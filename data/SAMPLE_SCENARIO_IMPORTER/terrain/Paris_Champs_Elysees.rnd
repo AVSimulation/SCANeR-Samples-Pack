@@ -1,0 +1,1776 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<RoadXML version="3.0.0" versionRevision="3.0.0-$Revision: 23033 $-$Date: 2011-05-02 11:01:27 +0200 (lun., 02 mai 2011) $" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <Network name="" traffic="right-hand">
+    <Geolocalisation Azimuth="0" EPSG="3857" TimeOffset="0" WKT="PROJCS['unnamed',PROJECTION['Mercator_1SP'],PARAMETER['standard_parallel_1',0],PARAMETER['central_meridian',0],PARAMETER['false_easting',0],PARAMETER['false_northing',0],UNIT['Meter',1],AUTHORITY['EPSG','3857']]">
+      <Translation x="255368.158658067" y="6220945.79148986" z="0"/>
+    </Geolocalisation>
+    <SubNetworkJunctions/>
+    <SubNetworks>
+      <SubNetwork heading="0" name="Sub Network" x="0" y="0" z="0">
+        <ExternalTerrain flipped="0" path="Paris_Champs_Elysees.ive"/>
+        <RoadNetwork>
+          <Grounds>
+            <Ground grip="1" name="Asphalt" type="asphalt" waterLevel="0">
+              <Roughness RepeatPattern="1" type="analytic">
+                <RoughnessAnalytic RoughnessHeight="0.005" RoughnessHeightStdDeviation="0" RoughnessLength="0.01" RoughnessLengthStdDeviation="0"/>
+                <Roughness2x2D>
+                  <Scale2x2DPoints bankingLeft="1" bankingRight="1" curvilinearDistance="1" zLeft="1" zRight="1"/>
+                  <Offset2x2DPoints bankingLeft="0" bankingRight="0" curvilinearDistance="0" zLeft="0" zRight="0"/>
+                  <Points2x2D/>
+                </Roughness2x2D>
+              </Roughness>
+            </Ground>
+            <Ground grip="0.8" name="Concrete" type="concrete" waterLevel="0">
+              <Roughness RepeatPattern="1" type="analytic">
+                <RoughnessAnalytic RoughnessHeight="0.001" RoughnessHeightStdDeviation="0" RoughnessLength="0.01" RoughnessLengthStdDeviation="0"/>
+                <Roughness2x2D>
+                  <Scale2x2DPoints bankingLeft="1" bankingRight="1" curvilinearDistance="1" zLeft="1" zRight="1"/>
+                  <Offset2x2DPoints bankingLeft="0" bankingRight="0" curvilinearDistance="0" zLeft="0" zRight="0"/>
+                  <Points2x2D/>
+                </Roughness2x2D>
+              </Roughness>
+            </Ground>
+            <Ground grip="0.4" name="Grass" type="grass" waterLevel="0">
+              <Roughness RepeatPattern="1" type="analytic">
+                <RoughnessAnalytic RoughnessHeight="0.003" RoughnessHeightStdDeviation="0" RoughnessLength="0.01" RoughnessLengthStdDeviation="0"/>
+                <Roughness2x2D>
+                  <Scale2x2DPoints bankingLeft="1" bankingRight="1" curvilinearDistance="1" zLeft="1" zRight="1"/>
+                  <Offset2x2DPoints bankingLeft="0" bankingRight="0" curvilinearDistance="0" zLeft="0" zRight="0"/>
+                  <Points2x2D/>
+                </Roughness2x2D>
+              </Roughness>
+            </Ground>
+            <Ground grip="0.6" name="Cobblestone" type="cobblestone" waterLevel="0">
+              <Roughness RepeatPattern="1" type="analytic">
+                <RoughnessAnalytic RoughnessHeight="0.009" RoughnessHeightStdDeviation="0" RoughnessLength="0.01" RoughnessLengthStdDeviation="0"/>
+                <Roughness2x2D>
+                  <Scale2x2DPoints bankingLeft="1" bankingRight="1" curvilinearDistance="1" zLeft="1" zRight="1"/>
+                  <Offset2x2DPoints bankingLeft="0" bankingRight="0" curvilinearDistance="0" zLeft="0" zRight="0"/>
+                  <Points2x2D/>
+                </Roughness2x2D>
+              </Roughness>
+            </Ground>
+          </Grounds>
+          <Markings>
+            <Marking alternate="0" destinationSeparation="0" dissuasive="0" doubleMarking="0" leftToRight="can" lineLength="3" material="marking material" name="FR_T2_3U_AutreRoute" noParking="0" noStop="0" quality="1" rightToLeft="can" totalLength="6.5" width="0.15">
+              <UVMapping leftU="0" lengthV="1" rightU="1"/>
+            </Marking>
+          </Markings>
+          <Profiles>
+            <Profile name="Profile_648763388" type="">
+              <LaneBorder distance="-7" height="0" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="inverse" material="Default" name="Lane" speedLimit="13.8888888888889" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="-3.5" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="inverse" material="Default" name="Lane 1" speedLimit="13.8888888888889" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="0" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 2" speedLimit="13.8888888888889" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="3.5" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 3" speedLimit="13.8888888888889" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="7" height="0" markingOffset="0"/>
+            </Profile>
+            <Profile name="Profile_643134324" type="">
+              <LaneBorder distance="-12.25" height="0" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="inverse" material="Default" name="Lane" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="-8.75" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="inverse" material="Default" name="Lane 1" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="-5.25" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="inverse" material="Default" name="Lane 2" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="-1.75" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 3" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="1.75" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 4" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="5.25" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 5" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="8.75" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 6" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="12.25" height="0" markingOffset="0"/>
+            </Profile>
+            <Profile name="Profile_642898830" type="">
+              <LaneBorder distance="-14" height="0" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="inverse" material="Default" name="Lane" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="-10.5" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="inverse" material="Default" name="Lane 1" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="-7" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="inverse" material="Default" name="Lane 2" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="-3.5" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="inverse" material="Default" name="Lane 3" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="0" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 4" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="3.5" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 5" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="7" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 6" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="10.5" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 7" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="14" height="0" markingOffset="0"/>
+            </Profile>
+            <Profile name="Profile_642727566" type="">
+              <LaneBorder distance="-1.75" height="0" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane" speedLimit="13.8888888888889" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="1.75" height="0" markingOffset="0"/>
+            </Profile>
+            <Profile name="Profile_566475381" type="">
+              <LaneBorder distance="-3.5" height="0" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="inverse" material="Default" name="Lane" speedLimit="13.8888888888889" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="0" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 1" speedLimit="13.8888888888889" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="3.5" height="0" markingOffset="0"/>
+            </Profile>
+            <Profile name="Profile_566475375" type="">
+              <LaneBorder distance="-3.5" height="0" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane" speedLimit="13.8888888888889" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="0" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 1" speedLimit="13.8888888888889" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="3.5" height="0" markingOffset="0"/>
+            </Profile>
+            <Profile name="Profile_544549304" type="">
+              <LaneBorder distance="-7" height="0" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="-3.5" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 1" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="0" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 2" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="3.5" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 3" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="7" height="0" markingOffset="0"/>
+            </Profile>
+            <Profile name="Profile_543476237" type="">
+              <LaneBorder distance="-5.25" height="0" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="-1.75" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 1" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="1.75" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 2" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="5.25" height="0" markingOffset="0"/>
+            </Profile>
+            <Profile name="Profile_522266410" type="">
+              <LaneBorder distance="-14" height="0" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="-10.5" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 1" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="-7" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 2" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="-3.5" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 3" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="0" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 4" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="3.5" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 5" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="7" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 6" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="10.5" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 7" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="14" height="0" markingOffset="0"/>
+            </Profile>
+            <Profile name="Profile_374056161" type="">
+              <LaneBorder distance="-1.75" height="0" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane" speedLimit="19.4444444444444" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="1.75" height="0" markingOffset="0"/>
+            </Profile>
+            <Profile name="Profile_314456033" type="">
+              <LaneBorder distance="-3.5" height="0" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="inverse" material="Default" name="Lane" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="0" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 1" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="3.5" height="0" markingOffset="0"/>
+            </Profile>
+            <Profile name="Profile_314456032" type="">
+              <LaneBorder distance="-7" height="0" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="inverse" material="Default" name="Lane" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="-3.5" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="inverse" material="Default" name="Lane 1" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="0" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 2" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="3.5" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 3" speedLimit="13.8888888888889" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="7" height="0" markingOffset="0"/>
+            </Profile>
+            <Profile name="Profile_190627543" type="">
+              <LaneBorder distance="-1.75" height="0" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane" speedLimit="30.5555555555556" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="1.75" height="0" markingOffset="0"/>
+            </Profile>
+            <Profile name="Profile_4293992" type="">
+              <LaneBorder distance="-3.5" height="0" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="inverse" material="Default" name="Lane" speedLimit="19.4444444444444" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="0" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 1" speedLimit="19.4444444444444" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="3.5" height="0" markingOffset="0"/>
+            </Profile>
+            <Profile name="Profile_69114049 Invert" type="none">
+              <LaneBorder distance="-1.75" height="0" markingOffset="-0"/>
+              <Lane Ground="Asphalt" circulationWay="inverse" material="Default" name="Lane" speedLimit="13.8888888888889" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="0" lengthV="1" rightU="1"/>
+              </Lane>
+              <LaneBorder distance="1.75" height="0" markingOffset="-0"/>
+            </Profile>
+            <Profile name="Profile_ 4039897" type="none">
+              <LaneBorder distance="-1.75" height="0" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="inverse" material="Default" name="Lane" speedLimit="13.8888888888889" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="-1.75" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 1" speedLimit="13.8888888888889" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="1.75" height="0" markingOffset="0"/>
+            </Profile>
+            <Profile name="Profile_ 4039898" type="none">
+              <LaneBorder distance="-1.75" height="0" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="inverse" material="Default" name="Lane" speedLimit="13.8888888888889" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="1.75" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 1" speedLimit="13.8888888888889" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="5.25" height="0" markingOffset="0"/>
+            </Profile>
+            <Profile name="Profile_34378247 Invert" type="none">
+              <LaneBorder distance="-3.5" height="0" markingOffset="-0"/>
+              <Lane Ground="Asphalt" circulationWay="inverse" material="Default" name="Lane 1" speedLimit="13.8888888888889" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="0" lengthV="1" rightU="1"/>
+              </Lane>
+              <LaneBorder distance="-0" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="-0"/>
+              <Lane Ground="Asphalt" circulationWay="inverse" material="Default" name="Lane" speedLimit="13.8888888888889" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="0" lengthV="1" rightU="1"/>
+              </Lane>
+              <LaneBorder distance="3.5" height="0" markingOffset="-0"/>
+            </Profile>
+            <Profile name="Profile_34378247 2" type="none">
+              <LaneBorder distance="-5.25" height="0" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane" speedLimit="13.8888888888889" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="-1.75" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 1" speedLimit="13.8888888888889" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="1.75" height="0" markingOffset="0"/>
+            </Profile>
+            <Profile name="Profile_34378247 1" type="none">
+              <LaneBorder distance="-1.75" height="0" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane" speedLimit="13.8888888888889" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="-1.75" height="0" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 1" speedLimit="13.8888888888889" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="1.75" height="0" markingOffset="0"/>
+            </Profile>
+          </Profiles>
+          <Intersections>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 0" x="327.813636488077" y="457.708327995613" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 3" x="717.754680787795" y="31.7656631246209" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 5" x="341.472538008384" y="212.704276573844" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 6" x="514.27378356675" y="129.372802227735" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 7" x="207.232364060794" y="277.675724605098" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 8" x="610.49835140846" y="83.2185242865235" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 10" x="56.4835096284805" y="408.193914324977" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 11" x="-15.562464812916" y="538.7647624081" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 12" x="-98.0390755416011" y="185.770805562846" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 13" x="25.7036704241472" y="266.672732319683" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 14" x="-117.998660240846" y="422.757939559408" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 16" x="5.53257869241156" y="94.8287904225537" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 18" x="245.014199236" y="106.320944666862" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 22" x="16.7869792116398" y="358.764172377065" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 24" x="158.763857769372" y="415.028708651662" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 25" x="102.836945594841" y="424.799942799844" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 26" x="222.906148364506" y="549.093058866449" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 27" x="201.04300037268" y="377.462722675875" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 28" x="216.972819505172" y="330.311404096894" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 31" x="-137.22353630088" y="289.404390237291" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 33" x="172.879169201915" y="236.532707688399" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 36" x="364.337561417342" y="355.574622376822" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 37" x="10.085545865848" y="315.899421847425" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 40" x="140.151238908729" y="69.8869884973391" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 43" x="25.8372538131662" y="376.855187895708" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 44" x="69.0848759863002" y="228.010491906665" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 47" x="126.392149846652" y="218.745756248012" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 48" x="87.2633488328138" y="573.563746631145" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+              <IntersectionWayLinks/>
+            </Intersection>
+          </Intersections>
+          <Tracks>
+            <Track endNode="Intersection 0" exitAtEnd="0" exitAtStart="0" name="Avenue Hoche - 648763388" startNode="Intersection 27">
+              <XYCurve direction="0.570280053354746" x="214.609905243398" y="386.164043433428">
+                <PolyLine endHeading="-0.0138756157646689" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="61.4061085921311" y="1.90958360235527e-014"/>
+                  <Vectord2 x="68.6269049070235" y="0.000110721283750004"/>
+                  <Vectord2 x="122.15570036329" y="-0.729501863192909"/>
+                  <Vectord2 x="129.214161347971" y="-0.827448641773266"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="-0" x="61.4061085921311" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="61.4061085921311" y="0"/>
+                  <end direction="-0" x="68.6269049078723" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="68.6269049078723" y="0"/>
+                  <end direction="-0" x="122.1606725459" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="122.1606725459" y="0"/>
+                  <end direction="0" x="129.219813077415" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="129.219813077415" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="129.219813077416" endProfile="Profile_648763388" name="" startProfile="Profile_648763388"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="" exitAtEnd="0" exitAtStart="0" name="Avenue des Champs-Ã‰lysÃ©es - 643131004" startNode="Intersection 3">
+              <XYCurve direction="-0.447102453763176" x="721.440733234867" y="29.9982511633991">
+                <PolyLine endHeading="-0.00576311452910903" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="13.7883547143491" y="3.38618022510673e-015"/>
+                  <Vectord2 x="23.7666316426113" y="-0.00655458328577069"/>
+                  <Vectord2 x="47.9750568863309" y="-0.146072055158797"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="13.7883547143491" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="13.7883547143491" y="0"/>
+                  <end direction="0" x="23.7666337954157" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="23.7666337954157" y="0"/>
+                  <end direction="0" x="47.9754610678327" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="47.9754610678327" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="47.9754610678327" endProfile="Profile_643134324" name="" startProfile="Profile_643134324"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 6" exitAtEnd="0" exitAtStart="0" name="Avenue des Champs-Ã‰lysÃ©es - 642901742" startNode="Intersection 5">
+              <XYCurve direction="-0.449317696187764" x="359.636491323659" y="203.945367101953">
+                <PolyLine endHeading="-6.44902972184846e-005" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="23.0773050911719" y="5.65086172299445e-015"/>
+                  <Vectord2 x="94.3736600996156" y="0.00109052949263779"/>
+                  <Vectord2 x="152.262113610142" y="-0.00264271408495"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="23.0773050911719" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="23.0773050911719" y="0"/>
+                  <end direction="0" x="94.3736601079559" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="94.3736601079559" y="0"/>
+                  <end direction="0" x="152.262113738861" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="152.262113738861" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="152.262113738861" endProfile="Profile_643134324" name="" startProfile="Profile_643134324"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 5" exitAtEnd="0" exitAtStart="0" name="Avenue des Champs-Ã‰lysÃ©es - 642898830" startNode="Intersection 7">
+              <XYCurve direction="-0.450724435322757" x="221.544433531431" y="270.749414969245">
+                <PolyLine endHeading="0.000224074960530223" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="62.1606696915492" y="1.52204637782205e-014"/>
+                  <Vectord2 x="84.7708213305726" y="-0.00668639040188935"/>
+                  <Vectord2 x="108.703076983444" y="-0.0109607200277839"/>
+                  <Vectord2 x="127.792702649909" y="-0.0066832128384434"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="62.1606696915493" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="62.1606696915493" y="0"/>
+                  <end direction="0" x="84.7708223192395" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="84.7708223192395" y="0"/>
+                  <end direction="0" x="108.703078353811" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="108.703078353811" y="0"/>
+                  <end direction="0" x="127.792704499517" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="127.792704499517" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="127.792704499517" endProfile="Profile_642898830" name="" startProfile="Profile_642898830"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 8" exitAtEnd="0" exitAtStart="0" name="Avenue des Champs-Ã‰lysÃ©es - 626668696" startNode="Intersection 6">
+              <XYCurve direction="-0.447244842468129" x="516.53969238151" y="128.285932958223">
+                <PolyLine endHeading="2.80558894022156e-005" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="73.8488116120965" y="1.80876364233584e-014"/>
+                  <Vectord2 x="97.2372799738906" y="0.00065618428183597"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="73.8488116120965" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="73.8488116120965" y="0"/>
+                  <end direction="0" x="97.2372799830955" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="97.2372799830955" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="97.2372799830955" endProfile="Profile_643134324" name="" startProfile="Profile_643134324"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 11" exitAtEnd="0" exitAtStart="0" name="Avenue Carnot - 566475380" startNode="Intersection 10">
+              <XYCurve direction="2.07500271705286" x="48.4907720997928" y="422.679366506284">
+                <PolyLine endHeading="-8.57474023760277e-018" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="128.087385586558" y="-1.0983160591184e-015"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="128.087385586558" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="128.087385586558" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="128.087385586558" endProfile="Profile_566475381" name="" startProfile="Profile_566475381"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 13" exitAtEnd="0" exitAtStart="0" name="Avenue Victor Hugo - 566475377" startNode="Intersection 12">
+              <XYCurve direction="0.579129161387515" x="-92.768205302844" y="189.217556831723">
+                <PolyLine endHeading="-0.000196749447135457" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="71.4053656969032" y="2.30839652948234e-014"/>
+                  <Vectord2 x="125.370466458072" y="-0.0106176038763498"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="71.4053656969032" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="71.4053656969032" y="0"/>
+                  <end direction="0" x="125.370467502576" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="125.370467502576" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="125.370467502576" endProfile="Profile_648763388" name="" startProfile="Profile_648763388"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 22" exitAtEnd="0" exitAtStart="0" name="Avenue de la Grande ArmÃ©e - 544549304" startNode="Intersection 14">
+              <XYCurve direction="-0.443182362233546" x="-113.848780131796" y="420.78809913381">
+                <PolyLine endHeading="-0.000210782569635002" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="76.2412519445317" y="4.56752691224693e-015"/>
+                  <Vectord2 x="98.3870604333278" y="-0.00518789840368585"/>
+                  <Vectord2 x="123.920759332837" y="-0.00875671189120676"/>
+                  <Vectord2 x="127.9194779953" y="-0.00959957209861071"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="76.2412519445317" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="76.2412519445317" y="0"/>
+                  <end direction="0" x="98.3870610409889" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="98.3870610409889" y="0"/>
+                  <end direction="0" x="123.920760189903" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="123.920760189903" y="0"/>
+                  <end direction="0" x="127.919478941195" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="127.919478941195" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="127.919478941195" endProfile="Profile_544549304" name="" startProfile="Profile_544549304"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 25" exitAtEnd="0" exitAtStart="0" name="Place Charles de Gaulle - 522266410" startNode="Intersection 24">
+              <XYCurve direction="2.7717232263165" x="150.887787359722" y="418.082363171827">
+                <PolyLine endHeading="0.416287390169898" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="8.1722550983495" y="0"/>
+                  <Vectord2 x="24.5037749648182" y="2.62142457250628"/>
+                  <Vectord2 x="36.2527240203262" y="6.25353978925143"/>
+                  <Vectord2 x="42.4492655540462" y="8.99319743817244"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="8.17225509834951" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="8.17225509834951" y="0"/>
+                  <end direction="0" x="24.7128236477738" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="24.7128236477738" y="0"/>
+                  <end direction="0" x="37.010387018484" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="37.010387018484" y="0"/>
+                  <end direction="0" x="43.7855512978508" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="43.7855512978508" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="43.7855512978508" endProfile="Profile_522266410" name="" startProfile="Profile_522266410"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 27" exitAtEnd="0" exitAtStart="0" name="Place Charles de Gaulle - 503103508" startNode="Intersection 28">
+              <XYCurve direction="1.71791107524172" x="215.533796071033" y="340.022374376485">
+                <PolyLine endHeading="0.36522608745179" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="3.47285760195921" y="8.88178419700125e-016"/>
+                  <Vectord2 x="16.640253985391" y="1.70617499727661"/>
+                  <Vectord2 x="28.2367143604539" y="4.66920891189938"/>
+                  <Vectord2 x="31.0341492977986" y="5.73889538695341"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="3.47285760195921" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="3.47285760195921" y="0"/>
+                  <end direction="0" x="16.7503332897451" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="16.7503332897451" y="0"/>
+                  <end direction="0" x="28.7193542693243" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="28.7193542693243" y="0"/>
+                  <end direction="0" x="31.7143286237371" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="31.7143286237371" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="31.7143286237371" endProfile="Profile_522266410" name="" startProfile="Profile_522266410"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 24" exitAtEnd="0" exitAtStart="0" name="Place Charles de Gaulle - 503103507" startNode="Intersection 27">
+              <XYCurve direction="2.21243750868728" x="195.945418436949" y="384.285900566544">
+                <PolyLine endHeading="0.41542640539118" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="6.73440615838626" y="1.77635683940025e-015"/>
+                  <Vectord2 x="21.6478515922441" y="2.19794985256409"/>
+                  <Vectord2 x="34.8482545332753" y="6.07868189772359"/>
+                  <Vectord2 x="39.0395798043489" y="7.92746707756741"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="6.73440615838625" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="6.73440615838625" y="0"/>
+                  <end direction="0" x="21.8089488799099" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="21.8089488799099" y="0"/>
+                  <end direction="0" x="35.5679720651477" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="35.5679720651477" y="0"/>
+                  <end direction="0" x="40.1489342096268" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="40.1489342096268" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="40.1489342096269" endProfile="Profile_522266410" name="" startProfile="Profile_522266410"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 7" exitAtEnd="0" exitAtStart="0" name="Place Charles de Gaulle - 365158942" startNode="Intersection 33">
+              <XYCurve direction="0.659087303745398" x="175.487006704118" y="238.552852055859">
+                <PolyLine endHeading="0.321252071302044" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="6.95238891372563" y="0"/>
+                  <Vectord2 x="17.1199034806811" y="0.982701133002228"/>
+                  <Vectord2 x="29.2508274085406" y="3.51840328336581"/>
+                  <Vectord2 x="35.7126371836129" y="5.66876146609299"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="6.95238891372562" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="6.95238891372562" y="0"/>
+                  <end direction="0" x="17.1672826471942" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="17.1672826471942" y="0"/>
+                  <end direction="0" x="29.5603896320819" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="29.5603896320819" y="0"/>
+                  <end direction="0" x="36.3706044512518" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="36.3706044512518" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="36.3706044512518" endProfile="Profile_522266410" name="" startProfile="Profile_522266410"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 13" exitAtEnd="0" exitAtStart="0" name="Place Charles de Gaulle - 314456037" startNode="Intersection 37">
+              <XYCurve direction="-1.45922922572891" x="11.248720196087" y="305.516932611632">
+                <PolyLine endHeading="0.37558663135311" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="1.1508586518472" y="8.88178419700125e-016"/>
+                  <Vectord2 x="12.9674325962833" y="1.3421405230786"/>
+                  <Vectord2 x="26.318924469191" y="4.5622118084696"/>
+                  <Vectord2 x="32.5454523558927" y="7.01735826431056"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="1.1508586518472" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="1.1508586518472" y="0"/>
+                  <end direction="0" x="13.0434093020658" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="13.0434093020658" y="0"/>
+                  <end direction="0" x="26.7777165039352" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="26.7777165039352" y="0"/>
+                  <end direction="0" x="33.4708020138851" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="33.4708020138851" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="33.4708020138852" endProfile="Profile_522266410" name="" startProfile="Profile_522266410"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 36" exitAtEnd="0" exitAtStart="0" name="Avenue de Friedland - 314456032" startNode="Intersection 28">
+              <XYCurve direction="0.169627948267528" x="233.394860170814" y="333.124069930619">
+                <PolyLine endHeading="1.81101014204071e-005" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="7.53067722817168" y="1.11716191852906e-015"/>
+                  <Vectord2 x="49.0276124123044" y="0.0152559917840047"/>
+                  <Vectord2 x="62.3646620051912" y="0.00814549475266286"/>
+                  <Vectord2 x="67.6616066774127" y="0.0083641624777168"/>
+                  <Vectord2 x="110.050985733376" y="0.0248713522774097"/>
+                  <Vectord2 x="116.160718816683" y="0.0228547307569164"/>
+                  <Vectord2 x="128.207376513266" y="0.0230728969496023"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="-0" x="7.53067722817165" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="7.53067722817165" y="0"/>
+                  <end direction="-0" x="49.0276152166714" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="49.0276152166714" y="0"/>
+                  <end direction="-0" x="62.3646667049986" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="62.3646667049986" y="0"/>
+                  <end direction="-0" x="67.6616113817337" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="67.6616113817337" y="0"/>
+                  <end direction="-0" x="110.050993651796" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="110.050993651796" y="0"/>
+                  <end direction="-0" x="116.160727067913" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="116.160727067913" y="0"/>
+                  <end direction="0" x="128.207384766472" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="128.207384766472" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="128.207384766471" endProfile="Profile_314456032" name="" startProfile="Profile_314456032"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 37" exitAtEnd="0" exitAtStart="0" name="Place Charles de Gaulle - 193476880" startNode="Intersection 22">
+              <XYCurve direction="-1.8916834714891" x="14.3172893665913" y="351.333723918555">
+                <PolyLine endHeading="0.3155959832952" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="1.34624416846872" y="1.77635683940025e-015"/>
+                  <Vectord2 x="10.8974563619389" y="0.851892026550746"/>
+                  <Vectord2 x="22.9604500026045" y="3.24247953703676"/>
+                  <Vectord2 x="28.283640018338" y="4.98054810995045"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="1.34624416846872" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="1.34624416846872" y="0"/>
+                  <end direction="0" x="10.9353720949068" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="10.9353720949068" y="0"/>
+                  <end direction="0" x="23.2329622742887" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="23.2329622742887" y="0"/>
+                  <end direction="0" x="28.8327153320365" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="28.8327153320365" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="28.8327153320364" endProfile="Profile_522266410" name="" startProfile="Profile_522266410"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 22" exitAtEnd="0" exitAtStart="0" name="Place Charles de Gaulle - 193465143" startNode="Intersection 43">
+              <XYCurve direction="-2.08426542343054" x="23.2892408339664" y="372.33681033923">
+                <PolyLine endHeading="0.0968738821063738" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="4.69362321171815" y="1.18655085756814e-015"/>
+                  <Vectord2 x="5.1849877035862" y="0.0477498496601007"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="4.69362321171815" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="4.69362321171815" y="0"/>
+                  <end direction="0" x="5.18730237069826" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="5.18730237069826" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="5.18730237069826" endProfile="Profile_522266410" name="" startProfile="Profile_522266410"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 28" exitAtEnd="0" exitAtStart="0" name="Place Charles de Gaulle - 193465140" startNode="Intersection 7">
+              <XYCurve direction="1.26634133658822" x="212.538270330071" y="291.150298262292">
+                <PolyLine endHeading="0.330796753499336" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="5.91785023827251" y="2.66453525910038e-015"/>
+                  <Vectord2 x="16.5070119826214" y="1.20369009752857"/>
+                  <Vectord2 x="27.4969793537632" y="3.66517548052474"/>
+                  <Vectord2 x="31.5463093859369" y="5.05577753828554"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="5.9178502382725" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="5.9178502382725" y="0"/>
+                  <end direction="0" x="16.5752052712472" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="16.5752052712472" y="0"/>
+                  <end direction="0" x="27.8374560724621" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="27.8374560724621" y="0"/>
+                  <end direction="0" x="32.1189100068765" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="32.1189100068765" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="32.1189100068764" endProfile="Profile_522266410" name="" startProfile="Profile_522266410"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 44" exitAtEnd="0" exitAtStart="0" name="Place Charles de Gaulle - 190627546" startNode="Intersection 13">
+              <XYCurve direction="-0.942964986605471" x="30.8863660770482" y="259.532050505635">
+                <PolyLine endHeading="0.42726764113305" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="5.52304954460958" y="1.77635683940025e-015"/>
+                  <Vectord2 x="20.5440469537375" y="2.16501336546409"/>
+                  <Vectord2 x="34.3690269973335" y="6.21596267705576"/>
+                  <Vectord2 x="40.1854276287513" y="8.86427510008926"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="5.52304954460959" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="5.52304954460959" y="0"/>
+                  <end direction="0" x="20.6992692991356" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="20.6992692991356" y="0"/>
+                  <end direction="0" x="35.1055270897942" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="35.1055270897942" y="0"/>
+                  <end direction="0" x="41.4964640316793" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="41.4964640316793" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="41.4964640316793" endProfile="Profile_522266410" name="" startProfile="Profile_522266410"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 10" exitAtEnd="0" exitAtStart="0" name="Place Charles de Gaulle - 190627544" startNode="Intersection 25">
+              <XYCurve direction="-2.98296408205225" x="97.6908166105639" y="423.97670303153">
+                <PolyLine endHeading="0.357915342805279" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="6.21975737875262" y="-8.88178419700125e-016"/>
+                  <Vectord2 x="17.4226451648109" y="1.24997688371622"/>
+                  <Vectord2 x="30.0289826355801" y="4.15540730847142"/>
+                  <Vectord2 x="37.4012454602482" y="6.91281573440836"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="6.21975737875261" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="6.21975737875261" y="0"/>
+                  <end direction="0" x="17.4921633755591" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="17.4921633755591" y="0"/>
+                  <end direction="0" x="30.4289817780881" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="30.4289817780881" y="0"/>
+                  <end direction="0" x="38.3000401810865" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="38.3000401810865" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="38.3000401810865" endProfile="Profile_522266410" name="" startProfile="Profile_522266410"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 47" exitAtEnd="0" exitAtStart="0" name="Place Charles de Gaulle - 184551793" startNode="Intersection 44">
+              <XYCurve direction="-0.380281640619877" x="77.0743569800088" y="224.816782134405">
+                <PolyLine endHeading="0.424900296442725" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="4.53512384387168" y="1.77635683940025e-015"/>
+                  <Vectord2 x="17.4680550000527" y="1.62587095305782"/>
+                  <Vectord2 x="33.2257822982082" y="5.9620627408253"/>
+                  <Vectord2 x="43.2227151452307" y="10.4853052860847"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="4.53512384387169" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="4.53512384387169" y="0"/>
+                  <end direction="0" x="17.5698530181398" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="17.5698530181398" y="0"/>
+                  <end direction="0" x="33.9133082471706" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="33.9133082471706" y="0"/>
+                  <end direction="0" x="44.8859282383633" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="44.8859282383633" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="44.8859282383633" endProfile="Profile_522266410" name="" startProfile="Profile_522266410"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="" exitAtEnd="0" exitAtStart="0" name="Avenue de la Grande ArmÃ©e - 44864462" startNode="Intersection 43">
+              <XYCurve direction="2.68247840877547" x="10.6859233593259" y="384.345188586484">
+                <PolyLine endHeading="-0.000543069221087464" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="4.23366217703669" y="1.04083408558608e-015"/>
+                  <Vectord2 x="57.9834605009753" y="-0.0105663341297344"/>
+                  <Vectord2 x="87.7144855309099" y="-0.0158777924835148"/>
+                  <Vectord2 x="113.71885105258" y="-0.0185672342933862"/>
+                  <Vectord2 x="127.616881355809" y="-0.0261148275268"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="4.23366217703669" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="4.23366217703669" y="0"/>
+                  <end direction="0" x="57.9834615395599" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="57.9834615395599" y="0"/>
+                  <end direction="0" x="87.7144870439414" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="87.7144870439414" y="0"/>
+                  <end direction="0" x="113.718852704686" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="113.718852704686" y="0"/>
+                  <end direction="0" x="127.616885057348" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="127.616885057348" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="127.616885057348" endProfile="Profile_544549304" name="" startProfile="Profile_544549304"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 40" exitAtEnd="0" exitAtStart="0" name="Avenue d'IÃ©na - 31544817" startNode="Intersection 47">
+              <XYCurve direction="-1.47563084913593" x="127.944887418587" y="202.478856338348">
+                <PolyLine endHeading="-0.00558434996619041" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="58.4017580013504" y="1.4210854715202e-014"/>
+                  <Vectord2 x="121.579692700069" y="-0.383387794469995"/>
+                  <Vectord2 x="126.930852229846" y="-0.413270852643867"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="58.4017580013504" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="58.4017580013504" y="0"/>
+                  <end direction="0" x="121.580855961012" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="121.580855961012" y="0"/>
+                  <end direction="0" x="126.932098929733" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="126.932098929733" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="126.932098929733" endProfile="Profile_314456033" name="" startProfile="Profile_314456033"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 44" exitAtEnd="0" exitAtStart="0" name="Avenue KlÃ©ber - 31544813" startNode="Intersection 16">
+              <XYCurve direction="1.12541350633638" x="8.23350746106419" y="100.486688966296">
+                <PolyLine endHeading="0.00014758933168944" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="33.8599663002274" y="-7.49400541621981e-016"/>
+                  <Vectord2 x="66.5976722217657" y="0.0115985307075375"/>
+                  <Vectord2 x="125.224028449793" y="0.0202511555054447"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="33.8599663002274" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="33.8599663002274" y="0"/>
+                  <end direction="0" x="66.5976742763677" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="66.5976742763677" y="0"/>
+                  <end direction="0" x="125.224031142912" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="125.224031142912" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="125.224031142913" endProfile="Profile_648763388" name="" startProfile="Profile_648763388"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 37" exitAtEnd="0" exitAtStart="0" name="Avenue Foch - 31544800" startNode="Intersection 31">
+              <XYCurve direction="0.177889348738299" x="-131.268867510712" y="290.474979078593">
+                <PolyLine endHeading="0.000147562624036413" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="74.5367045510729" y="-1.21777588013572e-015"/>
+                  <Vectord2 x="126.62571394344" y="0.00768639096518354"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="74.5367045510729" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="74.5367045510729" y="0"/>
+                  <end direction="0" x="126.625714510552" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="126.625714510552" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="126.625714510552" endProfile="Profile_648763388" name="" startProfile="Profile_648763388"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 18" exitAtEnd="0" exitAtStart="0" name="Avenue Marceau - 24931206" startNode="Intersection 33">
+              <XYCurve direction="-1.06507214746939" x="180.911110408065" y="222.028294187356">
+                <PolyLine endHeading="0.000618827819163084" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="26.3218950925461" y="6.63358257213531e-015"/>
+                  <Vectord2 x="60.3158856506915" y="0.00822859497685952"/>
+                  <Vectord2 x="93.2295911622505" y="0.0166090672559547"/>
+                  <Vectord2 x="120.043613147194" y="0.017946889869945"/>
+                  <Vectord2 x="126.265257618024" y="0.0217970170409028"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="26.3218950925461" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="26.3218950925461" y="0"/>
+                  <end direction="0" x="60.3158866465995" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="60.3158866465995" y="0"/>
+                  <end direction="0" x="93.2295932250744" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="93.2295932250744" y="0"/>
+                  <end direction="0" x="120.043615243392" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="120.043615243392" y="0"/>
+                  <end direction="0" x="126.265260905505" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="126.265260905505" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="126.265260905505" endProfile="Profile_642727566" name="" startProfile="Profile_642727566"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 26" exitAtEnd="0" exitAtStart="0" name="Avenue de Wagram - 4444183" startNode="Intersection 24">
+              <XYCurve direction="1.12441846075858" x="165.696824014867" y="429.514774610641">
+                <PolyLine endHeading="0.000122232800498875" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="7.66369726792884" y="1.87697080100691e-015"/>
+                  <Vectord2 x="25.1750341161136" y="0.00118711030166358"/>
+                  <Vectord2 x="61.8801909606351" y="0.00661362040399733"/>
+                  <Vectord2 x="90.4650466293007" y="0.0131716187751687"/>
+                  <Vectord2 x="128.170732846841" y="0.017780490419224"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="7.66369726792885" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="7.66369726792885" y="0"/>
+                  <end direction="0" x="25.1750341563512" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="25.1750341563512" y="0"/>
+                  <end direction="0" x="61.8801914020019" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="61.8801914020019" y="0"/>
+                  <end direction="0" x="90.4650478229424" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="90.4650478229424" y="0"/>
+                  <end direction="0" x="128.170734322161" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="128.170734322161" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="128.17073432216" endProfile="Profile_314456032" name="" startProfile="Profile_314456032"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 3" exitAtEnd="0" exitAtStart="0" name="Avenue des Champs-Ã‰lysÃ©es - 626668698" startNode="Intersection 8">
+              <XYCurve direction="-0.447096717714979" x="617.535567833454" y="79.8443244714573">
+                <PolyLine endHeading="-0.000123276500069085" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="10.3064097388051" y="2.88311041707345e-015"/>
+                  <Vectord2 x="96.0926580067659" y="-0.0212883756151337"/>
+                  <Vectord2 x="106.743984681755" y="-0.0226014338953704"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="10.3064097388051" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="10.3064097388051" y="0"/>
+                  <end direction="0" x="96.0926606481853" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="96.0926606481853" y="0"/>
+                  <end direction="0" x="106.743987404109" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="106.743987404109" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="106.743987404109" endProfile="Profile_643134324" name="" startProfile="Profile_643134324"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 43" exitAtEnd="0" exitAtStart="0" name="Place Charles de Gaulle - 184551794" startNode="Intersection 10">
+              <XYCurve direction="-2.50522944148507" x="53.1299402422259" y="405.715940987204">
+                <PolyLine endHeading="0.324916065657102" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="6.82016057861994" y="-1.77635683940025e-015"/>
+                  <Vectord2 x="17.8355820823827" y="1.17718304155987"/>
+                  <Vectord2 x="29.4269944497335" y="3.73330829563978"/>
+                  <Vectord2 x="32.0336571150225" y="4.61137381016901"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="6.82016057861993" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="6.82016057861993" y="0"/>
+                  <end direction="0" x="17.8983044131662" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="17.8983044131662" y="0"/>
+                  <end direction="0" x="29.7682082453174" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="29.7682082453174" y="0"/>
+                  <end direction="0" x="32.518788056633" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="32.518788056633" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="32.518788056633" endProfile="Profile_522266410" name="" startProfile="Profile_522266410"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 33" exitAtEnd="0" exitAtStart="0" name="Place Charles de Gaulle - 184551795" startNode="Intersection 47">
+              <XYCurve direction="0.183485482047229" x="131.086002383099" y="219.616807256123">
+                <PolyLine endHeading="0.361617209131927" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="7.80475575661019" y="1.77635683940025e-015"/>
+                  <Vectord2 x="20.5744307028877" y="1.57796420996663"/>
+                  <Vectord2 x="32.2448611234416" y="4.49272986495119"/>
+                  <Vectord2 x="39.6857341069355" y="7.30724239042354"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="7.80475575661018" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="7.80475575661018" y="0"/>
+                  <end direction="0" x="20.6715568074357" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="20.6715568074357" y="0"/>
+                  <end direction="0" x="32.7004721793413" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="32.7004721793413" y="0"/>
+                  <end direction="0" x="40.6558522150486" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="40.6558522150486" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="40.6558522150486" endProfile="Profile_522266410" name="" startProfile="Profile_522266410"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 25" exitAtEnd="0" exitAtStart="0" name="Avenue Mac-Mahon - 4450687" startNode="Intersection 48">
+              <XYCurve direction="-1.46041137471785" x="87.7658339103057" y="569.030134860844">
+                <PolyLine endHeading="-0.00841455864721845" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="36.9708791663976" y="1.14352971536391e-014"/>
+                  <Vectord2 x="128.686202165167" y="-0.771762179129231"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="36.9708791663976" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="36.9708791663976" y="0"/>
+                  <end direction="0" x="128.689449203385" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="128.689449203385" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="128.689449203385" endProfile="Profile_566475375" name="" startProfile="Profile_566475375"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+          </Tracks>
+          <TrafficLightGroups/>
+          <Materials>
+            <Material name="Default">
+              <Diffuse>
+                <Texture path="textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+              <NormalMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </NormalMap>
+              <ReflectionMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </ReflectionMap>
+              <SpecularMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </SpecularMap>
+              <AmbientOcclusionMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </AmbientOcclusionMap>
+            </Material>
+            <Material BRDF="../headlights/materials/whiteLine.bsdf2" name="marking material">
+              <Diffuse>
+                <Texture path="textures/marking.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+              <NormalMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </NormalMap>
+              <ReflectionMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </ReflectionMap>
+              <SpecularMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </SpecularMap>
+              <AmbientOcclusionMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </AmbientOcclusionMap>
+            </Material>
+          </Materials>
+          <ParkingSpots/>
+        </RoadNetwork>
+        <EntitiesGenerationLists/>
+        <Trajectories/>
+        <TrajectoryParts/>
+        <TerrainContours>
+          <TerrainContour contourPoints="-198.269 -63.1257 0 -198.269 -63.1257 0 -198.269 633.564 0 -198.269 633.564 0 301.731 633.564 0 836.887 633.564 0 836.887 -63.1257 0 301.731 -63.1257 0 -198.269 -63.1257 0 "/>
+        </TerrainContours>
+        <Areas/>
+        <ClippedDatas/>
+      </SubNetwork>
+    </SubNetworks>
+    <Roads/>
+  </Network>
+
+</RoadXML>

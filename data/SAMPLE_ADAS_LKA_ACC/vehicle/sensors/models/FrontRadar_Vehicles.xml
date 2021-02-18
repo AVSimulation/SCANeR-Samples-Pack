@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<SensorModelRoot version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <SensorModel>
+    <RadarSensorModel>
+      <angularPrecision>0.00872664625997165</angularPrecision>
+      <angularResolution>0.174532925199433</angularResolution>
+      <name>LongRangeRadarSensor</name>
+      <TargetSensorOption>
+        <includeWheelsBB>0</includeWheelsBB>
+        <logicalComputeBB>0</logicalComputeBB>
+      </TargetSensorOption>
+      <Beam>
+        <depthCartography></depthCartography>
+        <depthCartographyHorizontal></depthCartographyHorizontal>
+        <depthCartographyVertical></depthCartographyVertical>
+        <egoSpeedMax>0</egoSpeedMax>
+        <egoSpeedMin>0</egoSpeedMin>
+        <fov>0 0</fov>
+        <fovHorizontal>-0.785398163397448 0.785398163397448</fovHorizontal>
+        <fovVertical>-0.0872664625997165 0.0872664625997165</fovVertical>
+        <name>beam 0</name>
+        <offset>0 0</offset>
+        <position>0 0 0 0 0 0</position>
+        <range>150</range>
+        <useCartoHorizontal>0</useCartoHorizontal>
+        <useCartoVertical>0</useCartoVertical>
+        <useEgoSpeed>0</useEgoSpeed>
+        <useRange>1</useRange>
+        <DetectableTarget>
+          <name>2</name>
+          <range>150</range>
+          <visibility>0</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>6</name>
+          <range>150</range>
+          <visibility>0</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>13</name>
+          <range>150</range>
+          <visibility>0</visibility>
+        </DetectableTarget>
+      </Beam>
+    </RadarSensorModel>
+  </SensorModel>
+
+</SensorModelRoot>

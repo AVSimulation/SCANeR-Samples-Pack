@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<RoadXML version="3.0.0" versionRevision="3.0.0-$Revision: 23033 $-$Date: 2011-05-02 11:01:27 +0200 (lun., 02 mai 2011) $" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <Network name="Interchange" traffic="right-hand">
+    <Geolocalisation Azimuth="0" EPSG="27561" TimeOffset="0" WKT="PROJCS['NTF(Paris) / Lambert Nord France',GEOGCS['NTF(Paris)',DATUM['Nouvelle_Triangulation_Francaise_Paris',SPHEROID['Clarke 1880 (IGN)',6378249.2,293.4660212936265,AUTHORITY['EPSG','7011']],TOWGS84[-168,-60,320,0,0,0,0],AUTHORITY['EPSG','6807']],PRIMEM['Paris',2.33722917,AUTHORITY['EPSG','8903']],UNIT['grad',0.01570796326794897,AUTHORITY['EPSG','9105']],AUTHORITY['EPSG','4807']],PROJECTION['Lambert_Conformal_Conic_1SP'],PARAMETER['latitude_of_origin',55],PARAMETER['central_meridian',0],PARAMETER['scale_factor',0.999877341],PARAMETER['false_easting',600000],PARAMETER['false_northing',200000],UNIT['metre',1,AUTHORITY['EPSG','9001']],AXIS['X',EAST],AXIS['Y',NORTH],AUTHORITY['EPSG','27561']]">
+      <Translation x="599764.840722777" y="129580.099724856" z="-1.14248650614172"/>
+    </Geolocalisation>
+    <SubNetworkJunctions/>
+    <SubNetworks>
+      <SubNetwork heading="0" name="Sub Network" x="0" y="0" z="0">
+        <ExternalTerrain flipped="0" path="long_highway.ive"/>
+        <ExternalPhysicSurface flipped="0" path="Interchange/Interchange.sol"/>
+        <RoadNetwork>
+          <Grounds>
+            <Ground grip="1" name="Asphalt" type="asphalt" waterLevel="0">
+              <Roughness RepeatPattern="1" type="analytic">
+                <RoughnessAnalytic RoughnessHeight="0.005" RoughnessHeightStdDeviation="0" RoughnessLength="0.01" RoughnessLengthStdDeviation="0"/>
+                <Roughness2x2D>
+                  <Scale2x2DPoints bankingLeft="1" bankingRight="1" curvilinearDistance="1" zLeft="1" zRight="1"/>
+                  <Offset2x2DPoints bankingLeft="0" bankingRight="0" curvilinearDistance="0" zLeft="0" zRight="0"/>
+                  <Points2x2D/>
+                </Roughness2x2D>
+              </Roughness>
+            </Ground>
+            <Ground grip="1" name="Ground Material" type="asphalt" waterLevel="0">
+              <Roughness RepeatPattern="1" type="analytic">
+                <RoughnessAnalytic RoughnessHeight="0" RoughnessHeightStdDeviation="0" RoughnessLength="0.01" RoughnessLengthStdDeviation="0"/>
+                <Roughness2x2D>
+                  <Scale2x2DPoints bankingLeft="1" bankingRight="1" curvilinearDistance="1" zLeft="1" zRight="1"/>
+                  <Offset2x2DPoints bankingLeft="0" bankingRight="0" curvilinearDistance="0" zLeft="0" zRight="0"/>
+                  <Points2x2D/>
+                </Roughness2x2D>
+              </Roughness>
+            </Ground>
+          </Grounds>
+          <Markings>
+            <Marking alternate="0" destinationSeparation="0" dissuasive="0" doubleMarking="0" leftToRight="can" lineLength="2" material="marking material" name="Marking" noParking="0" noStop="0" quality="1" rightToLeft="can" totalLength="6" width="0.2">
+              <UVMapping leftU="0" lengthV="1" rightU="1"/>
+            </Marking>
+            <Marking alternate="0" destinationSeparation="0" dissuasive="0" doubleMarking="0" leftToRight="cannot" lineLength="6" material="marking material" name="Markin Continuous" noParking="0" noStop="0" quality="1" rightToLeft="cannot" totalLength="6" width="0.2">
+              <UVMapping leftU="0" lengthV="1" rightU="1"/>
+            </Marking>
+            <Marking alternate="0" destinationSeparation="0" dissuasive="0" doubleMarking="0" leftToRight="can" lineLength="10" material="marking material" name="Long marking" noParking="0" noStop="0" quality="1" rightToLeft="can" totalLength="12" width="0.2">
+              <UVMapping leftU="0" lengthV="1" rightU="1"/>
+            </Marking>
+          </Markings>
+          <Profiles>
+            <Profile name="2x2lanes" type="none">
+              <LaneBorder distance="-8.145" height="-0.1" markingOffset="0"/>
+              <Lane Ground="Ground Material" circulationWay="none" material="macadam material" name="Lane" speedLimit="0" type="shoulder">
+                <VehicleType categories="none"/>
+                <UVMapping leftU="0.672" lengthV="3.5" rightU="1"/>
+              </Lane>
+              <LaneBorder distance="-7" height="0" markingName="Long marking" markingOffset="0"/>
+              <Lane Ground="Ground Material" circulationWay="inverse" material="macadam material" name="Lane 2" speedLimit="36.1111111111111" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="0" lengthV="3.5" rightU="1"/>
+              </Lane>
+              <LaneBorder distance="-3.5" height="0" markingName="Marking" markingOffset="0"/>
+              <Lane Ground="Ground Material" circulationWay="inverse" material="macadam material" name="Lane 3" speedLimit="36.1111111111111" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="0" lengthV="3.5" rightU="1"/>
+              </Lane>
+              <LaneBorder distance="0" height="0" markingName="Markin Continuous" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="macadam material 1" name="Lane 4" speedLimit="36.1111111111111" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="0" lengthV="3.5" rightU="1"/>
+              </Lane>
+              <LaneBorder distance="3.5" height="0" markingName="Marking" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="macadam material 1" name="Lane 5" speedLimit="36.1111111111111" type="paved express">
+                <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="0" lengthV="3.5" rightU="1"/>
+              </Lane>
+              <LaneBorder distance="7" height="0" markingName="Long marking" markingOffset="0"/>
+              <Lane Ground="Ground Material" circulationWay="none" material="macadam material" name="Lane 6" speedLimit="0" type="shoulder">
+                <VehicleType categories="none"/>
+                <UVMapping leftU="0" lengthV="3.5" rightU="0.327"/>
+              </Lane>
+              <LaneBorder distance="8.145" height="-0.1" markingOffset="0"/>
+            </Profile>
+          </Profiles>
+          <Intersections/>
+          <Tracks>
+            <Track endNode="" exitAtEnd="0" exitAtStart="0" name="Track" startNode="">
+              <XYCurve direction="3.14159265358979" x="9990" y="-1.22213350550737e-012">
+                <Segment length="10000"/>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="10000" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="10000" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="10000" endProfile="2x2lanes" name="" startProfile="2x2lanes"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+          </Tracks>
+          <TrafficLightGroups/>
+          <Materials>
+            <Material BRDF="../headlights/materials/whiteLine.bsdf2" name="marking material">
+              <Diffuse>
+                <Texture path="Textures/marking.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+              <NormalMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </NormalMap>
+              <ReflectionMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </ReflectionMap>
+              <SpecularMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </SpecularMap>
+              <AmbientOcclusionMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </AmbientOcclusionMap>
+            </Material>
+            <Material name="macadam material">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+              <NormalMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </NormalMap>
+              <ReflectionMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </ReflectionMap>
+              <SpecularMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </SpecularMap>
+              <AmbientOcclusionMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </AmbientOcclusionMap>
+            </Material>
+            <Material BRDF="../headlights/materials/asphaltDry.bsdf2" name="macadam material 1">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+              <NormalMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </NormalMap>
+              <ReflectionMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </ReflectionMap>
+              <SpecularMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </SpecularMap>
+              <AmbientOcclusionMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </AmbientOcclusionMap>
+            </Material>
+            <Material name="DefaultTerrain material">
+              <Diffuse>
+                <Texture path="Textures/DefaultTerrain.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+              <NormalMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </NormalMap>
+              <ReflectionMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </ReflectionMap>
+              <SpecularMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </SpecularMap>
+              <AmbientOcclusionMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </AmbientOcclusionMap>
+            </Material>
+          </Materials>
+          <ParkingSpots/>
+        </RoadNetwork>
+        <EntitiesGenerationLists/>
+        <Trajectories/>
+        <TrajectoryParts/>
+        <TerrainContours>
+          <TerrainContour contourPoints="-118.145 -108.145 0 -118.145 108.145 0 -118.145 108.145 0 381.855 108.145 0 881.855 108.145 0 1381.86 108.145 0 1881.86 108.145 0 2381.86 108.145 0 2881.86 108.145 0 3381.86 108.145 0 3881.86 108.145 0 4381.85 108.145 0 4881.85 108.145 0 5381.85 108.145 0 5881.85 108.145 0 6381.85 108.145 0 6881.85 108.145 0 7381.85 108.145 0 7881.85 108.145 0 8381.85 108.145 0 8881.85 108.145 0 9381.85 108.145 0 10098.1 108.145 0 10098.1 -108.145 0 9381.85 -108.145 0 8881.85 -108.145 0 8381.85 -108.145 0 7881.85 -108.145 0 7381.85 -108.145 0 6881.85 -108.145 0 6381.85 -108.145 0 5881.85 -108.145 0 5381.85 -108.145 0 4881.85 -108.145 0 4381.85 -108.145 0 3881.85 -108.145 0 3381.85 -108.145 0 2881.85 -108.145 0 2381.85 -108.145 0 1881.85 -108.145 0 1381.85 -108.145 0 881.855 -108.145 0 381.855 -108.145 0 -118.145 -108.145 0 "/>
+        </TerrainContours>
+        <GeneratedTerrainMaterial material="DefaultTerrain material" uVHeading="0" uVOffsetX="0" uVOffsetY="0" uVScaleX="1" uVScaleY="1"/>
+        <Areas/>
+        <ClippedDatas/>
+      </SubNetwork>
+    </SubNetworks>
+    <Roads/>
+  </Network>
+
+</RoadXML>

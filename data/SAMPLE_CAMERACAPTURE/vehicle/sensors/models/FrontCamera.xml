@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<SensorModelRoot version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <SensorModel>
+    <CameraSensorModel>
+      <TargetSensorOption>
+        <includeWheelsBB>0</includeWheelsBB>
+        <logicalComputeBB>0</logicalComputeBB>
+      </TargetSensorOption>
+      <Focal>
+        <aspectRatio>2</aspectRatio>
+        <cartoFile>Barrel_DistortionMap.csv</cartoFile>
+        <ccdSize>0.04 0.01</ccdSize>
+        <dimensionType>0</dimensionType>
+        <focalLength>0.065</focalLength>
+        <fov>0.59707713710726 0.153588974175501</fov>
+        <fps>20</fps>
+        <hOffset>0</hOffset>
+        <hResolution>400</hResolution>
+        <keepDimAspectRatio>1</keepDimAspectRatio>
+        <keepFOVAspectRatio>1</keepFOVAspectRatio>
+        <keepResAspectRatio>1</keepResAspectRatio>
+        <maxRange>150</maxRange>
+        <name>Focal 0</name>
+        <position>0 0 0 0 0 0</position>
+        <useCarto>0</useCarto>
+        <useFOV>0</useFOV>
+        <vOffset>0</vOffset>
+        <vResolution>300</vResolution>
+        <DetectableTarget>
+          <name>2</name>
+          <range>150</range>
+          <visibility>0</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>3</name>
+          <range>150</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>4</name>
+          <range>150</range>
+          <visibility>0</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>5</name>
+          <range>150</range>
+          <visibility>0</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>6</name>
+          <range>150</range>
+          <visibility>0</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>7</name>
+          <range>150</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>11</name>
+          <range>150</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>13</name>
+          <range>150</range>
+          <visibility>0</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>14</name>
+          <range>150</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+      </Focal>
+    </CameraSensorModel>
+  </SensorModel>
+
+</SensorModelRoot>

@@ -1,0 +1,8 @@
+<!DOCTYPE Controlpad>
+<Controlpad>
+    <Dashboard label="Dashboard">
+        <CLSID_PlotterDashboardItem height="549" refreshPeriod="50" name="Plotter" width="728" yMaxValue="10" y="0" x="0" plotterTitle="Ball's height" yMinValue="0" useScanerTime="1" yAutoScale="1">
+            <Source name="ScanerDataSource" key="Network,IUser,ExportChannel,0,val" unit="" color="#c0c0c0"/>
+        </CLSID_PlotterDashboardItem>
+    </Dashboard>
+</Controlpad>

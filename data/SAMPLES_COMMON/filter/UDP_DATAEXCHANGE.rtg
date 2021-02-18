@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<RTGateway version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <maxStringSize>8</maxStringSize>
+
+  <RTGOutputCom>
+    <isEventBased>0</isEventBased>
+    <options>localhost:8192:0</options>
+    <plugin>UDP</plugin>
+  </RTGOutputCom>
+
+  <RTGInputValue>
+    <exportChanel>55</exportChanel>
+    <name>A</name>
+  </RTGInputValue>
+
+  <RTGInputValue>
+    <exportChanel>56</exportChanel>
+    <name>B</name>
+  </RTGInputValue>
+
+  <RTGInputValue>
+    <exportChanel>57</exportChanel>
+    <name>C</name>
+  </RTGInputValue>
+
+  <RTGFilter>
+    <Interface>IVehicle</Interface>
+    <Method>VehicleUpdate</Method>
+    <detected>0</detected>
+    <idRangeMax>1</idRangeMax>
+    <idRangeMin>0</idRangeMin>
+    <RTGField>
+      <Attribute>pos</Attribute>
+      <indexMax>5</indexMax>
+      <indexMin>0</indexMin>
+    </RTGField>
+    <RTGField>
+      <Attribute>speed</Attribute>
+      <indexMax>5</indexMax>
+      <indexMin>0</indexMin>
+    </RTGField>
+  </RTGFilter>
+
+  <RTGFilter>
+    <Interface>ISensor</Interface>
+    <Method>GPS</Method>
+    <detected>0</detected>
+    <idRangeMax>200000</idRangeMax>
+    <idRangeMin>200000</idRangeMin>
+    <RTGField>
+      <Attribute>globalId</Attribute>
+      <indexMax>-1</indexMax>
+      <indexMin>-1</indexMin>
+    </RTGField>
+    <RTGField>
+      <Attribute>latitude</Attribute>
+      <indexMax>-1</indexMax>
+      <indexMin>-1</indexMin>
+    </RTGField>
+    <RTGField>
+      <Attribute>longitude</Attribute>
+      <indexMax>-1</indexMax>
+      <indexMin>-1</indexMin>
+    </RTGField>
+  </RTGFilter>
+
+</RTGateway>

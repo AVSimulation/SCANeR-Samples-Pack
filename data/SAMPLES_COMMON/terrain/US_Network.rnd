@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<RoadXML version="2.4.1" versionRevision="2.4.1-$Revision: 23033 $-$Date: 2011-05-02 11:01:27 +0200 (lun., 02 mai 2011) $" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <Network name="" traffic="right-hand">
+    <Geolocalisation Azimuth="0" EPSG="27561" WKT="PROJCS['NTF(Paris) / Lambert Nord France',GEOGCS['NTF(Paris)',DATUM['Nouvelle_Triangulation_Francaise_Paris',SPHEROID['Clarke 1880 (IGN)',6378249.2,293.4660212936265,AUTHORITY['EPSG','7011']],TOWGS84[-168,-60,320,0,0,0,0],AUTHORITY['EPSG','6807']],PRIMEM['Paris',2.33722917,AUTHORITY['EPSG','8903']],UNIT['grad',0.01570796326794897,AUTHORITY['EPSG','9105']],AUTHORITY['EPSG','4807']],PROJECTION['Lambert_Conformal_Conic_1SP'],PARAMETER['latitude_of_origin',55],PARAMETER['central_meridian',0],PARAMETER['scale_factor',0.999877341],PARAMETER['false_easting',600000],PARAMETER['false_northing',200000],UNIT['metre',1,AUTHORITY['EPSG','9001']],AXIS['X',EAST],AXIS['Y',NORTH],AUTHORITY['EPSG','27561']]">
+      <Translation x="599764.840722777" y="129580.099724856" z="-1.14248650614172"/>
+    </Geolocalisation>
+    <ExternalTerrain flipped="0" path="Global_US_Network.ive"/>
+    <GeneratedTerrainMaterial uVHeading="0" uVOffsetX="0" uVOffsetY="0" uVScaleX="50" uVScaleY="50">
+      <Material>
+        <Diffuse>
+          <Texture path="textures/DefaultTerrain.png"/>
+          <Color alpha="1" blue="1" green="1" red="1"/>
+        </Diffuse>
+        <Ambient>
+          <Color alpha="1" blue="1" green="1" red="1"/>
+        </Ambient>
+        <Specular>
+          <Color alpha="1" blue="0" green="0" red="0"/>
+        </Specular>
+        <Emissive>
+          <Color alpha="1" blue="0" green="0" red="0"/>
+        </Emissive>
+      </Material>
+    </GeneratedTerrainMaterial>
+    <SubNetworkJunctions>
+      <SubNetworkJunction name="Subnetwork Junction" x="147.000000000005" y="256.999999999998" z="0">
+        <ClippedDatas/>
+        <Contours/>
+        <SubNetworkExits>
+          <SubNetworkExit subNetwork="Interchange_Diamond_US" track="HighwayNG+Toll/Automatic branch 10 2 2" trackBoundInfo="end"/>
+          <SubNetworkExit subNetwork="Highway_UCurve7km" track="Highway_UCurve_7.6km_Drop120m_2%" trackBoundInfo="start"/>
+        </SubNetworkExits>
+      </SubNetworkJunction>
+    </SubNetworkJunctions>
+    <SubNetworks>
+      <SubNetwork heading="0" name="Sub Network" x="0" y="0" z="0">
+        <RoadNetwork>
+          <Grounds>
+            <Ground grip="1" name="Asphalt" type="asphalt">
+              <Roughness RepeatPattern="1" type="analytic">
+                <RoughnessAnalytic granulosity="0.5"/>
+                <Roughness2x2D>
+                  <Scale2x2DPoints bankingLeft="1" bankingRight="1" curvilinearDistance="1" zLeft="1" zRight="1"/>
+                  <Offset2x2DPoints bankingLeft="0" bankingRight="0" curvilinearDistance="0" zLeft="0" zRight="0"/>
+                  <Points2x2D/>
+                </Roughness2x2D>
+              </Roughness>
+            </Ground>
+            <Ground grip="0.8" name="Concrete" type="concrete">
+              <Roughness RepeatPattern="1" type="analytic">
+                <RoughnessAnalytic granulosity="0.1"/>
+                <Roughness2x2D>
+                  <Scale2x2DPoints bankingLeft="1" bankingRight="1" curvilinearDistance="1" zLeft="1" zRight="1"/>
+                  <Offset2x2DPoints bankingLeft="0" bankingRight="0" curvilinearDistance="0" zLeft="0" zRight="0"/>
+                  <Points2x2D/>
+                </Roughness2x2D>
+              </Roughness>
+            </Ground>
+            <Ground grip="0.4" name="Grass" type="grass">
+              <Roughness RepeatPattern="1" type="analytic">
+                <RoughnessAnalytic granulosity="0.3"/>
+                <Roughness2x2D>
+                  <Scale2x2DPoints bankingLeft="1" bankingRight="1" curvilinearDistance="1" zLeft="1" zRight="1"/>
+                  <Offset2x2DPoints bankingLeft="0" bankingRight="0" curvilinearDistance="0" zLeft="0" zRight="0"/>
+                  <Points2x2D/>
+                </Roughness2x2D>
+              </Roughness>
+            </Ground>
+            <Ground grip="0.6" name="Cobblestone" type="cobblestone">
+              <Roughness RepeatPattern="1" type="analytic">
+                <RoughnessAnalytic granulosity="0.9"/>
+                <Roughness2x2D>
+                  <Scale2x2DPoints bankingLeft="1" bankingRight="1" curvilinearDistance="1" zLeft="1" zRight="1"/>
+                  <Offset2x2DPoints bankingLeft="0" bankingRight="0" curvilinearDistance="0" zLeft="0" zRight="0"/>
+                  <Points2x2D/>
+                </Roughness2x2D>
+              </Roughness>
+            </Ground>
+          </Grounds>
+          <Markings/>
+          <Profiles/>
+          <Intersections/>
+          <Tracks/>
+          <TrafficLightGroups/>
+        </RoadNetwork>
+        <Trajectories/>
+        <TrajectoryParts/>
+        <TerrainContours/>
+        <ClippedDatas/>
+      </SubNetwork>
+      <SubNetwork heading="0" name="Highway_UCurve7km" x="147" y="257" z="-0">
+        <ProxyFile flipped="0" path="Tiles/Highway_UCurve7km.itnSubNetwork"/>
+        <ClippedDatas/>
+      </SubNetwork>
+      <SubNetwork heading="0" name="Interchange_Diamond_US" x="-1088.57030901548" y="256.999999999998" z="0">
+        <ProxyFile flipped="0" path="Tiles/Interchange_Diamond_US.itnSubNetwork"/>
+        <ClippedDatas/>
+      </SubNetwork>
+    </SubNetworks>
+    <Roads/>
+  </Network>
+
+</RoadXML>

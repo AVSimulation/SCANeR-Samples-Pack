@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<SensorModelRoot version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <SensorModel>
+    <RadarSensorModel>
+      <angularPrecision>0.00872664625997165</angularPrecision>
+      <angularResolution>0.174532925199433</angularResolution>
+      <name>LongRangeRadarSensor</name>
+      <Beam>
+        <depthCartography></depthCartography>
+        <fov>0.523598775598299 0.349065850398866</fov>
+        <offset>0 0</offset>
+        <range>30</range>
+        <useRange>1</useRange>
+      </Beam>
+    </RadarSensorModel>
+  </SensorModel>
+
+</SensorModelRoot>

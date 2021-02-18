@@ -1,0 +1,13 @@
+﻿Build started 2021/01/29 14:01:43.
+     1>Project "D:\AVSimulation\SCANeRstudio_2021\APIs\samples\EVALUATION_APIs\ScanerAPI\EVAL_LATERAL_CTRL\cpp\eval_lateral_ctrl.vcxproj" on node 3 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I../.. /I../../../../../include /Zi /nologo /W3 /WX- /MP /O2 /D WIN32 /D NDEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D WINVER=0x502 /D _WIN32_WINNT=0x502 /D NO_WARN_MBCS_MFC_DEPRECATION /D _SCL_SECURE_NO_WARNINGS /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"obj\eval_lateral_ctrl\x64/vs2019\Release\\" /Fd"obj\eval_lateral_ctrl\x64/vs2019\Release\vc120.pdb" /Gd /TP /errorReport:prompt eval_lateral_ctrl.cpp
+         eval_lateral_ctrl.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"../../../../../bin/x64/vs2019/eval_lateral_ctrl.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:../../../../../lib\x64/vs2019 SCANeR_API_C.lib stk.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"../../../../../bin/x64/vs2019/eval_lateral_ctrl.pdb" /SUBSYSTEM:CONSOLE /LARGEADDRESSAWARE /OPT:REF /OPT:ICF /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"../../../../../bin/x64/vs2019/eval_lateral_ctrl.lib" /MACHINE:X64 /SAFESEH:NO obj\eval_lateral_ctrl\x64/vs2019\Release\eval_lateral_ctrl.obj
+         eval_lateral_ctrl.vcxproj -> D:\AVSimulation\SCANeRstudio_2021\APIs\samples\EVALUATION_APIs\ScanerAPI\EVAL_LATERAL_CTRL\cpp\../../../../../bin/x64/vs2019/eval_lateral_ctrl.exe
+     1>Done Building Project "D:\AVSimulation\SCANeRstudio_2021\APIs\samples\EVALUATION_APIs\ScanerAPI\EVAL_LATERAL_CTRL\cpp\eval_lateral_ctrl.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.39

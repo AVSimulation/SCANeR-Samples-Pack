@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<SensorModelRoot version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <SensorModel>
+    <CameraSensorModel>
+      <aspectRatio>0</aspectRatio>
+      <cartoFile></cartoFile>
+      <ccdSize>0.00475 0.0027</ccdSize>
+      <colorImage>1</colorImage>
+      <dimensionType>0</dimensionType>
+      <focalLenght>0.05</focalLenght>
+      <fps>30</fps>
+      <hResolution>400</hResolution>
+      <keepDimAspectRatio>0</keepDimAspectRatio>
+      <keepFOVAspectRatio>0</keepFOVAspectRatio>
+      <keepResAspectRatio>0</keepResAspectRatio>
+      <useCarto>0</useCarto>
+      <useFOV>1</useFOV>
+      <vResolution>300</vResolution>
+      <Beam>
+        <depthCartography></depthCartography>
+        <fov>0.698131700797732 0.523598775598299</fov>
+        <offset>0 0</offset>
+        <range>3</range>
+        <useRange>0</useRange>
+      </Beam>
+    </CameraSensorModel>
+  </SensorModel>
+
+</SensorModelRoot>

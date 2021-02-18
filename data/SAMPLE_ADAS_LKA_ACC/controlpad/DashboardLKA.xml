@@ -1,0 +1,45 @@
+<!DOCTYPE Controlpad>
+<Controlpad>
+    <Dashboard label="Dashboard">
+        <CounterDashboardItem x="150" name="Speed" width="250" sourceName="ScanerDataSource" unit="km/h" sourceKey="Network,IVehicle,VehicleUpdate,0,speed[0]" y="90" height="250">
+            <WidgetProperty value="0" name="minimum"/>
+            <WidgetProperty value="150" name="maximum"/>
+            <WidgetProperty value="-135" name="minAngle"/>
+            <WidgetProperty value="135" name="maxAngle"/>
+            <WidgetProperty value="false" name="wrapping"/>
+            <WidgetProperty value="km/h" name="label"/>
+        </CounterDashboardItem>
+        <CounterDashboardItem x="660" name="RPM" width="250" sourceName="ScanerDataSource" unit="rpm" sourceKey="Network,IVehicle,VehicleUpdate,0,engineSpeed" y="90" height="250">
+            <WidgetProperty value="0" name="minimum"/>
+            <WidgetProperty value="7000" name="maximum"/>
+            <WidgetProperty value="-135" name="minAngle"/>
+            <WidgetProperty value="135" name="maxAngle"/>
+            <WidgetProperty value="false" name="wrapping"/>
+            <WidgetProperty value="tr/min" name="label"/>
+        </CounterDashboardItem>
+        <ImageDashboardItem x="434" scale="1" name="LKA_OFF" fileName="LKA_OFF.png" threshold="0" width="184" sourceName="ScanerDataSource" unit="0.0-1.0" sourceKey="Network,IVehicle,CustomVehicleInput,0,customInputValues[0]" y="93" height="86"/>
+        <ImageDashboardItem x="434" scale="1" name="LKA_OF" fileName="LKA_ON.png" threshold="1" width="184" sourceName="ScanerDataSource" unit="0.0-1.0" sourceKey="Network,IVehicle,CustomVehicleInput,0,customInputValues[0]" y="93" height="86"/>
+        <ImageDashboardItem x="496" scale="1" name="ACC_dist_0" fileName="ACC_dist_0.png" threshold="0" width="60" sourceName="ScanerDataSource" unit="" sourceKey="Network,IVehicle,CustomVehicleInput,0,customInputValues[2]" y="93" height="86"/>
+        <ImageDashboardItem x="496" scale="1" name="ACC_dist_1" fileName="ACC_dist_1.png" threshold="1" width="60" sourceName="ScanerDataSource" unit="" sourceKey="Network,IVehicle,CustomVehicleInput,0,customInputValues[2]" y="93" height="86"/>
+        <ImageDashboardItem x="496" scale="1" name="ACC_dist_2" fileName="ACC_dist_2.png" threshold="2" width="60" sourceName="ScanerDataSource" unit="" sourceKey="Network,IVehicle,CustomVehicleInput,0,customInputValues[2]" y="93" height="86"/>
+        <ImageDashboardItem x="496" scale="1" name="ACC_dist_3" fileName="ACC_dist_3.png" threshold="3" width="60" sourceName="ScanerDataSource" unit="" sourceKey="Network,IVehicle,CustomVehicleInput,0,customInputValues[2]" y="93" height="86"/>
+        <ImageDashboardItem x="496" scale="1" name="ACC_dist_4" fileName="ACC_dist_4.png" threshold="4" width="60" sourceName="ScanerDataSource" unit="" sourceKey="Network,IVehicle,CustomVehicleInput,0,customInputValues[2]" y="93" height="86"/>
+        <DynamicTextDashboardItem x="246" name="Spee" width="119" sourceName="ScanerDataSource" unit="km/h" sourceKey="Network,IVehicle,VehicleUpdate,0,speed[0]" y="250" height="24">
+            <WidgetProperty value="" name="text"/>
+            <WidgetProperty value="Verdana,8,-1,5,50,0,0,0,0,0" name="font"/>
+            <WidgetProperty value="#fcfcfc" name="textColor" alpha="255"/>
+            <WidgetProperty value="#00000000" name="backgroundColor" alpha="0"/>
+        </DynamicTextDashboardItem>
+        <TextDashboardItem font="MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0" x="601" name="kmph" text="km/h" y="285"/>
+        <DynamicTextDashboardItem x="420" name="Dynamic text" width="207" sourceName="ScanerDataSource" unit="" sourceKey="Network,IUser,ExportChannel,66,val" y="280" height="24">
+            <WidgetProperty value="ACC target speed: " name="text"/>
+            <WidgetProperty value="Verdana,7.8,-1,5,50,0,0,0,0,0" name="font"/>
+            <WidgetProperty value="#ffffff" name="textColor" alpha="255"/>
+            <WidgetProperty value="#00000000" name="backgroundColor" alpha="0"/>
+        </DynamicTextDashboardItem>
+        <CLSID_PlotterDashboardItem plotterTitle="Distance to collision" x="140" yAutoScale="0" refreshPeriod="50" yMaxValue="60" name="Plotter" width="770" useScanerTime="1" y="360" height="367" yMinValue="10">
+            <Source key="Network,IVehicle,CustomVehicleInput,0,customInputValues[3]" color="#640000" name="ScanerDataSource" unit=""/>
+            <Source key="Network,ISensor,SensorMovableTargets,300000,targetsArray[0]/distanceToCollision" color="#ff0000" name="ScanerDataSource" unit=""/>
+        </CLSID_PlotterDashboardItem>
+    </Dashboard>
+</Controlpad>

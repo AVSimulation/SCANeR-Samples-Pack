@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF - 8" standalone="yes" ?>
+<infrastructureTech>
+  <mass>0</mass>
+  <isStatic>1</isStatic>
+  <isHeightmap>0</isHeightmap>
+  <isSound>0</isSound>
+  <heightmapScale_x>0</heightmapScale_x>
+  <heightmapScale_y>0</heightmapScale_y>
+  <heightmapScale_z>0</heightmapScale_z>
+  <heightmap></heightmap>
+  <volumeSound>0</volumeSound>
+  <sound></sound>
+  <friction>-1</friction>
+  <rollingFriction>-1</rollingFriction>
+  <defaultOrientationAxis>0 -1 </defaultOrientationAxis>
+</infrastructureTech>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<SensorsConfiguration version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <SensorConfiguration>
+    <Sensor>
+      <formatCamera></formatCamera>
+      <id>0</id>
+      <isImageSharing>0</isImageSharing>
+      <isLanesLTI>0</isLanesLTI>
+      <isOcclusionTests>0</isOcclusionTests>
+      <isRawImage>0</isRawImage>
+      <isTargetLTI>0</isTargetLTI>
+      <isVisible>1</isVisible>
+      <name>GPSSensor</name>
+      <noiseConfigName></noiseConfigName>
+      <position>0 0 0 0 0 0</position>
+      <scriptConfigName></scriptConfigName>
+      <sensorModelName>GPSSensor</sensorModelName>
+      <GPSSensor>
+        <enabled>1</enabled>
+        <ipADASRP>localhost</ipADASRP>
+        <portADASRP>9998</portADASRP>
+        <sendADASRP>0</sendADASRP>
+      </GPSSensor>
+      <Output>
+        <outputName>gpsCoordinates</outputName>
+        <outputReferenceFrame></outputReferenceFrame>
+      </Output>
+    </Sensor>
+  </SensorConfiguration>
+
+</SensorsConfiguration>

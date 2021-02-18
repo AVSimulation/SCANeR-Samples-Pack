@@ -1,0 +1,76 @@
+signal type;signal properties;3D
+barrier;;
+bus stop;;
+danger;;
+danger children;;
+danger crosswind;;
+danger domestic animals;;Danger_wildanimal_Roadsign.ive
+danger falling rocks;;
+danger left double curve;;
+danger left turn;;
+danger right double curve;;
+danger right priority;;
+danger right turn;;
+danger roadworks ahead;;
+danger round about ahead;;
+danger speed bump;;
+danger traffic light ahead;;
+danger two way traffic;;
+dead end;;Danger_DeadEnd_Roadsign.ive
+direction;;
+end highway;;
+end no overtaking;;
+end of obligation;;
+end prioritary road;;
+end reserved public transport;;
+end speed limit;;
+entering built-up area;;
+leaving built-up area;;
+left turn obligatory;;
+maximum height;;
+message board;;
+minimum distance;;
+no left turn;;No_Left_Turn.ive
+no overtaking;;
+no parking;;
+no right turn;;No_Right_Turn.ive
+no stop or parking;;
+no U turn;;
+parking;;
+pass on left side;;
+pass on right side;;
+pedestrian crossing;;
+pedestrian crossing ahead;;
+proceed straight or turn right;;
+railroad crossing;;
+reserved public transport;;
+right turn obligatory;;R6-4a_3arrow.ive
+speed limit;Value=5;SpeedLimit_5_Roadsign.ive
+speed limit;Value=10;SpeedLimit_10_Roadsign.ive
+speed limit;Value=15;SpeedLimit_15_Roadsign.ive
+speed limit;Value=20;SpeedLimit_20_Roadsign.ive
+speed limit;Value=25;SpeedLimit_25_Roadsign.ive
+speed limit;Value=30;SpeedLimit_30_Roadsign.ive
+speed limit;Value=35;SpeedLimit_35_Roadsign.ive
+speed limit;Value=40;SpeedLimit_40_Roadsign.ive
+speed limit;Value=45;SpeedLimit_45_Roadsign.ive
+speed limit;Value=50;SpeedLimit_30_Roadsign.ive
+speed limit;Value=55;SpeedLimit_55_Roadsign.ive
+speed limit;Value=65;SpeedLimit_65_Roadsign.ive
+speed limit;Value=70;SpeedLimit_40_Roadsign.ive
+speed limit;Value=90;SpeedLimit_55_Roadsign.ive
+speed limit;Value=130;speed_80.ive
+speed limit zone;Value=30;
+start highway;;
+start prioritary road;;
+stop;;
+straight obligatory;;
+switch on headlamps;;
+toll gate;;
+traffic light;;
+tram crossing ahead;;
+tramway crossing;;
+tunnel;;
+unknown;;
+wrong way;;Do_not_enter.ive
+yield;;Yield.ive

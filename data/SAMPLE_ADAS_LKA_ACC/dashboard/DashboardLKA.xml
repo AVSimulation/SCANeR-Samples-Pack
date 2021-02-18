@@ -1,0 +1,23 @@
+<!DOCTYPE Controlpad>
+<Controlpad>
+    <Dashboard label="Dashboard">
+        <CounterDashboardItem width="250" name="Speed" x="180" sourceKey="Network,IVehicle,VehicleUpdate,0,speed[0]" height="250" unit="km/h" y="80" sourceName="ScanerDataSource">
+            <WidgetProperty name="minimum" value="0"/>
+            <WidgetProperty name="maximum" value="150"/>
+            <WidgetProperty name="minAngle" value="-135"/>
+            <WidgetProperty name="maxAngle" value="135"/>
+            <WidgetProperty name="wrapping" value="false"/>
+            <WidgetProperty name="label" value="km/h"/>
+        </CounterDashboardItem>
+        <CounterDashboardItem width="250" name="RPM" x="680" sourceKey="Network,IVehicle,VehicleUpdate,0,engineSpeed" height="250" unit="rpm" y="80" sourceName="ScanerDataSource">
+            <WidgetProperty name="minimum" value="0"/>
+            <WidgetProperty name="maximum" value="7000"/>
+            <WidgetProperty name="minAngle" value="-135"/>
+            <WidgetProperty name="maxAngle" value="135"/>
+            <WidgetProperty name="wrapping" value="false"/>
+            <WidgetProperty name="label" value="tr/min"/>
+        </CounterDashboardItem>
+        <ImageDashboardItem fileName="LKAPictoG.png" width="184" threshold="1" name="LKAPictoG" x="460" sourceKey="Network,IVehicle,CustomVehicleInput,0,customInputValues[0]" height="86" unit="0.0-1.0" scale="0.4651162790697674" y="60" sourceName="ScanerDataSource"/>
+        <ImageDashboardItem fileName="LKAPictoR.png" width="184" threshold="0" name="LKAPictoR" x="460" sourceKey="Network,IVehicle,CustomVehicleInput,0,customInputValues[0]" height="86" unit="0.0-1.0" scale="0.4651162790697674" y="60" sourceName="ScanerDataSource"/>
+    </Dashboard>
+</Controlpad>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<SensorsConfiguration version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <SensorConfiguration>
+    <Sensor>
+      <formatCamera></formatCamera>
+      <id>0</id>
+      <isImageSharing>0</isImageSharing>
+      <isLanesLTI>1</isLanesLTI>
+      <isLineBorderDetected>0</isLineBorderDetected>
+      <isOcclusionTests>0</isOcclusionTests>
+      <isRawImage>1</isRawImage>
+      <isTargetLTI>0</isTargetLTI>
+      <isVisible>1</isVisible>
+      <name>markingDetection</name>
+      <noiseConfigName></noiseConfigName>
+      <position>3.5 0 0.5 0 0 0</position>
+      <scriptConfigName></scriptConfigName>
+      <sensorModelName>FrontCamera_Lanes_Lines</sensorModelName>
+      <CameraSensor>
+        <frameSharingFormat>0</frameSharingFormat>
+        <shareFrames>0</shareFrames>
+        <RoadSensor>
+          <distanceBetweenScans>0</distanceBetweenScans>
+          <scanNumber>0</scanNumber>
+        </RoadSensor>
+      </CameraSensor>
+      <Output>
+        <outputName>sensorPoint</outputName>
+        <outputReferenceFrame>Sensor</outputReferenceFrame>
+      </Output>
+      <Output>
+        <outputName>sensorPolynom</outputName>
+        <outputReferenceFrame>Sensor</outputReferenceFrame>
+      </Output>
+      <Output>
+        <outputName>cameraImage</outputName>
+        <outputReferenceFrame></outputReferenceFrame>
+      </Output>
+    </Sensor>
+  </SensorConfiguration>
+
+</SensorsConfiguration>

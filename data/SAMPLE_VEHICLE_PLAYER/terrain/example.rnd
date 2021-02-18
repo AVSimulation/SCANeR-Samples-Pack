@@ -1,0 +1,2635 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<RoadXML version="2.4.6" versionRevision="2.4.6-$Revision: 23033 $-$Date: 2011-05-02 11:01:27 +0200 (lun., 02 mai 2011) $" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <Network name="" traffic="right-hand">
+    <Geolocalisation Azimuth="0" EPSG="3857" TimeOffset="0" WKT="PROJCS['unnamed',PROJECTION['Mercator_1SP'],PARAMETER['standard_parallel_1',0],PARAMETER['central_meridian',0],PARAMETER['false_easting',0],PARAMETER['false_northing',0],UNIT['Meter',1],AUTHORITY['EPSG','3857']]">
+      <Translation x="625884.374828463" y="6673992.71498996" z="0"/>
+    </Geolocalisation>
+    <SubNetworkJunctions/>
+    <SubNetworks>
+      <SubNetwork heading="0" name="Sub Network" x="0" y="0" z="0">
+        <ExternalTerrain flipped="0" path="example.ive"/>
+        <RoadNetwork>
+          <Grounds>
+            <Ground grip="1" name="Asphalt" type="asphalt" waterLevel="0">
+              <Roughness RepeatPattern="1" type="analytic">
+                <RoughnessAnalytic RoughnessHeight="0.005" RoughnessHeightStdDeviation="0" RoughnessLength="0.01" RoughnessLengthStdDeviation="0"/>
+                <Roughness2x2D>
+                  <Scale2x2DPoints bankingLeft="1" bankingRight="1" curvilinearDistance="1" zLeft="1" zRight="1"/>
+                  <Offset2x2DPoints bankingLeft="0" bankingRight="0" curvilinearDistance="0" zLeft="0" zRight="0"/>
+                  <Points2x2D/>
+                </Roughness2x2D>
+              </Roughness>
+            </Ground>
+            <Ground grip="0.8" name="Concrete" type="concrete" waterLevel="0">
+              <Roughness RepeatPattern="1" type="analytic">
+                <RoughnessAnalytic RoughnessHeight="0.001" RoughnessHeightStdDeviation="0" RoughnessLength="0.01" RoughnessLengthStdDeviation="0"/>
+                <Roughness2x2D>
+                  <Scale2x2DPoints bankingLeft="1" bankingRight="1" curvilinearDistance="1" zLeft="1" zRight="1"/>
+                  <Offset2x2DPoints bankingLeft="0" bankingRight="0" curvilinearDistance="0" zLeft="0" zRight="0"/>
+                  <Points2x2D/>
+                </Roughness2x2D>
+              </Roughness>
+            </Ground>
+            <Ground grip="0.4" name="Grass" type="grass" waterLevel="0">
+              <Roughness RepeatPattern="1" type="analytic">
+                <RoughnessAnalytic RoughnessHeight="0.003" RoughnessHeightStdDeviation="0" RoughnessLength="0.01" RoughnessLengthStdDeviation="0"/>
+                <Roughness2x2D>
+                  <Scale2x2DPoints bankingLeft="1" bankingRight="1" curvilinearDistance="1" zLeft="1" zRight="1"/>
+                  <Offset2x2DPoints bankingLeft="0" bankingRight="0" curvilinearDistance="0" zLeft="0" zRight="0"/>
+                  <Points2x2D/>
+                </Roughness2x2D>
+              </Roughness>
+            </Ground>
+            <Ground grip="0.6" name="Cobblestone" type="cobblestone" waterLevel="0">
+              <Roughness RepeatPattern="1" type="analytic">
+                <RoughnessAnalytic RoughnessHeight="0.009" RoughnessHeightStdDeviation="0" RoughnessLength="0.01" RoughnessLengthStdDeviation="0"/>
+                <Roughness2x2D>
+                  <Scale2x2DPoints bankingLeft="1" bankingRight="1" curvilinearDistance="1" zLeft="1" zRight="1"/>
+                  <Offset2x2DPoints bankingLeft="0" bankingRight="0" curvilinearDistance="0" zLeft="0" zRight="0"/>
+                  <Points2x2D/>
+                </Roughness2x2D>
+              </Roughness>
+            </Ground>
+          </Grounds>
+          <Markings>
+            <Marking alternate="0" destinationSeparation="0" dissuasive="0" doubleMarking="0" leftToRight="can" lineLength="3" material="marking material" name="FR_T2_3U_AutreRoute" noParking="0" noStop="0" quality="1" rightToLeft="can" totalLength="6.5" width="0.15">
+              <UVMapping leftU="0" lengthV="1" rightU="1"/>
+            </Marking>
+          </Markings>
+          <Profiles>
+            <Profile name="Profile_275734763" type="">
+              <LaneBorder distance="-1.75" height="0" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane" speedLimit="8.33333333333333" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="1.75" height="0" markingOffset="0"/>
+            </Profile>
+            <Profile name="Profile_275734758" type="">
+              <LaneBorder distance="-3.5" height="0" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="inverse" material="Default" name="Lane" speedLimit="13.8888888888889" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="0" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 1" speedLimit="13.8888888888889" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="3.5" height="0" markingOffset="0"/>
+            </Profile>
+            <Profile name="Profile_275734756" type="">
+              <LaneBorder distance="-1.75" height="0" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane" speedLimit="13.8888888888889" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="1.75" height="0" markingOffset="0"/>
+            </Profile>
+            <Profile name="Profile_275734754" type="">
+              <LaneBorder distance="-3.5" height="0" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="inverse" material="Default" name="Lane" speedLimit="8.33333333333333" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="0" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane 1" speedLimit="8.33333333333333" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="1" lengthV="1" rightU="0"/>
+              </Lane>
+              <LaneBorder distance="3.5" height="0" markingOffset="0"/>
+            </Profile>
+            <Profile name="Profile_7152968 Invert" type="none">
+              <LaneBorder distance="-3.5" height="0" markingOffset="-0"/>
+              <Lane Ground="Asphalt" circulationWay="inverse" material="Default" name="Lane 1" speedLimit="8.33333333333333" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="0" lengthV="1" rightU="1"/>
+              </Lane>
+              <LaneBorder distance="-0" height="0" markingName="FR_T2_3U_AutreRoute" markingOffset="-0"/>
+              <Lane Ground="Asphalt" circulationWay="direct" material="Default" name="Lane" speedLimit="8.33333333333333" type="paved">
+                <VehicleType categories="bicycle,moped,motorcycle,car,trail,caravan,bus,agricultural vehicle,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+                <UVMapping leftU="0" lengthV="1" rightU="1"/>
+              </Lane>
+              <LaneBorder distance="3.5" height="0" markingOffset="-0"/>
+            </Profile>
+          </Profiles>
+          <Intersections>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 0" x="480.800012685359" y="-395.943353476003" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 1" x="-32.6500066496665" y="43.5276509700343" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 2" x="-345.647018913063" y="302.311272711493" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 3" x="424.728385172668" y="-375.529492261819" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 4" x="492.722330149263" y="-312.879119645804" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 5" x="515.965839826851" y="-200.485203134827" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 6" x="362.344942532131" y="-161.261070221663" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 7" x="-334.782236611703" y="38.1430996730924" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 8" x="135.253181313979" y="-125.602602509782" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 9" x="-359.005357808317" y="309.443362441845" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 10" x="114.1024780632" y="-104.207446423359" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 11" x="513.739450011053" y="75.8706934517249" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 12" x="610.587407001178" y="111.530206626281" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 13" x="403.533154125675" y="36.6454105461016" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 14" x="-412.995310842991" y="-15.4882619343698" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 15" x="568.286000499735" y="-43.5875301649794" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 16" x="-518.192229642649" y="102.615313592367" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 17" x="-356.778967992403" y="-111.339171406813" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 18" x="-401.306764309644" y="-75.68048360385" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 19" x="-149.958486047573" y="-62.2727763233707" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 20" x="-179.780977631104" y="-195.136468938552" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 21" x="-369.024111979641" y="-375.208575255238" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 22" x="472.551238417509" y="-86.3781064515934" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 23" x="412.4387133891" y="-107.773309700191" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 24" x="-115.215672970982" y="396.811972054653" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 25" x="-658.454788042116" y="-186.221904085018" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 26" x="342.307434189366" y="-132.734308629297" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 27" x="-104.083723891643" y="-261.10394349508" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 28" x="550.474881972768" y="-286.064469241537" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 29" x="-47.3107835870469" y="-211.18266091682" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 30" x="-1.66979236190673" y="-252.189451345243" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 31" x="-59.5559275744017" y="-221.88010455016" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 32" x="-468.098458785564" y="-271.801321101375" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 33" x="617.266576448688" y="-154.129389258102" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+            <Intersection drawMarkingInsideIntersection="0" name="Intersection 34" x="-12.8017414411297" y="-182.65607539285" z="0">
+              <ClippedDatas/>
+              <Contours/>
+              <BannedLinks/>
+            </Intersection>
+          </Intersections>
+          <Tracks>
+            <Track endNode="Intersection 0" exitAtEnd="0" exitAtStart="0" name="Stilpot - 275734763" startNode="Intersection 0">
+              <XYCurve direction="-2.07668774639616" x="469.465441290464" y="-416.403719116926">
+                <PolyLine endHeading="3.05309158926942" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="2.63714434879207" y="8.88178419700125e-016"/>
+                  <Vectord2 x="22.0198518617607" y="6.84342755974816"/>
+                  <Vectord2 x="21.8229571263528" y="6.86089859081779"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="-0" x="2.63714434879196" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="2.63714434879196" y="0"/>
+                  <end direction="-0" x="23.1924806705069" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="23.1924806705069" y="0"/>
+                  <end direction="0" x="23.390149013339" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="23.390149013339" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="23.390149013339" endProfile="Profile_275734763" name="" startProfile="Profile_275734763"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 2" exitAtEnd="0" exitAtStart="0" name="Dorpsstraat - 275734758" startNode="Intersection 1">
+              <XYCurve direction="2.21680674044752" x="-36.1757407641177" y="48.2041362930204">
+                <PolyLine endHeading="0.384832829006769" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="116.038920059289" y="-1.4210854715202e-014"/>
+                  <Vectord2 x="138.514749716943" y="1.52695133456777"/>
+                  <Vectord2 x="159.245462292889" y="5.5964227528617"/>
+                  <Vectord2 x="175.200359251927" y="8.72167935922792"/>
+                  <Vectord2 x="232.334150290063" y="30.599035037731"/>
+                  <Vectord2 x="383.954009880439" y="92.0092349689896"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="116.038920059289" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="116.038920059289" y="0"/>
+                  <end direction="0" x="138.566558621242" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="138.566558621242" y="0"/>
+                  <end direction="0" x="159.692917548677" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="159.692917548677" y="0"/>
+                  <end direction="0" x="175.951022168501" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="175.951022168501" y="0"/>
+                  <end direction="0" x="237.130175234502" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="237.130175234502" y="0"/>
+                  <end direction="0" x="400.714387424439" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="400.714387424439" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="400.714387424439" endProfile="Profile_275734758" name="" startProfile="Profile_275734758"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 3" exitAtEnd="0" exitAtStart="0" name="Dorpsstraat - 275734756" startNode="Intersection 0">
+              <XYCurve direction="2.56530434716314" x="471.725716855321" y="-390.04618302729">
+                <PolyLine endHeading="0.549748991872815" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="4.81715400668492" y="1.77635683940025e-015"/>
+                  <Vectord2 x="15.2366372647953" y="1.41313986492481"/>
+                  <Vectord2 x="38.724175773754" y="8.17199337381274"/>
+                  <Vectord2 x="41.3785309389461" y="9.79847579225034"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="4.81715400668492" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="4.81715400668492" y="0"/>
+                  <end direction="0" x="15.33202897712" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="15.33202897712" y="0"/>
+                  <end direction="0" x="39.7727033942556" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="39.7727033942556" y="0"/>
+                  <end direction="0" x="42.8857479491036" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="42.8857479491036" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="42.8857479491036" endProfile="Profile_275734756" name="" startProfile="Profile_275734756"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 4" exitAtEnd="0" exitAtStart="0" name="De Zellen - 275734754" startNode="Intersection 3">
+              <XYCurve direction="1.16507994807026" x="427.117609528455" y="-369.967307487058">
+                <PolyLine endHeading="-0.533417113058735" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="4.57974510726146" y="7.105427357601e-015"/>
+                  <Vectord2 x="15.1954839594191" y="-0.455843479219084"/>
+                  <Vectord2 x="72.9159207691296" y="-34.5407105073551"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="-0" x="4.57974510726146" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="4.57974510726146" y="0"/>
+                  <end direction="-0" x="15.2052664899869" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="15.2052664899869" y="0"/>
+                  <end direction="0" x="82.2382955564814" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="82.2382955564814" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="82.2382955564814" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 5" exitAtEnd="0" exitAtStart="0" name="De Zellen - 25066513" startNode="">
+              <XYCurve direction="1.94575480322171" x="532.329804973444" y="-242.062576346099">
+                <PolyLine endHeading="-1.27218472219356e-015" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="38.8664806494968" y="-4.94453428877214e-014"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="38.8664806494968" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="38.8664806494968" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="38.8664806494968" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 6" exitAtEnd="0" exitAtStart="0" name="Spagetstraat - 24303784" startNode="">
+              <XYCurve direction="2.28378952701251" x="412.483241185313" y="-219.241403101012">
+                <PolyLine endHeading="3.70787655544934e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="69.4483047765635" y="2.5750574109672e-014"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="69.4483047765635" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="69.4483047765635" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="69.4483047765635" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 28" exitAtEnd="0" exitAtStart="0" name="De Zellen - 24148957" startNode="">
+              <XYCurve direction="2.05449948215217" x="618.747125676367" y="-429.389882848598">
+                <PolyLine endHeading="-0.0426307392020633" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="47.7294842038548" y="-1.13686837721616e-013"/>
+                  <Vectord2 x="77.8725663508155" y="-2.77005077614217"/>
+                  <Vectord2 x="152.661406568413" y="-5.96028717674139"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="47.7294842038548" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="47.7294842038548" y="0"/>
+                  <end direction="0" x="77.9995780692664" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="77.9995780692664" y="0"/>
+                  <end direction="0" x="152.856429655377" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="152.856429655377" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="152.856429655377" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 1" exitAtEnd="0" exitAtStart="0" name="Oudartstraat - 24148953" startNode="">
+              <XYCurve direction="0.687818588858631" x="-79.6936234588502" y="4.87307084258646">
+                <PolyLine endHeading="-2.33395563377898e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="55.030777211877" y="-1.28439392504896e-014"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="55.030777211877" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="55.030777211877" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="55.030777211877" endProfile="Profile_275734758" name="" startProfile="Profile_275734758"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="" exitAtEnd="0" exitAtStart="0" name="Kavelaarsstraat - 24148951" startNode="Intersection 7">
+              <XYCurve direction="-1.10092234393037" x="-331.842748071698" y="32.3545099630974">
+                <PolyLine endHeading="2.44929359829471e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="62.4964441862592" y="1.53072140661587e-014"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="62.4964441862592" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="62.4964441862592" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="62.4964441862592" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 8" exitAtEnd="0" exitAtStart="0" name="Dorpsstraat - 23898840" startNode="Intersection 3">
+              <XYCurve direction="2.720673552369" x="419.203164475017" y="-373.055986908455">
+                <PolyLine endHeading="-0.416032315734801" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="73.2726704303182" y="1.4210854715202e-014"/>
+                  <Vectord2 x="104.603073577278" y="-5.87914214206725"/>
+                  <Vectord2 x="202.155630660426" y="-39.971946404377"/>
+                  <Vectord2 x="354.746748199533" y="-107.390057746023"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="-0" x="73.2726704303182" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="73.2726704303182" y="0"/>
+                  <end direction="-0" x="105.149911115134" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="105.149911115134" y="0"/>
+                  <end direction="-0" x="208.488290703402" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="208.488290703402" y="0"/>
+                  <end direction="0" x="375.309305233071" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="375.309305233071" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="375.309305233071" endProfile="Profile_275734758" name="" startProfile="Profile_275734758"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 9" exitAtEnd="0" exitAtStart="0" name="Dorpsstraat - 7153319" startNode="Intersection 2">
+              <XYCurve direction="2.65119002576451" x="-351.440014224155" y="305.404184389374">
+                <PolyLine endHeading="2.44929359829471e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="4.28804684226938" y="1.05026856799582e-015"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="4.28804684226938" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="4.28804684226938" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="4.28804684226938" endProfile="Profile_275734758" name="" startProfile="Profile_275734758"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="" exitAtEnd="0" exitAtStart="0" name="Dorpsstraat - 7153317" startNode="Intersection 9">
+              <XYCurve direction="2.70113822219829" x="-363.917744757158" y="311.758746250145">
+                <PolyLine endHeading="0.0165102533634848" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="85.8220419865334" y="1.77635683940025e-014"/>
+                  <Vectord2 x="138.202086649412" y="0.384110142747012"/>
+                  <Vectord2 x="216.192016862387" y="2.64803311772882"/>
+                  <Vectord2 x="235.88919881432" y="9.4483372568406"/>
+                  <Vectord2 x="269.345356784218" y="19.1461946049781"/>
+                  <Vectord2 x="285.684303394778" y="19.4159792670521"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="85.8220419865334" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="85.8220419865334" y="0"/>
+                  <end direction="0" x="138.203494996993" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="138.203494996993" y="0"/>
+                  <end direction="0" x="216.226277322806" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="216.226277322806" y="0"/>
+                  <end direction="0" x="237.064298179691" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="237.064298179691" y="0"/>
+                  <end direction="0" x="271.897657811682" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="271.897657811682" y="0"/>
+                  <end direction="0" x="288.238831579396" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="288.238831579396" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="288.238831579396" endProfile="Profile_275734758" name="" startProfile="Profile_275734758"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 1" exitAtEnd="0" exitAtStart="0" name="Dorpsstraat - 7153315" startNode="Intersection 10">
+              <XYCurve direction="2.33211865668417" x="110.500533223729" y="-100.427748024233">
+                <PolyLine endHeading="0.00865819919423751" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="41.5735141980981" y="3.5527136788005e-015"/>
+                  <Vectord2 x="84.4960990883087" y="3.68995559454369"/>
+                  <Vectord2 x="165.966723762147" y="3.99793133683483"/>
+                  <Vectord2 x="197.246004932526" y="4.26876035140709"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="41.5735141980981" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="41.5735141980981" y="0"/>
+                  <end direction="0" x="84.6544156040232" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="84.6544156040232" y="0"/>
+                  <end direction="0" x="166.125622381653" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="166.125622381653" y="0"/>
+                  <end direction="0" x="197.406076005134" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="197.406076005134" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="197.406076005134" endProfile="Profile_275734758" name="" startProfile="Profile_275734758"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 0" exitAtEnd="0" exitAtStart="0" name="Dorpsstraat - 7153312" startNode="">
+              <XYCurve direction="2.80318610869716" x="619.492966264603" y="-444.740295917727">
+                <PolyLine endHeading="0.000617508813122746" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="123.570983821897" y="-2.8421709430404e-014"/>
+                  <Vectord2 x="143.345733049198" y="0.0122110834772211"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="123.570983821897" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="123.570983821897" y="0"/>
+                  <end direction="0" x="143.345736819424" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="143.345736819424" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="143.345736819424" endProfile="Profile_275734758" name="" startProfile="Profile_275734758"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 0" exitAtEnd="0" exitAtStart="0" name="Dorpsstraat - 7153310" startNode="Intersection 3">
+              <XYCurve direction="-0.807446949028241" x="429.396245354029" y="-380.407869500967">
+                <PolyLine endHeading="0.645682366276292" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="2.74824997627759" y="0"/>
+                  <Vectord2 x="26.7814924623074" y="11.3461131609586"/>
+                  <Vectord2 x="38.1189663694482" y="19.8879225166772"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="2.7482499762776" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="2.7482499762776" y="0"/>
+                  <end direction="0" x="29.3251389637718" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="29.3251389637718" y="0"/>
+                  <end direction="0" x="43.5202374722196" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="43.5202374722196" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="43.5202374722196" endProfile="Profile_275734756" name="" startProfile="Profile_275734756"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 10" exitAtEnd="0" exitAtStart="0" name="Dorpsstraat - 7153307" startNode="Intersection 8">
+              <XYCurve direction="2.35044892177459" x="130.95098684304" y="-121.250684697475">
+                <PolyLine endHeading="2.16661163683062e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="16.877496289529" y="3.65669798614591e-015"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="16.877496289529" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="16.877496289529" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="16.877496289529" endProfile="Profile_275734758" name="" startProfile="Profile_275734758"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 13" exitAtEnd="0" exitAtStart="0" name="Elsdonk - 7153273" startNode="Intersection 10">
+              <XYCurve direction="0.512220951878256" x="120.280776515565" y="-100.7335239185">
+                <PolyLine endHeading="-0.115257826592114" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="112.959448907539" y="2.8421709430404e-014"/>
+                  <Vectord2 x="182.479260554358" y="-3.82561459173023"/>
+                  <Vectord2 x="308.938575220856" y="-18.4659269315246"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="112.959448907539" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="112.959448907539" y="0"/>
+                  <end direction="0" x="182.584441104406" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="182.584441104406" y="0"/>
+                  <end direction="0" x="309.888396311331" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="309.888396311331" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="309.888396311331" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 12" exitAtEnd="0" exitAtStart="0" name="Elsdonk - 7153260" startNode="Intersection 11">
+              <XYCurve direction="0.35279660727134" x="519.627903158799" y="78.0388277017971">
+                <PolyLine endHeading="7.62328349509996e-017" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="90.8244479373218" y="6.92380514912151e-015"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="90.8244479373218" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="90.8244479373218" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="90.8244479373218" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 11" exitAtEnd="0" exitAtStart="0" name="Elsdonk - 7153255" startNode="Intersection 13">
+              <XYCurve direction="0.341944295623486" x="409.747982360192" y="38.8574293218924">
+                <PolyLine endHeading="2.44929359829471e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="104.672139468675" y="2.56372801120436e-014"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="104.672139468675" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="104.672139468675" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="104.672139468675" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="" exitAtEnd="0" exitAtStart="0" name="Rode Beemden - 7153250" startNode="Intersection 12">
+              <XYCurve direction="1.95312730024159" x="608.309755340253" y="117.194343044075">
+                <PolyLine endHeading="0.370290112831573" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="107.278088833164" y="-2.8421709430404e-014"/>
+                  <Vectord2 x="125.489016446297" y="2.27565902430567"/>
+                  <Vectord2 x="132.120077838912" y="9.20779161921243"/>
+                  <Vectord2 x="137.997435624107" y="66.8356639802775"/>
+                  <Vectord2 x="145.874438048528" y="76.8662570109563"/>
+                  <Vectord2 x="159.53788498138" y="82.1703655187867"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="107.278088833164" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="107.278088833164" y="0"/>
+                  <end direction="0" x="125.630650194611" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="125.630650194611" y="0"/>
+                  <end direction="0" x="135.223639171254" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="135.223639171254" y="0"/>
+                  <end direction="0" x="193.150446500835" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="193.150446500835" y="0"/>
+                  <end direction="0" x="205.904268035631" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="205.904268035631" y="0"/>
+                  <end direction="0" x="220.561121352415" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="220.561121352415" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="220.561121352415" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="" exitAtEnd="0" exitAtStart="0" name="Het Buske - 7153210" startNode="">
+              <XYCurve direction="-3.05091333309445" x="-388.18219634518" y="444.740295917727">
+                <PolyLine endHeading="0" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="5.11946627745237" y="0"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="5.11946627745237" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="5.11946627745237" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="5.11946627745237" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 16" exitAtEnd="0" exitAtStart="0" name="Gasthuisstraat - 7153203" startNode="Intersection 14">
+              <XYCurve direction="2.19172743460582" x="-416.661571564525" y="-10.3628869231805">
+                <PolyLine endHeading="0.226139209300448" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="57.7968195599329" y="1.77635683940025e-014"/>
+                  <Vectord2 x="108.974798505001" y="7.18922282374766"/>
+                  <Vectord2 x="144.868428156994" y="15.4474341946432"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="57.7968195599328" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="57.7968195599328" y="0"/>
+                  <end direction="0" x="109.47728447378" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="109.47728447378" y="0"/>
+                  <end direction="0" x="146.308666536374" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="146.308666536374" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="146.308666536374" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 11" exitAtEnd="0" exitAtStart="0" name="Hillendonk - 7153200" startNode="Intersection 15">
+              <XYCurve direction="1.99913857953841" x="565.782127288014" y="-38.1039891646073">
+                <PolyLine endHeading="2.5616488378142e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="119.019402400972" y="3.04885913837791e-014"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="119.019402400972" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="119.019402400972" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="119.019402400972" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 16" exitAtEnd="0" exitAtStart="0" name="Gasthuisstraat - 7153195" startNode="Intersection 25">
+              <XYCurve direction="1.42983656612201" x="-657.549032496199" y="-179.83888694934">
+                <PolyLine endHeading="-0.537767641138594" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="112.405036517859" y="2.8421709430404e-014"/>
+                  <Vectord2 x="138.213434620303" y="-4.20819271328361"/>
+                  <Vectord2 x="228.584754054472" y="-56.1580342435423"/>
+                  <Vectord2 x="293.324300331632" y="-94.7686473621989"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="-0" x="112.405036517859" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="112.405036517859" y="0"/>
+                  <end direction="-0" x="138.554267835937" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="138.554267835937" y="0"/>
+                  <end direction="-0" x="242.79323085501" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="242.79323085501" y="0"/>
+                  <end direction="0" x="318.172195411251" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="318.172195411251" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="318.172195411251" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 12" exitAtEnd="0" exitAtStart="0" name=" - 7153186" startNode="">
+              <XYCurve direction="2.14669419491241" x="681.83188110881" y="63.3899009833113">
+                <PolyLine endHeading="1.36381060849087" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="53.1467176336847" y="1.70974345792274e-014"/>
+                  <Vectord2 x="72.0613426650548" y="-0.336143386547697"/>
+                  <Vectord2 x="77.9508631759549" y="27.7100954010197"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="53.1467176336846" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="53.1467176336846" y="0"/>
+                  <end direction="0" x="72.0643293342575" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="72.0643293342575" y="0"/>
+                  <end direction="0" x="100.722276957518" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="100.722276957518" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="62.0643293342576" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+                <Portion endDistance="82.0643293342576" endProfile="Profile_7152968 Invert" name="" startProfile="Profile_275734754"/>
+                <Portion endDistance="100.722276957518" endProfile="Profile_7152968 Invert" name="" startProfile="Profile_7152968 Invert"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 18" exitAtEnd="0" exitAtStart="0" name="Koolakker - 7153167" startNode="Intersection 17">
+              <XYCurve direction="-2.57181621271233" x="-362.026646387358" y="-114.701113313731">
+                <PolyLine endHeading="-1.62245213514956" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="6.98826577344468" y="-7.105427357601e-015"/>
+                  <Vectord2 x="14.4624830520868" y="-6.90581981632845"/>
+                  <Vectord2 x="12.3338038845652" y="-48.0780628646463"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="6.98826577344468" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="6.98826577344468" y="0"/>
+                  <end direction="0" x="17.1644276856759" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="17.1644276856759" y="0"/>
+                  <end direction="0" x="58.3916622840333" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="58.3916622840333" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="58.3916622840333" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 14" exitAtEnd="0" exitAtStart="0" name="Gasthuisstraat - 7153166" startNode="Intersection 17">
+              <XYCurve direction="2.11076448601269" x="-359.810767452258" y="-106.280998996375">
+                <PolyLine endHeading="-0.017912775462592" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="46.0697887296848" y="1.88737914186277e-015"/>
+                  <Vectord2 x="99.161311741669" y="-0.951118260510851"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="46.0697887296848" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="46.0697887296848" y="0"/>
+                  <end direction="0" x="99.1698305533738" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="99.1698305533738" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="99.1698305533738" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 19" exitAtEnd="0" exitAtStart="0" name="Oudartstraat - 7153163" startNode="Intersection 20">
+              <XYCurve direction="1.96522846445316" x="-182.708229898316" y="-188.103953753964">
+                <PolyLine endHeading="-1.26170907978962" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="15.5570024350516" y="0"/>
+                  <Vectord2 x="46.7942409516722" y="14.7306024603028"/>
+                  <Vectord2 x="67.1045063766277" y="17.1285752603319"/>
+                  <Vectord2 x="73.6234973415684" y="9.59195161069937"/>
+                  <Vectord2 x="87.713549079987" y="-28.8893405488659"/>
+                  <Vectord2 x="101.689399088844" y="-72.6566875088665"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="15.5570024350515" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="15.5570024350515" y="0"/>
+                  <end direction="0" x="50.0932981105829" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="50.0932981105829" y="0"/>
+                  <end direction="0" x="70.5446343794389" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="70.5446343794389" y="0"/>
+                  <end direction="0" x="80.5094695129059" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="80.5094695129059" y="0"/>
+                  <end direction="0" x="121.489213341548" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="121.489213341548" y="0"/>
+                  <end direction="0" x="167.433800001862" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="167.433800001862" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="167.433800001862" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 32" exitAtEnd="0" exitAtStart="0" name="Wilde Wingerd - 7153160" startNode="Intersection 21">
+              <XYCurve direction="2.05056618766986" x="-371.858748251669" y="-369.760687063926">
+                <PolyLine endHeading="1.02439185883935" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="17.976086765169" y="-7.105427357601e-015"/>
+                  <Vectord2 x="76.6879840581676" y="0.822822585510856"/>
+                  <Vectord2 x="103.374582548506" y="5.76031587947912"/>
+                  <Vectord2 x="117.408356274242" y="17.2813062572964"/>
+                  <Vectord2 x="128.237597044115" y="35.0876084180182"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="17.9760867651691" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="17.9760867651691" y="0"/>
+                  <end direction="0" x="76.6937495315876" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="76.6937495315876" y="0"/>
+                  <end direction="0" x="103.833266458248" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="103.833266458248" y="0"/>
+                  <end direction="0" x="121.990359404833" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="121.990359404833" y="0"/>
+                  <end direction="0" x="142.831109206383" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="142.831109206383" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="142.831109206383" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="" exitAtEnd="0" exitAtStart="0" name="Jan Ettenstraat - 7153159" startNode="">
+              <XYCurve direction="-0.411817567401878" x="379.042866151198" y="-393.037278560922">
+                <PolyLine endHeading="-0.206789768277789" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="13.3623017794779" y="0"/>
+                  <Vectord2 x="42.8362715310316" y="-20.1997810902979"/>
+                  <Vectord2 x="66.9076195634954" y="-25.2496768434643"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="13.3623017794779" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="13.3623017794779" y="0"/>
+                  <end direction="0" x="49.0938851338642" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="49.0938851338642" y="0"/>
+                  <end direction="0" x="73.6892351662961" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="73.6892351662961" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="73.6892351662961" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 22" exitAtEnd="0" exitAtStart="0" name="Weringedonk - 7153131" startNode="Intersection 23">
+              <XYCurve direction="0.341938306797339" x="418.476086093327" y="-105.624492693528">
+                <PolyLine endHeading="2.43582663752276e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="51.4729999037144" y="1.25379304278674e-014"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="51.4729999037144" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="51.4729999037144" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="51.4729999037144" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 18" exitAtEnd="0" exitAtStart="0" name="Koolakker - 7153127" startNode="">
+              <XYCurve direction="0.469940473241119" x="-537.405973753543" y="-193.763626591302">
+                <PolyLine endHeading="0.0411663623283298" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="40.2779937559868" y="1.4210854715202e-014"/>
+                  <Vectord2 x="44.4999693499067" y="5.85447000240257"/>
+                  <Vectord2 x="44.8186214410032" y="23.6898955490197"/>
+                  <Vectord2 x="50.2157474242866" y="33.4068721956717"/>
+                  <Vectord2 x="64.35779429383" y="39.1023370137752"/>
+                  <Vectord2 x="168.842859525497" y="43.4060384587385"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="-0" x="40.2779937559868" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="40.2779937559868" y="0"/>
+                  <end direction="-0" x="47.4960195889058" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="47.4960195889058" y="0"/>
+                  <end direction="-0" x="65.3342914666434" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="65.3342914666434" y="0"/>
+                  <end direction="-0" x="76.4495334357151" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="76.4495334357151" y="0"/>
+                  <end direction="-0" x="91.6953790716455" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="91.6953790716455" y="0"/>
+                  <end direction="0" x="196.269040681981" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="196.269040681981" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="196.269040681981" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 14" exitAtEnd="0" exitAtStart="0" name="Koolakker - 7153115" startNode="Intersection 18">
+              <XYCurve direction="2.07605282701866" x="-404.201073508395" y="-70.4480469847216">
+                <PolyLine endHeading="-1.53770291546014" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="51.7233485784643" y="1.06581410364015e-014"/>
+                  <Vectord2 x="52.1407651409241" y="-12.6086780801881"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="51.7233485784643" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="51.7233485784643" y="0"/>
+                  <end direction="0" x="64.338934158073" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="64.338934158073" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="64.338934158073" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="" exitAtEnd="0" exitAtStart="0" name="De Boogaard - 7153109" startNode="Intersection 24">
+              <XYCurve direction="2.99699666482576" x="-121.265435146789" y="397.692891393362">
+                <PolyLine endHeading="-0.382818560952063" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="6.26071739551121" y="8.88178419700125e-016"/>
+                  <Vectord2 x="19.4057674480473" y="-5.29330949807808"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="6.26071739551121" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="6.26071739551121" y="0"/>
+                  <end direction="0" x="20.4315136443507" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="20.4315136443507" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="20.4315136443507" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="" exitAtEnd="0" exitAtStart="0" name="Oudartstraat - 7153097" startNode="Intersection 19">
+              <XYCurve direction="0.770389771480289" x="-145.64336765091" y="-58.0852781114607">
+                <PolyLine endHeading="2.44929359829471e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="41.3759207576691" y="1.01341777835308e-014"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="41.3759207576691" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="41.3759207576691" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="41.3759207576691" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 7" exitAtEnd="0" exitAtStart="0" name="Kavelaarsstraat - 7153096" startNode="Intersection 19">
+              <XYCurve direction="2.33749718726573" x="-154.279538283491" y="-57.7870417355653">
+                <PolyLine endHeading="1.34701923198083" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="106.139979606155" y="2.8421709430404e-014"/>
+                  <Vectord2 x="163.918786248286" y="-1.9302065413799"/>
+                  <Vectord2 x="175.49402168288" y="2.37618714702409"/>
+                  <Vectord2 x="182.705148352059" y="12.4321398073179"/>
+                  <Vectord2 x="193.038579311323" y="57.8360990445517"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="106.139979606155" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="106.139979606155" y="0"/>
+                  <end direction="0" x="163.951018294983" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="163.951018294983" y="0"/>
+                  <end direction="0" x="176.301366547797" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="176.301366547797" y="0"/>
+                  <end direction="0" x="188.675635485598" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="188.675635485598" y="0"/>
+                  <end direction="0" x="235.240636396221" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="235.240636396221" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="235.240636396221" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="" exitAtEnd="0" exitAtStart="0" name="Spagetstraat - 7153091" startNode="Intersection 26">
+              <XYCurve direction="2.07669525419795" x="339.657424835564" y="-127.950784125071">
+                <PolyLine endHeading="3.27082609760836e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="29.7930506432357" y="9.74478875712631e-015"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="29.7930506432357" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="29.7930506432357" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="29.7930506432357" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 24" exitAtEnd="0" exitAtStart="0" name="De Heese - 7153086" startNode="Intersection 24">
+              <XYCurve direction="0.310017619820922" x="-112.063880859478" y="397.821638990942">
+                <PolyLine endHeading="1.08425710073824" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="8.37962901086819" y="3.10862446895044e-015"/>
+                  <Vectord2 x="174.386785853076" y="-40.0737794088756"/>
+                  <Vectord2 x="80.0791269039837" y="-75.3929285410466"/>
+                  <Vectord2 x="57.7608795852738" y="-75.7324935163225"/>
+                  <Vectord2 x="2.60649042097889" y="-61.8085251574698"/>
+                  <Vectord2 x="-2.15018541454098" y="-58.4124533237887"/>
+                  <Vectord2 x="-10.3810664678271" y="-22.0745095005216"/>
+                  <Vectord2 x="-9.23755289629685" y="-11.2070654081719"/>
+                  <Vectord2 x="-6.16808034649508" y="-5.40412172131802"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="8.37962901086826" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="8.37962901086826" y="0"/>
+                  <end direction="0" x="179.155165663354" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="179.155165663354" y="0"/>
+                  <end direction="0" x="279.859568903127" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="279.859568903127" y="0"/>
+                  <end direction="0" x="302.18039925846" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="302.18039925846" y="0"/>
+                  <end direction="0" x="359.065226224399" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="359.065226224399" y="0"/>
+                  <end direction="0" x="364.909819358548" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="364.909819358548" y="0"/>
+                  <end direction="0" x="402.168289056272" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="402.168289056272" y="0"/>
+                  <end direction="0" x="413.095729945548" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="413.095729945548" y="0"/>
+                  <end direction="0" x="419.660470394856" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="419.660470394856" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="169.155165663354" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+                <Portion endDistance="189.155165663354" endProfile="Profile_7152968 Invert" name="" startProfile="Profile_275734754"/>
+                <Portion endDistance="302.18039925846" endProfile="Profile_7152968 Invert" name="" startProfile="Profile_7152968 Invert"/>
+                <Portion endDistance="322.18039925846" endProfile="Profile_275734754" name="" startProfile="Profile_7152968 Invert"/>
+                <Portion endDistance="425.774032471512" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="" exitAtEnd="0" exitAtStart="0" name="Kloosterstraat - 7153078" startNode="Intersection 9">
+              <XYCurve direction="0.953746749834242" x="-355.259352040861" y="314.723411462683">
+                <PolyLine endHeading="-0.154553701462782" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="41.622126003546" y="7.105427357601e-015"/>
+                  <Vectord2 x="147.31062379945" y="-16.4658636460718"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="41.622126003546" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="41.622126003546" y="0"/>
+                  <end direction="0" x="148.585592813321" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="148.585592813321" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="148.585592813321" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 25" exitAtEnd="0" exitAtStart="0" name="Venstraat - 7153041" startNode="Intersection 32">
+              <XYCurve direction="3.07869134966806" x="-474.139064865104" y="-271.420857192215">
+                <PolyLine endHeading="-1.61409391239777" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="192.488760009414" y="2.8421709430404e-014"/>
+                  <Vectord2 x="189.544722285209" y="-67.9529295415195"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="-0" x="192.488760009414" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="192.488760009414" y="0"/>
+                  <end direction="0" x="260.505434372369" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="260.505434372369" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="260.505434372369" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 20" exitAtEnd="0" exitAtStart="0" name="Oudartstraat - 7153038" startNode="Intersection 27">
+              <XYCurve direction="2.68803933268156" x="-111.225529105015" y="-257.622705681896">
+                <PolyLine endHeading="-0.691238281152478" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="20.5381721266937" y="3.5527136788005e-015"/>
+                  <Vectord2 x="47.5819025450614" y="-4.66858645433233"/>
+                  <Vectord2 x="72.4049110092123" y="-12.4031299680748"/>
+                  <Vectord2 x="80.2239814887138" y="-18.8659972952162"/>
+                  <Vectord2 x="85.1697039228012" y="-22.9581869971295"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="20.5381721266937" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="20.5381721266937" y="0"/>
+                  <end direction="0" x="47.981915574389" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="47.981915574389" y="0"/>
+                  <end direction="0" x="73.9820100468575" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="73.9820100468575" y="0"/>
+                  <end direction="0" x="84.1262950020253" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="84.1262950020253" y="0"/>
+                  <end direction="0" x="90.5454995439822" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="90.5454995439822" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="90.5454995439822" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="" exitAtEnd="0" exitAtStart="0" name="De Zellen - 7153037" startNode="Intersection 28">
+              <XYCurve direction="1.93270337219226" x="548.43758771029" y="-280.683082555443">
+                <PolyLine endHeading="2.44929359829471e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="29.7427671961181" y="7.28487692890217e-015"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="29.7427671961181" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="29.7427671961181" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="29.7427671961181" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 29" exitAtEnd="0" exitAtStart="0" name="Oudartstraat - 7153035" startNode="Intersection 30">
+              <XYCurve direction="2.40962678400084" x="-6.46809983305121" y="-247.878344517835">
+                <PolyLine endHeading="2.44929359829471e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="48.3455400326386" y="1.18412421708042e-014"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="48.3455400326385" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="48.3455400326386" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="48.3455400326386" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 29" exitAtEnd="0" exitAtStart="0" name="Oudartstraat - 7153034" startNode="Intersection 31">
+              <XYCurve direction="0.71804050503262" x="-55.626951817538" y="-218.447723784429">
+                <PolyLine endHeading="2.44929359829471e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="5.44177917607148" y="1.33285148992853e-015"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="5.44177917607148" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="5.44177917607148" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="5.44177917607148" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="" exitAtEnd="0" exitAtStart="0" name="Wevestraat - 7153033" startNode="Intersection 13">
+              <XYCurve direction="1.75595580403968" x="402.318670675633" y="43.1294021406819">
+                <PolyLine endHeading="0.505121441654107" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="29.6827182282711" y="2.8421709430404e-014"/>
+                  <Vectord2 x="359.687942125116" y="99.4640571854084"/>
+                  <Vectord2 x="407.09933854907" y="113.755719850029"/>
+                  <Vectord2 x="428.732228811268" y="125.718083484146"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="29.6827182282711" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="29.6827182282711" y="0"/>
+                  <end direction="0" x="374.351467132185" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="374.351467132185" y="0"/>
+                  <end direction="0" x="423.870071036057" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="423.870071036057" y="0"/>
+                  <end direction="0" x="448.590105113929" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="448.590105113929" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="448.590105113929" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 2" exitAtEnd="0" exitAtStart="0" name="Kloosterstraat - 7153017" startNode="Intersection 16">
+              <XYCurve direction="0.778170254555747" x="-513.741086934202" y="107.002572030521">
+                <PolyLine endHeading="0.152652687177176" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="14.0696472603846" y="-7.105427357601e-015"/>
+                  <Vectord2 x="134.794808487364" y="2.32711377150508"/>
+                  <Vectord2 x="250.328170618387" y="20.1018744124977"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="14.0696472603846" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="14.0696472603846" y="0"/>
+                  <end direction="0" x="134.817235276815" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="134.817235276815" y="0"/>
+                  <end direction="0" x="251.709920596055" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="251.709920596055" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="251.709920596055" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="" exitAtEnd="0" exitAtStart="0" name="Gasthuisstraat - 7153012" startNode="Intersection 16">
+              <XYCurve direction="2.68482871076378" x="-524.365048329385" y="105.648789757822">
+                <PolyLine endHeading="6.12295146598096e-017" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="102.272895927588" y="6.26211978049943e-015"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="102.272895927588" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="102.272895927588" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="102.272895927588" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 21" exitAtEnd="0" exitAtStart="0" name="Vlierbes - 7153004" startNode="">
+              <XYCurve direction="-0.0615211920827026" x="-584.983924118569" y="-419.780259837396">
+                <PolyLine endHeading="0.501744080012396" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="86.993780412954" y="0"/>
+                  <Vectord2 x="96.1017209594565" y="-3.01144097204389"/>
+                  <Vectord2 x="108.214084655536" y="-0.479092407835253"/>
+                  <Vectord2 x="148.791243024797" y="28.8140637393498"/>
+                  <Vectord2 x="176.130006438438" y="37.6430896387102"/>
+                  <Vectord2 x="207.426589724771" y="54.8114327447514"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="86.993780412954" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="86.993780412954" y="0"/>
+                  <end direction="0" x="96.586660987981" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="96.586660987981" y="0"/>
+                  <end direction="0" x="108.960914240471" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="108.960914240471" y="0"/>
+                  <end direction="0" x="159.006840931735" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="159.006840931735" y="0"/>
+                  <end direction="0" x="187.735914765026" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="187.735914765026" y="0"/>
+                  <end direction="0" x="223.432246935223" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="223.432246935223" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="223.432246935223" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="" exitAtEnd="0" exitAtStart="0" name="Wilde Wingerd - 7152994" startNode="Intersection 32">
+              <XYCurve direction="1.52280443795308" x="-467.808095729165" y="-265.755714110358">
+                <PolyLine endHeading="-0.92126165793168" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="17.1518107937414" y="0"/>
+                  <Vectord2 x="29.8847712112256" y="-4.96084212901511"/>
+                  <Vectord2 x="35.601150120648" y="-12.4876382374669"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="17.1518107937414" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="17.1518107937414" y="0"/>
+                  <end direction="0" x="30.8170307196054" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="30.8170307196054" y="0"/>
+                  <end direction="0" x="40.2684669858188" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="40.2684669858188" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="40.2684669858188" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 31" exitAtEnd="0" exitAtStart="0" name="Oudartstraat - 7152992" startNode="Intersection 27">
+              <XYCurve direction="0.722153026521463" x="-100.457433190908" y="-257.909600765884">
+                <PolyLine endHeading="4.03220773063779e-017" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="47.5180080465794" y="1.91602479389926e-015"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="47.5180080465794" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="47.5180080465794" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="47.5180080465794" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 26" exitAtEnd="0" exitAtStart="0" name="Spagetstraat - 7152982" startNode="Intersection 6">
+              <XYCurve direction="2.18313851424827" x="359.247570100448" y="-156.851439871925">
+                <PolyLine endHeading="2.44929359829471e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="22.3699377283827" y="5.4790545272379e-015"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="22.3699377283827" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="22.3699377283827" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="22.3699377283827" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 8" exitAtEnd="0" exitAtStart="0" name="Spaanseweg - 7152981" startNode="Intersection 30">
+              <XYCurve direction="0.74619925970311" x="2.50817715989808" y="-248.32682586356">
+                <PolyLine endHeading="-0.000113741871140563" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="171.248001629605" y="4.19438789256432e-014"/>
+                  <Vectord2 x="174.663438282941" y="-0.000388478157345901"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="171.248001629605" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="171.248001629605" y="0"/>
+                  <end direction="0" x="174.663438305034" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="174.663438305034" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="174.663438305034" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 15" exitAtEnd="0" exitAtStart="0" name="Hillendonk - 7152974" startNode="Intersection 33">
+              <XYCurve direction="1.98789347015439" x="614.852930083724" y="-148.682149179615">
+                <PolyLine endHeading="2.44929359829471e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="108.938032667239" y="2.66821226022687e-014"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="108.938032667239" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="108.938032667239" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="108.938032667239" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 15" exitAtEnd="0" exitAtStart="0" name="Weringedonk - 7152973" startNode="Intersection 22">
+              <XYCurve direction="0.420331404871316" x="477.852517398736" y="-84.0085932493984">
+                <PolyLine endHeading="2.44929359829471e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="93.0277788152261" y="2.27852343115709e-014"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="93.0277788152261" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="93.0277788152261" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="93.0277788152261" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 22" exitAtEnd="0" exitAtStart="0" name="Laardonk - 7152970" startNode="Intersection 5">
+              <XYCurve direction="1.93435606835994" x="513.747770226371" y="-194.655425268947">
+                <PolyLine endHeading="2.44929359829471e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="109.924477978117" y="2.69237320207689e-014"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="109.924477978117" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="109.924477978117" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="109.924477978117" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="" exitAtEnd="0" exitAtStart="0" name="Oudartstraat - 7152969" startNode="Intersection 34">
+              <XYCurve direction="0.904379328676937" x="-9.15645911629091" y="-178.020898857737">
+                <PolyLine endHeading="1.69308050601892" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="41.463667965505" y="-1.4210854715202e-014"/>
+                  <Vectord2 x="50.2572728557641" y="1.33578958276829"/>
+                  <Vectord2 x="54.7266232059751" y="9.43915915220418"/>
+                  <Vectord2 x="47.5847484532073" y="67.5516703035789"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="41.463667965505" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="41.463667965505" y="0"/>
+                  <end direction="0" x="50.3581505685247" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="50.3581505685247" y="0"/>
+                  <end direction="0" x="59.6123221106884" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="59.6123221106884" y="0"/>
+                  <end direction="0" x="118.162047364552" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="118.162047364552" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="118.162047364552" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 23" exitAtEnd="0" exitAtStart="0" name="Weringedonk - 7152964" startNode="Intersection 6">
+              <XYCurve direction="0.421568655990168" x="368.918172597709" y="-158.313269997914">
+                <PolyLine endHeading="1.60130163369099" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="53.7964964343295" y="3.5527136788005e-015"/>
+                  <Vectord2 x="60.9348795276982" y="10.4767737213176"/>
+                  <Vectord2 x="60.5862586967896" y="21.9014312818929"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="53.7964964343295" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="53.7964964343295" y="0"/>
+                  <end direction="0" x="66.4740080511802" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="66.4740080511802" y="0"/>
+                  <end direction="0" x="77.9039834168646" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="77.9039834168646" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="77.9039834168646" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 23" exitAtEnd="0" exitAtStart="0" name="Weringedonk - 7152962" startNode="Intersection 26">
+              <XYCurve direction="0.341937401561355" x="348.998422285443" y="-130.352864163908">
+                <PolyLine endHeading="2.44929359829471e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="61.7044555184731" y="1.51132327887657e-014"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="61.7044555184731" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="61.7044555184731" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="61.7044555184731" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 17" exitAtEnd="0" exitAtStart="0" name="Gasthuisstraat - 7152961" startNode="Intersection 30">
+              <XYCurve direction="-2.42355531581777" x="-6.52767984221657" y="-256.43330877612">
+                <PolyLine endHeading="-1.78325797618298" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="42.3285233695879" y="-5.6843418860808e-014"/>
+                  <Vectord2 x="148.100744000721" y="-2.44158051225418"/>
+                  <Vectord2 x="236.778297350127" y="-15.9910880857719"/>
+                  <Vectord2 x="209.99759079374" y="-146.475936423064"/>
+                  <Vectord2 x="169.629293527863" y="-333.611139049865"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="-0" x="42.328523369588" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="42.328523369588" y="0"/>
+                  <end direction="-0" x="148.128920214964" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="148.128920214964" y="0"/>
+                  <end direction="-0" x="237.835651420161" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="237.835651420161" y="0"/>
+                  <end direction="-0" x="371.040388157506" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="-0" x="371.040388157506" y="0"/>
+                  <end direction="0" x="562.48015279986" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="562.48015279986" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="227.835651420161" endProfile="Profile_7152968 Invert" name="" startProfile="Profile_7152968 Invert"/>
+                <Portion endDistance="247.835651420161" endProfile="Profile_275734754" name="" startProfile="Profile_7152968 Invert"/>
+                <Portion endDistance="562.48015279986" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 25" exitAtEnd="0" exitAtStart="0" name="Wilde Wingerd - 7152951" startNode="">
+              <XYCurve direction="0.341934894649559" x="-681.83188110881" y="-186.221904085018">
+                <PolyLine endHeading="-0.602789220819077" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="10.6344049862687" y="0"/>
+                  <Vectord2 x="16.7130058506723" y="-4.18353227168792"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="10.6344049862687" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="10.6344049862687" y="0"/>
+                  <end direction="0" x="18.0135194817202" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="18.0135194817202" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="18.0135194817202" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="" exitAtEnd="0" exitAtStart="0" name="Peppeldonk - 7152940" startNode="Intersection 33">
+              <XYCurve direction="0.39067731236479" x="622.73009243762" y="-151.879257184174">
+                <PolyLine endHeading="2.44929359829471e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="36.2280400066397" y="8.87331064670273e-015"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="36.2280400066397" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="36.2280400066397" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="36.2280400066397" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="" exitAtEnd="0" exitAtStart="0" name="Oudartstraat - 7152939" startNode="Intersection 34">
+              <XYCurve direction="2.50508301653412" x="-18.4116220814608" y="-178.50962954709">
+                <PolyLine endHeading="1.28931026043007e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="79.6516094971812" y="1.02695637384485e-014"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="79.6516094971812" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="79.6516094971812" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="79.6516094971812" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="" exitAtEnd="0" exitAtStart="0" name="Oudartstraat - 7152937" startNode="Intersection 31">
+              <XYCurve direction="2.53937336110796" x="-65.3157573761154" y="-217.920798782532">
+                <PolyLine endHeading="2.44929359829471e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="80.1933444960773" y="1.96417045300084e-014"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="80.1933444960773" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="80.1933444960773" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="80.1933444960773" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 34" exitAtEnd="0" exitAtStart="0" name="Oudartstraat - 7152935" startNode="Intersection 29">
+              <XYCurve direction="0.69077561925643" x="-42.2540906950408" y="-207.002591773135">
+                <PolyLine endHeading="5.42257708324227e-017" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="31.236538908619" y="1.69382540045683e-015"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="31.236538908619" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="31.236538908619" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="31.236538908619" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="" exitAtEnd="0" exitAtStart="0" name="Spagetstraat - 7152932" startNode="Intersection 4">
+              <XYCurve direction="2.28635503956923" x="488.584900834796" y="-308.119299041084">
+                <PolyLine endHeading="2.44929359829471e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="105.430370538358" y="2.58229931625439e-014"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="105.430370538358" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="105.430370538358" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="105.430370538358" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="" exitAtEnd="0" exitAtStart="0" name=" - 7152931" startNode="Intersection 20">
+              <XYCurve direction="0.7654986640436" x="-174.288537100417" y="-189.858384752579">
+                <PolyLine endHeading="-1.80601645371698e-017" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="46.4184012103912" y="-8.38323963412028e-016"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="46.4184012103912" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="46.4184012103912" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="46.4184012103912" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 33" exitAtEnd="0" exitAtStart="0" name="Peppeldonk - 7152930" startNode="Intersection 5">
+              <XYCurve direction="0.429160956270248" x="521.637674193391" y="-197.88973831391">
+                <PolyLine endHeading="2.44929359829471e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="99.2078163635563" y="2.42989069520055e-014"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="99.2078163635563" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="99.2078163635563" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="99.2078163635563" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 28" exitAtEnd="0" exitAtStart="0" name="De Zellen - 7152927" startNode="Intersection 4">
+              <XYCurve direction="0.434683970115865" x="497.377969645324" y="-310.71749489411">
+                <PolyLine endHeading="2.44929359829471e-016" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="52.5633319295813" y="1.28743032400163e-014"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="52.5633319295813" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="52.5633319295813" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="52.5633319295813" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 27" exitAtEnd="0" exitAtStart="0" name="Oudartstraat - 7152917" startNode="">
+              <XYCurve direction="-0.403641857647901" x="-167.535833643866" y="-289.630252343602">
+                <PolyLine endHeading="1.09265623146045" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="18.1570873906172" y="-5.6843418860808e-014"/>
+                  <Vectord2 x="23.922699656662" y="6.33982997893878"/>
+                  <Vectord2 x="43.4928439215439" y="44.1018702614433"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="18.1570873906172" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="18.1570873906172" y="0"/>
+                  <end direction="0" x="26.7265523076478" y="0"/>
+                </Polynomial>
+                <Polynomial>
+                  <begin direction="0" x="26.7265523076478" y="0"/>
+                  <end direction="0" x="69.2584489599931" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="69.2584489599931" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="69.2584489599931" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 21" exitAtEnd="0" exitAtStart="0" name="Wilde Wingerd - 7152481" startNode="">
+              <XYCurve direction="2.05962403965576" x="-343.420629097149" y="-423.345983993262">
+                <PolyLine endHeading="0" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="48.6890294467912" y="0"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="48.6890294467912" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="48.6890294467912" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="48.6890294467912" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+            <Track endNode="Intersection 14" exitAtEnd="0" exitAtStart="0" name="Kavelaarsstraat - 7153097" startNode="Intersection 7">
+              <XYCurve direction="-2.5405229057555" x="-340.136537101151" y="34.4716108774966">
+                <PolyLine endHeading="-7.66951701058567e-017" type="segment">
+                  <Vectord2 x="0" y="0"/>
+                  <Vectord2 x="82.4112909901884" y="-6.32054798113575e-015"/>
+                </PolyLine>
+              </XYCurve>
+              <SZCurve>
+                <Polynomial>
+                  <begin direction="-0" x="0" y="0"/>
+                  <end direction="0" x="82.4112909901884" y="0"/>
+                </Polynomial>
+              </SZCurve>
+              <BankingCurve>
+                <Polynomial>
+                  <begin direction="0" x="0" y="0"/>
+                  <end direction="0" x="82.4112909901884" y="0"/>
+                </Polynomial>
+              </BankingCurve>
+              <Portions>
+                <Portion endDistance="82.4112909901884" endProfile="Profile_275734754" name="" startProfile="Profile_275734754"/>
+              </Portions>
+              <ClippedDatas/>
+            </Track>
+          </Tracks>
+          <TrafficLightGroups/>
+          <Materials>
+            <Material name="Default">
+              <Diffuse>
+                <Texture path="textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+              <NormalMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </NormalMap>
+              <ReflectionMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </ReflectionMap>
+              <SpecularMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </SpecularMap>
+              <AmbientOcclusionMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </AmbientOcclusionMap>
+            </Material>
+            <Material BRDF="../headlights/materials/whiteLine.bsdf2" name="marking material">
+              <Diffuse>
+                <Texture path="textures/marking.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+              <NormalMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </NormalMap>
+              <ReflectionMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </ReflectionMap>
+              <SpecularMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </SpecularMap>
+              <AmbientOcclusionMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </AmbientOcclusionMap>
+            </Material>
+            <Material name="Default Terrain Material">
+              <Diffuse>
+                <Texture path="Textures/DefaultTerrain.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+              <NormalMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </NormalMap>
+              <ReflectionMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </ReflectionMap>
+              <SpecularMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </SpecularMap>
+              <AmbientOcclusionMap>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </AmbientOcclusionMap>
+            </Material>
+          </Materials>
+        </RoadNetwork>
+        <Trajectories/>
+        <TrajectoryParts/>
+        <TerrainContours>
+          <TerrainContour contourPoints="-690.332 -453.24 0 -690.332 -453.24 0 -690.332 46.7597 0 -690.332 453.24 0 -690.332 453.24 0 -190.332 453.24 0 309.668 453.24 0 690.332 453.24 0 690.332 46.7597 0 690.332 -453.24 0 309.668 -453.24 0 -190.332 -453.24 0 -690.332 -453.24 0 "/>
+        </TerrainContours>
+        <GeneratedTerrainMaterial material="Default Terrain Material" uVHeading="0" uVOffsetX="0" uVOffsetY="0" uVScaleX="1" uVScaleY="1"/>
+        <ClippedDatas/>
+      </SubNetwork>
+    </SubNetworks>
+    <Roads/>
+  </Network>
+
+</RoadXML>

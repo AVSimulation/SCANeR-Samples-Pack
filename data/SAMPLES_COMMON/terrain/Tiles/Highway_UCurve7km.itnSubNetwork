@@ -1,0 +1,2440 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<RoadXML version="2.4.1" versionRevision="2.4.1-$Revision: 23033 $-$Date: 2011-05-02 11:01:27 +0200 (lun., 02 mai 2011) $" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <SubNetwork heading="0" name="Highway_UCurve7km" x="0" y="0" z="0">
+    <ExternalTerrain flipped="0" path="Highway_UCurve7km/Highway_UCurve7km.ive"/>
+    <ExternalPhysicSurface flipped="0" path="Highway_UCurve7km/Highway_UCurve7km.sol"/>
+    <RoadNetwork>
+      <Grounds>
+        <Ground grip="1" name="Asphalt 2" type="asphalt">
+          <Roughness RepeatPattern="1" type="analytic">
+            <RoughnessAnalytic granulosity="0.07"/>
+            <Roughness2x2D>
+              <Scale2x2DPoints bankingLeft="1" bankingRight="1" curvilinearDistance="1" zLeft="1" zRight="1"/>
+              <Offset2x2DPoints bankingLeft="0" bankingRight="0" curvilinearDistance="0" zLeft="0" zRight="0"/>
+              <Points2x2D/>
+            </Roughness2x2D>
+          </Roughness>
+        </Ground>
+        <Ground grip="0.9" name="Cobblestone 2" type="cobblestone">
+          <Roughness RepeatPattern="1" type="analytic">
+            <RoughnessAnalytic granulosity="0.4"/>
+            <Roughness2x2D>
+              <Scale2x2DPoints bankingLeft="1" bankingRight="1" curvilinearDistance="1" zLeft="1" zRight="1"/>
+              <Offset2x2DPoints bankingLeft="0" bankingRight="0" curvilinearDistance="0" zLeft="0" zRight="0"/>
+              <Points2x2D/>
+            </Roughness2x2D>
+          </Roughness>
+        </Ground>
+        <Ground grip="0.7" name="Grass 2" type="grass">
+          <Roughness RepeatPattern="1" type="analytic">
+            <RoughnessAnalytic granulosity="0.2"/>
+            <Roughness2x2D>
+              <Scale2x2DPoints bankingLeft="1" bankingRight="1" curvilinearDistance="1" zLeft="1" zRight="1"/>
+              <Offset2x2DPoints bankingLeft="0" bankingRight="0" curvilinearDistance="0" zLeft="0" zRight="0"/>
+              <Points2x2D/>
+            </Roughness2x2D>
+          </Roughness>
+        </Ground>
+      </Grounds>
+      <Markings>
+        <Marking doubleMarking="0" leftToRight="can" lineLength="0.002" name="Marking Each km" rightToLeft="can" totalLength="1000" width="0.6">
+          <Material shininess="2.56">
+            <Diffuse>
+              <Texture path="Textures/marking.png"/>
+              <Color alpha="1" blue="1" green="1" red="1"/>
+            </Diffuse>
+            <Ambient>
+              <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+            </Ambient>
+            <Specular>
+              <Color alpha="1" blue="1" green="1" red="1"/>
+            </Specular>
+            <Emissive>
+              <Color alpha="1" blue="0" green="0" red="0"/>
+            </Emissive>
+          </Material>
+          <UVMapping leftU="0" lengthV="10" rightU="1"/>
+        </Marking>
+        <Marking doubleMarking="0" leftToRight="can" lineLength="20" name="Marking broken 20/26 0.225" rightToLeft="can" totalLength="26" width="0.225">
+          <Material shininess="2.56">
+            <Diffuse>
+              <Texture path="Textures/marking.png"/>
+              <Color alpha="1" blue="1" green="1" red="1"/>
+            </Diffuse>
+            <Ambient>
+              <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+            </Ambient>
+            <Specular>
+              <Color alpha="1" blue="1" green="1" red="1"/>
+            </Specular>
+            <Emissive>
+              <Color alpha="1" blue="0" green="0" red="0"/>
+            </Emissive>
+          </Material>
+          <UVMapping leftU="0" lengthV="10" rightU="1"/>
+        </Marking>
+        <Marking doubleMarking="0" leftToRight="can" lineLength="3" name="Marking broken 3/13 0.15" rightToLeft="can" totalLength="13" width="0.15">
+          <Material shininess="2.56">
+            <Diffuse>
+              <Texture path="Textures/marking.png"/>
+              <Color alpha="1" blue="1" green="1" red="1"/>
+            </Diffuse>
+            <Ambient>
+              <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+            </Ambient>
+            <Specular>
+              <Color alpha="1" blue="1" green="1" red="1"/>
+            </Specular>
+            <Emissive>
+              <Color alpha="1" blue="0" green="0" red="0"/>
+            </Emissive>
+          </Material>
+          <UVMapping leftU="0" lengthV="10" rightU="1"/>
+        </Marking>
+        <Marking doubleMarking="0" leftToRight="cannot" lineLength="1" name="Marking Continuous 1/1 0.225" rightToLeft="cannot" totalLength="1" width="0.225">
+          <Material shininess="2.56">
+            <Diffuse>
+              <Texture path="Textures/marking.png"/>
+              <Color alpha="1" blue="1" green="1" red="1"/>
+            </Diffuse>
+            <Ambient>
+              <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+            </Ambient>
+            <Specular>
+              <Color alpha="1" blue="1" green="1" red="1"/>
+            </Specular>
+            <Emissive>
+              <Color alpha="1" blue="0" green="0" red="0"/>
+            </Emissive>
+          </Material>
+          <UVMapping leftU="0" lengthV="10" rightU="1"/>
+        </Marking>
+        <Marking doubleMarking="0" leftToRight="cannot" lineLength="6.5" name="continuous + broken line 6.5/13 0.15" rightToLeft="can" totalLength="13" width="0.45">
+          <Material shininess="2.56">
+            <Diffuse>
+              <Texture path="Textures/marking.png"/>
+              <Color alpha="1" blue="1" green="1" red="1"/>
+            </Diffuse>
+            <Ambient>
+              <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+            </Ambient>
+            <Specular>
+              <Color alpha="1" blue="1" green="1" red="1"/>
+            </Specular>
+            <Emissive>
+              <Color alpha="1" blue="0" green="0" red="0"/>
+            </Emissive>
+          </Material>
+          <UVMapping leftU="0" lengthV="10" rightU="1"/>
+        </Marking>
+      </Markings>
+      <Profiles>
+        <Profile name="Highway_2x3_Lanes" type="none">
+          <LaneBorder distance="-20.55" height="0" markingOffset="0"/>
+          <Lane Ground="Grass 2" circulationWay="none" name="Lane" speedLimit="0" type="shoulder">
+            <VehicleType categories="none"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/highway_rigole.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="0.752941176470588" green="0.752941176470588" red="0.752941176470588"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="-16.55" height="0" markingName="Marking Each km" markingOffset="0.001">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="-0.71" y="0"/>
+                <Vectord2 x="-0.7" y="0.7"/>
+                <Vectord2 x="-0.69" y="0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Cobblestone 2" circulationWay="inverse" name="Lane 2" speedLimit="28" type="emergency">
+            <VehicleType categories="police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="1" rightU="0.5"/>
+          </Lane>
+          <LaneBorder distance="-14.55" height="0" markingName="Marking broken 20/26 0.225" markingOffset="0.001"/>
+          <Lane Ground="Asphalt 2" circulationWay="inverse" name="Lane 3" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="-10.55" height="0" markingName="Marking broken 3/13 0.15" markingOffset="0.001"/>
+          <Lane Ground="Asphalt 2" circulationWay="inverse" name="Lane 4" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="-6.55" height="0" markingName="Marking broken 3/13 0.15" markingOffset="0.001"/>
+          <Lane Ground="Asphalt 2" circulationWay="inverse" name="Lane 5" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="-2" height="0" markingName="Marking Continuous 1/1 0.225" markingOffset="-0.163">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="0.69" y="0"/>
+                <Vectord2 x="0.7" y="0.7"/>
+                <Vectord2 x="0.71" y="0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Cobblestone 2" circulationWay="none" name="Lane 6" speedLimit="0" type="median">
+            <VehicleType categories="none"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="2" height="0" markingName="Marking Continuous 1/1 0.225" markingOffset="0.163">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="-0.71" y="0"/>
+                <Vectord2 x="-0.7" y="0.7"/>
+                <Vectord2 x="-0.69" y="-0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Asphalt 2" circulationWay="direct" name="Lane 7" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="6.55" height="0" markingName="Marking broken 3/13 0.15" markingOffset="0.001"/>
+          <Lane Ground="Asphalt 2" circulationWay="direct" name="Lane 8" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="10.55" height="0" markingName="Marking broken 3/13 0.15" markingOffset="0.001"/>
+          <Lane Ground="Asphalt 2" circulationWay="direct" name="Lane 9" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="14.55" height="0" markingName="Marking broken 20/26 0.225" markingOffset="0.001"/>
+          <Lane Ground="Cobblestone 2" circulationWay="direct" name="Lane 10" speedLimit="28" type="emergency">
+            <VehicleType categories="police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="0.5"/>
+          </Lane>
+          <LaneBorder distance="16.55" height="0" markingName="Marking Each km" markingOffset="0.001">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="0.69" y="0"/>
+                <Vectord2 x="0.7" y="0.7"/>
+                <Vectord2 x="0.71" y="0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Grass 2" circulationWay="none" name="Lane 11" speedLimit="0" type="shoulder">
+            <VehicleType categories="none"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/highway_rigole.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="0.752941176470588" green="0.752941176470588" red="0.752941176470588"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="1" lengthV="4" rightU="0"/>
+          </Lane>
+          <LaneBorder distance="20.55" height="0" markingOffset="0"/>
+        </Profile>
+        <Profile name="ivent_auto_2x2v_bau_glissiere" type="none">
+          <LaneBorder distance="-14.55" height="0" markingOffset="0"/>
+          <Lane Ground="Grass 2" circulationWay="none" name="Lane" speedLimit="0" type="shoulder">
+            <VehicleType categories="none"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/highway_rigole.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="0.752941176470588" green="0.752941176470588" red="0.752941176470588"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="1" lengthV="4" rightU="0"/>
+          </Lane>
+          <LaneBorder distance="-12.55" height="0" markingName="Marking Each km" markingOffset="0.1">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="-0.71" y="0"/>
+                <Vectord2 x="-0.7" y="0.7"/>
+                <Vectord2 x="-0.69" y="0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Cobblestone 2" circulationWay="inverse" name="Lane 2" speedLimit="28" type="emergency">
+            <VehicleType categories="police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0.5" lengthV="4" rightU="0"/>
+          </Lane>
+          <LaneBorder distance="-10.55" height="0" markingName="Marking broken 20/26 0.225" markingOffset="0.1625"/>
+          <Lane Ground="Asphalt 2" circulationWay="inverse" name="Lane 3" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="1" lengthV="4" rightU="0"/>
+          </Lane>
+          <LaneBorder distance="-6.55" height="0" markingName="Marking broken 3/13 0.15" markingOffset="-0.025"/>
+          <Lane Ground="Asphalt 2" circulationWay="inverse" name="Lane 4" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="1" lengthV="4" rightU="0"/>
+          </Lane>
+          <LaneBorder distance="-2" height="0" markingName="Marking Continuous 1/1 0.225" markingOffset="-0.163">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="0.69" y="0"/>
+                <Vectord2 x="0.7" y="0.7"/>
+                <Vectord2 x="0.71" y="0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Cobblestone 2" circulationWay="none" name="Lane 5" speedLimit="0" type="median">
+            <VehicleType categories="none"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="1" lengthV="4" rightU="0"/>
+          </Lane>
+          <LaneBorder distance="2" height="0" markingName="Marking Continuous 1/1 0.225" markingOffset="0.163">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="-0.71" y="0"/>
+                <Vectord2 x="-0.7" y="0.7"/>
+                <Vectord2 x="-0.69" y="-0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Asphalt 2" circulationWay="direct" name="Lane 6" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="1" lengthV="4" rightU="0"/>
+          </Lane>
+          <LaneBorder distance="6.55" height="0" markingName="Marking broken 3/13 0.15" markingOffset="0.025"/>
+          <Lane Ground="Asphalt 2" circulationWay="direct" name="Lane 7" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="1" lengthV="4" rightU="0"/>
+          </Lane>
+          <LaneBorder distance="10.55" height="0" markingName="Marking broken 20/26 0.225" markingOffset="-0.1625"/>
+          <Lane Ground="Cobblestone 2" circulationWay="direct" name="Lane 8" speedLimit="28" type="emergency">
+            <VehicleType categories="police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0.5" lengthV="4" rightU="0"/>
+          </Lane>
+          <LaneBorder distance="12.55" height="0" markingName="Marking Each km" markingOffset="-0.1">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="0.69" y="0"/>
+                <Vectord2 x="0.7" y="0.7"/>
+                <Vectord2 x="0.71" y="0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Grass 2" circulationWay="none" name="Lane 9" speedLimit="0" type="shoulder">
+            <VehicleType categories="none"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/highway_rigole.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="0.752941176470588" green="0.752941176470588" red="0.752941176470588"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="14.55" height="0" markingOffset="0"/>
+        </Profile>
+        <Profile name="ivent_auto_2x2v_bau_glissiere_PAU" type="none">
+          <LaneBorder distance="-14.55" height="0" markingOffset="0"/>
+          <Lane Ground="Grass 2" circulationWay="none" name="Lane" speedLimit="0" type="shoulder">
+            <VehicleType categories="none"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/highway_rigole.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="0.752941176470588" green="0.752941176470588" red="0.752941176470588"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="-12.55" height="0" markingName="Marking Each km" markingOffset="0.1">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="-0.71" y="0"/>
+                <Vectord2 x="-0.7" y="0.7"/>
+                <Vectord2 x="-0.69" y="0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Cobblestone 2" circulationWay="inverse" name="Lane 2" speedLimit="28" type="emergency">
+            <VehicleType categories="police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="0.5"/>
+          </Lane>
+          <LaneBorder distance="-10.55" height="0" markingName="Marking broken 20/26 0.225" markingOffset="0.1625"/>
+          <Lane Ground="Asphalt 2" circulationWay="inverse" name="Lane 3" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="-6.55" height="0" markingName="Marking broken 3/13 0.15" markingOffset="-0.025"/>
+          <Lane Ground="Asphalt 2" circulationWay="inverse" name="Lane 4" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="-2" height="0" markingName="Marking Continuous 1/1 0.225" markingOffset="-0.163">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="0.69" y="0"/>
+                <Vectord2 x="0.7" y="0.7"/>
+                <Vectord2 x="0.71" y="0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Cobblestone 2" circulationWay="none" name="Lane 5" speedLimit="0" type="median">
+            <VehicleType categories="none"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="2" height="0" markingName="Marking Continuous 1/1 0.225" markingOffset="0.163">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="-0.71" y="0"/>
+                <Vectord2 x="-0.7" y="0.7"/>
+                <Vectord2 x="-0.69" y="-0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Asphalt 2" circulationWay="direct" name="Lane 6" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="6.55" height="0" markingName="Marking broken 3/13 0.15" markingOffset="0.025"/>
+          <Lane Ground="Asphalt 2" circulationWay="direct" name="Lane 7" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="10.55" height="0" markingName="Marking broken 20/26 0.225" markingOffset="-0.1625"/>
+          <Lane Ground="Cobblestone 2" circulationWay="direct" name="Lane 8" speedLimit="28" type="emergency">
+            <VehicleType categories="police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="0.5"/>
+          </Lane>
+          <LaneBorder distance="15.55" height="0" markingName="Marking Each km" markingOffset="-0.1">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="0.69" y="0"/>
+                <Vectord2 x="0.7" y="0.7"/>
+                <Vectord2 x="0.71" y="0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Grass 2" circulationWay="none" name="Lane 9" speedLimit="0" type="shoulder">
+            <VehicleType categories="none"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/highway_rigole.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="0.752941176470588" green="0.752941176470588" red="0.752941176470588"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="1" lengthV="4" rightU="0"/>
+          </Lane>
+          <LaneBorder distance="17.55" height="0" markingOffset="0"/>
+        </Profile>
+        <Profile name="Highway_2x3_Lanes_PAU" type="none">
+          <LaneBorder distance="-20.55" height="0" markingOffset="0"/>
+          <Lane Ground="Grass 2" circulationWay="none" name="Lane" speedLimit="0" type="shoulder">
+            <VehicleType categories="none"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/highway_rigole.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="0.752941176470588" green="0.752941176470588" red="0.752941176470588"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="-16.55" height="0" markingName="Marking Each km" markingOffset="0.001">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="-0.71" y="0"/>
+                <Vectord2 x="-0.7" y="0.7"/>
+                <Vectord2 x="-0.69" y="0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Cobblestone 2" circulationWay="inverse" name="Lane 2" speedLimit="28" type="emergency">
+            <VehicleType categories="police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="1" rightU="0.5"/>
+          </Lane>
+          <LaneBorder distance="-14.55" height="0" markingName="Marking broken 20/26 0.225" markingOffset="0.001"/>
+          <Lane Ground="Asphalt 2" circulationWay="inverse" name="Lane 3" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="-10.55" height="0" markingName="Marking broken 3/13 0.15" markingOffset="0.001"/>
+          <Lane Ground="Asphalt 2" circulationWay="inverse" name="Lane 4" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="-6.55" height="0" markingName="Marking broken 3/13 0.15" markingOffset="0.001"/>
+          <Lane Ground="Asphalt 2" circulationWay="inverse" name="Lane 5" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="-2" height="0" markingName="Marking Continuous 1/1 0.225" markingOffset="-0.163">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="0.69" y="0"/>
+                <Vectord2 x="0.7" y="0.7"/>
+                <Vectord2 x="0.71" y="0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Cobblestone 2" circulationWay="none" name="Lane 6" speedLimit="0" type="median">
+            <VehicleType categories="none"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="2" height="0" markingName="Marking Continuous 1/1 0.225" markingOffset="0.163">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="-0.71" y="0"/>
+                <Vectord2 x="-0.7" y="0.7"/>
+                <Vectord2 x="-0.69" y="-0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Asphalt 2" circulationWay="direct" name="Lane 7" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="6.55" height="0" markingName="Marking broken 3/13 0.15" markingOffset="0.001"/>
+          <Lane Ground="Asphalt 2" circulationWay="direct" name="Lane 8" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="10.55" height="0" markingName="Marking broken 3/13 0.15" markingOffset="0.001"/>
+          <Lane Ground="Asphalt 2" circulationWay="direct" name="Lane 9" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="14.55" height="0" markingName="Marking broken 20/26 0.225" markingOffset="0.001"/>
+          <Lane Ground="Cobblestone 2" circulationWay="direct" name="Lane 10" speedLimit="28" type="emergency">
+            <VehicleType categories="police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="0.5"/>
+          </Lane>
+          <LaneBorder distance="19.55" height="0" markingName="Marking Each km" markingOffset="0.001">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="0.69" y="0"/>
+                <Vectord2 x="0.7" y="0.7"/>
+                <Vectord2 x="0.71" y="0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Grass 2" circulationWay="none" name="Lane 11" speedLimit="0" type="shoulder">
+            <VehicleType categories="none"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/highway_rigole.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="0.752941176470588" green="0.752941176470588" red="0.752941176470588"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="1" lengthV="4" rightU="0"/>
+          </Lane>
+          <LaneBorder distance="23.55" height="0" markingOffset="0"/>
+        </Profile>
+        <Profile name="ivent_auto_2x2v_bau_glissiere_PAU Invert" type="none">
+          <LaneBorder distance="-17.55" height="0" markingOffset="-0"/>
+          <Lane Ground="Grass 2" circulationWay="none" name="Lane 9" speedLimit="0" type="shoulder">
+            <VehicleType categories="none"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/highway_rigole.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="0.752941176470588" green="0.752941176470588" red="0.752941176470588"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="1" lengthV="4" rightU="0"/>
+          </Lane>
+          <LaneBorder distance="-15.55" height="0" markingName="Marking Each km" markingOffset="0.1">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="-0.69" y="0"/>
+                <Vectord2 x="-0.7" y="0.7"/>
+                <Vectord2 x="-0.71" y="0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Cobblestone 2" circulationWay="inverse" name="Lane 8" speedLimit="28" type="emergency">
+            <VehicleType categories="police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="0.5"/>
+          </Lane>
+          <LaneBorder distance="-10.55" height="0" markingName="Marking broken 20/26 0.225" markingOffset="0.1625"/>
+          <Lane Ground="Asphalt 2" circulationWay="inverse" name="Lane 7" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="-6.55" height="0" markingName="Marking broken 3/13 0.15" markingOffset="-0.025"/>
+          <Lane Ground="Asphalt 2" circulationWay="inverse" name="Lane 6" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="-2" height="0" markingName="Marking Continuous 1/1 0.225" markingOffset="-0.163">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="0.71" y="0"/>
+                <Vectord2 x="0.7" y="0.7"/>
+                <Vectord2 x="0.69" y="-0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Cobblestone 2" circulationWay="none" name="Lane 5" speedLimit="0" type="median">
+            <VehicleType categories="none"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="2" height="0" markingName="Marking Continuous 1/1 0.225" markingOffset="0.163">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="-0.69" y="0"/>
+                <Vectord2 x="-0.7" y="0.7"/>
+                <Vectord2 x="-0.71" y="0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Asphalt 2" circulationWay="direct" name="Lane 4" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="6.55" height="0" markingName="Marking broken 3/13 0.15" markingOffset="0.025"/>
+          <Lane Ground="Asphalt 2" circulationWay="direct" name="Lane 3" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="10.55" height="0" markingName="Marking broken 20/26 0.225" markingOffset="-0.1625"/>
+          <Lane Ground="Cobblestone 2" circulationWay="direct" name="Lane 2" speedLimit="28" type="emergency">
+            <VehicleType categories="police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="0.5"/>
+          </Lane>
+          <LaneBorder distance="12.55" height="0" markingName="Marking Each km" markingOffset="-0.1">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="0.71" y="0"/>
+                <Vectord2 x="0.7" y="0.7"/>
+                <Vectord2 x="0.69" y="0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Grass 2" circulationWay="none" name="Lane" speedLimit="0" type="shoulder">
+            <VehicleType categories="none"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/highway_rigole.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="0.752941176470588" green="0.752941176470588" red="0.752941176470588"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="14.55" height="0" markingOffset="-0"/>
+        </Profile>
+        <Profile name="Highway_2x3_Lanes_PAU Invert" type="none">
+          <LaneBorder distance="-23.55" height="0" markingOffset="-0"/>
+          <Lane Ground="Grass 2" circulationWay="none" name="Lane 11" speedLimit="0" type="shoulder">
+            <VehicleType categories="none"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/highway_rigole.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="0.752941176470588" green="0.752941176470588" red="0.752941176470588"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="-19.55" height="0" markingName="Marking Each km" markingOffset="-0.001">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="-0.71" y="0"/>
+                <Vectord2 x="-0.7" y="0.7"/>
+                <Vectord2 x="-0.69" y="0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Cobblestone 2" circulationWay="inverse" name="Lane 10" speedLimit="28" type="emergency">
+            <VehicleType categories="police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0.5" lengthV="4" rightU="0"/>
+          </Lane>
+          <LaneBorder distance="-14.55" height="0" markingName="Marking broken 20/26 0.225" markingOffset="-0.001"/>
+          <Lane Ground="Asphalt 2" circulationWay="inverse" name="Lane 9" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="1" lengthV="4" rightU="0"/>
+          </Lane>
+          <LaneBorder distance="-10.55" height="0" markingName="Marking broken 3/13 0.15" markingOffset="-0.001"/>
+          <Lane Ground="Asphalt 2" circulationWay="inverse" name="Lane 8" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="1" lengthV="4" rightU="0"/>
+          </Lane>
+          <LaneBorder distance="-6.55" height="0" markingName="Marking broken 3/13 0.15" markingOffset="-0.001"/>
+          <Lane Ground="Asphalt 2" circulationWay="inverse" name="Lane 7" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="1" lengthV="4" rightU="0"/>
+          </Lane>
+          <LaneBorder distance="-2" height="0" markingName="Marking Continuous 1/1 0.225" markingOffset="-0.163">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="0.69" y="0"/>
+                <Vectord2 x="0.7" y="0.7"/>
+                <Vectord2 x="0.71" y="0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Cobblestone 2" circulationWay="none" name="Lane 6" speedLimit="0" type="median">
+            <VehicleType categories="none"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="1" lengthV="4" rightU="0"/>
+          </Lane>
+          <LaneBorder distance="2" height="0" markingName="Marking Continuous 1/1 0.225" markingOffset="0.163">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="-0.71" y="0"/>
+                <Vectord2 x="-0.7" y="0.7"/>
+                <Vectord2 x="-0.69" y="-0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Asphalt 2" circulationWay="direct" name="Lane 5" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="1" lengthV="4" rightU="0"/>
+          </Lane>
+          <LaneBorder distance="6.55" height="0" markingName="Marking broken 3/13 0.15" markingOffset="-0.001"/>
+          <Lane Ground="Asphalt 2" circulationWay="direct" name="Lane 4" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="1" lengthV="4" rightU="0"/>
+          </Lane>
+          <LaneBorder distance="10.55" height="0" markingName="Marking broken 3/13 0.15" markingOffset="-0.001"/>
+          <Lane Ground="Asphalt 2" circulationWay="direct" name="Lane 3" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="1" lengthV="4" rightU="0"/>
+          </Lane>
+          <LaneBorder distance="14.55" height="0" markingName="Marking broken 20/26 0.225" markingOffset="-0.001"/>
+          <Lane Ground="Cobblestone 2" circulationWay="direct" name="Lane 2" speedLimit="28" type="emergency">
+            <VehicleType categories="police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0.5" lengthV="1" rightU="0"/>
+          </Lane>
+          <LaneBorder distance="16.55" height="0" markingName="Marking Each km" markingOffset="-0.001">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="0.69" y="0"/>
+                <Vectord2 x="0.7" y="0.7"/>
+                <Vectord2 x="0.71" y="0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Grass 2" circulationWay="none" name="Lane" speedLimit="0" type="shoulder">
+            <VehicleType categories="none"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/highway_rigole.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="0.752941176470588" green="0.752941176470588" red="0.752941176470588"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="1" lengthV="4" rightU="0"/>
+          </Lane>
+          <LaneBorder distance="20.55" height="0" markingOffset="-0"/>
+        </Profile>
+        <Profile name="Highway_2x3_Lanes_entry+exit" type="none">
+          <LaneBorder distance="-20.55" height="0" markingOffset="0"/>
+          <Lane Ground="Cobblestone 2" circulationWay="none" name="Lane" speedLimit="0" type="shoulder">
+            <VehicleType categories="none"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/highway_rigole.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="0.752941176470588" green="0.752941176470588" red="0.752941176470588"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="-16.55" height="0" markingName="Marking Each km" markingOffset="0.001">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="-0.71" y="0"/>
+                <Vectord2 x="-0.7" y="0.7"/>
+                <Vectord2 x="-0.69" y="0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Asphalt 2" circulationWay="inverse" name="Lane 2" speedLimit="28" type="emergency">
+            <VehicleType categories="police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="1" rightU="0.5"/>
+          </Lane>
+          <LaneBorder distance="-14.55" height="0" markingName="Marking broken 20/26 0.225" markingOffset="0.001"/>
+          <Lane Ground="Asphalt 2" circulationWay="inverse" name="Lane 3" speedLimit="36.1111111111111" type="paved entry">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="-10.55" height="0" markingName="continuous + broken line 6.5/13 0.15" markingOffset="0.001"/>
+          <Lane Ground="Asphalt 2" circulationWay="inverse" name="Lane 4" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="-6.55" height="0" markingName="Marking broken 3/13 0.15" markingOffset="0.001"/>
+          <Lane Ground="Asphalt 2" circulationWay="inverse" name="Lane 5" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="-2" height="0" markingName="Marking Continuous 1/1 0.225" markingOffset="-0.163">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="0.69" y="0"/>
+                <Vectord2 x="0.7" y="0.7"/>
+                <Vectord2 x="0.71" y="0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Asphalt 2" circulationWay="none" name="Lane 6" speedLimit="0" type="median">
+            <VehicleType categories="none"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="2" height="0" markingName="Marking Continuous 1/1 0.225" markingOffset="0.163">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="-0.71" y="0"/>
+                <Vectord2 x="-0.7" y="0.7"/>
+                <Vectord2 x="-0.69" y="-0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Asphalt 2" circulationWay="direct" name="Lane 7" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="6.55" height="0" markingName="Marking broken 3/13 0.15" markingOffset="0.001"/>
+          <Lane Ground="Asphalt 2" circulationWay="direct" name="Lane 8" speedLimit="36.1111111111111" type="paved express">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="10.55" height="0" markingName="continuous + broken line 6.5/13 0.15" markingOffset="0.001"/>
+          <Lane Ground="Asphalt 2" circulationWay="direct" name="Lane 9" speedLimit="36.1111111111111" type="paved exit">
+            <VehicleType categories="motorcycle,car,trail,caravan,bus,goods transport,poluting transport,dangerous transport,nailed tires,truck,police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="1"/>
+          </Lane>
+          <LaneBorder distance="14.55" height="0" markingName="Marking broken 20/26 0.225" markingOffset="0.001"/>
+          <Lane Ground="Asphalt 2" circulationWay="direct" name="Lane 10" speedLimit="28" type="emergency">
+            <VehicleType categories="police,firefighter,ambulance"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/macadam.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="0" lengthV="4" rightU="0.5"/>
+          </Lane>
+          <LaneBorder distance="16.55" height="0" markingName="Marking Each km" markingOffset="0.001">
+            <Decoration>
+              <Material shininess="2.56">
+                <Diffuse>
+                  <Texture path="Textures/motorway_barrier-2.png"/>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Diffuse>
+                <Ambient>
+                  <Color alpha="1" blue="1" green="1" red="1"/>
+                </Ambient>
+                <Specular>
+                  <Color alpha="1" blue="0.0627450980392157" green="0.0627450980392157" red="0.0627450980392157"/>
+                </Specular>
+                <Emissive>
+                  <Color alpha="1" blue="0" green="0" red="0"/>
+                </Emissive>
+              </Material>
+              <UVMapping leftU="0" lengthV="1.555" rightU="1"/>
+              <PolyLine endHeading="0" type="segment">
+                <Vectord2 x="0.69" y="0"/>
+                <Vectord2 x="0.7" y="0.7"/>
+                <Vectord2 x="0.71" y="0"/>
+              </PolyLine>
+            </Decoration>
+          </LaneBorder>
+          <Lane Ground="Cobblestone 2" circulationWay="none" name="Lane 11" speedLimit="0" type="shoulder">
+            <VehicleType categories="none"/>
+            <Material shininess="6.4">
+              <Diffuse>
+                <Texture path="Textures/highway_rigole.png"/>
+                <Color alpha="1" blue="1" green="1" red="1"/>
+              </Diffuse>
+              <Ambient>
+                <Color alpha="1" blue="0.87843137254902" green="0.87843137254902" red="0.87843137254902"/>
+              </Ambient>
+              <Specular>
+                <Color alpha="1" blue="0.752941176470588" green="0.752941176470588" red="0.752941176470588"/>
+              </Specular>
+              <Emissive>
+                <Color alpha="1" blue="0" green="0" red="0"/>
+              </Emissive>
+            </Material>
+            <UVMapping leftU="1" lengthV="4" rightU="0"/>
+          </Lane>
+          <LaneBorder distance="20.55" height="0" markingOffset="0"/>
+        </Profile>
+      </Profiles>
+      <Intersections/>
+      <Tracks>
+        <Track endNode="" exitAtEnd="1" exitAtStart="1" name="Highway_UCurve_7.6km_Drop120m_2%" startNode="">
+          <XYCurve direction="0" x="4.49063009000383e-012" y="-1.51027937325887e-012">
+            <Segment length="200"/>
+            <ClothoArc endCurvature="0.0004" length="500" startCurvature="0"/>
+            <CircleArc curvature="0.0004" length="1000"/>
+            <ClothoArc endCurvature="0" length="500" startCurvature="0.0004"/>
+            <Segment length="2000"/>
+            <ClothoArc endCurvature="0.0004" length="500" startCurvature="0"/>
+            <CircleArc curvature="0.0004" length="1500"/>
+            <ClothoArc endCurvature="0" length="500" startCurvature="0.0004"/>
+            <Segment length="900"/>
+          </XYCurve>
+          <SZCurve>
+            <Polynomial>
+              <begin direction="0" x="0" y="0"/>
+              <end direction="0" x="500" y="-0"/>
+            </Polynomial>
+            <Polynomial>
+              <begin direction="0" x="500" y="-0"/>
+              <end direction="0.02" x="3800" y="70"/>
+            </Polynomial>
+            <Polynomial>
+              <begin direction="0.02" x="3800" y="70"/>
+              <end direction="0" x="7000" y="120"/>
+            </Polynomial>
+            <Polynomial>
+              <begin direction="0" x="7000" y="120"/>
+              <end direction="0" x="7600" y="120"/>
+            </Polynomial>
+          </SZCurve>
+          <BankingCurve>
+            <Polynomial>
+              <begin direction="0" x="0" y="0"/>
+              <end direction="0" x="300" y="0"/>
+            </Polynomial>
+            <Polynomial>
+              <begin direction="0" x="300" y="0"/>
+              <end direction="0" x="600" y="0.0523598775598299"/>
+            </Polynomial>
+            <Polynomial>
+              <begin direction="0" x="600" y="0.0523598775598299"/>
+              <end direction="0" x="1800" y="0.0523598775598299"/>
+            </Polynomial>
+            <Polynomial>
+              <begin direction="0" x="1800" y="0.0523598775598299"/>
+              <end direction="0" x="2100" y="0"/>
+            </Polynomial>
+            <Polynomial>
+              <begin direction="0" x="2100" y="0"/>
+              <end direction="0" x="4300" y="0"/>
+            </Polynomial>
+            <Polynomial>
+              <begin direction="0" x="4300" y="0"/>
+              <end direction="0" x="4600" y="0.0523598775598299"/>
+            </Polynomial>
+            <Polynomial>
+              <begin direction="0" x="4600" y="0.0523598775598299"/>
+              <end direction="0" x="6300" y="0.0523598775598299"/>
+            </Polynomial>
+            <Polynomial>
+              <begin direction="0" x="6300" y="0.0523598775598299"/>
+              <end direction="0" x="6600" y="0"/>
+            </Polynomial>
+            <Polynomial>
+              <begin direction="0" x="6600" y="0"/>
+              <end direction="0" x="7600" y="0"/>
+            </Polynomial>
+          </BankingCurve>
+          <Portions>
+            <Portion endDistance="286.179476889451" endProfile="ivent_auto_2x2v_bau_glissiere" name="" startProfile="ivent_auto_2x2v_bau_glissiere"/>
+            <Portion endDistance="318.179476889451" endProfile="ivent_auto_2x2v_bau_glissiere_PAU Invert" name="" startProfile="ivent_auto_2x2v_bau_glissiere"/>
+            <Portion endDistance="358.179476889451" endProfile="ivent_auto_2x2v_bau_glissiere_PAU Invert" name="" startProfile="ivent_auto_2x2v_bau_glissiere_PAU Invert"/>
+            <Portion endDistance="370.179476889451" endProfile="ivent_auto_2x2v_bau_glissiere" name="" startProfile="ivent_auto_2x2v_bau_glissiere_PAU Invert"/>
+            <Portion endDistance="382.179476889451" endProfile="ivent_auto_2x2v_bau_glissiere_PAU" name="" startProfile="ivent_auto_2x2v_bau_glissiere"/>
+            <Portion endDistance="422.179476889451" endProfile="ivent_auto_2x2v_bau_glissiere_PAU" name="" startProfile="ivent_auto_2x2v_bau_glissiere_PAU"/>
+            <Portion endDistance="459.21226101812" endProfile="ivent_auto_2x2v_bau_glissiere" name="" startProfile="ivent_auto_2x2v_bau_glissiere_PAU"/>
+            <Portion endDistance="803.20635175861" endProfile="ivent_auto_2x2v_bau_glissiere" name="" startProfile="ivent_auto_2x2v_bau_glissiere"/>
+            <Portion endDistance="1217.35214855432" endProfile="Highway_2x3_Lanes_entry+exit" name="" startProfile="ivent_auto_2x2v_bau_glissiere"/>
+            <Portion endDistance="1286.17947688945" endProfile="Highway_2x3_Lanes" name="" startProfile="Highway_2x3_Lanes"/>
+            <Portion endDistance="1318.17947688945" endProfile="Highway_2x3_Lanes_PAU Invert" name="" startProfile="Highway_2x3_Lanes"/>
+            <Portion endDistance="1358.17947688945" endProfile="Highway_2x3_Lanes_PAU Invert" name="" startProfile="Highway_2x3_Lanes_PAU Invert"/>
+            <Portion endDistance="1370.17947688945" endProfile="Highway_2x3_Lanes" name="" startProfile="Highway_2x3_Lanes_PAU Invert"/>
+            <Portion endDistance="1382.17947688945" endProfile="Highway_2x3_Lanes_PAU" name="" startProfile="Highway_2x3_Lanes"/>
+            <Portion endDistance="1422.17947688945" endProfile="Highway_2x3_Lanes_PAU" name="" startProfile="Highway_2x3_Lanes_PAU"/>
+            <Portion endDistance="1454.17947688945" endProfile="Highway_2x3_Lanes" name="" startProfile="Highway_2x3_Lanes_PAU"/>
+            <Portion endDistance="2286.17947688945" endProfile="Highway_2x3_Lanes" name="" startProfile="Highway_2x3_Lanes"/>
+            <Portion endDistance="2318.17947688945" endProfile="Highway_2x3_Lanes_PAU Invert" name="" startProfile="Highway_2x3_Lanes"/>
+            <Portion endDistance="2358.17947688945" endProfile="Highway_2x3_Lanes_PAU Invert" name="" startProfile="Highway_2x3_Lanes_PAU Invert"/>
+            <Portion endDistance="2370.17947688945" endProfile="Highway_2x3_Lanes" name="" startProfile="Highway_2x3_Lanes_PAU Invert"/>
+            <Portion endDistance="2382.17947688945" endProfile="Highway_2x3_Lanes_PAU" name="" startProfile="Highway_2x3_Lanes"/>
+            <Portion endDistance="2422.17947688945" endProfile="Highway_2x3_Lanes_PAU" name="" startProfile="Highway_2x3_Lanes_PAU"/>
+            <Portion endDistance="2454.17947688945" endProfile="Highway_2x3_Lanes" name="" startProfile="Highway_2x3_Lanes_PAU"/>
+            <Portion endDistance="3286.17947688945" endProfile="Highway_2x3_Lanes" name="" startProfile="Highway_2x3_Lanes"/>
+            <Portion endDistance="3318.17947688945" endProfile="Highway_2x3_Lanes_PAU Invert" name="" startProfile="Highway_2x3_Lanes"/>
+            <Portion endDistance="3358.17947688945" endProfile="Highway_2x3_Lanes_PAU Invert" name="" startProfile="Highway_2x3_Lanes_PAU Invert"/>
+            <Portion endDistance="3370.17947688945" endProfile="Highway_2x3_Lanes" name="" startProfile="Highway_2x3_Lanes_PAU Invert"/>
+            <Portion endDistance="3382.17947688945" endProfile="Highway_2x3_Lanes_PAU" name="" startProfile="Highway_2x3_Lanes"/>
+            <Portion endDistance="3422.17947688945" endProfile="Highway_2x3_Lanes_PAU" name="" startProfile="Highway_2x3_Lanes_PAU"/>
+            <Portion endDistance="3454.17947688945" endProfile="Highway_2x3_Lanes" name="" startProfile="Highway_2x3_Lanes_PAU"/>
+            <Portion endDistance="4286.17947688945" endProfile="Highway_2x3_Lanes" name="" startProfile="Highway_2x3_Lanes"/>
+            <Portion endDistance="4318.17947688945" endProfile="Highway_2x3_Lanes_PAU Invert" name="" startProfile="Highway_2x3_Lanes"/>
+            <Portion endDistance="4358.17947688945" endProfile="Highway_2x3_Lanes_PAU Invert" name="" startProfile="Highway_2x3_Lanes_PAU Invert"/>
+            <Portion endDistance="4370.17947688945" endProfile="Highway_2x3_Lanes" name="" startProfile="Highway_2x3_Lanes_PAU Invert"/>
+            <Portion endDistance="4382.17947688945" endProfile="Highway_2x3_Lanes_PAU" name="" startProfile="Highway_2x3_Lanes"/>
+            <Portion endDistance="4422.17947688945" endProfile="Highway_2x3_Lanes_PAU" name="" startProfile="Highway_2x3_Lanes_PAU"/>
+            <Portion endDistance="4454.17947688945" endProfile="Highway_2x3_Lanes" name="" startProfile="Highway_2x3_Lanes_PAU"/>
+            <Portion endDistance="5286.17947688945" endProfile="Highway_2x3_Lanes" name="" startProfile="Highway_2x3_Lanes"/>
+            <Portion endDistance="5318.17947688945" endProfile="Highway_2x3_Lanes_PAU Invert" name="" startProfile="Highway_2x3_Lanes"/>
+            <Portion endDistance="5358.17947688945" endProfile="Highway_2x3_Lanes_PAU Invert" name="" startProfile="Highway_2x3_Lanes_PAU Invert"/>
+            <Portion endDistance="5370.17947688945" endProfile="Highway_2x3_Lanes" name="" startProfile="Highway_2x3_Lanes_PAU Invert"/>
+            <Portion endDistance="5382.17947688945" endProfile="Highway_2x3_Lanes_PAU" name="" startProfile="Highway_2x3_Lanes"/>
+            <Portion endDistance="5422.17947688945" endProfile="Highway_2x3_Lanes_PAU" name="" startProfile="Highway_2x3_Lanes_PAU"/>
+            <Portion endDistance="5454.17947688945" endProfile="Highway_2x3_Lanes" name="" startProfile="Highway_2x3_Lanes_PAU"/>
+            <Portion endDistance="6000" endProfile="Highway_2x3_Lanes" name="" startProfile="Highway_2x3_Lanes"/>
+            <Portion endDistance="6400" endProfile="ivent_auto_2x2v_bau_glissiere" name="" startProfile="Highway_2x3_Lanes"/>
+            <Portion endDistance="7600" endProfile="ivent_auto_2x2v_bau_glissiere" name="" startProfile="ivent_auto_2x2v_bau_glissiere"/>
+          </Portions>
+          <ClippedDatas>
+            <TrackClippedData mass="-1" name="SIGN_Phone_HighwayNG" sequenceOrientation="0">
+              <ExternalElement flipped="0" path="3DObjects/signal/FR/SIGN_Phone_HighwayNG.ive"/>
+              <TrackClip abscissa="358.185176436259" distance="-15.0446157775076" elevation="0" heading="1.57079601287842" vertical="1"/>
+              <TrackScope bottom="0" from="0" left="0" right="0" to="0" top="0" way=""/>
+            </TrackClippedData>
+            <TrackClippedData mass="-1" name="SIGN_Phone_HighwayNG 2" sequenceOrientation="0">
+              <ExternalElement flipped="0" path="3DObjects/signal/FR/SIGN_Phone_HighwayNG.ive"/>
+              <TrackClip abscissa="382.153863569314" distance="14.8734046412584" elevation="0" heading="4.71238899230957" vertical="1"/>
+              <TrackScope bottom="0" from="0" left="0" right="0" to="0" top="0" way=""/>
+            </TrackClippedData>
+            <TrackClippedData mass="-1" name="SIGN_Phone_HighwayNG 3" sequenceOrientation="0">
+              <ExternalElement flipped="0" path="3DObjects/signal/FR/SIGN_Phone_HighwayNG.ive"/>
+              <TrackClip abscissa="1358.21068128765" distance="-18.9172947295827" elevation="0" heading="1.57079601287842" vertical="1"/>
+              <TrackScope bottom="0" from="0" left="0" right="0" to="0" top="0" way=""/>
+            </TrackClippedData>
+            <TrackClippedData mass="-1" name="SIGN_Phone_HighwayNG 4" sequenceOrientation="0">
+              <ExternalElement flipped="0" path="3DObjects/signal/FR/SIGN_Phone_HighwayNG.ive"/>
+              <TrackClip abscissa="1382.16666207673" distance="18.9348992506929" elevation="0" heading="4.71238899230957" vertical="1"/>
+              <TrackScope bottom="0" from="0" left="0" right="0" to="0" top="0" way=""/>
+            </TrackClippedData>
+            <TrackClippedData mass="-1" name="SIGN_Phone_HighwayNG 5" sequenceOrientation="0">
+              <ExternalElement flipped="0" path="3DObjects/signal/FR/SIGN_Phone_HighwayNG.ive"/>
+              <TrackClip abscissa="2358.21749419157" distance="-19.1582757496788" elevation="0" heading="1.57079601287842" vertical="1"/>
+              <TrackScope bottom="0" from="0" left="0" right="0" to="0" top="0" way=""/>
+            </TrackClippedData>
+            <TrackClippedData mass="-1" name="SIGN_Phone_HighwayNG 6" sequenceOrientation="0">
+              <ExternalElement flipped="0" path="3DObjects/signal/FR/SIGN_Phone_HighwayNG.ive"/>
+              <TrackClip abscissa="2382.1490564635" distance="18.8241486952916" elevation="0" heading="4.71238899230957" vertical="1"/>
+              <TrackScope bottom="0" from="0" left="0" right="0" to="0" top="0" way=""/>
+            </TrackClippedData>
+            <TrackClippedData mass="-1" name="SIGN_Phone_HighwayNG 7" sequenceOrientation="0">
+              <ExternalElement flipped="0" path="3DObjects/signal/FR/SIGN_Phone_HighwayNG.ive"/>
+              <TrackClip abscissa="3358.18868341242" distance="-18.9876361633427" elevation="0" heading="1.57079601287842" vertical="1"/>
+              <TrackScope bottom="0" from="0" left="0" right="0" to="0" top="0" way=""/>
+            </TrackClippedData>
+            <TrackClippedData mass="-1" name="SIGN_Phone_HighwayNG 8" sequenceOrientation="0">
+              <ExternalElement flipped="0" path="3DObjects/signal/FR/SIGN_Phone_HighwayNG.ive"/>
+              <TrackClip abscissa="3382.17155702656" distance="18.9363551522383" elevation="0" heading="4.71238899230957" vertical="1"/>
+              <TrackScope bottom="0" from="0" left="0" right="0" to="0" top="0" way=""/>
+            </TrackClippedData>
+            <TrackClippedData mass="-1" name="SIGN_Phone_HighwayNG 9" sequenceOrientation="0">
+              <ExternalElement flipped="0" path="3DObjects/signal/FR/SIGN_Phone_HighwayNG.ive"/>
+              <TrackClip abscissa="4358.19632294714" distance="-19.0998298474161" elevation="0" heading="1.57079601287842" vertical="1"/>
+              <TrackScope bottom="0" from="0" left="0" right="0" to="0" top="0" way=""/>
+            </TrackClippedData>
+            <TrackClippedData mass="-1" name="SIGN_Phone_HighwayNG 10" sequenceOrientation="0">
+              <ExternalElement flipped="0" path="3DObjects/signal/FR/SIGN_Phone_HighwayNG.ive"/>
+              <TrackClip abscissa="4382.17179916004" distance="18.8225505991453" elevation="0" heading="4.71238899230957" vertical="1"/>
+              <TrackScope bottom="0" from="0" left="0" right="0" to="0" top="0" way=""/>
+            </TrackClippedData>
+            <TrackClippedData mass="-1" name="SIGN_Phone_HighwayNG 11" sequenceOrientation="0">
+              <ExternalElement flipped="0" path="3DObjects/signal/FR/SIGN_Phone_HighwayNG.ive"/>
+              <TrackClip abscissa="5358.20136384833" distance="-19.0046924818296" elevation="0" heading="1.57079601287842" vertical="1"/>
+              <TrackScope bottom="0" from="0" left="0" right="0" to="0" top="0" way=""/>
+            </TrackClippedData>
+            <TrackClippedData mass="-1" name="SIGN_Phone_HighwayNG 12" sequenceOrientation="0">
+              <ExternalElement flipped="0" path="3DObjects/signal/FR/SIGN_Phone_HighwayNG.ive"/>
+              <TrackClip abscissa="5382.16092140169" distance="18.885738939234" elevation="0" heading="4.71238899230957" vertical="1"/>
+              <TrackScope bottom="0" from="0" left="0" right="0" to="0" top="0" way=""/>
+            </TrackClippedData>
+          </ClippedDatas>
+        </Track>
+      </Tracks>
+      <TrafficLightGroups/>
+    </RoadNetwork>
+    <Trajectories/>
+    <TrajectoryParts/>
+    <TerrainContours>
+      <TerrainContour contourPoints="5398.98 4516.01 130.484 5406.21 4557.7 129.987 5333.95 4578.76 129.782 5298.79 4589.01 129.794 5240.74 4605.92 129.737 5211.64 4614.4 122.87 5190.59 4620.54 120 5188.66 4621.1 120 5186.69 4621.44 120 5182.75 4622.12 120 5178.27 4622.9 120 5174.32 4623.58 120 5169.84 4624.35 120 5165.9 4625.03 120 5163.93 4625.37 120 5161.91 4625.44 120 5140.21 4626.17 122.897 5109.41 4627.2 129.737 5057.1 4628.95 129.787 5012.75 4630.44 129.785 4913.43 4633.77 129.964 4898.77 4548.22 130.668 4884.88 4463.79 136.122 4872.69 4389.7 140.908 4856.85 4300.79 129.394 4844.79 4233.07 120.624 4830.88 4145.63 119.732 4818.12 4065.43 118.914 4801.99 3955.12 119.209 4786.3 3863.25 119.42 4769.51 3768.47 118.634 4756.28 3691.75 118.577 4747.06 3630.5 121.392 4736.59 3587.65 123.631 4711.73 3532.81 124.926 4681.91 3454.82 124.407 4675.29 3384.12 124.513 4669.35 3316.16 121.233 4655.27 3256.77 117.465 4633.28 3194.96 116.355 4613.53 3141.16 116.191 4592.29 3085.96 116.039 4571.69 3035 116.3 4549.2 2984.55 115.443 4524.49 2933.14 111.836 4498.74 2882.34 109.365 4472.16 2832.81 108.866 4444.35 2783.94 108.352 4426.04 2751.94 105.944 4397.87 2706.57 107.757 4366.92 2657.97 110.082 4329.25 2601.67 110.48 4295.16 2550.2 111.366 4253.76 2498.16 108.62 4200.97 2443.78 106.704 4150.53 2388.59 104.62 4103.52 2339.27 102.916 4063.24 2299.79 101.08 4022.17 2261 102.838 3982.03 2224.87 102.354 3922.08 2175.36 100.445 3874.06 2134.78 96.4785 3833.74 2105.12 97.3164 3752.5 2046.06 92.2644 3651.48 1977.22 86.583 3556.06 1909.26 87.845 3457.1 1841.89 90.5977 3359.69 1774.6 90.2618 3260.31 1707.08 85.8084 3161.25 1639.64 80.0379 3062.54 1571.66 76.5777 2965.79 1505.48 69.9292 2864.08 1438.9 65.6758 2764.33 1367.69 64.6853 2667.59 1301.91 59.8229 2579.41 1242.24 56.5893 2485.51 1184.92 52.8382 2412.85 1156.7 50.8957 2225.89 1084.09 43.1606 2073.28 1024.82 30.358 1995.24 994.513 26.1019 1882.22 950.62 19.9388 1814.65 924.374 16.2535 1814.01 924.156 15.88 1804.88 921.768 2.40421 1778.34 908.488 -15.2325 1748.13 891.668 -12.9176 1728.04 879.242 5.67316 1719.01 873.676 18.8739 1718.13 873.257 19.3356 1138.1 647.063 8.66295 805.25 323.773 9.05104 709.122 308.693 12.7864 617.131 299.066 14.3742 516.36 294.114 9.87733 426.475 290.374 12.1171 337.444 291.236 10.5662 250.388 290.193 11.3175 128.489 289.011 5.12984 37.2112 288.916 2.24687 15.6812 129.014 2.60067 8.19503 73.4137 1.87068 7.27646 66.5915 1.78751 3.16481 36.0543 0.453756 0.269359 14.55 -1.52588e-005 -1.96251e-007 12.55 0 -1.96251e-007 10.55 0 -1.96251e-007 6.55 0 -1.96251e-007 2 0 -1.96251e-007 -2 0 -1.96251e-007 -6.55 0 -1.96251e-007 -10.55 0 5.42427e-005 -12.5497 0 0.399207 -14.55 -1.52588e-005 4.77589 -36.4876 0.567552 10.6112 -65.7364 2.23992 10.863 -66.9987 2.29246 13.1191 -78.3074 2.47111 17.2131 -98.8282 2.20594 49.6486 -261.409 1.89817 81.9019 -261.391 2.2008 191.184 -261.51 6.52412 296.281 -261.313 6.92406 410.443 -262.817 8.9197 522.361 -256.809 10.787 631.109 -251.04 9.19506 745.435 -240.875 9.23153 854.036 -227.985 10.0199 939.649 -217.036 9.70143 1136.14 -269.743 -3.05176e-005 1688.46 -272.652 -3.05176e-005 2164.05 -23.0483 24.0052 2181.66 -13.3176 12.2706 2201.19 -6.2839 -4.74585 2221.85 5.82767 -4.27151 2242.44 19.7891 12.2572 2260.78 29.4266 23.097 2783.67 763.008 53.2153 2869 840.362 56.4098 2950.86 904.406 60.5258 3048.37 971.037 63.3686 3146.22 1036.01 66.4089 3251.06 1108.79 69.2194 3347.19 1175.76 73.1353 3444.92 1242.8 76.9862 3543.94 1310.39 78.8573 3642.95 1377.99 80.4885 3740.96 1445.82 86.228 3839.67 1512.47 85.3892 3937.24 1579.56 88.4843 4041.04 1650.44 87.0054 4126.79 1715.88 92.5219 4172.54 1750.09 93.6126 4215.93 1786.21 94.6504 4266.77 1827.68 95.8614 4315.58 1869.96 97.0255 4370.6 1919.41 98.3431 4422.19 1959.29 99.5755 4475.03 1998.08 103.056 4523.09 2037.5 108.003 4580.28 2086.32 112.688 4633.54 2139.79 112.426 4668.76 2193.24 112.419 4693.66 2256.98 111.822 4730.48 2315.81 111.601 4766.58 2364.88 111.674 4792.17 2411.93 111.716 4819.98 2459.42 111.691 4873.24 2523.03 116.633 4915.26 2592.18 120.467 4945.89 2648.96 120.456 4974.81 2705.89 121.223 5003.76 2766.04 120.497 5029.36 2826.25 125.103 5054.04 2884.2 128.171 5078.27 2946.78 131.199 5101.05 3013.63 132.408 5117.22 3068.99 133.311 5134.19 3110.55 132.488 5150.14 3178.7 133.595 5172.66 3252.72 134.154 5196.46 3294.36 133.733 5213.48 3350.18 134.234 5234.95 3422.06 133.983 5239.77 3478.3 133.513 5236.92 3557.06 133.232 5244.39 3621.96 132.968 5254.83 3684.28 132.677 5265.95 3747.02 131.89 5276.93 3810.13 131.628 5290.3 3888.23 129.588 5306.14 3978.76 129.683 5308.46 3992.24 130.111 5318.29 4049.49 131.933 5328.73 4110.3 133.867 5341.37 4182.63 134.812 5356.3 4268 135.927 5369.18 4343.11 133.851 5383.42 4426.19 131.555 5398.98 4516.01 130.484 "/>
+    </TerrainContours>
+    <ClippedDatas/>
+  </SubNetwork>
+
+</RoadXML>

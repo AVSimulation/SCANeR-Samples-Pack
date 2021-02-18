@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<vehicle version="0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <wheelBase>2.7</wheelBase>
+
+  <rideHeight>0.2</rideHeight>
+
+  <csvFile>hostvehicle.csv</csvFile>
+
+</vehicle>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<SensorModelRoot version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <SensorModel>
+    <CameraSensorModel>
+      <TargetSensorOption>
+        <includeWheelsBB>0</includeWheelsBB>
+        <logicalComputeBB>0</logicalComputeBB>
+      </TargetSensorOption>
+      <Focal>
+        <aspectRatio>2</aspectRatio>
+        <cartoFile>Barrel_DistortionMap.csv</cartoFile>
+        <ccdSize>0.0027 0.00475</ccdSize>
+        <dimensionType>0</dimensionType>
+        <focalLength>0.065</focalLength>
+        <fov>1.5707963267949 0.698131700797732</fov>
+        <fps>30</fps>
+        <hOffset>0</hOffset>
+        <hResolution>400</hResolution>
+        <keepDimAspectRatio>1</keepDimAspectRatio>
+        <keepFOVAspectRatio>1</keepFOVAspectRatio>
+        <keepResAspectRatio>1</keepResAspectRatio>
+        <maxRange>20</maxRange>
+        <name>Focal 0</name>
+        <position>0 0 0 0 0 0</position>
+        <useCarto>0</useCarto>
+        <useFOV>1</useFOV>
+        <vOffset>0</vOffset>
+        <vResolution>300</vResolution>
+        <DetectableArea>
+          <name>3</name>
+          <range>20</range>
+          <sample>2</sample>
+        </DetectableArea>
+      </Focal>
+    </CameraSensorModel>
+  </SensorModel>
+
+</SensorModelRoot>

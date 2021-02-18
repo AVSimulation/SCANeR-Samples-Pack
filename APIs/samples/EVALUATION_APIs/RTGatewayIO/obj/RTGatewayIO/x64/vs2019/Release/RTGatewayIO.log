@@ -1,0 +1,17 @@
+﻿Build started 2021/01/28 13:20:19.
+     1>Project "D:\AVSimulation\SCANeRstudio_2021\APIs\samples\EVALUATION_APIs\RTGatewayIO\RTGatewayIO.vcxproj" on node 3 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /MP /O2 /D _WINSOCK_DEPRECATED_NO_WARNINGS /D WIN32 /D NDEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D WINVER=0x502 /D _WIN32_WINNT=0x502 /D NO_WARN_MBCS_MFC_DEPRECATION /D _SCL_SECURE_NO_WARNINGS /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"obj\RTGatewayIO\x64/vs2019\Release\\" /Fd"obj\RTGatewayIO\x64/vs2019\Release\vc120.pdb" /Gd /TP /errorReport:prompt RTGatewayIO.cpp UDPProtocol.cpp UDPSocket.cpp
+         RTGatewayIO.cpp
+         UDPProtocol.cpp
+         UDPSocket.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"../../../bin\x64/vs2019\RTGatewayIO.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:../../../../lib\x64/vs2019 ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"../../../bin\x64/vs2019\RTGatewayIO.pdb" /SUBSYSTEM:CONSOLE /LARGEADDRESSAWARE /OPT:REF /OPT:ICF /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"../../../bin\x64/vs2019\RTGatewayIO.lib" /MACHINE:X64 /SAFESEH:NO obj\RTGatewayIO\x64/vs2019\Release\RTGatewayIO.obj
+         obj\RTGatewayIO\x64/vs2019\Release\UDPProtocol.obj
+         obj\RTGatewayIO\x64/vs2019\Release\UDPSocket.obj
+         RTGatewayIO.vcxproj -> D:\AVSimulation\SCANeRstudio_2021\APIs\samples\EVALUATION_APIs\RTGatewayIO\../../../bin\x64/vs2019\RTGatewayIO.exe
+     1>Done Building Project "D:\AVSimulation\SCANeRstudio_2021\APIs\samples\EVALUATION_APIs\RTGatewayIO\RTGatewayIO.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.71

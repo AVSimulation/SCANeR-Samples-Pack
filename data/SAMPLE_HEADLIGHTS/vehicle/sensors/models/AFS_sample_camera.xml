@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<SensorModelRoot version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <SensorModel>
+    <CameraSensorModel>
+      <Focal>
+        <aspectRatio>2</aspectRatio>
+        <cartoFile>Barrel_DistortionMap.csv</cartoFile>
+        <ccdSize>0.00475 0.0027</ccdSize>
+        <dimensionType>0</dimensionType>
+        <focalLength>0.065</focalLength>
+        <fov>1.39626340159546 0.698131700797732</fov>
+        <fps>30</fps>
+        <hOffset>0</hOffset>
+        <hResolution>400</hResolution>
+        <keepDimAspectRatio>0</keepDimAspectRatio>
+        <keepFOVAspectRatio>0</keepFOVAspectRatio>
+        <keepResAspectRatio>1</keepResAspectRatio>
+        <maxRange>300</maxRange>
+        <useCarto>0</useCarto>
+        <useFOV>1</useFOV>
+        <vOffset>0</vOffset>
+        <vResolution>300</vResolution>
+        <DetectableTarget>
+          <name>13</name>
+          <range>150</range>
+          <visibility>0</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>2</name>
+          <range>300</range>
+          <visibility>0</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>3</name>
+          <range>150</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>4</name>
+          <range>150</range>
+          <visibility>0</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>5</name>
+          <range>150</range>
+          <visibility>0</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>6</name>
+          <range>150</range>
+          <visibility>0</visibility>
+        </DetectableTarget>
+      </Focal>
+    </CameraSensorModel>
+  </SensorModel>
+
+</SensorModelRoot>

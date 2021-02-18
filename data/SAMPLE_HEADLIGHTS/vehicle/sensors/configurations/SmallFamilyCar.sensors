@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<SensorsConfiguration version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <SensorConfiguration>
+    <Sensor>
+      <id>0</id>
+      <isVisible>1</isVisible>
+      <name>longRadar</name>
+      <position>3.48 0 0.5 0 0 0</position>
+      <sensorModelName>longRadar</sensorModelName>
+      <RadarSensor>
+        <targetInfrastructure>1</targetInfrastructure>
+        <targetPedestrians>1</targetPedestrians>
+        <targetVehicles>1</targetVehicles>
+      </RadarSensor>
+      <Output>
+        <outputName>sensorTarget</outputName>
+        <outputReferenceFrame></outputReferenceFrame>
+      </Output>
+    </Sensor>
+    <Sensor>
+      <id>0</id>
+      <isVisible>1</isVisible>
+      <name>GPSSensor</name>
+      <position>0 0 0 0 0 0</position>
+      <sensorModelName>GPSSensor</sensorModelName>
+      <GPSSensor>
+        <enabled>1</enabled>
+        <ipADASRP>localhost</ipADASRP>
+        <portADASRP>9998</portADASRP>
+        <sendADASRP>0</sendADASRP>
+      </GPSSensor>
+      <Output>
+        <outputName>gpsCoordinates</outputName>
+        <outputReferenceFrame></outputReferenceFrame>
+      </Output>
+    </Sensor>
+  </SensorConfiguration>
+
+</SensorsConfiguration>
