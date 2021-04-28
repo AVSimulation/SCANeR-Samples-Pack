@@ -194,19 +194,6 @@ The camera sensor model used is: FrontCamera_Lanes_Lines</description>
         <vehicleLODScale>1</vehicleLODScale>
       </Viewing>
     </Visual>
-    <ScenarioScript>
-      <isScriptActive>1</isScriptActive>
-      <script>
-TYPEOF SCENARIO (0)
-{
-	LABEL="Main"
-	FILE="EVAL_LATERAL_CTRL_Main"
-	TASK_KIND="0"
-}
-</script>
-      <scriptLanguage></scriptLanguage>
-      <scriptName>Main</scriptName>
-    </ScenarioScript>
     <Vehicle>
       <cabin></cabin>
       <decorationName></decorationName>
