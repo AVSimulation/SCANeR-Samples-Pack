@@ -2,6 +2,9 @@
 
 # Samples Pack Manual # 
 
+This is the manual for Samples-Pack users.
+For devs who want to contribute to the Samples-Pack, check the [Samples Pack Developper's Manual](./README_dev.md)
+
 ## 1. INSTALLATION ## 
 
 ### Pre-requisites ### 
