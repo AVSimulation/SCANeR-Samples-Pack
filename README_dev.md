@@ -1,19 +1,19 @@
 # Samples-Pack Developper’s Manual
 
 ## 1. Prerequisites
-### 1.1. GitHub Account
+### GitHub Account
 An account using your company email (avsimulation.fr) is required.
 Upon request, AVSimulation sends you an e-mail invitation to join the repo.
 
-### 1.2. Install Git
+### Install Git
 Get the Git Client here : https://git-scm.com/download/win
 Install with default settings (Git Bash is required, Git GUI is good to have)
 
-### 1.3. SCANeR Studio 2021.1
+### SCANeR Studio 2021.1
 A valid installation of SCANeR Studio 2021.1r34 or above is required.
 
 ## 2. First time installation
-### 2.1. Set up the Git local repo
+### Set up the Git local repo
 * Open folder `%STUDIO_PATH%/SCANeRstudio_2021`
 * `Right click > Git Bash here`
 * In the Git Bash console, run the following commands
@@ -42,7 +42,7 @@ From https://github.com/AVSGuillaume/Samples-Pack
  * [new branch]      master     -> origin/master
  * [new tag]         v1.0       -> v1.0
 ```
-### 2.2. Configuration.cfg
+### Configuration.cfg
 Configuration paths have to be added manually in %STUDIO_PATH%/Configurations.cfg
 ```
 SAMPLE_2021_ADAS = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_ADAS
@@ -60,5 +60,6 @@ SAMPLE_2021_VEHICLE_PLAYER = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_VEHI
 ```
 ## 3. Work with Samples-Pack on Git
 
+(to be done)
 
 	
