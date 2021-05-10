@@ -43,9 +43,9 @@ git checkout -t origin/main
 ```
 This gets the latest working version of the Samples-Pack
 
-### Configuration.cfg
+### configuration.cfg
 
-Configuration paths have to be added manually in `%STUDIO_PATH%/Configurations.cfg`
+Configuration paths have to be added manually in `%STUDIO_PATH%/configurations.cfg`
 ```
 SAMPLE_2021_ADAS = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_ADAS
 SAMPLE_2021_ADAS_LKA_ACC = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_ADAS_LKA_ACC
