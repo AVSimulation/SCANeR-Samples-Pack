@@ -120,7 +120,7 @@ When you finished doing the modification and the Samples Pack works, push the br
 git push origin GA_Fix_Headlights_Framerate
 ```
 * "origin" points to the GitHub repository
-* after "/" is the name of your branch
+* The last parameter is the name of your branch
 
 ### Request merge
 
