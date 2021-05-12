@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+# Images
+doc/help/html/
