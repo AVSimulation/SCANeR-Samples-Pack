@@ -4,13 +4,13 @@
   <Scenario>
     <description>-------------------------------------
 Scenario:
-The EGO vehicle (ID 0) is controlled by a virtual driver (driver commands emulator) with the following instruction: 
+The EGO vehicle (ID 0) is equiped with a functional radar sensor and controlled by a virtual driver (driver commands emulator) with the following instruction: 
 - Streering wheel anle 0°.
 - Initial speed 50 Km/h.
 - From 0 to 30 seconds the speed is constant 50 Km/h.
 - The Pedestrian (ID 1) is inactive when the scenario begin.
 - When the EGO vehicle goes over the "pedestrianActivation" trigger then the Pedestrian cross the road whitout paying attention to the vehicle.
-- An ADAS (developed using the SCANeR API) force the vehicle to brake when the vehicle is a distance of less than 20 meters (by default, this distance can be configured using the dynamic variable initialization).
+- An ADAS (connected using the SCANeR API) forces the vehicle to brake when the vehicle is at a distance  less than 20 meters (by default, this distance can be configured using the dynamic variable initialization).
 -------------------------------------
 Needed modules:
 ACQUISITION, MODELHANDLER, SCENARIO, SENSORS, WALKERTRAFFIC
