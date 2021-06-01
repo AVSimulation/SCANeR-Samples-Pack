@@ -39,13 +39,14 @@ git fetch
 * When prompted, login to GitHub with the account linked to your company e-mail.
 * Once fetching is finished, run the following command in the Git Bash console
 ```
-git checkout -t origin/main
+git checkout -b 2021.2 origin/2021.2
 ```
-This gets the latest working version of the Samples-Pack
+This creates a new local branch "2021.2" that with upstream "origin/2021.2"
+Now your working tree has the latest version of the Samples Pack files.
 
 ### configuration.cfg
 
-Configuration paths have to be added manually in `%STUDIO_PATH%/configurations.cfg`
+Configuration paths still needs to be added manually in `%STUDIO_PATH%/configurations.cfg`
 ```
 SAMPLE_2021_ADAS = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_ADAS
 SAMPLE_2021_ADAS_LKA_ACC = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_ADAS_LKA_ACC
@@ -62,47 +63,50 @@ SAMPLE_2021_VEHICLE_PLAYER = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_VEHI
 ```
 Now the Samples Pack can be used normally
 
-## 3. Publish a modification
-
-### First time setup
+### Set your Git credentials
 
 The Git user name must be set up at least once before commiting.
 ```
 git config --global user.email "name.surname@avsimulation.fr"
 git config --global user.name "Name Surname"
 ```
+Now the remote repository can accept your future modifications.
+
+### Ignore SCANeR installation files
+
+By default, Git lists all files. This includes SCANeR studio installed files that are not related to the Samples Pack.  
+Try to do ```git status``` and you will see the very long list. It is difficult to find the relevant modification of Samples Pack files in the middle of it.
+
+In order to ignore these files from now on, add all of these file to your local exclude list.  
+(Do this only when you don't have uncommitted Samples Pack changes, or they will be added to the exclude list.)
+```
+git ls-files --others --exclude-standard >> .git/info/exclude
+```
+Git will stop mentionning these files. They will remain untouched.
+
+Over time, if you work and create files that are not related to the Samples Pack (e.g.: test configuration), run the command again to update your exclude list.
+
+## 3. Publish a modification
 
 ### Get the latest version
 
-Before starting to work, make sure that you have the latest version of the Samples Pack.
+Before starting to work, make sure that you have the latest version of the Samples Pack.  
+(Make sure that you are on a working branch with a valid uplink.)
 ```
-git checkout -t origin/main
+git fetch
+git pull
 ```
+This gets the last modifications from the remote, and applies it to your working branch.
 
-### Create your branch
-
-Then, create a local branch to start working.
-```
-git checkout -b GA_Fix_Headlights_Framerate
-```
-No hard naming convention here, but consider including the following information in the branch name:
-* author: Your initials
-* type: "fix" or "improve" or "new"
-* task: If a related Jira task exists, write the ID
-* sample: Name of the modified sample
-* subject: One or two words to describe the modification
-This will help reviewers to keep track of pending modifications.
-
-### Modify
+### Start working
 
 You can perform the modifications on your local copy of the Samples Pack.
  
-Commit as mush as you want on your local branch.
+Commit changes on your working branch.
 * Check the list of modified files
 ```
 git status
 ```
-This also list all SCANeR files that are not in the Samples Pack. Ignore them and only look for yours.
 * Include new, modified or deleted files to your commit with
 ```
 git add path/to/my/file
@@ -111,73 +115,33 @@ git add path/to/my/file
 ```
 git commit -m "Replaced Simulink block"
 ```
-Parameter "-m" is the commit message that will help the reviewers.
+Parameter "-m" is the commit message that helps everyone know what you did.
 
 ### Push
 
 When you finished doing the modification and the Samples Pack works, push the branch to the GitHub server.
 ```
-git push origin GA_Fix_Headlights_Framerate
+git push
 ```
-* "origin" points to the GitHub repository
-* The last parameter is the name of your branch
-
-### Request merge
-
-You can request your modification to be released ("Pull request") in the public version of Samples Pack.
-A reviewer will check the modification and perform the release.
-
-* Go to the list of branches of the GitHub repository: https://github.com/AVSGuillaume/Samples-Pack/branches
-You should see your branch in the list.
-![Your branches](doc/assets/Your%20branches.png)
-* Select `New pull request`
-* Add details that will help the reviewer
-* Finish with `Create pull request`
-
-The other devs are notified.
-A reviewer will be designated to validate the modification.
-
-## 4. Review a modification
-
-The reviewer is not the same person who did the modification.
-
-Current Pull Requests can be see on this page: https://github.com/AVSGuillaume/Samples-Pack/pulls.
-
-When you are the reviewer:
-* Select the Pull Request to review in order to see the details
-* Tab "Files changed" gives an overview of modifications. All samples whose files have been touched must be tested.
-* Tab "Conversation" allows for tracked discussion between modification dev and reviewer.
-
-### Test
-
-Get your local copy of the Samples Pack to include the modifications to review.
-```
-git checkout -t origin/GA_Fix_Headlights_Framerate
-```
-Run the Samples according to their respective manual.
+If you get an error, see next section.
 
 ### Merge
 
-Use the Pull Request page to take action according to your result.
-(https://github.com/AVSGuillaume/Samples-Pack/pulls)
+If it has been some time since you started working, it is possible that someone else in the team modified the Samples Pack in the mean time.
 
-* If anything is suspicious
-    * Use the "Conversation" tab to scold the modification dev.
-    * When the modification is done (by the dev or the reviewer), committed and pushed on the same branch, restart the review process.
-* If all is good, validate with button `Merge pull request` then `Confirm merge`
-
-### Publish
-
-The modification is now available on the branch "main".
-The working branch has been automatically deleted.
-
-Samples Pack devs who want to update with the latest modification must checkout "main" again:
+You need to merge the modifications locally before sending. First, get the remote modifications.
 ```
-git checkout -t origin/main
+git pull
 ```
+* If everything goes well, there is no error message.
+* If there are conflicts, follow the guidelines to resolve file by file:
+https://akshayranganath.github.io/Git-Pull-Handling-Merge-Conflict/
 
-The public copy of the Samples Pack should be updated manually:
-* Get to the home page of the GitHub repo. https://github.com/AVSGuillaume/Samples-Pack/
-* Download the ZIP with button `Code > Download ZIP`
-* Replace the archive `stockage.avsimulation.com/Evaluation/2021/SCANeRstudio_SamplesPack.zip` via FTP
-* If they were modified, replace the PDF files of the Samples Pack Manual in `stockage.avsimulation.com/Evaluation/2021/`
+Once all is ready, create the merge commit
+```
+git commit -m "Merging with remote modifications"
+```
+And finally, send again
+```
+git push
+```
