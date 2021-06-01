@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<sce version="20.21.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<sce version="20.21.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <Scenario>
     <description></description>
@@ -91,48 +91,20 @@
       <finalTime>3600</finalTime>
       <stopAtFinalTime>0</stopAtFinalTime>
     </ScenarioStopCriteria>
-    <UserDataList/>
-    <Visual>
-      <Others>
-        <loadCache>0</loadCache>
-        <optimize>1</optimize>
-        <refreshRate>60</refreshRate>
-        <viewMode></viewMode>
-      </Others>
-      <Quality>
-        <anisotropicFiltering>8</anisotropicFiltering>
-        <antiAliasing>8</antiAliasing>
-        <fadeLOD>0</fadeLOD>
-      </Quality>
-      <RoadMarks>
-        <mode></mode>
-        <nodeName></nodeName>
-        <Interval>
-          <max>0</max>
-          <min>0</min>
-        </Interval>
-      </RoadMarks>
-      <Sfx>
-        <dazzleHalo>1</dazzleHalo>
-        <fog>1</fog>
-        <fogHalo>1</fogHalo>
-        <sky>1</sky>
-      </Sfx>
-      <Viewing>
-        <farPlane>5000</farPlane>
-        <nearPlane>1</nearPlane>
-        <terrainLODScale>1</terrainLODScale>
-        <vehicleLODScale>1</vehicleLODScale>
-      </Viewing>
-    </Visual>
-    <ScenarioScript>
-      <isScriptActive>1</isScriptActive>
-      <script>
+    <StoryBoard>
+      <firstStep>Main Step</firstStep>
+      <Step>
+        <description></description>
+        <hint></hint>
+        <name>Main Step</name>
+        <ScenarioScript>
+          <isScriptActive>1</isScriptActive>
+          <script>
 TYPEOF SCENARIO (0)
 {
 	IS_EXPANDED="1"
 	LABEL="Main"
-	FILE="result_scenario-importer_Sce_Sce_Main"
+	FILE="result_scenario-importer_Sce_Main"
 	TASK_KIND="0"
 
 	TYPEOF RULE (0)
@@ -182,9 +154,57 @@ TYPEOF SCENARIO (0)
 	}
 }
 </script>
-      <scriptLanguage></scriptLanguage>
-      <scriptName>Main</scriptName>
-    </ScenarioScript>
+          <scriptLanguage>mice</scriptLanguage>
+          <scriptName>Main</scriptName>
+        </ScenarioScript>
+      </Step>
+      <Transition>
+        <allConditionsTrue>1</allConditionsTrue>
+        <fromStep>Main Step</fromStep>
+        <name>Forward</name>
+        <toStep>BUILTIN_SUCCESS_ADB568D064DB408EAFDE1D4021E336DF</toStep>
+      </Transition>
+      <Transition>
+        <allConditionsTrue>0</allConditionsTrue>
+        <fromStep>Main Step</fromStep>
+        <name>Failure</name>
+        <toStep>BUILTIN_FAILURE_A36CBB59761A4AF1B2BACC50D71084AB</toStep>
+      </Transition>
+    </StoryBoard>
+    <UserDataList/>
+    <Visual>
+      <Others>
+        <loadCache>0</loadCache>
+        <optimize>1</optimize>
+        <refreshRate>60</refreshRate>
+        <viewMode></viewMode>
+      </Others>
+      <Quality>
+        <anisotropicFiltering>8</anisotropicFiltering>
+        <antiAliasing>8</antiAliasing>
+        <fadeLOD>0</fadeLOD>
+      </Quality>
+      <RoadMarks>
+        <mode></mode>
+        <nodeName></nodeName>
+        <Interval>
+          <max>0</max>
+          <min>0</min>
+        </Interval>
+      </RoadMarks>
+      <Sfx>
+        <dazzleHalo>1</dazzleHalo>
+        <fog>1</fog>
+        <fogHalo>1</fogHalo>
+        <sky>1</sky>
+      </Sfx>
+      <Viewing>
+        <farPlane>5000</farPlane>
+        <nearPlane>1</nearPlane>
+        <terrainLODScale>1</terrainLODScale>
+        <vehicleLODScale>1</vehicleLODScale>
+      </Viewing>
+    </Visual>
     <Vehicle>
       <cabin></cabin>
       <decorationName></decorationName>

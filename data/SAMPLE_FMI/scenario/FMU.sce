@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<sce version="20.21.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<sce version="20.21.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <Scenario>
     <description></description>
@@ -91,6 +91,9 @@
       <finalTime>3600</finalTime>
       <stopAtFinalTime>0</stopAtFinalTime>
     </ScenarioStopCriteria>
+    <StoryBoard>
+      <firstStep></firstStep>
+    </StoryBoard>
     <UserDataList/>
     <Visual>
       <Others>

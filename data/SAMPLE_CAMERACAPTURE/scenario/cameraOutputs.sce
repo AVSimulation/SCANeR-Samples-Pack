@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<sce version="20.21.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<sce version="20.21.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <Scenario>
     <description></description>
@@ -148,6 +148,226 @@
       <finalTime>10</finalTime>
       <stopAtFinalTime>1</stopAtFinalTime>
     </ScenarioStopCriteria>
+    <StoryBoard>
+      <firstStep>Main Step</firstStep>
+      <Step>
+        <description></description>
+        <hint></hint>
+        <name>Main Step</name>
+        <ScenarioScript>
+          <isScriptActive>1</isScriptActive>
+          <script>
+TYPEOF SCENARIO (0)
+{
+	IS_EXPANDED="1"
+	LABEL="Main"
+	FILE="cameraOutputs_Main"
+	TASK_KIND="0"
+
+	TYPEOF RULE (1)
+	{
+		IS_EXPANDED="1"
+		LABEL="Rule: Move pedestrian out of beam after 5s"
+
+		TYPEOF CONDITION (SUPEQUAL)
+		{
+			IS_EXPANDED="1"
+			MODIFIER="BECOMES_TRUE"
+
+			TYPEOF PARAMETER (OPERAND_1)
+			{
+				KIND="FUNCTION"
+
+				TYPEOF FUNCTION (GET_SCENARIO_CLOCK)
+				{
+				}
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (OPERAND_2)
+			{
+				KIND="USER"
+				VALUE="2"
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (SET_VHL_POSITION)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (VHL_NUMBER)
+			{
+				KIND="VEHICLE"
+				VALUE="1"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (MAP_XPOSITION)
+			{
+				KIND="USER"
+				VALUE="190.954"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (MAP_YPOSITION)
+			{
+				KIND="USER"
+				VALUE="3708.98"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (HEADING)
+			{
+				KIND="USER"
+				VALUE="0"
+				OWNER_FILE=""
+			}
+		}
+	}
+
+	TYPEOF RULE (2)
+	{
+		IS_EXPANDED="1"
+		LABEL="Rule: Move car out of beam after 10s"
+
+		TYPEOF CONDITION (SUPEQUAL)
+		{
+			IS_EXPANDED="1"
+			MODIFIER="BECOMES_TRUE"
+
+			TYPEOF PARAMETER (OPERAND_1)
+			{
+				KIND="FUNCTION"
+
+				TYPEOF FUNCTION (GET_SCENARIO_CLOCK)
+				{
+				}
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (OPERAND_2)
+			{
+				KIND="USER"
+				VALUE="5"
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (SET_VHL_POSITION)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (VHL_NUMBER)
+			{
+				KIND="VEHICLE"
+				VALUE="2"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (MAP_XPOSITION)
+			{
+				KIND="USER"
+				VALUE="186.295"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (MAP_YPOSITION)
+			{
+				KIND="USER"
+				VALUE="3714.54"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (HEADING)
+			{
+				KIND="USER"
+				VALUE="0"
+				OWNER_FILE=""
+			}
+		}
+	}
+
+	TYPEOF RULE (0)
+	{
+		IS_EXPANDED="1"
+		LABEL="Rule: Move car in beam after 15s"
+
+		TYPEOF CONDITION (SUPEQUAL)
+		{
+			IS_EXPANDED="1"
+			MODIFIER="BECOMES_TRUE"
+
+			TYPEOF PARAMETER (OPERAND_1)
+			{
+				KIND="FUNCTION"
+
+				TYPEOF FUNCTION (GET_SCENARIO_CLOCK)
+				{
+				}
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (OPERAND_2)
+			{
+				KIND="USER"
+				VALUE="8"
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (SET_VHL_POSITION)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (VHL_NUMBER)
+			{
+				KIND="VEHICLE"
+				VALUE="2"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (MAP_XPOSITION)
+			{
+				KIND="USER"
+				VALUE="294.059"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (MAP_YPOSITION)
+			{
+				KIND="USER"
+				VALUE="3785.22"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (HEADING)
+			{
+				KIND="USER"
+				VALUE="0"
+				OWNER_FILE=""
+			}
+		}
+	}
+}
+</script>
+          <scriptLanguage>mice</scriptLanguage>
+          <scriptName>Main</scriptName>
+        </ScenarioScript>
+      </Step>
+      <Transition>
+        <allConditionsTrue>1</allConditionsTrue>
+        <fromStep>Main Step</fromStep>
+        <name>Forward</name>
+        <toStep>BUILTIN_SUCCESS_ADB568D064DB408EAFDE1D4021E336DF</toStep>
+      </Transition>
+      <Transition>
+        <allConditionsTrue>0</allConditionsTrue>
+        <fromStep>Main Step</fromStep>
+        <name>Failure</name>
+        <toStep>BUILTIN_FAILURE_A36CBB59761A4AF1B2BACC50D71084AB</toStep>
+      </Transition>
+    </StoryBoard>
     <UserDataList/>
     <Visual>
       <Others>
@@ -564,206 +784,6 @@
         </Trajectory>
       </AirplaneDriver>
     </Driver>
-    <ScenarioScript>
-      <isScriptActive>1</isScriptActive>
-      <script>
-TYPEOF SCENARIO (0)
-{
-	IS_EXPANDED="1"
-	LABEL="Main"
-	FILE="cameraOutputs_Main"
-	TASK_KIND="0"
-
-	TYPEOF RULE (1)
-	{
-		IS_EXPANDED="1"
-		LABEL="Rule: Move pedestrian out of beam after 5s"
-
-		TYPEOF CONDITION (SUPEQUAL)
-		{
-			IS_EXPANDED="1"
-			MODIFIER="BECOMES_TRUE"
-
-			TYPEOF PARAMETER (OPERAND_1)
-			{
-				KIND="FUNCTION"
-
-				TYPEOF FUNCTION (GET_SCENARIO_CLOCK)
-				{
-				}
-				OWNER_FILE=""
-			}
-
-			TYPEOF PARAMETER (OPERAND_2)
-			{
-				KIND="USER"
-				VALUE="2"
-				OWNER_FILE=""
-			}
-		}
-
-		TYPEOF ACTION (SET_VHL_POSITION)
-		{
-			IS_EXPANDED="1"
-
-			TYPEOF PARAMETER (VHL_NUMBER)
-			{
-				KIND="VEHICLE"
-				VALUE="1"
-				OWNER_FILE=""
-			}
-
-			TYPEOF PARAMETER (MAP_XPOSITION)
-			{
-				KIND="USER"
-				VALUE="190.954"
-				OWNER_FILE=""
-			}
-
-			TYPEOF PARAMETER (MAP_YPOSITION)
-			{
-				KIND="USER"
-				VALUE="3708.98"
-				OWNER_FILE=""
-			}
-
-			TYPEOF PARAMETER (HEADING)
-			{
-				KIND="USER"
-				VALUE="0"
-				OWNER_FILE=""
-			}
-		}
-	}
-
-	TYPEOF RULE (2)
-	{
-		IS_EXPANDED="1"
-		LABEL="Rule: Move car out of beam after 10s"
-
-		TYPEOF CONDITION (SUPEQUAL)
-		{
-			IS_EXPANDED="1"
-			MODIFIER="BECOMES_TRUE"
-
-			TYPEOF PARAMETER (OPERAND_1)
-			{
-				KIND="FUNCTION"
-
-				TYPEOF FUNCTION (GET_SCENARIO_CLOCK)
-				{
-				}
-				OWNER_FILE=""
-			}
-
-			TYPEOF PARAMETER (OPERAND_2)
-			{
-				KIND="USER"
-				VALUE="5"
-				OWNER_FILE=""
-			}
-		}
-
-		TYPEOF ACTION (SET_VHL_POSITION)
-		{
-			IS_EXPANDED="1"
-
-			TYPEOF PARAMETER (VHL_NUMBER)
-			{
-				KIND="VEHICLE"
-				VALUE="2"
-				OWNER_FILE=""
-			}
-
-			TYPEOF PARAMETER (MAP_XPOSITION)
-			{
-				KIND="USER"
-				VALUE="186.295"
-				OWNER_FILE=""
-			}
-
-			TYPEOF PARAMETER (MAP_YPOSITION)
-			{
-				KIND="USER"
-				VALUE="3714.54"
-				OWNER_FILE=""
-			}
-
-			TYPEOF PARAMETER (HEADING)
-			{
-				KIND="USER"
-				VALUE="0"
-				OWNER_FILE=""
-			}
-		}
-	}
-
-	TYPEOF RULE (0)
-	{
-		IS_EXPANDED="1"
-		LABEL="Rule: Move car in beam after 15s"
-
-		TYPEOF CONDITION (SUPEQUAL)
-		{
-			IS_EXPANDED="1"
-			MODIFIER="BECOMES_TRUE"
-
-			TYPEOF PARAMETER (OPERAND_1)
-			{
-				KIND="FUNCTION"
-
-				TYPEOF FUNCTION (GET_SCENARIO_CLOCK)
-				{
-				}
-				OWNER_FILE=""
-			}
-
-			TYPEOF PARAMETER (OPERAND_2)
-			{
-				KIND="USER"
-				VALUE="8"
-				OWNER_FILE=""
-			}
-		}
-
-		TYPEOF ACTION (SET_VHL_POSITION)
-		{
-			IS_EXPANDED="1"
-
-			TYPEOF PARAMETER (VHL_NUMBER)
-			{
-				KIND="VEHICLE"
-				VALUE="2"
-				OWNER_FILE=""
-			}
-
-			TYPEOF PARAMETER (MAP_XPOSITION)
-			{
-				KIND="USER"
-				VALUE="294.059"
-				OWNER_FILE=""
-			}
-
-			TYPEOF PARAMETER (MAP_YPOSITION)
-			{
-				KIND="USER"
-				VALUE="3785.22"
-				OWNER_FILE=""
-			}
-
-			TYPEOF PARAMETER (HEADING)
-			{
-				KIND="USER"
-				VALUE="0"
-				OWNER_FILE=""
-			}
-		}
-	}
-}
-</script>
-      <scriptLanguage>mice</scriptLanguage>
-      <scriptName>Main</scriptName>
-    </ScenarioScript>
   </Scenario>
 
 </sce>
