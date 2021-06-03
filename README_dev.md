@@ -55,6 +55,7 @@ SAMPLE_2021_CARMAKER = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_CARMAKER
 SAMPLE_2021_DATAEXCHANGE = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_DATAEXCHANGE
 SAMPLE_2021_FMI = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_FMI
 SAMPLE_2021_HEADLIGHTS = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_HEADLIGHTS
+SAMPLE_2021_HEADLIGHTS_HPC = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_HEADLIGHTS_HPC  
 SAMPLE_2021_LATERAL_CTRL = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_LATERAL_CTRL
 SAMPLE_2021_LONGI_CTRL = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_LONGI_CTRL
 SAMPLE_2021_PIXEL_LIGHTING = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_PIXEL_LIGHTING
@@ -80,7 +81,7 @@ Try to do ```git status``` and you will see the very long list. It is difficult 
 In order to ignore these files from now on, add all of these file to your local exclude list.  
 (Do this only when you don't have uncommitted Samples Pack changes, or they will be added to the exclude list.)
 ```
-git ls-files --others --exclude-standard >> .git/info/exclude
+git ls-files --others --exclude-standard = .git/info/exclude
 ```
 Git will stop mentionning these files. They will remain untouched.
 
