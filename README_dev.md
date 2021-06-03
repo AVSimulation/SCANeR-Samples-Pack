@@ -123,7 +123,7 @@ When you finished doing the modification and the Samples Pack works, push the br
 ```
 git push
 ```
-If you get an error, see next section.
+If you get an error (rejected), see next section.
 
 ### Merge
 
@@ -133,15 +133,15 @@ You need to merge the modifications locally before sending. First, get the remot
 ```
 git pull
 ```
-* If everything goes well, there is no error message.
+* If everything goes well, there is no error message. Set a merge commit message when prompter.
 * If there are conflicts, follow the guidelines to resolve file by file:
-https://akshayranganath.github.io/Git-Pull-Handling-Merge-Conflict/
-
+https://akshayranganath.github.io/Git-Pull-Handling-Merge-Conflict/  
 Once all is ready, create the merge commit
 ```
-git commit -m "Merging with remote modifications"
+git commit -m "Merging"
 ```
-And finally, send again
+
+Finally, send again
 ```
 git push
 ```
