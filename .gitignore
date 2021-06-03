@@ -24,5 +24,11 @@
 *.a
 *.lib
 
+#
+.bdp
+.filters
+.log
+.tlog
+
 # Images
 doc/help/html/
