@@ -25,10 +25,18 @@
 *.lib
 
 #
-.bdp
-.filters
-.log
-.tlog
+*/.vs/
+*/obj/*
+*.iobj
+*.ipdb
+*.pdb
+*.filters
+*.log
+*.tlog
+*.vcxproj.user
+*.exe.recipe
+*.FileListAbsolute.txt
+data/*/record/*
 
 # Images
 doc/help/html/

@@ -21,27 +21,28 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{19F823E9-C5A5-4FEF-8CB0-B66B22FF38D6}</ProjectGuid>
     <RootNamespace>ScanerAPISensorsViewerPixelLighting</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
@@ -69,22 +70,22 @@
     <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>../../../../bin\$(TARGET_PLATFORM)\</OutDir>
+    <OutDir>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\bin\$(TARGET_PLATFORM)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>../../../../bin\$(TARGET_PLATFORM)\</OutDir>
+    <OutDir>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\bin\$(TARGET_PLATFORM)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>../../../../bin\$(TARGET_PLATFORM)\</OutDir>
+    <OutDir>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\bin\$(TARGET_PLATFORM)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>../../../../bin\$(TARGET_PLATFORM)\</OutDir>
+    <OutDir>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\bin\$(TARGET_PLATFORM)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>../..;../../../../include;$(OSG_ROOT)/include;C:\OSG_301\x64\vs2013\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\include;$(OSG_ROOT)/include;C:\OpenSceneGraph-3.6.5-VC2019-64-Release\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>BOOST_PYTHON_STATIC_LIB;OSG;NDEBUG;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -98,7 +99,7 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>SCANeR_API_C.lib;stk.lib;osgUtil.lib;OpenThreads.lib;osgViewer.lib;osgParticle.lib;osgGA.lib;osgSim.lib;osgText.lib;osg.lib;osgDB.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>../../../../lib\$(TARGET_PLATFORM);$(OSG_ROOT)\lib;C:\OSG_301\x64\vs2013\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\lib\$(TARGET_PLATFORM);$(OSG_ROOT)\lib;C:\OpenSceneGraph-3.6.5-VC2019-64-Release\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SubSystem>Console</SubSystem>
       <StripPrivateSymbols>
       </StripPrivateSymbols>
@@ -112,7 +113,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>../..;../../../../include;$(OSG_ROOT)/include;C:\OSG_301\x64\vs2013\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\include;$(OSG_ROOT)/include;C:\OpenSceneGraph-3.6.5-VC2019-64-Release\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>BOOST_PYTHON_STATIC_LIB;OSG;NDEBUG;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -126,7 +127,7 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>SCANeR_API_C.lib;stk.lib;osgUtil.lib;OpenThreads.lib;osgViewer.lib;osgParticle.lib;osgGA.lib;osgSim.lib;osgText.lib;osg.lib;osgDB.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>../../../../lib\$(TARGET_PLATFORM);$(OSG_ROOT)\lib;C:\OSG_301\x64\vs2013\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\lib\$(TARGET_PLATFORM);$(OSG_ROOT)\lib;C:\OpenSceneGraph-3.6.5-VC2019-64-Release\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX64</TargetMachine>
       <StripPrivateSymbols>
@@ -138,7 +139,7 @@
     <PreBuildEvent />
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>../..;../../../../include;$(OSG_ROOT)/include;C:\OSG_301\x64\vs2013\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\include;$(OSG_ROOT)/include;C:\OpenSceneGraph-3.6.5-VC2019-64-Release\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>BOOST_PYTHON_STATIC_LIB;OSG;_DEBUG;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -153,7 +154,7 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>SCANeR_API_C.lib;stk.lib;osgUtild.lib;OpenThreadsd.lib;osgViewerd.lib;osgGAd.lib;osgSimd.lib;osgTextd.lib;osgd.lib;osgDBd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>../../../../lib\$(TARGET_PLATFORM);$(OSG_ROOT)\lib;C:\OSG_301\x64\vs2013\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\lib\$(TARGET_PLATFORM);$(OSG_ROOT)\lib;C:\OpenSceneGraph-3.6.5-VC2019-64-Release\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <StripPrivateSymbols>
@@ -170,7 +171,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>../..;../../../../include;$(OSG_ROOT)/include;C:\OSG_301\x64\vs2013\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\include;$(OSG_ROOT)/include;C:\OpenSceneGraph-3.6.5-VC2019-64-Release\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>BOOST_PYTHON_STATIC_LIB;OSG;_DEBUG;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -185,7 +186,7 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>SCANeR_API_C.lib;stk.lib;osgUtild.lib;OpenThreadsd.lib;osgViewerd.lib;osgGAd.lib;osgSimd.lib;osgTextd.lib;osgd.lib;osgDBd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>../../../../lib\$(TARGET_PLATFORM);$(OSG_ROOT)\lib;C:\OSG_301\x64\vs2013\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\lib\$(TARGET_PLATFORM);$(OSG_ROOT)\lib;C:\OpenSceneGraph-3.6.5-VC2019-64-Release\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX64</TargetMachine>

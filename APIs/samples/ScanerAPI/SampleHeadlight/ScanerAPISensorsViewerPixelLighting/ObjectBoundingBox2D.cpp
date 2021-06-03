@@ -33,7 +33,7 @@ void ObjectBoundingBox2D::setPixelCoords(const stk::Vector3& bottomLeft, const s
 	(*verticesCoords)[3].set(topLeft.x, topLeft.y, topLeft.z);
 
 	//update geometry bounding box for the frustum culling to work properly
-	my2DBBoxGeometry->setInitialBound(my2DBBoxGeometry->computeBound());
+	my2DBBoxGeometry->setInitialBound(my2DBBoxGeometry->computeBoundingBox());
 }
 
 //=============================================================================

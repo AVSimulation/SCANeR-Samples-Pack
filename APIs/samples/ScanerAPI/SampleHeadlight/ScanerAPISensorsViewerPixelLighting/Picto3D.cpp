@@ -169,7 +169,7 @@ void Picto3D::setPixelCoords(int windowWidth, int windowHeight, const stk::Trans
 		*****/
 
 		//update geometry bounding box for the frustum culling to work properly
-		my2DBBoxGeometry->setInitialBound(my2DBBoxGeometry->computeBound());
+		my2DBBoxGeometry->setInitialBound(my2DBBoxGeometry->computeBoundingBox());
 	}
 }
 
@@ -290,5 +290,5 @@ void Picto3D::createGeode()
 	stateSet->setAttributeAndModes(new osg::Depth(osg::Depth::ALWAYS,0.0,1.0,false));
 	stateSet->setRenderBinDetails(20, "RenderBin");
 
-	my2DBBoxGeometry->setInitialBound(my2DBBoxGeometry->computeBound());
+	my2DBBoxGeometry->setInitialBound(my2DBBoxGeometry->computeBoundingBox());
 }

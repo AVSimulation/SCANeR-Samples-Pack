@@ -59,7 +59,7 @@ void ObjectBoundingBox::updatePoints(
 
 	//update geometry bounding box for the frustum culling to work properly
 	if (my3DBBoxGeometry)
-		my3DBBoxGeometry->setInitialBound(my3DBBoxGeometry->computeBound());
+		my3DBBoxGeometry->setInitialBound(my3DBBoxGeometry->computeBoundingBox());
 }
 
 //=============================================================================
@@ -197,7 +197,7 @@ void ObjectBoundingBox::create3DBoundingBox ()
 	my3DBBoxGeometry->setColorArray (my3DBBoxVerticesColors);
 	my3DBBoxGeometry->setColorBinding (osg::Geometry::BIND_PER_VERTEX);
 	my3DBBoxGeometry->addPrimitiveSet (pPoints);
-	my3DBBoxGeometry->setInitialBound (my3DBBoxGeometry->computeBound());
+	my3DBBoxGeometry->setInitialBound (my3DBBoxGeometry->computeBoundingBox());
 
 	if (myDebugDetectionPointsGeode == NULL)
 	{
