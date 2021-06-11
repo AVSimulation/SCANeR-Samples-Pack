@@ -81,7 +81,7 @@ Try to do ```git status``` and you will see the very long list. It is difficult 
 In order to ignore these files from now on, add all of these file to your local exclude list.  
 (Do this only when you don't have uncommitted Samples Pack changes, or they will be added to the exclude list.)
 ```
-git ls-files --others --exclude-standard = .git/info/exclude
+git ls-files --others --exclude-standard >> .git/info/exclude
 ```
 Git will stop mentionning these files. They will remain untouched.
 
