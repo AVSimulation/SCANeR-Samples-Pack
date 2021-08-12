@@ -22,56 +22,39 @@ If you are interested, check the Git basics here:  https://git-scm.com/doc
 
 ### SCANeR studio 2021.1
 
-A valid installation of SCANeR studio 2021.1 is required.
+A valid installation of SCANeR studio 2021.2 is required.
 
 ## 2. First time installation
 
 ### Set up the Git local repo
 
-* Open folder `%STUDIO_PATH%/SCANeRstudio_2021`
+* Open directory `%STUDIO_PATH%/SCANeRstudio_2021`
 * `Right click > Git Bash here`
-* In the Git Bash console, run the following commands
+* In the Git Bash console, run the following commands:
 ```
 git init
 git remote add origin https://github.com/AVSGuillaume/Samples-Pack.git
 git fetch
 ```
 * When prompted, login to GitHub with the account linked to your company e-mail.
-* Once fetching is finished, run the following command in the Git Bash console
-```
-git checkout -b 2021.2 origin/2021.2
-```
-This creates a new local branch "2021.2" that with upstream "origin/2021.2"
-Now your working tree has the latest version of the Samples Pack files.
+* Fetching takes some time.
 
-### configuration.cfg
-
-Configuration paths still needs to be added manually in `%STUDIO_PATH%/configurations.cfg`
-```
-SAMPLE_2021_ADAS = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_ADAS
-SAMPLE_2021_ADAS_LKA_ACC = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_ADAS_LKA_ACC
-SAMPLE_2021_CAMERACAPTURE = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_CAMERACAPTURE
-SAMPLE_2021_CARMAKER = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_CARMAKER
-SAMPLE_2021_DATAEXCHANGE = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_DATAEXCHANGE
-SAMPLE_2021_FMI = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_FMI
-SAMPLE_2021_HEADLIGHTS = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_HEADLIGHTS
-SAMPLE_2021_HEADLIGHTS_HPC = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_HEADLIGHTS_HPC  
-SAMPLE_2021_LATERAL_CTRL = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_LATERAL_CTRL
-SAMPLE_2021_LONGI_CTRL = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_LONGI_CTRL
-SAMPLE_2021_PIXEL_LIGHTING = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_PIXEL_LIGHTING
-SAMPLE_2021_SCENARIO_IMPORTER = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_SCENARIO_IMPORTER
-SAMPLE_2021_VEHICLE_PLAYER = ${STUDIO_PATH}/SCANeRstudio_2021/config/SAMPLE_VEHICLE_PLAYER
-```
-Now the Samples Pack can be used normally
+The local git repo is now up to date, but no branch is applied to your SCANeR studio installation yet.
 
 ### Set your Git credentials
 
-The Git user name must be set up at least once before commiting.
 ```
 git config --global user.email "name.surname@avsimulation.fr"
 git config --global user.name "Name Surname"
 ```
 Now the remote repository can accept your future modifications.
+
+### Git hook for configuration.cfg
+
+```
+git config core.hooksPath "./samples-pack-utils/hooks/"
+```
+Now every time you checkout a branch, the Samples Pack configuration paths will be automatically be added to `%STUDIO_PATH%/configurations.cfg`  
 
 ### Ignore SCANeR installation files
 
@@ -87,30 +70,38 @@ Git will stop mentionning these files. They will remain untouched.
 
 Over time, if you work and create files that are not related to the Samples Pack (e.g.: test configuration), run the command again to update your exclude list.
 
+### Deploy the Samples Pack files
+
+```
+git checkout -b 2021.2 origin/2021.2
+```
+This creates a new local branch `2021.2` that with uplink `origin/2021.2`
+Now your SCANeR studio installation has the latest version of the Samples Pack files.
+
 ## 3. Publish a modification
 
 ### Get the latest version
 
-Before starting to work, make sure that you have the latest version of the Samples Pack.  
-(Make sure that you are on a working branch with a valid uplink.)
+Make sure that you are on a working branch (e.g. `2021.2`) with a valid uplink (e.g. `origin/2021.2`).
 ```
 git fetch
 git pull
 ```
-This gets the last modifications from the remote, and applies it to your working branch.
+Now your SCANeR studio installation has the latest Samples Pack files.
 
 ### Start working
 
 You can perform the modifications on your local copy of the Samples Pack.
- 
-Commit changes on your working branch.
+
+Commit changes on your working branch as often as necessary.
+
 * Check the list of modified files
 ```
 git status
 ```
 * Include new, modified or deleted files to your commit with
 ```
-git add path/to/my/file
+git add path/to/the/file
 ```
 * Save the changes in your current local branch
 ```
