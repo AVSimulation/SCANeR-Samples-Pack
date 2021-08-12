@@ -1,0 +1,21 @@
+#!/bin/sh
+
+echo AUTO UPDATE 'configuration.cfg'
+echo This will add all folders begining by \"./config/SAMPLE_\" to \"$(realpath "..\\configuration.cfg")\".
+
+function cancel() {
+	echo 'configuration.cfg' was not updated.
+}
+
+function add_config() {
+	for c in ./config/SAMPLE_*/
+	do {
+		c=${c#./config/}
+		c=${c%/}
+		echo Adding $c...
+		echo $c = ${STUDIO_PATH}\\SCANeRstudio_2021\\config\\$c >> ../configuration.cfg
+	} done
+	echo Successfully updated \"$(realpath "..\\configuration.cfg")\".;
+}
+
+add_config
