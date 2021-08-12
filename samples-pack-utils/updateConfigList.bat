@@ -1,8 +1,8 @@
 @ECHO OFF
 
-call :getabs "../../configuration.cfg"
+call :getabs "../../configurations.cfg"
 
-echo AUTO UPDATE 'configuration.cfg'
+echo AUTO UPDATE 'configurations.cfg'
 echo This will add all folders begining by "./config/SAMPLE_" to "%abspath%"
 
 :choice
@@ -14,14 +14,14 @@ goto :choice
 :update
 for /f %%c IN ('dir "../config/" /a:d /b ^| findstr /b "SAMPLE_"') do (
 	echo adding %%c...
-	echo %%c = ${STUDIO_PATH}/SCANeRstudio_2021/config/%%c >> ../../configuration.cfg
+	echo %%c = ${STUDIO_PATH}/SCANeRstudio_2021/config/%%c >> ../../configurations.cfg
 )
 echo successfully updated "%abspath%".
 pause
 goto :eof
 
 :cancel
-echo 'configuration.cfg' was not updated.
+echo 'configurations.cfg' was not updated.
 pause
 goto :eof
 
