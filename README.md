@@ -137,3 +137,17 @@ Finally, send again
 ```
 git push
 ```
+
+## 4. Release
+
+* Go to the [repository releases page](../../releases)
+* Button `Draft a new release`
+  * Target = `<latest major SCANeR release>` (e.g. `2021.2`)
+  * Tag = `<latest major SCANeR release>r<Samples Pack sub-version>` (e.g. `2021.2r1`)
+  * Title = `Samples Pack <Samples Pack version>` (e.g. `Samples Pack 2021.2r1`)
+  * Description of changes included in this release (optional)
+  * Attach binaries
+    * Download the ZIP of the latest Samples Pack sources from Github
+    * Remove the parent directory `Samples-Pack-2021.2/` to have folders `APIs/`, `bin/`, `config/, etc... at the root of the ZIP
+    * Drag & drop the new ZIP in the "Attach binaries" area
+* Button `Publish release`
