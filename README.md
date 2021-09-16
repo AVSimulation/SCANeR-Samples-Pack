@@ -151,3 +151,5 @@ git push
     * Remove the parent directory `Samples-Pack-2021.2/` to have folders `APIs/`, `bin/`, `config/, etc... at the root of the ZIP
     * Drag & drop the new ZIP in the "Attach binaries" area
 * Button `Publish release`
+* Go to the SCANeR Guides repository and [edit `_config.yml`](https://github.com/AVSGuillaume/Samples-Pack/edit/Pages/_config.yml).
+  * Update the `zip_url:` path to the uploaded ZIP
