@@ -140,16 +140,23 @@ git push
 
 ## 4. Release
 
-* Go to the [repository releases page](../../releases)
-* Button `Draft a new release`
-  * Target = `<latest major SCANeR release>` (e.g. `2021.2`)
-  * Tag = `<latest major SCANeR release>r<Samples Pack sub-version>` (e.g. `2021.2r1`)
-  * Title = `Samples Pack <Samples Pack version>` (e.g. `Samples Pack 2021.2r1`)
-  * Description of changes included in this release (optional)
-  * Attach binaries
-    * Download the ZIP of the latest Samples Pack sources from Github
-    * Remove the parent directory `Samples-Pack-2021.2/` to have folders `APIs/`, `bin/`, `config/, etc... at the root of the ZIP
-    * Drag & drop the new ZIP in the "Attach binaries" area
-* Button `Publish release`
-* Go to the SCANeR Guides repository and [edit `_config.yml`](https://github.com/AVSGuillaume/Samples-Pack/edit/Pages/_config.yml).
-  * Update the `zip_url:` path to the uploaded ZIP
+The [SCANeR User Guides](https://avsguillaume.github.io/Samples-Pack/) website links to the latest release of the Samples Pack.
+
+* Prepare the ZIP
+  * Go to the [latest commit on GitHub](../../tree/2021.2)
+  * Download as a ZIP: `Code` > `Download as ZIP`  
+  The ZIP includes a root folder `Samples-Pack-2021.2` that we don't want.
+  * Create a new ZIP with `APIs/`, `bin/`, `config/` etc... at the root  
+  Name of the new ZIP: `Samples-Pack-<latest major SCANeR release>r<Samples Pack sub-version>` (e.g. `Samples-Pack-2021.2r1`)
+* Create a Release on GitHub
+  * Go to the [repository releases page](../../releases)
+  * Button `Draft a new release`
+    * Target = `<latest major SCANeR release>` (e.g. `2021.2`)
+    * Tag = `<latest major SCANeR release>r<Samples Pack sub-version>` (e.g. `2021.2r1`)
+    * Title = `Samples Pack <Samples Pack version>` (e.g. `Samples Pack 2021.2r1`)
+    * Description of changes included in this release (optional)
+    * Attach binaries = Drag & drop the new ZIP in the "Attach binaries" area
+  * Button `Publish release`
+* Update the link
+  * Go to the SCANeR Guides repository and [edit `_config.yml`](../../edit/Pages/_config.yml).
+  * Change the `zip_url:` path to the newly uploaded ZIP URL
