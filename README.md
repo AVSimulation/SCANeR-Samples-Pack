@@ -33,7 +33,7 @@ A valid installation of SCANeR studio 2021.2 is required.
 * In the Git Bash console, run the following commands:
 ```
 git init
-git remote add origin https://github.com/AVSGuillaume/Samples-Pack.git
+git remote add origin https://github.com/AVSGuichet/Samples-Pack.git
 git fetch
 ```
 * When prompted, login to GitHub with the account linked to your company e-mail.
@@ -140,7 +140,7 @@ git push
 
 ## 4. Release
 
-The [SCANeR User Guides](https://avsguillaume.github.io/Samples-Pack/) website links to the latest release of the Samples Pack.
+The [SCANeR User Guides](https://avsguichet.github.io/Samples-Pack/) website links to the latest release of the Samples Pack.
 
 * Prepare the ZIP
   * Go to the [latest commit on GitHub](../../tree/2021.2)
@@ -158,5 +158,5 @@ The [SCANeR User Guides](https://avsguillaume.github.io/Samples-Pack/) website l
     * Attach binaries = Drag & drop the new ZIP in the "Attach binaries" area
   * Button `Publish release`
 * Update the link
-  * Go to the SCANeR Guides repository and [edit `_config.yml`](../../edit/Pages/_config.yml).
+  * Go to the SCANeR Guides repository and [edit `_config.yml`](../../../SCANeR-User-Guides/edit/Published/_config.yml).
   * Change the `zip_url:` path to the newly uploaded ZIP URL
