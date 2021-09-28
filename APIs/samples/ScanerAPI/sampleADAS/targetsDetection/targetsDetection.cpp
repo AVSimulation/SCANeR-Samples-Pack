@@ -10,7 +10,6 @@
 #include <map>
 
 
-// ADAS
 int main(int argc, char *argv[])
 {
 	std::string configName = "EVAL_CAMERACAPTURE";
