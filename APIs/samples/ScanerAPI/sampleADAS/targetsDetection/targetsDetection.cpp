@@ -9,7 +9,7 @@
 #include <fstream>
 #include <map>
 
-
+//Main
 int main(int argc, char *argv[])
 {
 	std::string configName = "EVAL_CAMERACAPTURE";
