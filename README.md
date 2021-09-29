@@ -20,7 +20,7 @@ Install with default settings (Git Bash is required, Git GUI is good to have)
 This manual is meant to be self sufficient.  
 If you are interested, check the Git basics here:  https://git-scm.com/doc
 
-### SCANeR studio 2021.1
+### SCANeR studio 2021.2
 
 A valid installation of SCANeR studio 2021.2 is required.
 
