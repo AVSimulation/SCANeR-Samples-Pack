@@ -4,7 +4,6 @@
 
 ### GitHub Account
 
-For now, the repository is private.
 An account using your company email (avsimulation.fr) is required.  
 Send a request to guichet@avsimulation.fr.
 
