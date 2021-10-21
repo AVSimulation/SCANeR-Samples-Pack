@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<ExportChannelAnalysingToolCfg version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>0</exportChannelId>
+    <fullName>AFSManager/CurrentCurveCurvature</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>1</exportChannelId>
+    <fullName>AFSManager/CurveCurvatureAtXMeters</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>2</exportChannelId>
+    <fullName>AFSManager/HeadingRelativeToTheRoad</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>3</exportChannelId>
+    <fullName>AFSManager/DistanceToNextVehicleInOppositeDirection</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>4</exportChannelId>
+    <fullName>AFSManager/DistanceToNextVehicleInSameDirection</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>5</exportChannelId>
+    <fullName>Augmented Reality Plugin/Capture enabled</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>6</exportChannelId>
+    <fullName>Augmented Reality Plugin/Opaque borders</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>7</exportChannelId>
+    <fullName>Augmented Reality Plugin/Target hue</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>8</exportChannelId>
+    <fullName>Augmented Reality Plugin/Tolerance hue</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>9</exportChannelId>
+    <fullName>Augmented Reality Plugin/Min saturation</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>10</exportChannelId>
+    <fullName>Augmented Reality Plugin/Min lightness</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>11</exportChannelId>
+    <fullName>Augmented Reality Plugin/Max lightness</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>12</exportChannelId>
+    <fullName>Augmented Reality Plugin/Transparency</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>13</exportChannelId>
+    <fullName>Osg DOF Plugin/Sharp Distance</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>14</exportChannelId>
+    <fullName>Osg DOF Plugin/Blur Range</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>15</exportChannelId>
+    <fullName>Warping Plugin/Reload shader</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>16</exportChannelId>
+    <fullName>XRTools/Menu</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>17</exportChannelId>
+    <fullName>XRTools/GUILaunched</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>18</exportChannelId>
+    <fullName>XRTools/ShowObject</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>19</exportChannelId>
+    <fullName>XRTools/VehicleID</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>20</exportChannelId>
+    <fullName>XRTools/CollabObject</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>21</exportChannelId>
+    <fullName>XRTools/HeadPositionX</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>22</exportChannelId>
+    <fullName>XRTools/HeadPositionY</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>23</exportChannelId>
+    <fullName>XRTools/HeadPositionZ</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>24</exportChannelId>
+    <fullName>XRTools/HeadPositionHeading</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>25</exportChannelId>
+    <fullName>XRTools/HeadPositionPitch</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>26</exportChannelId>
+    <fullName>XRTools/HeadPositionRoll</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>27</exportChannelId>
+    <fullName>XRTools/RepositionUser</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>28</exportChannelId>
+    <fullName>XRTools/ShowHUD</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>29</exportChannelId>
+    <fullName>XRTools/TrackerData_X_0</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>30</exportChannelId>
+    <fullName>XRTools/TrackerData_Y_0</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>31</exportChannelId>
+    <fullName>XRTools/TrackerData_Z_0</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>32</exportChannelId>
+    <fullName>XRTools/TrackerData_Heading_0</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>33</exportChannelId>
+    <fullName>XRTools/TrackerData_Pitch_0</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>34</exportChannelId>
+    <fullName>XRTools/TrackerData_Roll_0</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>35</exportChannelId>
+    <fullName>XRTools/TrackerData_X_1</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>36</exportChannelId>
+    <fullName>XRTools/TrackerData_Y_1</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>37</exportChannelId>
+    <fullName>XRTools/TrackerData_Z_1</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>38</exportChannelId>
+    <fullName>XRTools/TrackerData_Heading_1</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>39</exportChannelId>
+    <fullName>XRTools/TrackerData_Pitch_1</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>40</exportChannelId>
+    <fullName>XRTools/TrackerData_Roll_1</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>41</exportChannelId>
+    <fullName>XRTools/TrackerData_X_2</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>42</exportChannelId>
+    <fullName>XRTools/TrackerData_Y_2</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>43</exportChannelId>
+    <fullName>XRTools/TrackerData_Z_2</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>44</exportChannelId>
+    <fullName>XRTools/TrackerData_Heading_2</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>45</exportChannelId>
+    <fullName>XRTools/TrackerData_Pitch_2</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>46</exportChannelId>
+    <fullName>XRTools/TrackerData_Roll_2</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>47</exportChannelId>
+    <fullName>AcquisitionMapping/ACCELERATOR</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>48</exportChannelId>
+    <fullName>AcquisitionMapping/BRAKE</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>49</exportChannelId>
+    <fullName>AcquisitionMapping/IGNITION_KEY</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>50</exportChannelId>
+    <fullName>AcquisitionMapping/GEARBOX</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>51</exportChannelId>
+    <fullName>AcquisitionMapping/STEERING_WHEEL</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>52</exportChannelId>
+    <fullName>DotNetLowLevel/SinWave</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>53</exportChannelId>
+    <fullName>DotNetHighLevel/output</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>54</exportChannelId>
+    <fullName>DotNetHighLevel/input</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>55</exportChannelId>
+    <fullName>RTGateway/UDP_A</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>56</exportChannelId>
+    <fullName>RTGateway/UDP_B</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>57</exportChannelId>
+    <fullName>RTGateway/UDP_C</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>58</exportChannelId>
+    <fullName>RTGateway/SNU_A</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>59</exportChannelId>
+    <fullName>RTGateway/SNU_B</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>60</exportChannelId>
+    <fullName>RTGateway/SNU_C</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>61</exportChannelId>
+    <fullName>RTGateway/SISCI_time</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>62</exportChannelId>
+    <fullName>RTGateway/SISCI_csvLine</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>63</exportChannelId>
+    <fullName>RTGateway/SISCI_sinWave</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>64</exportChannelId>
+    <fullName>VisualMeter/speed</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>65</exportChannelId>
+    <fullName>VisualMeter/tachometer</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>66</exportChannelId>
+    <fullName>RTCALLAS/AEBActivation</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>67</exportChannelId>
+    <fullName>ADAS/DistanceToCollision</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>68</exportChannelId>
+    <fullName>Analysis/BrakingDistance</fullName>
+  </ExportChannelAnalysingToolValue>
+
+  <ExportChannelAnalysingToolValue>
+    <exportChannelId>69</exportChannelId>
+    <fullName>Analysis/DistanceFromPedestrian</fullName>
+  </ExportChannelAnalysingToolValue>
+
+</ExportChannelAnalysingToolCfg>
