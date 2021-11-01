@@ -19,15 +19,15 @@ Install with default settings (Git Bash is required, Git GUI is good to have)
 This manual is meant to be self sufficient.  
 If you are interested, check the Git basics here:  https://git-scm.com/doc
 
-### SCANeR studio 2021.2
+### SCANeR studio 2022
 
-A valid installation of SCANeR studio 2021.2 is required.
+A valid installation of SCANeR studio 2022 is required.
 
 ## 2. First time installation
 
 ### Set up the Git local repo
 
-* Open directory `%STUDIO_PATH%/SCANeRstudio_2021`
+* Open directory `%STUDIO_PATH%/SCANeRstudio_2022`
 * `Right click > Git Bash here`
 * In the Git Bash console, run the following commands:
 ```
@@ -72,16 +72,16 @@ Over time, if you work and create files that are not related to the Samples Pack
 ### Deploy the Samples Pack files
 
 ```
-git checkout -b 2021.2 origin/2021.2
+git checkout -b 2022 origin/2022
 ```
-This creates a new local branch `2021.2` that with uplink `origin/2021.2`
+This creates a new local branch `2022` that with uplink `origin/2022`
 Now your SCANeR studio installation has the latest version of the Samples Pack files.
 
 ## 3. Publish a modification
 
 ### Get the latest version
 
-Make sure that you are on a working branch (e.g. `2021.2`) with a valid uplink (e.g. `origin/2021.2`).
+Make sure that you are on a working branch (e.g. `2022`) with a valid uplink (e.g. `origin/2022`).
 ```
 git fetch
 git pull
@@ -142,20 +142,22 @@ git push
 The [SCANeR User Guides](https://avsguichet.github.io/Samples-Pack/) website links to the latest release of the Samples Pack.
 
 * Prepare the ZIP
-  * Go to the [latest commit on GitHub](../../tree/2021.2)
+  * Go to the [latest commit on GitHub](../../tree/2022)
   * Download as a ZIP: `Code` > `Download as ZIP`  
-  The ZIP includes a root folder `Samples-Pack-2021.2` that we don't want.
+  The ZIP includes a root folder `Samples-Pack-2022` that we don't want.
   * Create a new ZIP with `APIs/`, `bin/`, `config/` etc... at the root  
-  Name of the new ZIP: `Samples-Pack-<latest major SCANeR release>r<Samples Pack sub-version>` (e.g. `Samples-Pack-2021.2r1`)
-* Create a Release on GitHub
-  * Go to the [repository releases page](../../releases)
-  * Button `Draft a new release`
-    * Target = `<latest major SCANeR release>` (e.g. `2021.2`)
-    * Tag = `<latest major SCANeR release>r<Samples Pack sub-version>` (e.g. `2021.2r1`)
-    * Title = `Samples Pack <Samples Pack version>` (e.g. `Samples Pack 2021.2r1`)
-    * Description of changes included in this release (optional)
-    * Attach binaries = Drag & drop the new ZIP in the "Attach binaries" area
-  * Button `Publish release`
+  Name of the new ZIP: `Samples-Pack-<latest major SCANeR release>r<Samples Pack sub-version>` (e.g. `Samples-Pack-2022r1`)
+* ~~Create a Release on GitHub~~
+  * ~~Go to the [repository releases page](../../releases)~~
+  * ~~Button `Draft a new release`~~
+    * ~~Target = `<latest major SCANeR release>` (e.g. `2022`)~~
+    * ~~Tag = `<latest major SCANeR release>r<Samples Pack sub-version>` (e.g. `2022r1`)~~
+    * ~~Title = `Samples Pack <Samples Pack version>` (e.g. `Samples Pack 2022r1`)~~
+    * ~~Description of changes included in this release (optional)~~
+    * ~~Attach binaries = Drag & drop the new ZIP in the "Attach binaries" area~~
+  * ~~Button `Publish release`~~
+* Send the ZIP to the FTP server `stockage.scanersimulation.com` using FileZilla
+  * `(root)/Evaluation/2022/Samples-Pack-2022.zip`
 * Update the link
   * Go to the SCANeR Guides repository and [edit `_config.yml`](../../../SCANeR-User-Guides/edit/Published/_config.yml).
   * Change the `zip_url:` path to the newly uploaded ZIP URL
