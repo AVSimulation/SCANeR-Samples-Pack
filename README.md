@@ -32,7 +32,7 @@ A valid installation of SCANeR studio 2021.2 is required.
 * In the Git Bash console, run the following commands:
 ```
 git init
-git remote add origin https://github.com/AVSGuichet/Samples-Pack.git
+git remote add origin https://github.com/AVSimulation/SCANeR-Samples-Pack.git
 git fetch
 ```
 * When prompted, login to GitHub with the account linked to your company e-mail.
