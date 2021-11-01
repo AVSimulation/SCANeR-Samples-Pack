@@ -38,7 +38,7 @@ git fetch
 * When prompted, login to GitHub with the account linked to your company e-mail.
 * Fetching takes some time.
 
-The local git repo is now up to date, but no branch is applied to your SCANeR studio installation yet.
+The local git repo is now up to date (inside the `.git/` folder), but no change was applied to your SCANeR studio installation yet (inside `data/`, `config/`, etc...).
 
 ### Set your Git credentials
 
