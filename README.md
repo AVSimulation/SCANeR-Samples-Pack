@@ -69,7 +69,7 @@ Git will stop mentionning these files. They will remain untouched.
 
 Over time, if you work and create files that are not related to the Samples Pack (e.g.: test configuration), run the command again to update your exclude list.
 
-### Deploy the Samples Pack files
+### Install the Samples Pack files
 
 ```
 git checkout -b 2021.2 origin/2021.2
