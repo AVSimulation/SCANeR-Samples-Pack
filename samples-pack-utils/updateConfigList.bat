@@ -13,8 +13,11 @@ goto :choice
 
 :update
 for /f %%c IN ('dir "../config/" /a:d /b ^| findstr /b "SAMPLE_"') do (
-	echo adding %%c...
-	echo %%c = ${STUDIO_PATH}/SCANeRstudio_2022/config/%%c >> ../../configurations.cfg
+	set configFolder=%%c
+	set configName=%%c
+	set configName=%configName:SAMPLE_=SAMPLE_2022_%
+	echo adding %configName% ...
+	echo %configName% = ${STUDIO_PATH}/SCANeRstudio_2022/config/%configFolder% >> ../../configurations.cfg
 )
 echo successfully updated "%abspath%".
 pause
