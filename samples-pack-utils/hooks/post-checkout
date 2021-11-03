@@ -13,7 +13,7 @@ function add_config() {
 		c=${c#./config/}
 		c=${c%/}
 		echo Adding $c...
-		echo $c = \${STUDIO_PATH}\\SCANeRstudio_2021\\config\\$c >> ../configurations.cfg
+		echo $c = \${STUDIO_PATH}\\SCANeRstudio_2022\\config\\$c >> ../configurations.cfg
 	} done
 	echo Successfully updated \"$(realpath "..\\configurations.cfg")\".;
 }
