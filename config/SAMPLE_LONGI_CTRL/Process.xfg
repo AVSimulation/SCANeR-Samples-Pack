@@ -30,7 +30,7 @@
         <protocol></protocol>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/DriverHandler.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/DriverHandler.exe</exe>
         <name>ACQUISITION</name>
         <port>25103</port>
         <protocol></protocol>
@@ -40,7 +40,7 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/ModelHandler.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/ModelHandler.exe</exe>
         <name>MODELHANDLER</name>
         <port>25104</port>
         <protocol></protocol>
@@ -54,7 +54,7 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/APIs/bin/x64/vs2019/eval_longitudinal_ctrl.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/APIs/bin/x64/vs2019/eval_longitudinal_ctrl.exe</exe>
         <name>LONGI_C</name>
         <port>25105</port>
         <protocol></protocol>
@@ -75,7 +75,7 @@
         <port>25107</port>
         <protocol></protocol>
         <Option>
-          <value>${STUDIO_PATH}\SCANeRstudio_2021\APIs\samples\EVALUATION_APIs\ScanerAPI\EVAL_LONGITUDINAL_CTRL\python\eval_longitudinal_ctrl_accel.py</value>
+          <value>${STUDIO_PATH}\SCANeRstudio_2022\APIs\samples\EVALUATION_APIs\ScanerAPI\EVAL_LONGITUDINAL_CTRL\python\eval_longitudinal_ctrl_accel.py</value>
         </Option>
         <Environment/>
         <Display/>
@@ -86,7 +86,7 @@
         <port>25108</port>
         <protocol></protocol>
         <Option>
-          <value>${STUDIO_PATH}\SCANeRstudio_2021\APIs\samples\EVALUATION_APIs\ScanerAPI\EVAL_LONGITUDINAL_CTRL\python\eval_longitudinal_ctrl_speed.py</value>
+          <value>${STUDIO_PATH}\SCANeRstudio_2022\APIs\samples\EVALUATION_APIs\ScanerAPI\EVAL_LONGITUDINAL_CTRL\python\eval_longitudinal_ctrl_speed.py</value>
         </Option>
         <Environment/>
         <Display/>
@@ -97,7 +97,7 @@
         <port>25109</port>
         <protocol></protocol>
         <Option>
-          <value>${STUDIO_PATH}\SCANeRstudio_2021\APIs\samples\EVALUATION_APIs\ScanerAPI\EVAL_LONGITUDINAL_CTRL\python\eval_longitudinal_ctrl_pedalPos.py</value>
+          <value>${STUDIO_PATH}\SCANeRstudio_2022\APIs\samples\EVALUATION_APIs\ScanerAPI\EVAL_LONGITUDINAL_CTRL\python\eval_longitudinal_ctrl_pedalPos.py</value>
         </Option>
         <Environment/>
         <Display/>

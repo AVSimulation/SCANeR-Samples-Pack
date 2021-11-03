@@ -30,7 +30,7 @@
         <protocol></protocol>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/DriverHandler.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/DriverHandler.exe</exe>
         <name>ACQUISITION</name>
         <port>25103</port>
         <protocol></protocol>
@@ -40,7 +40,7 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/visual.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/visual.exe</exe>
         <name>VISUAL</name>
         <port>25104</port>
         <protocol></protocol>
@@ -50,7 +50,7 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/ModelHandler.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/ModelHandler.exe</exe>
         <name>MODELHANDLER</name>
         <port>25105</port>
         <protocol></protocol>

@@ -30,13 +30,13 @@
         <protocol></protocol>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/traffic.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/traffic.exe</exe>
         <name>TRAFFIC</name>
         <port>25103</port>
         <protocol></protocol>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/scenario.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/scenario.exe</exe>
         <name>SCENARIO</name>
         <port>25104</port>
         <protocol></protocol>
@@ -46,7 +46,7 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/DriverHandler.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/DriverHandler.exe</exe>
         <name>ACQUISITION</name>
         <port>25105</port>
         <protocol></protocol>
@@ -56,7 +56,7 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/Sound.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/Sound.exe</exe>
         <name>SOUND</name>
         <port>25106</port>
         <protocol></protocol>
@@ -66,7 +66,7 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/visual.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/visual.exe</exe>
         <name>VISUAL_HL</name>
         <port>25107</port>
         <protocol></protocol>
@@ -83,19 +83,19 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/recorder.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/recorder.exe</exe>
         <name>RECORD</name>
         <port>25108</port>
         <protocol></protocol>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/TrafficTools.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/TrafficTools.exe</exe>
         <name>TRAFFICTOOLS</name>
         <port>25109</port>
         <protocol></protocol>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/ModelHandler.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/ModelHandler.exe</exe>
         <name>MODELHANDLER</name>
         <port>25110</port>
         <protocol></protocol>
@@ -109,13 +109,13 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/ControlpadDesigner.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/ControlpadDesigner.exe</exe>
         <name>CONTROLPAD</name>
         <port>25111</port>
         <protocol></protocol>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/Dashboard.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/Dashboard.exe</exe>
         <name>DASHBOARD</name>
         <port>25112</port>
         <protocol></protocol>
@@ -125,19 +125,19 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/WalkerTraffic.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/WalkerTraffic.exe</exe>
         <name>WALKERTRAFFIC</name>
         <port>25113</port>
         <protocol></protocol>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/physics.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/physics.exe</exe>
         <name>PHYSICS</name>
         <port>25114</port>
         <protocol></protocol>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/OfflineScheduler.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/OfflineScheduler.exe</exe>
         <name>OFFLINESCHEDULER</name>
         <port>25115</port>
         <protocol></protocol>
@@ -147,7 +147,7 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/nightTestManager.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/nightTestManager.exe</exe>
         <name>NIGHTTESTMANAGER</name>
         <port>25116</port>
         <protocol></protocol>
@@ -159,7 +159,7 @@
         <Display/>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/Sensors.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/Sensors.exe</exe>
         <name>SENSORS</name>
         <port>25117</port>
         <protocol></protocol>
@@ -167,7 +167,7 @@
         <Display/>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/APIs/bin/x64/vs2019/ScanerAPISensorsViewerPixelLighting.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/APIs/bin/x64/vs2019/ScanerAPISensorsViewerPixelLighting.exe</exe>
         <name>SENSOR_VIEWER_L</name>
         <port>25118</port>
         <protocol></protocol>
@@ -175,7 +175,7 @@
         <Display/>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/APIs/bin/x64/vs2019/ScanerAPISensorsViewerPixelLighting.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/APIs/bin/x64/vs2019/ScanerAPISensorsViewerPixelLighting.exe</exe>
         <name>SENSOR_VIEWER_R</name>
         <port>25119</port>
         <protocol></protocol>
@@ -183,7 +183,7 @@
         <Display/>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/APIs/bin/x64/vs2019/IS_VideoCapture.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/APIs/bin/x64/vs2019/IS_VideoCapture.exe</exe>
         <name>IS_VIDEOCAPTURE_L</name>
         <port>25120</port>
         <protocol></protocol>
@@ -195,7 +195,7 @@
         <Display/>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/APIs/bin/x64/vs2019/IS_VideoCapture.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/APIs/bin/x64/vs2019/IS_VideoCapture.exe</exe>
         <name>IS_VIDEOCAPTURE_R</name>
         <port>25121</port>
         <protocol></protocol>

@@ -30,13 +30,13 @@
         <protocol></protocol>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/traffic.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/traffic.exe</exe>
         <name>TRAFFIC</name>
         <port>25103</port>
         <protocol></protocol>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/scenario.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/scenario.exe</exe>
         <name>SCENARIO</name>
         <port>25104</port>
         <protocol></protocol>
@@ -46,7 +46,7 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/ControlpadDesigner.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/ControlpadDesigner.exe</exe>
         <name>CONTROLPAD</name>
         <port>25105</port>
         <protocol></protocol>
@@ -63,7 +63,7 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2021/bin/x64/FMIHandler.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/FMIHandler.exe</exe>
         <name>FMIHANDLER</name>
         <port>25106</port>
         <protocol></protocol>
