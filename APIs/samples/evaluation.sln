@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RTGatewayIO", "EVALUATION_APIs\RTGatewayIO\RTGatewayIO.vcxproj", "{82D9D0F9-C8B4-40C1-BADD-2FA5A7177DC9}"
 EndProject
@@ -25,6 +25,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VENSender", "VEN\VENSender\VENSender.vcxproj", "{C45BBB54-4E5B-42E9-875F-EC9BCBEF12F1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ScanerAPISensorsViewerPixelLighting", "ScanerAPI\SampleHeadlight\ScanerAPISensorsViewerPixelLighting\ScanerAPISensorsViewerPixelLighting.vcxproj", "{19F823E9-C5A5-4FEF-8CB0-B66B22FF38D6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AEB", "ScanerAPI\ADAS\AEB\AEB.vcxproj", "{7F435BD1-0553-4A81-9FF7-7467D6F82414}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -148,6 +150,16 @@ Global
 		{19F823E9-C5A5-4FEF-8CB0-B66B22FF38D6}.Release|Win32.Build.0 = Release|Win32
 		{19F823E9-C5A5-4FEF-8CB0-B66B22FF38D6}.Release|x64.ActiveCfg = Release|x64
 		{19F823E9-C5A5-4FEF-8CB0-B66B22FF38D6}.Release|x64.Build.0 = Release|x64
+		{7F435BD1-0553-4A81-9FF7-7467D6F82414}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{7F435BD1-0553-4A81-9FF7-7467D6F82414}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{7F435BD1-0553-4A81-9FF7-7467D6F82414}.Debug|Win32.ActiveCfg = Debug|x64
+		{7F435BD1-0553-4A81-9FF7-7467D6F82414}.Debug|x64.ActiveCfg = Debug|x64
+		{7F435BD1-0553-4A81-9FF7-7467D6F82414}.Debug|x64.Build.0 = Debug|x64
+		{7F435BD1-0553-4A81-9FF7-7467D6F82414}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{7F435BD1-0553-4A81-9FF7-7467D6F82414}.Release|Mixed Platforms.Build.0 = Release|x64
+		{7F435BD1-0553-4A81-9FF7-7467D6F82414}.Release|Win32.ActiveCfg = Release|x64
+		{7F435BD1-0553-4A81-9FF7-7467D6F82414}.Release|x64.ActiveCfg = Release|x64
+		{7F435BD1-0553-4A81-9FF7-7467D6F82414}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -160,5 +172,9 @@ Global
 		{9503BFE1-A19D-4F08-AA10-224FDA8243FB} = {90F8BAAF-1D3C-4FA2-8448-1B20A13BB930}
 		{C188E690-3707-40B5-833C-3E8DD3FC73EC} = {01E51DA0-09DA-45C2-B3E3-822ADB2BDF84}
 		{C45BBB54-4E5B-42E9-875F-EC9BCBEF12F1} = {01E51DA0-09DA-45C2-B3E3-822ADB2BDF84}
+		{7F435BD1-0553-4A81-9FF7-7467D6F82414} = {90F8BAAF-1D3C-4FA2-8448-1B20A13BB930}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4362678D-B197-4863-BE2C-27BA362689E1}
 	EndGlobalSection
 EndGlobal
