@@ -180,7 +180,7 @@ TYPEOF SCENARIO (0)
 	{
 		LABEL="ACC_target_speed"
 		TYPE="FLOAT"
-		VALUE="130"
+		VALUE="70"
 		INTERACTIVE_TYPE="INTEGER"
 		IS_INITIALIZATION_NEEDED_AT_START="1"
 		INTERACTIVE_MIN_VALUE="30"
@@ -199,18 +199,32 @@ TYPEOF SCENARIO (0)
 			IS_EXPANDED="1"
 		}
 
-		TYPEOF ACTION (EXPORT_CHANNEL)
+		TYPEOF ACTION (SET_EXPORT_CHANNEL_BY_NAME)
 		{
 			IS_EXPANDED="1"
 
-			TYPEOF PARAMETER (CHANNEL_ID)
+			TYPEOF PARAMETER (VHL_NUMBER_PLUS)
 			{
-				KIND="EXPORT_CHANNEL"
-				VALUE="66"
+				KIND="VEHICLE"
+				VALUE="-1"
 				OWNER_FILE=""
 			}
 
-			TYPEOF PARAMETER (FLOAT_VALUE)
+			TYPEOF PARAMETER (CHANNEL_CATEGORY)
+			{
+				KIND="EXPORT_CHANNEL_CATEGORY"
+				VALUE="ADAS"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (CHANNEL_NAME)
+			{
+				KIND="EXPORT_CHANNEL_NAME"
+				VALUE="ACC_target_speed"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (CHANNEL_VALUE)
 			{
 				KIND="VARIABLE"
 				VALUE="0"
@@ -414,7 +428,7 @@ TYPEOF SCENARIO (0)
       <modelColor>0 0 0</modelColor>
       <modelName>ExecutiveCar_lka_acc</modelName>
       <motionId>-1</motionId>
-      <name>SmallFamilyCar</name>
+      <name>ExecutiveCar_lka_acc</name>
       <process>MODELHANDLER</process>
       <recomputeRestitutionMovement>1</recomputeRestitutionMovement>
       <state>0</state>
@@ -651,7 +665,7 @@ TYPEOF SCENARIO (0)
         <laneGapPeriodStdDev>0</laneGapPeriodStdDev>
         <laneGapStdDev>0.2</laneGapStdDev>
         <manualOverrideModule></manualOverrideModule>
-        <maxSpeed>25</maxSpeed>
+        <maxSpeed>13.8888888888889</maxSpeed>
         <norm>NormalDriver</norm>
         <overtakeRisk>-0.09</overtakeRisk>
         <priorityObserving>1</priorityObserving>

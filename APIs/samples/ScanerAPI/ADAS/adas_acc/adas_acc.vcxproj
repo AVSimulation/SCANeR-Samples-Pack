@@ -70,25 +70,25 @@
     <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\bin\$(TARGET_PLATFORM)\</OutDir>
+    <OutDir>$(STUDIO_PATH)\SCANeRstudio_2022\APIs\bin\$(TARGET_PLATFORM)\</OutDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\bin\$(TARGET_PLATFORM)\</OutDir>
+    <OutDir>$(STUDIO_PATH)\SCANeRstudio_2022\APIs\bin\$(TARGET_PLATFORM)\</OutDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\bin\$(TARGET_PLATFORM)\</OutDir>
+    <OutDir>$(STUDIO_PATH)\SCANeRstudio_2022\APIs\bin\$(TARGET_PLATFORM)\</OutDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\bin\$(TARGET_PLATFORM)\</OutDir>
+    <OutDir>$(STUDIO_PATH)\SCANeRstudio_2022\APIs\bin\$(TARGET_PLATFORM)\</OutDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(STUDIO_PATH)\SCANeRstudio_2022\APIs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -98,7 +98,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>SCANeR_API_C.lib;stk.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\lib\$(TARGET_PLATFORM);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(STUDIO_PATH)\SCANeRstudio_2022\APIs\lib\$(TARGET_PLATFORM);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <PerUserRedirection>true</PerUserRedirection>
@@ -106,7 +106,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(STUDIO_PATH)\SCANeRstudio_2022\APIs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PrecompiledHeader />
@@ -115,7 +115,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>SCANeR_API_C.lib;stk.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\lib\$(TARGET_PLATFORM);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(STUDIO_PATH)\SCANeRstudio_2022\APIs\lib\$(TARGET_PLATFORM);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
@@ -129,7 +129,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(STUDIO_PATH)\SCANeRstudio_2022\APIs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -139,7 +139,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>SCANeR_API_C.lib;stk.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\lib\$(TARGET_PLATFORM);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(STUDIO_PATH)\SCANeRstudio_2022\APIs\lib\$(TARGET_PLATFORM);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX64</TargetMachine>
@@ -151,7 +151,7 @@
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(STUDIO_PATH)\SCANeRstudio_2022\APIs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PrecompiledHeader />
@@ -160,7 +160,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>SCANeR_API_C.lib;stk.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(STUDIO_PATH)\SCANeRstudio_2021\APIs\lib\$(TARGET_PLATFORM);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(STUDIO_PATH)\SCANeRstudio_2022\APIs\lib\$(TARGET_PLATFORM);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
