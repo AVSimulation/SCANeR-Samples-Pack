@@ -145,15 +145,20 @@
         </ExitMethod>
       </Process>
       <Process>
-        <exe>C:/Python27/python.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/python/python.exe</exe>
         <name>ADAS_PY</name>
         <port>25116</port>
         <protocol></protocol>
+        <Environment/>
+        <Display/>
+        <ExitMethod>
+          <exitMethod>0</exitMethod>
+          <overrideExitOrder>0</overrideExitOrder>
+          <timeout>3000</timeout>
+        </ExitMethod>
         <Option>
           <value>${STUDIO_PATH}\SCANeRstudio_2022\APIs\samples\EVALUATION_APIs\ScanerAPI\EVAL_ADAS\python\eval_adas.py</value>
         </Option>
-        <Environment/>
-        <Display/>
       </Process>
     </Computer>
   </Processes>

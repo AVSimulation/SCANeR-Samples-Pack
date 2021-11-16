@@ -12,7 +12,7 @@ this_file = inspect.currentframe().f_code.co_filename
 this_dir = os.path.dirname(this_file)
 # to find scaner_api dll
 if (os.name == 'nt'):
-    os.chdir(os.path.abspath(os.environ['STUDIO_PATH']+'./SCANeRstudio_1.9/APIs/bin/x64/vs2013'))
+    os.chdir(os.path.abspath(os.environ['STUDIO_PATH']+'./SCANeRstudio_2022/APIs/bin/x64/vs2019'))
 
 from scaner import *
 
@@ -24,8 +24,8 @@ status = PS_DAEMON
 
 try:
     # read access to radar and ExportChannel
-    radar_300000 = Com_declareInputData('Network/ISensor/SensorTargets', 300000);
-    EC_1000 = Com_declareInputData('Network/IUser/ExportChannel', 1000);
+    radar_300000 = Com_declareInputData('Network/ISensor/SensorMovableTargets', 300000);
+    EC_1000 = Com_declareInputData('Network/IUser/ExportChannel', 67);
     # write access to Shared Memory for longitudinal control
     CabToModelCorrective_0 = Com_declareOutputData('Shm/ModelCabin/CabToModelCorrective', 0);
 
@@ -42,23 +42,23 @@ try:
         
         if status == PS_RUNNING:
             if Com_updateInputs(UT_NetworkData) == 0:
-                print 'Update Network inputs failed...'
+                print('Update Network inputs failed...')
             targetsCount = Com_getShortData(radar_300000, "targetsArrayCount")
 
             if targetsCount > 0:
-				distanceToCollisionTmp = "targetsArray[%d]/distanceToCollision" % (Com_getShortData(radar_300000, "nearestTarget"))
-				distanceToCollision = Com_getFloatData(radar_300000, distanceToCollisionTmp);
+                distanceToCollisionTmp = "targetsArray[%d]/distanceToCollision" % (Com_getShortData(radar_300000, "nearestTarget"))
+                distanceToCollision = Com_getFloatData(radar_300000, distanceToCollisionTmp);
 
             if distanceToCollision != -1:
-				if distanceToCollision < Com_getFloatData(EC_1000, "val"): #export channel value used to define the distanceToCollision
-					#add brake assistance
-					Com_setDoubleData(CabToModelCorrective_0, "BrakeAdditive", 400);
-					Com_setDoubleData(CabToModelCorrective_0, "BrakeMultiplicative", 0);
-					Com_setDoubleData(CabToModelCorrective_0, "TimeOfUpdate", TimeOfUpdate);
-					if Com_updateOutputs(UT_ShmData) == 0: #flush the corrective message
-						print 'Update Shm outputs failed...'
-				distanceToCollision = -1;
+                if distanceToCollision < Com_getFloatData(EC_1000, "val"): #export channel value used to define the distanceToCollision
+                    #add brake assistance
+                    Com_setDoubleData(CabToModelCorrective_0, "BrakeAdditive", 400);
+                    Com_setDoubleData(CabToModelCorrective_0, "BrakeMultiplicative", 0);
+                    Com_setDoubleData(CabToModelCorrective_0, "TimeOfUpdate", TimeOfUpdate);
+                    if Com_updateOutputs(UT_ShmData) == 0: #flush the corrective message
+                        print('Update Shm outputs failed...')
+                distanceToCollision = -1;
             
 except KeyboardInterrupt:
-    print 'Bye bye'
+    print('Bye bye')
     Process_Close()
