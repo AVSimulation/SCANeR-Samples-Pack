@@ -55,7 +55,7 @@ int main(int argc, char* argv[])
 					// add brake assistance
 					Com_setDoubleData(CabToModelCorrective_0, "BrakeAdditive", 400);
 					Com_setDoubleData(CabToModelCorrective_0, "BrakeMultiplicative", 0);
-					Com_setDoubleData(CabToModelCorrective_0, "AccelMultiplicative", 0);
+					Com_setDoubleData(CabToModelCorrective_0, "AcceleratorMultiplicative", 0);
 					Com_setDoubleData(CabToModelCorrective_0, "TimeOfUpdate", TimeOfUpdate);
 					if (!Com_updateOutputs(UT_ShmData)) // flush the corrective message
 						std::cout << "Update Shm outputs failed..." << std::endl;
