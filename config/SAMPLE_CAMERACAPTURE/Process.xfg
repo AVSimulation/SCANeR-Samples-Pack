@@ -106,7 +106,7 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/APIs/bin/x64/vs2019/targetsDetection.exe</exe>
+        <exe>${LOCAL_STUDIO_PATH}/SCANeRstudio_2022/APIs/bin/x64/vs2019/targetsDetection.exe</exe>
         <name>TARGETSDETECTION</name>
         <port>25110</port>
         <protocol></protocol>
