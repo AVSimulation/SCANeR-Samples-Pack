@@ -60,6 +60,11 @@
         <protocol></protocol>
         <Environment/>
         <Display/>
+        <ExitMethod>
+          <exitMethod>0</exitMethod>
+          <overrideExitOrder>0</overrideExitOrder>
+          <timeout>3000</timeout>
+        </ExitMethod>
       </Process>
       <Process>
         <exe></exe>
@@ -68,37 +73,69 @@
         <protocol></protocol>
         <Environment/>
         <Display/>
+        <ExitMethod>
+          <exitMethod>0</exitMethod>
+          <overrideExitOrder>0</overrideExitOrder>
+          <timeout>3000</timeout>
+        </ExitMethod>
       </Process>
       <Process>
-        <exe>${PYTHON_HOME}/python.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/python/python.exe</exe>
         <name>LONGI_PY_ACCEL</name>
         <port>25107</port>
         <protocol></protocol>
-        <Option>
-          <value>${LOCAL_STUDIO_PATH}\SCANeRstudio_2022\APIs\samples\EVALUATION_APIs\ScanerAPI\EVAL_LONGITUDINAL_CTRL\python\eval_longitudinal_ctrl_accel.py</value>
-        </Option>
         <Environment/>
         <Display/>
+        <ExitMethod>
+          <exitMethod>0</exitMethod>
+          <overrideExitOrder>0</overrideExitOrder>
+          <timeout>3000</timeout>
+        </ExitMethod>
+        <Option>
+          <value>${LOCAL_STUDIO_PATH}\SCANeRstudio_2022\APIs\samples\ScanerAPI\EVAL_LONGITUDINAL_CTRL\python\eval_longitudinal_ctrl_accel.py</value>
+        </Option>
       </Process>
       <Process>
-        <exe>${PYTHON_HOME}/python.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/python/python.exe</exe>
         <name>LONGI_PY_SPEED</name>
         <port>25108</port>
         <protocol></protocol>
-        <Option>
-          <value>${LOCAL_STUDIO_PATH}\SCANeRstudio_2022\APIs\samples\EVALUATION_APIs\ScanerAPI\EVAL_LONGITUDINAL_CTRL\python\eval_longitudinal_ctrl_speed.py</value>
-        </Option>
         <Environment/>
         <Display/>
+        <ExitMethod>
+          <exitMethod>0</exitMethod>
+          <overrideExitOrder>0</overrideExitOrder>
+          <timeout>3000</timeout>
+        </ExitMethod>
+        <Option>
+          <value>${LOCAL_STUDIO_PATH}\SCANeRstudio_2022\APIs\samples\ScanerAPI\EVAL_LONGITUDINAL_CTRL\python\eval_longitudinal_ctrl_speed.py</value>
+        </Option>
       </Process>
       <Process>
-        <exe>${PYTHON_HOME}/python.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/python/python.exe</exe>
         <name>LONGI_PY_PEDAL</name>
         <port>25109</port>
         <protocol></protocol>
+        <Environment/>
+        <Display/>
+        <ExitMethod>
+          <exitMethod>0</exitMethod>
+          <overrideExitOrder>0</overrideExitOrder>
+          <timeout>3000</timeout>
+        </ExitMethod>
         <Option>
-          <value>${LOCAL_STUDIO_PATH}\SCANeRstudio_2022\APIs\samples\EVALUATION_APIs\ScanerAPI\EVAL_LONGITUDINAL_CTRL\python\eval_longitudinal_ctrl_pedalPos.py</value>
+          <value>${LOCAL_STUDIO_PATH}\SCANeRstudio_2022\APIs\samples\ScanerAPI\EVAL_LONGITUDINAL_CTRL\python\eval_longitudinal_ctrl_pedalPos.py</value>
         </Option>
+      </Process>
+      <Process>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/ControlpadViewer.exe</exe>
+        <name>CONTROLPADVIEWER</name>
+        <port>25110</port>
+        <protocol></protocol>
+        <Argument>
+          <name>doc</name>
+          <value>plot_speed.xml</value>
+        </Argument>
         <Environment/>
         <Display/>
       </Process>
@@ -127,6 +164,9 @@
       </Selected>
       <Selected>
         <processName>LONGI_C</processName>
+      </Selected>
+      <Selected>
+        <processName>CONTROLPADVIEWER</processName>
       </Selected>
     </DefaultProcesses>
   </Setup>
@@ -158,6 +198,9 @@
     </Module>
     <Module>
       <processName>LONGI_PY_PEDAL</processName>
+    </Module>
+    <Module>
+      <processName>CONTROLPADVIEWER</processName>
     </Module>
   </ProcessGroups>
 
