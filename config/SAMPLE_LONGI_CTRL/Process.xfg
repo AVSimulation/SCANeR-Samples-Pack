@@ -154,6 +154,9 @@
       <Selected>
         <processName>LONGI_C</processName>
       </Selected>
+      <Selected>
+        <processName>CONTROLPADVIEWER</processName>
+      </Selected>
     </AutoStartProcesses>
     <DefaultProcesses>
       <Selected>
