@@ -1,0 +1,33 @@
+<!DOCTYPE Controlpad>
+<Controlpad>
+    <Dashboard label="Dashboard">
+        <TextDashboardItem text="Clutch" y="420" x="260" name="Clutch label" font="Verdana,10,-1,5,50,0,0,0,0,0"/>
+        <VerticalProgressBarDashboardItem sourceKey="Network,IVehicle,VehicleUpdate,0,clutch" height="150" sourceName="ScanerDataSource" width="50" unit="" y="440" x="260" name="Clutch bar">
+            <WidgetProperty name="minimum" value="0"/>
+            <WidgetProperty name="maximum" value="1"/>
+            <WidgetProperty name="textVisible" value="true"/>
+            <WidgetProperty name="invertedAppearance" value="false"/>
+            <WidgetProperty name="format" value="%v"/>
+        </VerticalProgressBarDashboardItem>
+        <TextDashboardItem text="Brake" y="420" x="360" name="Brake label" font="Verdana,10,-1,5,50,0,0,0,0,0"/>
+        <VerticalProgressBarDashboardItem sourceKey="Network,IVehicle,VehicleUpdate,0,brake" height="150" sourceName="ScanerDataSource" width="50" unit="N" y="440" x="360" name="Brake bar">
+            <WidgetProperty name="minimum" value="0"/>
+            <WidgetProperty name="maximum" value="400"/>
+            <WidgetProperty name="textVisible" value="true"/>
+            <WidgetProperty name="invertedAppearance" value="false"/>
+            <WidgetProperty name="format" value="%v"/>
+        </VerticalProgressBarDashboardItem>
+        <TextDashboardItem text="Accel" y="420" x="460" name="Accel label" font="Verdana,10,-1,5,50,0,0,0,0,0"/>
+        <VerticalProgressBarDashboardItem sourceKey="Network,IVehicle,VehicleUpdate,0,accelerator" height="150" sourceName="ScanerDataSource" width="50" unit="" y="440" x="460" name="Accel bar">
+            <WidgetProperty name="minimum" value="0"/>
+            <WidgetProperty name="maximum" value="1"/>
+            <WidgetProperty name="textVisible" value="true"/>
+            <WidgetProperty name="invertedAppearance" value="false"/>
+            <WidgetProperty name="format" value="%v"/>
+        </VerticalProgressBarDashboardItem>
+        <CLSID_PlotterDashboardItem xMaxValue="40" refreshRate="20" name="Plotter" yLeftMaxValue="50" drawCompleteCurve="0" yLeftAutoScale="0" yLeftMinValue="0" plotterTitle="New Plot" yRightMaxValue="2" yRightAutoScale="0" x="0" width="760" yRightMinValue="-2" height="400" y="0" xAutoScale="0" useScanerTime="1" xMinValue="0" xAxis="Time (s)">
+            <Source isYAutoScale="0" key="Network,IVehicle,VehicleUpdate,0,accel[0]" unit="" isLeft="0" isHighlighted="0" name="ScanerDataSource" color="#ff0000"/>
+            <Source isYAutoScale="0" key="Network,IVehicle,VehicleUpdate,0,speed[0]" unit="km/h" isLeft="1" isHighlighted="0" name="ScanerDataSource" color="#ffffff"/>
+        </CLSID_PlotterDashboardItem>
+    </Dashboard>
+</Controlpad>
