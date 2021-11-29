@@ -2,13 +2,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RTGatewayIO", "EVALUATION_APIs\RTGatewayIO\RTGatewayIO.vcxproj", "{82D9D0F9-C8B4-40C1-BADD-2FA5A7177DC9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RTGatewayIO", "RTGatewayIO\RTGatewayIO.vcxproj", "{82D9D0F9-C8B4-40C1-BADD-2FA5A7177DC9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "eval_adas", "EVALUATION_APIs\ScanerAPI\EVAL_ADAS\cpp\eval_adas.vcxproj", "{1BDCEB5E-8053-4961-B90A-531DF329414B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "eval_adas", "ScanerAPI\EVAL_ADAS\cpp\eval_adas.vcxproj", "{1BDCEB5E-8053-4961-B90A-531DF329414B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "eval_longitudinal_ctrl", "EVALUATION_APIs\ScanerAPI\EVAL_LONGITUDINAL_CTRL\cpp\eval_longitudinal_ctrl2.vcxproj", "{C5CAA2E7-590C-41E4-A90C-A8D9F9D5881C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "eval_longitudinal_ctrl", "ScanerAPI\EVAL_LONGITUDINAL_CTRL\cpp\eval_longitudinal_ctrl2.vcxproj", "{C5CAA2E7-590C-41E4-A90C-A8D9F9D5881C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "eval_lateral_ctrl", "EVALUATION_APIs\ScanerAPI\EVAL_LATERAL_CTRL\cpp\eval_lateral_ctrl.vcxproj", "{CB9EB123-4136-41EB-A45E-F7E8084983E3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "eval_lateral_ctrl", "ScanerAPI\EVAL_LATERAL_CTRL\cpp\eval_lateral_ctrl.vcxproj", "{CB9EB123-4136-41EB-A45E-F7E8084983E3}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "adas_acc", "ScanerAPI\ADAS\adas_acc\adas_acc.vcxproj", "{19FD521A-8E1E-410B-A542-802C1AED0CB4}"
 EndProject
