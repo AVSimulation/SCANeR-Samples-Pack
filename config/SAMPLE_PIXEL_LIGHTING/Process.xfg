@@ -183,28 +183,38 @@
         <Display/>
       </Process>
       <Process>
-        <exe>${LOCAL_STUDIO_PATH}/SCANeRstudio_2022/APIs/bin/x64/vs2019/IS_VideoCapture.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/APIs/bin/x64/vs2019/IS_VideoCapture.exe</exe>
         <name>IS_VIDEOCAPTURE_L</name>
         <port>25120</port>
         <protocol></protocol>
-        <Argument>
-          <name>cfg</name>
-          <value>../SAMPLE_PIXEL_LIGHTING/imageSharingVideoCaptureL.cfg</value>
-        </Argument>
         <Environment/>
         <Display/>
+        <ExitMethod>
+          <exitMethod>0</exitMethod>
+          <overrideExitOrder>0</overrideExitOrder>
+          <timeout>3000</timeout>
+        </ExitMethod>
+        <Argument>
+          <name>cfg</name>
+          <value>imageSharingVideoCaptureL.cfg</value>
+        </Argument>
       </Process>
       <Process>
-        <exe>${LOCAL_STUDIO_PATH}/SCANeRstudio_2022/APIs/bin/x64/vs2019/IS_VideoCapture.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/APIs/bin/x64/vs2019/IS_VideoCapture.exe</exe>
         <name>IS_VIDEOCAPTURE_R</name>
         <port>25121</port>
         <protocol></protocol>
-        <Argument>
-          <name>cfg</name>
-          <value>../SAMPLE_PIXEL_LIGHTING/imageSharingVideoCaptureR.cfg</value>
-        </Argument>
         <Environment/>
         <Display/>
+        <ExitMethod>
+          <exitMethod>0</exitMethod>
+          <overrideExitOrder>0</overrideExitOrder>
+          <timeout>3000</timeout>
+        </ExitMethod>
+        <Argument>
+          <name>cfg</name>
+          <value>imageSharingVideoCaptureR.cfg</value>
+        </Argument>
       </Process>
     </Computer>
   </Processes>
