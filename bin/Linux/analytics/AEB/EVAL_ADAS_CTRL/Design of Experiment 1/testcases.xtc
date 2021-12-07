@@ -1,0 +1,269 @@
+
+<testcaseset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TestCaseSet.xsd">
+
+  <name>ADAS_AEB_EVAL_ADAS_CTRL </name>
+
+  <prefix>AEB_EVAL_ADAS_CTRL </prefix>
+
+  <useprefix>1</useprefix>
+
+  <outputdir></outputdir>
+
+  <datesuffix>0</datesuffix>
+
+  <parameter name="rainLevel" ranges="1" type="Real" unit="">
+    <description></description>
+    <id>/sce/Scenario/StoryBoard/Step[name/@ScenarioTreeValue="Main Step"]/ScenarioScript[scriptName="Main"]/Variable[name=5]/value</id>
+    <default>0.000000</default>
+  </parameter>
+
+  <parameter name="distanceToCollision" ranges="1" type="Real" unit="">
+    <description></description>
+    <id>/sce/Scenario/StoryBoard/Step[name/@ScenarioTreeValue="Main Step"]/ScenarioScript[scriptName="Main"]/Variable[name=0]/value</id>
+    <default>20.000000</default>
+  </parameter>
+
+  <testcases>
+    <testcase id="1" selected="1">
+      <value range="0">-1.000000</value>
+      <value range="0">1.000000</value>
+    </testcase>
+    <testcase id="2" selected="1">
+      <value range="0">0.000000</value>
+      <value range="0">1.000000</value>
+    </testcase>
+    <testcase id="3" selected="1">
+      <value range="0">1.000000</value>
+      <value range="0">1.000000</value>
+    </testcase>
+    <testcase id="4" selected="1">
+      <value range="0">-1.000000</value>
+      <value range="0">2.000000</value>
+    </testcase>
+    <testcase id="5" selected="1">
+      <value range="0">0.000000</value>
+      <value range="0">2.000000</value>
+    </testcase>
+    <testcase id="6" selected="1">
+      <value range="0">1.000000</value>
+      <value range="0">2.000000</value>
+    </testcase>
+    <testcase id="7" selected="1">
+      <value range="0">-1.000000</value>
+      <value range="0">3.000000</value>
+    </testcase>
+    <testcase id="8" selected="1">
+      <value range="0">0.000000</value>
+      <value range="0">3.000000</value>
+    </testcase>
+    <testcase id="9" selected="1">
+      <value range="0">1.000000</value>
+      <value range="0">3.000000</value>
+    </testcase>
+    <testcase id="10" selected="1">
+      <value range="0">-1.000000</value>
+      <value range="0">4.000000</value>
+    </testcase>
+    <testcase id="11" selected="1">
+      <value range="0">0.000000</value>
+      <value range="0">4.000000</value>
+    </testcase>
+    <testcase id="12" selected="1">
+      <value range="0">1.000000</value>
+      <value range="0">4.000000</value>
+    </testcase>
+    <testcase id="13" selected="1">
+      <value range="0">-1.000000</value>
+      <value range="0">5.000000</value>
+    </testcase>
+    <testcase id="14" selected="1">
+      <value range="0">0.000000</value>
+      <value range="0">5.000000</value>
+    </testcase>
+    <testcase id="15" selected="1">
+      <value range="0">1.000000</value>
+      <value range="0">5.000000</value>
+    </testcase>
+    <testcase id="16" selected="1">
+      <value range="0">-1.000000</value>
+      <value range="0">6.000000</value>
+    </testcase>
+    <testcase id="17" selected="1">
+      <value range="0">0.000000</value>
+      <value range="0">6.000000</value>
+    </testcase>
+    <testcase id="18" selected="1">
+      <value range="0">1.000000</value>
+      <value range="0">6.000000</value>
+    </testcase>
+    <testcase id="19" selected="1">
+      <value range="0">-1.000000</value>
+      <value range="0">7.000000</value>
+    </testcase>
+    <testcase id="20" selected="1">
+      <value range="0">0.000000</value>
+      <value range="0">7.000000</value>
+    </testcase>
+    <testcase id="21" selected="1">
+      <value range="0">1.000000</value>
+      <value range="0">7.000000</value>
+    </testcase>
+    <testcase id="22" selected="1">
+      <value range="0">-1.000000</value>
+      <value range="0">8.000000</value>
+    </testcase>
+    <testcase id="23" selected="1">
+      <value range="0">0.000000</value>
+      <value range="0">8.000000</value>
+    </testcase>
+    <testcase id="24" selected="1">
+      <value range="0">1.000000</value>
+      <value range="0">8.000000</value>
+    </testcase>
+    <testcase id="25" selected="1">
+      <value range="0">-1.000000</value>
+      <value range="0">9.000000</value>
+    </testcase>
+    <testcase id="26" selected="1">
+      <value range="0">0.000000</value>
+      <value range="0">9.000000</value>
+    </testcase>
+    <testcase id="27" selected="1">
+      <value range="0">1.000000</value>
+      <value range="0">9.000000</value>
+    </testcase>
+    <testcase id="28" selected="1">
+      <value range="0">-1.000000</value>
+      <value range="0">10.000000</value>
+    </testcase>
+    <testcase id="29" selected="1">
+      <value range="0">0.000000</value>
+      <value range="0">10.000000</value>
+    </testcase>
+    <testcase id="30" selected="1">
+      <value range="0">1.000000</value>
+      <value range="0">10.000000</value>
+    </testcase>
+    <testcase id="31" selected="1">
+      <value range="0">-1.000000</value>
+      <value range="0">11.000000</value>
+    </testcase>
+    <testcase id="32" selected="1">
+      <value range="0">0.000000</value>
+      <value range="0">11.000000</value>
+    </testcase>
+    <testcase id="33" selected="1">
+      <value range="0">1.000000</value>
+      <value range="0">11.000000</value>
+    </testcase>
+    <testcase id="34" selected="1">
+      <value range="0">-1.000000</value>
+      <value range="0">12.000000</value>
+    </testcase>
+    <testcase id="35" selected="1">
+      <value range="0">0.000000</value>
+      <value range="0">12.000000</value>
+    </testcase>
+    <testcase id="36" selected="1">
+      <value range="0">1.000000</value>
+      <value range="0">12.000000</value>
+    </testcase>
+    <testcase id="37" selected="1">
+      <value range="0">-1.000000</value>
+      <value range="0">13.000000</value>
+    </testcase>
+    <testcase id="38" selected="1">
+      <value range="0">0.000000</value>
+      <value range="0">13.000000</value>
+    </testcase>
+    <testcase id="39" selected="1">
+      <value range="0">1.000000</value>
+      <value range="0">13.000000</value>
+    </testcase>
+    <testcase id="40" selected="1">
+      <value range="0">-1.000000</value>
+      <value range="0">14.000000</value>
+    </testcase>
+    <testcase id="41" selected="1">
+      <value range="0">0.000000</value>
+      <value range="0">14.000000</value>
+    </testcase>
+    <testcase id="42" selected="1">
+      <value range="0">1.000000</value>
+      <value range="0">14.000000</value>
+    </testcase>
+    <testcase id="43" selected="1">
+      <value range="0">-1.000000</value>
+      <value range="0">15.000000</value>
+    </testcase>
+    <testcase id="44" selected="1">
+      <value range="0">0.000000</value>
+      <value range="0">15.000000</value>
+    </testcase>
+    <testcase id="45" selected="1">
+      <value range="0">1.000000</value>
+      <value range="0">15.000000</value>
+    </testcase>
+    <testcase id="46" selected="1">
+      <value range="0">-1.000000</value>
+      <value range="0">16.000000</value>
+    </testcase>
+    <testcase id="47" selected="1">
+      <value range="0">0.000000</value>
+      <value range="0">16.000000</value>
+    </testcase>
+    <testcase id="48" selected="1">
+      <value range="0">1.000000</value>
+      <value range="0">16.000000</value>
+    </testcase>
+    <testcase id="49" selected="1">
+      <value range="0">-1.000000</value>
+      <value range="0">17.000000</value>
+    </testcase>
+    <testcase id="50" selected="1">
+      <value range="0">0.000000</value>
+      <value range="0">17.000000</value>
+    </testcase>
+    <testcase id="51" selected="1">
+      <value range="0">1.000000</value>
+      <value range="0">17.000000</value>
+    </testcase>
+    <testcase id="52" selected="1">
+      <value range="0">-1.000000</value>
+      <value range="0">18.000000</value>
+    </testcase>
+    <testcase id="53" selected="1">
+      <value range="0">0.000000</value>
+      <value range="0">18.000000</value>
+    </testcase>
+    <testcase id="54" selected="1">
+      <value range="0">1.000000</value>
+      <value range="0">18.000000</value>
+    </testcase>
+    <testcase id="55" selected="1">
+      <value range="0">-1.000000</value>
+      <value range="0">19.000000</value>
+    </testcase>
+    <testcase id="56" selected="1">
+      <value range="0">0.000000</value>
+      <value range="0">19.000000</value>
+    </testcase>
+    <testcase id="57" selected="1">
+      <value range="0">1.000000</value>
+      <value range="0">19.000000</value>
+    </testcase>
+    <testcase id="58" selected="1">
+      <value range="0">-1.000000</value>
+      <value range="0">20.000000</value>
+    </testcase>
+    <testcase id="59" selected="1">
+      <value range="0">0.000000</value>
+      <value range="0">20.000000</value>
+    </testcase>
+    <testcase id="60" selected="1">
+      <value range="0">1.000000</value>
+      <value range="0">20.000000</value>
+    </testcase>
+  </testcases>
+
+</testcaseset>
