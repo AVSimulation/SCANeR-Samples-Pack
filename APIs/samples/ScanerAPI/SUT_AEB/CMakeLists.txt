@@ -1,0 +1,8 @@
+SET(TARGET_NAME "SUT_AEB")
+
+ADD_EXECUTABLE(${TARGET_NAME}  
+sut_aeb.cpp
+)
+
+TARGET_LINK_LIBRARIES(${TARGET_NAME} 
+	                 ${SCANER_API_LIB})
