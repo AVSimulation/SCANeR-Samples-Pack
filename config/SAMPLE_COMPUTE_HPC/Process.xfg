@@ -141,7 +141,7 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${LOCAL_STUDIO_PATH}/SCANeR-Samples-Pack/data/SAMPLE_COMPUTE_HPC/bin/SUT_AEB</exe>
+        <exe>${LOCAL_STUDIO_PATH}/SCANeR-Samples-Pack/data/SAMPLE_COMPUTE_HPC/bin/ubuntu/20.04/SUT_AEB</exe>
         <name>SUT_AEB</name>
         <port>25110</port>
         <protocol></protocol>
