@@ -141,7 +141,7 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/data/SAMPLE_COMPUTE_LOCAL/bin/sut_aeb_w.exe</exe>
+        <exe>${LOCAL_STUDIO_PATH}/SCANeR-Samples-Pack/data/SAMPLE_COMPUTE_LOCAL/bin/sut_aeb_w.exe</exe>
         <name>SUT_AEB</name>
         <port>25110</port>
         <protocol></protocol>
