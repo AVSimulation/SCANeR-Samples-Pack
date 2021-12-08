@@ -2,51 +2,54 @@
 
 ## 1. Prerequisites
 
-### GitHub Account
+* SCANeR studio 2022
+
+* GitHub Account
 
 An account using your company email (avsimulation.fr) is required.  
 Send a request to guichet@avsimulation.fr.
 
-### Git client
+* Git client
 
-Any Git client is good to use, but the instructions are given here for the "official" client found on git-scm.com.
+Any Git client is good to use. The instructions are given here for the "official" client found on git-scm.com.
 
 Get the Git client here : https://git-scm.com/download/win  
-Install with default settings (Git Bash is required, Git GUI is good to have)
+Install with default settings (Git Bash is required, Git GUI is nice to have)
 
-### Git basics
+* Git basics
 
-This manual is meant to be self sufficient.  
-If you are interested, check the Git basics here:  https://git-scm.com/doc
-
-### SCANeR studio 2022
-
-A valid installation of SCANeR studio 2022 is required.
+This manual should be self sufficient.  
+For more, check the Git basics here:  https://git-scm.com/doc
 
 ## 2. First time installation
 
+### Set up LOCAL_STUDIO_PATH
+
+`LOCAL_STUDIO_PATH` is an environment variable like `STUDIO_PATH`.  
+It allows the user to define an arbitrary directory for SCANeR's user data and configurations.  
+Details in the SCANeR studio user manual: `1.5.4.7.5. Set LOCAL_STUDIO_PATH variable`.
+
+> The Samples Pack goes into `%LOCAL_STUDIO_PATH%/SCANeR-Samples-Pack-2022/`
+
+* In windows, create a folder anywhere (e.g.: `D:/SCANeR_data/`).
+* Find `Edit the system environment variables` or `Edit environment variables for your account`
+* Add the environment variable `LOCAL_STUDIO_PATH` with full absolute path to your folder (e.g.: `D:\SCANeR_data`).
+
 ### Set up the Git local repo
 
-* Open directory `%STUDIO_PATH%/SCANeRstudio_2022`
+* Open directory `%LOCAL_STUDIO_PATH%`
 * `Right click > Git Bash here`
-* In the Git Bash console, run the following commands:
+* Clone the repository:
 ```
-git init
-git remote add origin https://github.com/AVSimulation/SCANeR-Samples-Pack.git
-git fetch
+git clone https://github.com/AVSimulation/SCANeR-Samples-Pack.git SCANeR-Samples-Pack-2022
 ```
 * When prompted, login to GitHub with the account linked to your company e-mail.
-* Fetching takes some time.
-
-The local git repo is now up to date, but no branch is applied to your SCANeR studio installation yet.
-
-### Set your Git credentials
-
+* *Downloading can take a few minutes.*
+* Update your local working tree:
 ```
-git config --global user.email "name.surname@avsimulation.fr"
-git config --global user.name "Name Surname"
+cd SCANeR-Samples-Pack-2022
+git checkout 2022
 ```
-Now the remote repository can accept your future modifications.
 
 ### Git hook for configuration.cfg
 
@@ -55,31 +58,17 @@ git config core.hooksPath "./samples-pack-utils/hooks/"
 ```
 Now every time you checkout a branch, the Samples Pack configuration paths will be automatically be added to `%STUDIO_PATH%/configurations.cfg`  
 
-### Ignore SCANeR installation files
+### Prepare for contribution
 
-By default, Git lists all files. This includes SCANeR studio installed files that are not related to the Samples Pack.  
-Try to do ```git status``` and you will see the very long list. It is difficult to find the relevant modification of Samples Pack files in the middle of it.
-
-In order to ignore these files from now on, add all of these file to your local exclude list.  
-(Do this only when you don't have uncommitted Samples Pack changes, or they will be added to the exclude list.)
+The remote repository will need to know who makes a contribution.
 ```
-git ls-files --others --exclude-standard >> .git/info/exclude
+git config --global user.email "name.surname@avsimulation.fr"
+git config --global user.name "Name Surname"
 ```
-Git will stop mentionning these files. They will remain untouched.
-
-Over time, if you work and create files that are not related to the Samples Pack (e.g.: test configuration), run the command again to update your exclude list.
-
-### Deploy the Samples Pack files
-
-```
-git checkout -b 2022 origin/2022
-```
-This creates a new local branch `2022` that with uplink `origin/2022`
-Now your SCANeR studio installation has the latest version of the Samples Pack files.
 
 ## 3. Publish a modification
 
-### Get the latest version
+### Before modifying, get the latest files
 
 Make sure that you are on a working branch (e.g. `2022`) with a valid uplink (e.g. `origin/2022`).
 ```
@@ -104,7 +93,7 @@ git add path/to/the/file
 ```
 * Save the changes in your current local branch
 ```
-git commit -m "Replaced Simulink block"
+git commit -m "Replaced some Simulink block"
 ```
 Parameter "-m" is the commit message that helps everyone know what you did.
 
@@ -114,7 +103,7 @@ When you finished doing the modification and the Samples Pack works, push the br
 ```
 git push
 ```
-If you get an error (rejected), see next section.
+If you get rejected, see next section.
 
 ### Merge
 
@@ -137,7 +126,43 @@ Finally, send again
 git push
 ```
 
-## 4. Release
+### Diff tool
+
+The diff tool helps visualize the current modifications.
+
+* Install [Meld](https://meldmerge.org/) or [WinMerge](https://winmerge.org/)
+* Apply in Git Bash (once and for all)
+  * For Meld
+  ```
+  git config --global diff.tool meld
+  git config --global difftool.meld.path "C:\Program Files (x86)\Meld\Meld.exe"
+  git config --global difftool.prompt false
+
+  git config --global merge.tool meld
+  git config --global mergetool.meld.path "C:\Program Files (x86)\Meld\Meld.exe"
+  git config --global mergetool.prompt false
+  ```
+  * For WinMerge
+  ```
+  git config --global diff.tool winmerge 
+  git config --global difftool.winmerge.path 'C:\Program Files (x86)\WinMerge\WinMergeU.exe'
+  git config --global difftool.prompt false
+
+  git config --global merge.tool winmerge 
+  git config --global mergetool.winmerge.path 'C:\Program Files (x86)\WinMerge\WinMergeU.exe'
+  git config --global mergetool.prompt false
+  ```
+
+Now check your pending modifications ...
+```
+git difftool --dir-diff
+```
+... or the difference between two commits or branches
+```
+git difftool --dir-diff 2022 2021.2
+```
+
+## 4. Release (obsolete - to be updated)
 
 The [SCANeR User Guides](https://avsguichet.github.io/Samples-Pack/) website links to the latest release of the Samples Pack.
 
