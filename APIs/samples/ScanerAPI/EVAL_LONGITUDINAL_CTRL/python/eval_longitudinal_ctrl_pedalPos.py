@@ -12,7 +12,7 @@ this_file = inspect.currentframe().f_code.co_filename
 this_dir = os.path.dirname(this_file)
 # to find scaner_api dll
 if (os.name == 'nt'):
-    os.chdir(os.path.abspath(os.environ['STUDIO_PATH']+'./SCANeRstudio_1.9/APIs/bin/x64/vs2013'))
+    os.chdir(os.path.abspath(os.environ['STUDIO_PATH']+'./SCANeRstudio_2022/APIs/bin/x64/vs2019'))
 
 from scaner import *
 
@@ -43,30 +43,30 @@ try:
         if status == PS_RUNNING:
             time = Process_GetTime();
             if Com_updateInputs(UT_NetworkData) == 0:
-                print 'Update Network inputs failed...'
+                print('Update Network inputs failed...')
             targetsCount = Com_getShortData(radar_300000, "targetsArrayCount")
 
             throttle = 0;
             brakePedal = 0;
             if time < 10:
-                throttle = 100;
+                throttle = .4;
                 brakePedal = 0;
             else:
                 if time < 20:
-                    throttle = 0;
+                    throttle = .08;
                     brakePedal = 0;
                 else:
                     throttle = 0;
-                    brakePedal = 400;
+                    brakePedal = 50;
 
-            Com_setDoubleData(CabToModelCorrective_0, "AcceleratorAdditive", 1);
+            Com_setDoubleData(CabToModelCorrective_0, "AcceleratorAdditive", throttle);
             Com_setDoubleData(CabToModelCorrective_0, "AcceleratorMultiplicative", 0);
             Com_setDoubleData(CabToModelCorrective_0, "BrakeAdditive", brakePedal);
             Com_setDoubleData(CabToModelCorrective_0, "BrakeMultiplicative", 0);
             Com_setDoubleData(CabToModelCorrective_0, "TimeOfUpdate", TimeOfUpdate);
             if Com_updateOutputs(UT_ShmData) == 0: #flush the corrective message
-                print 'Update Shm outputs failed...'
+                print('Update Shm outputs failed...')
             
 except KeyboardInterrupt:
-    print 'Bye bye'
+    print('Bye bye')
     Process_Close()

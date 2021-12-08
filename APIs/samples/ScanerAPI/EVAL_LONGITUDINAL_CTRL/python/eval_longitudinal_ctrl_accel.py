@@ -12,7 +12,7 @@ this_file = inspect.currentframe().f_code.co_filename
 this_dir = os.path.dirname(this_file)
 # to find scaner_api dll
 if (os.name == 'nt'):
-    os.chdir(os.path.abspath(os.environ['STUDIO_PATH']+'./SCANeRstudio_1.9/APIs/bin/x64/vs2013'))
+    os.chdir(os.path.abspath(os.environ['STUDIO_PATH']+'./SCANeRstudio_2022/APIs/bin/x64/vs2019'))
 
 from scaner import *
 
@@ -24,7 +24,7 @@ status = PS_DAEMON
 
 try:
     # write access to Shared Memory for longitudinal control
-    cabToModelOutput = Com_declareOutputData('Shm/ModelCabin/CabToModel');
+    cabToModelOutput = Com_declareOutputData('Shm/ModelCabin/CabToModel', 0);
 
     while status != PS_DEAD:
         # Process manager Run 
@@ -36,12 +36,23 @@ try:
         status = Process_GetState()
         
         if status == PS_RUNNING:
-            Com_setShortData(cabToModelOutput, "RVLVState", 1) # RVLVState = 1 for control in speed
-            Com_setDoubleData(cabToModelOutput, "RVLVTarget", 27) # target speed in m/s
+            time = Process_GetTime();
+            Com_setShortData(cabToModelOutput, "RVLVState", 3); # RVLVState = 1 for control in acceleration
+			
+            targetAccel = 0;
+            if time < 10:
+                targetAccel = 1.1
+            else:
+                if time < 20:
+                    targetAccel = 0
+                else:
+                    targetAccel = -1.1;
+            
+            Com_setDoubleData(cabToModelOutput, "RVLVTarget", targetAccel); # target speed in m/s
 
         if Com_updateOutputs(UT_ShmData) == 0: #flush the corrective message
-            print 'Update Shm outputs failed...'
+            print('Update Shm outputs failed...')
             
 except KeyboardInterrupt:
-    print 'Bye bye'
+    print('Bye bye')
     Process_Close()

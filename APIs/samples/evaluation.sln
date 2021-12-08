@@ -8,11 +8,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VEN", "VEN", "{01E51DA0-09D
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sut_aeb", "ScanerAPI\SUT_AEB\sut_aeb.vcxproj", "{66A24238-183E-4379-BA87-7557B2D08B1E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "targetsDetection", "ScanerAPI\sampleADAS\targetsDetection\targetsDetection.vcxproj", "{CCCF6562-0FC8-406D-ADF2-29CEA2884404}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "targetsDetection", "ScanerAPI\SampleADAS\targetsDetection\targetsDetection.vcxproj", "{CCCF6562-0FC8-406D-ADF2-29CEA2884404}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ScanerAPISensorsViewerPixelLighting", "ScanerAPI\SampleHeadlight\ScanerAPISensorsViewerPixelLighting\ScanerAPISensorsViewerPixelLighting.vcxproj", "{19F823E9-C5A5-4FEF-8CB0-B66B22FF38D6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RTGatewayIO", "EVALUATION_APIs\RTGatewayIO\RTGatewayIO.vcxproj", "{82D9D0F9-C8B4-40C1-BADD-2FA5A7177DC9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RTGatewayIO", "RTGatewayIO\RTGatewayIO.vcxproj", "{82D9D0F9-C8B4-40C1-BADD-2FA5A7177DC9}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VENSCANeRGateway", "VEN\VENSCANeRGateway\VENSCANeRGateway.vcxproj", "{C188E690-3707-40B5-833C-3E8DD3FC73EC}"
 EndProject
@@ -22,11 +22,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "adas_acc", "ScanerAPI\ADAS\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "adas_lka", "ScanerAPI\ADAS\adas_lka\adas_lka.vcxproj", "{9503BFE1-A19D-4F08-AA10-224FDA8243FB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "eval_adas", "EVALUATION_APIs\ScanerAPI\EVAL_ADAS\cpp\eval_adas.vcxproj", "{1BDCEB5E-8053-4961-B90A-531DF329414B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "eval_adas", "ScanerAPI\EVAL_ADAS\cpp\eval_adas.vcxproj", "{1BDCEB5E-8053-4961-B90A-531DF329414B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "eval_lateral_ctrl", "EVALUATION_APIs\ScanerAPI\EVAL_LATERAL_CTRL\cpp\eval_lateral_ctrl.vcxproj", "{CB9EB123-4136-41EB-A45E-F7E8084983E3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "eval_lateral_ctrl", "ScanerAPI\EVAL_LATERAL_CTRL\cpp\eval_lateral_ctrl.vcxproj", "{CB9EB123-4136-41EB-A45E-F7E8084983E3}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "eval_longitudinal_ctrl", "EVALUATION_APIs\ScanerAPI\EVAL_LONGITUDINAL_CTRL\cpp\eval_longitudinal_ctrl2.vcxproj", "{C5CAA2E7-590C-41E4-A90C-A8D9F9D5881C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "eval_longitudinal_ctrl", "ScanerAPI\EVAL_LONGITUDINAL_CTRL\cpp\eval_longitudinal_ctrl2.vcxproj", "{C5CAA2E7-590C-41E4-A90C-A8D9F9D5881C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
