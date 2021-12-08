@@ -70,16 +70,16 @@
     <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(LOCAL_STUDIO_PATH)\SCANeRstudio_2022\APIs\bin\$(TARGET_PLATFORM)\</OutDir>
+    <OutDir>$(LOCAL_STUDIO_PATH)\SCANeR-Samples-Pack-2022\APIs\bin\$(TARGET_PLATFORM)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(LOCAL_STUDIO_PATH)\SCANeRstudio_2022\APIs\bin\$(TARGET_PLATFORM)\</OutDir>
+    <OutDir>$(LOCAL_STUDIO_PATH)\SCANeR-Samples-Pack-2022\APIs\bin\$(TARGET_PLATFORM)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(LOCAL_STUDIO_PATH)\SCANeRstudio_2022\APIs\bin\$(TARGET_PLATFORM)\</OutDir>
+    <OutDir>$(LOCAL_STUDIO_PATH)\SCANeR-Samples-Pack-2022\APIs\bin\$(TARGET_PLATFORM)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(LOCAL_STUDIO_PATH)\SCANeRstudio_2022\APIs\bin\$(TARGET_PLATFORM)\</OutDir>
+    <OutDir>$(LOCAL_STUDIO_PATH)\SCANeR-Samples-Pack-2022\APIs\bin\$(TARGET_PLATFORM)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>

@@ -132,7 +132,7 @@
         <Display/>
       </Process>
       <Process>
-        <exe>${LOCAL_STUDIO_PATH}/SCANeRstudio_2022/APIs/bin/x64/vs2019/eval_adas.exe</exe>
+        <exe>${LOCAL_STUDIO_PATH}\SCANeR-Samples-Pack-2022/APIs/bin/x64/vs2019/eval_adas.exe</exe>
         <name>ADAS_C</name>
         <port>25115</port>
         <protocol></protocol>
@@ -157,7 +157,7 @@
           <timeout>3000</timeout>
         </ExitMethod>
         <Option>
-          <value>${LOCAL_STUDIO_PATH}\SCANeRstudio_2022\APIs\samples\ScanerAPI\EVAL_ADAS\python\eval_adas.py</value>
+          <value>${LOCAL_STUDIO_PATH}\SCANeR-Samples-Pack-2022\APIs\samples\ScanerAPI\EVAL_ADAS\python\eval_adas.py</value>
         </Option>
       </Process>
     </Computer>

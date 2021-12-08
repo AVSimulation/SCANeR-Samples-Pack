@@ -88,7 +88,7 @@
         <Display/>
       </Process>
       <Process>
-        <exe>${LOCAL_STUDIO_PATH}/SCANeRstudio_2022/APIs/bin/x64/vs2019/eval_lateral_ctrl.exe</exe>
+        <exe>${LOCAL_STUDIO_PATH}\SCANeR-Samples-Pack-2022/APIs/bin/x64/vs2019/eval_lateral_ctrl.exe</exe>
         <name>LATERAL_CTRL</name>
         <port>25109</port>
         <protocol></protocol>

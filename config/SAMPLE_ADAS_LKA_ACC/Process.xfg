@@ -132,7 +132,7 @@
         <Display/>
       </Process>
       <Process>
-        <exe>${LOCAL_STUDIO_PATH}/SCANeRstudio_2022/APIs/bin/x64/vs2019/adas_lka.exe</exe>
+        <exe>${LOCAL_STUDIO_PATH}\SCANeR-Samples-Pack-2022/APIs/bin/x64/vs2019/adas_lka.exe</exe>
         <name>ADAS_LKA</name>
         <port>25115</port>
         <protocol></protocol>
@@ -144,7 +144,7 @@
         <Display/>
       </Process>
       <Process>
-        <exe>${LOCAL_STUDIO_PATH}/SCANeRstudio_2022/APIs/bin/x64/vs2019/adas_acc.exe</exe>
+        <exe>${LOCAL_STUDIO_PATH}\SCANeR-Samples-Pack-2022/APIs/bin/x64/vs2019/adas_acc.exe</exe>
         <name>ADAS_ACC</name>
         <port>25116</port>
         <protocol></protocol>

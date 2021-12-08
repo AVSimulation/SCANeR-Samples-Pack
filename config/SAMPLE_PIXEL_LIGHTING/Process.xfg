@@ -167,7 +167,7 @@
         <Display/>
       </Process>
       <Process>
-        <exe>${LOCAL_STUDIO_PATH}/SCANeRstudio_2022/APIs/bin/x64/vs2019/ScanerAPISensorsViewerPixelLighting.exe</exe>
+        <exe>${LOCAL_STUDIO_PATH}\SCANeR-Samples-Pack-2022/APIs/bin/x64/vs2019/ScanerAPISensorsViewerPixelLighting.exe</exe>
         <name>SENSOR_VIEWER_L</name>
         <port>25118</port>
         <protocol></protocol>
@@ -175,7 +175,7 @@
         <Display/>
       </Process>
       <Process>
-        <exe>${LOCAL_STUDIO_PATH}/SCANeRstudio_2022/APIs/bin/x64/vs2019/ScanerAPISensorsViewerPixelLighting.exe</exe>
+        <exe>${LOCAL_STUDIO_PATH}\SCANeR-Samples-Pack-2022/APIs/bin/x64/vs2019/ScanerAPISensorsViewerPixelLighting.exe</exe>
         <name>SENSOR_VIEWER_R</name>
         <port>25119</port>
         <protocol></protocol>

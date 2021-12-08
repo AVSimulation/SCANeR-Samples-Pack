@@ -14,7 +14,7 @@ function add_config() {
 		configFolder=${configFolder%/}
 		configName=${configFolder/'SAMPLE_'/'SAMPLE_2022_'}
 		echo Adding $configName ...
-		echo $configName = \${STUDIO_PATH}\\SCANeRstudio_2022\\config\\$configFolder >> ../configurations.cfg
+		echo $configName = \${LOCAL_STUDIO_PATH}\\SCANeR-Samples-Pack-2022\\config\\$configFolder >> ../configurations.cfg
 	} done
 	echo Successfully updated \"$(realpath "..\\configurations.cfg")\".;
 }

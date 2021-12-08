@@ -54,7 +54,7 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${LOCAL_STUDIO_PATH}/SCANeRstudio_2022/APIs/bin/x64/vs2019/eval_longitudinal_ctrl.exe</exe>
+        <exe>${LOCAL_STUDIO_PATH}\SCANeR-Samples-Pack-2022/APIs/bin/x64/vs2019/eval_longitudinal_ctrl.exe</exe>
         <name>LONGI_C</name>
         <port>25105</port>
         <protocol></protocol>
@@ -92,7 +92,7 @@
           <timeout>3000</timeout>
         </ExitMethod>
         <Option>
-          <value>${LOCAL_STUDIO_PATH}\SCANeRstudio_2022\APIs\samples\ScanerAPI\EVAL_LONGITUDINAL_CTRL\python\eval_longitudinal_ctrl_accel.py</value>
+          <value>${LOCAL_STUDIO_PATH}\SCANeR-Samples-Pack-2022\APIs\samples\ScanerAPI\EVAL_LONGITUDINAL_CTRL\python\eval_longitudinal_ctrl_accel.py</value>
         </Option>
       </Process>
       <Process>
@@ -108,7 +108,7 @@
           <timeout>3000</timeout>
         </ExitMethod>
         <Option>
-          <value>${LOCAL_STUDIO_PATH}\SCANeRstudio_2022\APIs\samples\ScanerAPI\EVAL_LONGITUDINAL_CTRL\python\eval_longitudinal_ctrl_speed.py</value>
+          <value>${LOCAL_STUDIO_PATH}\SCANeR-Samples-Pack-2022\APIs\samples\ScanerAPI\EVAL_LONGITUDINAL_CTRL\python\eval_longitudinal_ctrl_speed.py</value>
         </Option>
       </Process>
       <Process>
@@ -124,7 +124,7 @@
           <timeout>3000</timeout>
         </ExitMethod>
         <Option>
-          <value>${LOCAL_STUDIO_PATH}\SCANeRstudio_2022\APIs\samples\ScanerAPI\EVAL_LONGITUDINAL_CTRL\python\eval_longitudinal_ctrl_pedalPos.py</value>
+          <value>${LOCAL_STUDIO_PATH}\SCANeR-Samples-Pack-2022\APIs\samples\ScanerAPI\EVAL_LONGITUDINAL_CTRL\python\eval_longitudinal_ctrl_pedalPos.py</value>
         </Option>
       </Process>
       <Process>
