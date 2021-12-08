@@ -1,22 +1,28 @@
 #!/bin/sh
 
+echo ===
 echo AUTO UPDATE 'configurations.cfg'
-echo This will add all folders begining by \"./config/SAMPLE_\" to \"$(realpath "..\\configurations.cfg")\".
+echo [$(realpath "..\\configurations.cfg")]
 
 function cancel() {
 	echo 'configurations.cfg' was not updated.
 }
-
+#Add all folders begining by \"./config/SAMPLE_\" to \"$(realpath "..\\configurations.cfg")\".
 function add_config() {
 	for configFolder in ./config/SAMPLE_*/
 	do {
 		configFolder=${configFolder#'./config/'}
 		configFolder=${configFolder%/}
 		configName=${configFolder/'SAMPLE_'/'SAMPLE_2022_'}
-		echo Adding $configName ...
-		echo $configName = \${LOCAL_STUDIO_PATH}\\SCANeR-Samples-Pack-2022\\config\\$configFolder >> ../configurations.cfg
+		if  grep -q "$configName" ../configurations.cfg
+		then
+			echo Found $configName
+		else
+			echo Adding $configName ...
+			echo $configName = \${LOCAL_STUDIO_PATH}\\SCANeR-Samples-Pack-2022\\config\\$configFolder >> ../configurations.cfg
+		fi
 	} done
-	echo Successfully updated \"$(realpath "..\\configurations.cfg")\".;
+	echo 'configurations.cfg' is up to date.;
 }
 
 add_config
