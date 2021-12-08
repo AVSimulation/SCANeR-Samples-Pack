@@ -31,11 +31,11 @@ Details in the SCANeR studio user manual: `1.5.4.7.5. Set LOCAL_STUDIO_PATH vari
 
 > The Samples Pack goes into `%LOCAL_STUDIO_PATH%/SCANeR-Samples-Pack-2022/`
 
-* In windows, create a folder anywhere (e.g.: `D:/SCANeR_data/`).
+* In windows, create a folder (e.g.: `D:/SCANeR_data/`).
 * Find `Edit the system environment variables` or `Edit environment variables for your account`
 * Add the environment variable `LOCAL_STUDIO_PATH` with full absolute path to your folder (e.g.: `D:\SCANeR_data`).
 
-### Set up the Git local repo
+### Download (clone) the repository
 
 * Open directory `%LOCAL_STUDIO_PATH%`
 * `Right click > Git Bash here`
@@ -45,18 +45,28 @@ git clone https://github.com/AVSimulation/SCANeR-Samples-Pack.git SCANeR-Samples
 ```
 * When prompted, login to GitHub with the account linked to your company e-mail.
 * *Downloading can take a few minutes.*
-* Update your local working tree:
+* Go intside the new repository
 ```
 cd SCANeR-Samples-Pack-2022
-git checkout 2022
 ```
 
-### Git hook for configuration.cfg
+### Git hooks for configuration.cfg
 
+Hooks are bash scripts that are executed with a Git command.  
 ```
 git config core.hooksPath "./samples-pack-utils/hooks/"
 ```
-Now every time you checkout a branch, the Samples Pack configuration paths will be automatically be added to `%STUDIO_PATH%/configurations.cfg`  
+In the folder `samples-pack-utils` there is a hook script to auto-update `configuration.cfg` everytime `git checkout` is called.  
+(No need to modify `configuration.cfg` by hand anymore.)
+
+### Update the working tree
+
+```
+git checkout 2022
+```
+Now the working tree (i.e. files in `%LOCAL_STUDIO_PATH%/SCANeR-Samples-Pack-2022`) are matching the remote branch.
+
+*The Samples Pack is ready to use in SCANeR*
 
 ### Prepare for contribution
 
@@ -87,6 +97,7 @@ Commit changes on your working branch as often as necessary.
 ```
 git status
 ```
+> See also [difftool](#diff-tool).
 * Include new, modified or deleted files to your commit with
 ```
 git add path/to/the/file
