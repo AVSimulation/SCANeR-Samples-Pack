@@ -95,6 +95,18 @@
         <Environment/>
         <Display/>
       </Process>
+      <Process>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/UXDRender.exe</exe>
+        <name>UXDRENDER</name>
+        <port>25110</port>
+        <protocol></protocol>
+        <Argument>
+          <name>cfg</name>
+          <value>uxdrender.cfg</value>
+        </Argument>
+        <Environment/>
+        <Display/>
+      </Process>
     </Computer>
   </Processes>
 
@@ -102,21 +114,18 @@
     <name>Unamed</name>
     <AutoStartProcesses>
       <Selected>
-        <processName>VISUAL</processName>
-      </Selected>
-      <Selected>
         <processName>ACQUISITION</processName>
       </Selected>
       <Selected>
         <processName>MODELHANDLER</processName>
       </Selected>
+      <Selected>
+        <processName>UXDRENDER</processName>
+      </Selected>
     </AutoStartProcesses>
     <DefaultProcesses>
       <Selected>
         <processName>ACQUISITION</processName>
-      </Selected>
-      <Selected>
-        <processName>VISUAL</processName>
       </Selected>
       <Selected>
         <processName>MODELHANDLER</processName>
@@ -126,6 +135,9 @@
       </Selected>
       <Selected>
         <processName>LATERAL_CTRL</processName>
+      </Selected>
+      <Selected>
+        <processName>UXDRENDER</processName>
       </Selected>
     </DefaultProcesses>
   </Setup>
@@ -151,6 +163,9 @@
     </Module>
     <Module>
       <processName>VISUAL</processName>
+    </Module>
+    <Module>
+      <processName>UXDRENDER</processName>
     </Module>
     <Module>
       <processName>SENSORS</processName>

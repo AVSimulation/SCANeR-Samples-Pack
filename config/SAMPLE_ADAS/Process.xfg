@@ -160,6 +160,18 @@
           <value>${LOCAL_STUDIO_PATH}\SCANeR-Samples-Pack-2022\APIs\samples\ScanerAPI\EVAL_ADAS\python\eval_adas.py</value>
         </Option>
       </Process>
+      <Process>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/UXDRender.exe</exe>
+        <name>UXDRENDER</name>
+        <port>25117</port>
+        <protocol></protocol>
+        <Argument>
+          <name>cfg</name>
+          <value>uxdrender.cfg</value>
+        </Argument>
+        <Environment/>
+        <Display/>
+      </Process>
     </Computer>
   </Processes>
 
@@ -171,9 +183,6 @@
       </Selected>
       <Selected>
         <processName>ACQUISITION</processName>
-      </Selected>
-      <Selected>
-        <processName>VISUAL</processName>
       </Selected>
       <Selected>
         <processName>MODELHANDLER</processName>
@@ -197,9 +206,6 @@
       </Selected>
       <Selected>
         <processName>ACQUISITION</processName>
-      </Selected>
-      <Selected>
-        <processName>VISUAL</processName>
       </Selected>
       <Selected>
         <processName>MODELHANDLER</processName>
@@ -275,6 +281,9 @@
       </Module>
       <Module>
         <processName>VISUAL</processName>
+      </Module>
+      <Module>
+        <processName>UXDRENDER</processName>
       </Module>
       <Module>
         <processName>WALKERTRAFFIC</processName>

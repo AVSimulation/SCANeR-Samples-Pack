@@ -139,6 +139,18 @@
           <value>offlineScheduler.cfg</value>
         </Argument>
       </Process>
+      <Process>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/UXDRender.exe</exe>
+        <name>UXDRENDER</name>
+        <port>25116</port>
+        <protocol></protocol>
+        <Argument>
+          <name>cfg</name>
+          <value>uxdrender.cfg</value>
+        </Argument>
+        <Environment/>
+        <Display/>
+      </Process>
     </Computer>
   </Processes>
 
@@ -149,10 +161,10 @@
         <processName>MODELHANDLER</processName>
       </Selected>
       <Selected>
-        <processName>VISUAL</processName>
+        <processName>ACQUISITION</processName>
       </Selected>
       <Selected>
-        <processName>ACQUISITION</processName>
+        <processName>UXDRENDER</processName>
       </Selected>
     </AutoStartProcesses>
     <DefaultProcesses>
@@ -160,10 +172,10 @@
         <processName>ACQUISITION</processName>
       </Selected>
       <Selected>
-        <processName>VISUAL</processName>
+        <processName>MODELHANDLER</processName>
       </Selected>
       <Selected>
-        <processName>MODELHANDLER</processName>
+        <processName>UXDRENDER</processName>
       </Selected>
     </DefaultProcesses>
   </Setup>
@@ -210,6 +222,9 @@
     </Module>
     <Module>
       <processName>VISUAL</processName>
+    </Module>
+    <Module>
+      <processName>UXDRENDER</processName>
     </Module>
     <Module>
       <processName>WALKERTRAFFIC</processName>
