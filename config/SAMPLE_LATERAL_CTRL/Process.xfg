@@ -122,6 +122,12 @@
       <Selected>
         <processName>UXDRENDER</processName>
       </Selected>
+      <Selected>
+        <processName>LATERAL_CTRL</processName>
+      </Selected>
+      <Selected>
+        <processName>SENSORS</processName>
+      </Selected>
     </AutoStartProcesses>
     <DefaultProcesses>
       <Selected>
