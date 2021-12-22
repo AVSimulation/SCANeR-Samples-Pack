@@ -25,7 +25,7 @@
             <WidgetProperty name="invertedAppearance" value="false"/>
             <WidgetProperty name="format" value="%v"/>
         </VerticalProgressBarDashboardItem>
-        <CLSID_PlotterDashboardItem xMaxValue="40" refreshRate="20" name="Plotter" yLeftMaxValue="50" drawCompleteCurve="0" yLeftAutoScale="0" yLeftMinValue="0" plotterTitle="New Plot" yRightMaxValue="2" yRightAutoScale="0" x="0" width="760" yRightMinValue="-2" height="400" y="0" xAutoScale="0" useScanerTime="1" xMinValue="0" xAxis="Time (s)">
+        <CLSID_PlotterDashboardItem xMaxValue="40" refreshRate="20" name="Plotter" yLeftMaxValue="50" drawCompleteCurve="0" yLeftAutoScale="0" yLeftMinValue="0" plotterTitle="Ego dynamic" yRightMaxValue="2" yRightAutoScale="0" x="0" width="760" yRightMinValue="-2" height="400" y="0" xAutoScale="0" useScanerTime="1" xMinValue="0" xAxis="Time (s)">
             <Source isYAutoScale="0" key="Network,IVehicle,VehicleUpdate,0,accel[0]" unit="" isLeft="0" isHighlighted="0" name="ScanerDataSource" color="#ff0000"/>
             <Source isYAutoScale="0" key="Network,IVehicle,VehicleUpdate,0,speed[0]" unit="km/h" isLeft="1" isHighlighted="0" name="ScanerDataSource" color="#ffffff"/>
         </CLSID_PlotterDashboardItem>
