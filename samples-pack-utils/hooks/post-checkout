@@ -9,13 +9,20 @@ function cancel() {
 }
 #Add all folders begining by \"./config/SAMPLE_\" to \"$(realpath "..\\configurations.cfg")\".
 function add_config() {
+	if ! grep -q "[Common]" ../configurations.cfg
+	then
+		echo "[Common]" >> ../configurations.cfg
+		echo '(LOCAL_STUDIO_PATH)/configurations.cfg' was created.
+	fi
+	
 	echo >> ../configurations.cfg
+	
 	for configFolder in ./config/SAMPLE_*/
 	do {
 		configFolder=${configFolder#'./config/'}
 		configFolder=${configFolder%/}
 		configName=${configFolder/'SAMPLE_'/'SAMPLE_2022_'}
-		if  grep "$configName\s=" ../configurations.cfg
+		if  grep -q "$configName\s=" ../configurations.cfg
 		then
 			echo Found "$configName"
 		else
@@ -23,7 +30,7 @@ function add_config() {
 			echo $configName = \${LOCAL_STUDIO_PATH}\\SCANeR-Samples-Pack-2022\\config\\$configFolder >> ../configurations.cfg
 		fi
 	} done
-	echo 'configurations.cfg' is up to date.;
+	echo '(LOCAL_STUDIO_PATH)/configurations.cfg' is up to date.;
 }
 
 add_config
