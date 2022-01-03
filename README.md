@@ -8,9 +8,9 @@ This project includes **turn-key examples** for different use cases of SCANeR st
 
 Please check the procedure below to get started with using and contributing to the Samples Pack
 
-# 1. Introduction
+## 1. Introduction
 
-## 1.1. Principle
+### 1.1. Principle
 
 AVSimulation encourages **collaboration**. The SCANeR Samples Pack is open source, and open to your contributions.
 
@@ -20,7 +20,7 @@ The process is as follow:
 3. Suggest the modification into the official AVSimulation repository. ("pull request")
 4. AVSimulation approves; your modification is published and available for all.
 
-## 1.2. Pre-requisites
+### 1.2. Pre-requisites
 
 * SCANeR studio 2022
 
@@ -39,7 +39,7 @@ Feeling rusty with Git ? Review the Git basics here:  https://git-scm.com/doc
 
 ## 2. First time installation
 
-## 2.1. Copy ("fork") the Git repository
+### 2.1. Copy ("fork") the Git repository
 
 This repository is open to forks.
 
@@ -49,7 +49,7 @@ This repository is open to forks.
 
 _Now you have your own copy of the projects in the Samples Pack._ 👍
 
-## 2.2. Set LOCAL_STUDIO_PATH
+### 2.2. Set LOCAL_STUDIO_PATH
 
 > The Samples Pack goes in folder `%LOCAL_STUDIO_PATH%/SCANeR-Samples-Pack-2022/`.
 
@@ -102,6 +102,6 @@ git config --global user.email "name.surname@avsimulation.fr"
 git config --global user.name "Name Surname"
 ```
 
-# 3. Modify & contribute
+## 3. Modify & contribute
 
 (TBD)
