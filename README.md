@@ -1,74 +1,100 @@
-# Samples-Pack Developper’s Manual
+# Samples-Pack Contributor's manual
 
-## 1. Prerequisites
+Thank you for checking out the SCANeR Sample Pack.
+
+This project includes **turn-key examples** for different use cases of SCANeR studio. Use it for evaluation, inspiration, starter for your own projects.
+
+> **Get a [free SCANeR studio Trial here](https://www.avsimulation.com/free-download/), including all features to use the samples.**
+
+Please check the procedure below to get started with using and contributing to the Samples Pack
+
+# 1. Introduction
+
+## 1.1. Principle
+
+AVSimulation encourages **collaboration**. The SCANeR Samples Pack is open source, and open to your contributions.
+
+The process is as follow:
+1. Copy the Samples Pack to your own Github account. ("fork")
+2. Use and make modifications: improvements, new samples. Publish under your own account.
+3. Suggest the modification into the official AVSimulation repository. ("pull request")
+4. AVSimulation approves; your modification is published and available for all.
+
+## 1.2. Pre-requisites
 
 * SCANeR studio 2022
 
 * GitHub Account
 
-An account using your company email (avsimulation.fr) is required.  
-Send a request to guichet@avsimulation.fr.
-
 * Git client
 
-Any Git client is good to use. The instructions are given here for the "official" client found on git-scm.com.
+Any Git client is good to use.
 
-Get the Git client here : https://git-scm.com/download/win  
+Here is a Git client : https://git-scm.com/download/win  
 Install with default settings (Git Bash is required, Git GUI is nice to have)
 
 * Git basics
 
-This manual should be self sufficient.  
-For more, check the Git basics here:  https://git-scm.com/doc
+Feeling rusty with Git ? Review the Git basics here:  https://git-scm.com/doc
 
 ## 2. First time installation
 
-### Set up LOCAL_STUDIO_PATH
+## 2.1. Copy ("fork") the Git repository
 
-`LOCAL_STUDIO_PATH` is an environment variable like `STUDIO_PATH`.  
-It allows the user to define an arbitrary directory for SCANeR's user data and configurations.  
-Details in the SCANeR studio user manual: `1.5.4.7.5. Set LOCAL_STUDIO_PATH variable`.
+This repository is open to forks.
 
-> The Samples Pack goes into `%LOCAL_STUDIO_PATH%/SCANeR-Samples-Pack-2022/`
+* Go to the [SCANeR Samples Pack repository home](https://github.com/AVSimulation/SCANeR-Samples-Pack/)
+* Click on the `Fork` button in the top right corner.
+* Confirm the Fork and let Github copy the files to your repository.
 
-* In windows, create a folder (e.g.: `D:/SCANeR_data/`).
-* Find `Edit the system environment variables` or `Edit environment variables for your account`
-* Add the environment variable `LOCAL_STUDIO_PATH` with full absolute path to your folder (e.g.: `D:\SCANeR_data`).
+_Now you have your own copy of the projects in the Samples Pack._ 👍
 
-### Download (clone) the repository
+## 2.2. Set LOCAL_STUDIO_PATH
 
-* Open directory `%LOCAL_STUDIO_PATH%`
+> The Samples Pack goes in folder `%LOCAL_STUDIO_PATH%/SCANeR-Samples-Pack-2022/`.
+
+`LOCAL_STUDIO_PATH` is an _environment variable_, like `%STUDIO_PATH%`.  
+(Details in the User Manual: `1.5.4.7.5. Set LOCAL_STUDIO_PATH variable`)
+
+* In Windows, create a folder (e.g.: `D:/SCANeR_data/`).
+* Find "Edit environment variables for your account"
+* Add the environment variable "LOCAL_STUDIO_PATH" with full absolute path to your folder (e.g.: "D:\SCANeR_data").
+
+### 2.3. Download ("clone") your Git repository
+
+* Open the directory `%LOCAL_STUDIO_PATH%/`
 * `Right click > Git Bash here`
-* Clone the repository:
+* Clone your repository:
 ```
-git clone https://github.com/AVSimulation/SCANeR-Samples-Pack.git SCANeR-Samples-Pack-2022
+git clone https://github.com/<NAME>/SCANeR-Samples-Pack.git SCANeR-Samples-Pack-2022
 ```
+  Where `<NAME>` is your Github account.  
 * When prompted, login to GitHub with the account linked to your company e-mail.
-* *Downloading can take a few minutes.*
-* Go intside the new repository
+* *Downloading takes a few minutes.*
+* Go intside the new local repository
 ```
 cd SCANeR-Samples-Pack-2022
 ```
 
-### Git hooks for configuration.cfg
+### 2.4. Git hooks for configuration.cfg
 
-Hooks are bash scripts that are executed with a Git command.  
+[Hooks](https://git-scm.com/docs/githooks) are bash scripts that are executed with a Git command.  
+In the folder `samples-pack-utils/` there is a hook script to auto-update `configuration.cfg` everytime `git checkout` is called.  
 ```
 git config core.hooksPath "./samples-pack-utils/hooks/"
 ```
-In the folder `samples-pack-utils` there is a hook script to auto-update `configuration.cfg` everytime `git checkout` is called.  
-(No need to modify `configuration.cfg` by hand anymore.)
+That way, SCANeR detects new samples automatically at the next start.
 
-### Update the working tree
+### 2.5. Update the working tree
 
 ```
 git checkout 2022
 ```
 Now the working tree (i.e. files in `%LOCAL_STUDIO_PATH%/SCANeR-Samples-Pack-2022`) are matching the remote branch.
 
-*The Samples Pack is ready to use in SCANeR*
+_The Samples Pack is ready to use in SCANeR._ 👍
 
-### Prepare for contribution
+### 2.6. Prepare for contribution
 
 The remote repository will need to know who makes a contribution.
 ```
@@ -76,124 +102,6 @@ git config --global user.email "name.surname@avsimulation.fr"
 git config --global user.name "Name Surname"
 ```
 
-## 3. Publish a modification
+# 3. Modify & contribute
 
-### Before modifying, get the latest files
-
-Make sure that you are on a working branch (e.g. `2022`) with a valid uplink (e.g. `origin/2022`).
-```
-git fetch
-git pull
-```
-Now your SCANeR studio installation has the latest Samples Pack files.
-
-### Start working
-
-You can perform the modifications on your local copy of the Samples Pack.
-
-Commit changes on your working branch as often as necessary.
-
-* Check the list of modified files
-```
-git status
-```
-> See also [difftool](#diff-tool).
-* Include new, modified or deleted files to your commit with
-```
-git add path/to/the/file
-```
-* Save the changes in your current local branch
-```
-git commit -m "Replaced some Simulink block"
-```
-Parameter "-m" is the commit message that helps everyone know what you did.
-
-### Push
-
-When you finished doing the modification and the Samples Pack works, push the branch to the GitHub server.
-```
-git push
-```
-If you get rejected, see next section.
-
-### Merge
-
-If it has been some time since you started working, it is possible that someone else in the team modified the Samples Pack in the mean time.
-
-You need to merge the modifications locally before sending. First, get the remote modifications.
-```
-git pull
-```
-* If everything goes well, there is no error message. Set a merge commit message when prompter.
-* If there are conflicts, follow the guidelines to resolve file by file:
-https://akshayranganath.github.io/Git-Pull-Handling-Merge-Conflict/  
-Once all is ready, create the merge commit
-```
-git commit -m "Merging"
-```
-
-Finally, send again
-```
-git push
-```
-
-### Diff tool
-
-The diff tool helps visualize the current modifications.
-
-* Install [Meld](https://meldmerge.org/) or [WinMerge](https://winmerge.org/)
-* Apply in Git Bash (once and for all)
-  * For Meld
-  ```
-  git config --global diff.tool meld
-  git config --global difftool.meld.path "C:\Program Files (x86)\Meld\Meld.exe"
-  git config --global difftool.prompt false
-
-  git config --global merge.tool meld
-  git config --global mergetool.meld.path "C:\Program Files (x86)\Meld\Meld.exe"
-  git config --global mergetool.prompt false
-  ```
-  * For WinMerge
-  ```
-  git config --global diff.tool winmerge 
-  git config --global difftool.winmerge.path 'C:\Program Files (x86)\WinMerge\WinMergeU.exe'
-  git config --global difftool.prompt false
-
-  git config --global merge.tool winmerge 
-  git config --global mergetool.winmerge.path 'C:\Program Files (x86)\WinMerge\WinMergeU.exe'
-  git config --global mergetool.prompt false
-  ```
-
-Now check your pending modifications ...
-```
-git difftool --dir-diff
-```
-... or the difference between two commits or branches
-```
-git difftool --dir-diff 2022 2021.2
-```
-
-## 4. Release (obsolete - to be updated)
-
-The [SCANeR User Guides](https://avsguichet.github.io/Samples-Pack/) website links to the latest release of the Samples Pack.
-
-* Prepare the ZIP
-  * Go to the [latest commit on GitHub](../../tree/2022)
-  * Download as a ZIP: `Code` > `Download as ZIP`  
-  The ZIP includes a root folder `Samples-Pack-2022` that we don't want.
-  * Create a new ZIP with `APIs/`, `bin/`, `config/` etc... at the root  
-  Name of the new ZIP: `Samples-Pack-<latest major SCANeR release>r<Samples Pack sub-version>` (e.g. `Samples-Pack-2022r1`)
-* ~~Create a Release on GitHub~~
-  * ~~Go to the [repository releases page](../../releases)~~
-  * ~~Button `Draft a new release`~~
-    * ~~Target = `<latest major SCANeR release>` (e.g. `2022`)~~
-    * ~~Tag = `<latest major SCANeR release>r<Samples Pack sub-version>` (e.g. `2022r1`)~~
-    * ~~Title = `Samples Pack <Samples Pack version>` (e.g. `Samples Pack 2022r1`)~~
-    * ~~Description of changes included in this release (optional)~~
-    * ~~Attach binaries = Drag & drop the new ZIP in the "Attach binaries" area~~
-  * ~~Button `Publish release`~~
-* Send the ZIP to the FTP server `stockage.scanersimulation.com` using FileZilla
-  * `(root)/Evaluation/2022/Samples-Pack-2022.zip`
-* Update the link
-  * Go to the SCANeR Guides repository and [edit `_config.yml`](../../../SCANeR-User-Guides/edit/Published/_config.yml).
-  * Change the `zip_url:` path to the newly uploaded ZIP URL
+(TBD)
