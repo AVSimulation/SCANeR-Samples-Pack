@@ -1,45 +1,39 @@
 # Samples-Pack Contributor's manual
 
-Thank you for checking out the SCANeR Sample Pack.
+Thank you for checking the SCANeR Sample Pack.
 
-This project includes **turn-key examples** for different use cases of SCANeR studio. Use it for evaluation, inspiration, starter for your own projects.
+This project includes turn-key examples for various use cases of [**SCANeR studio**](https://www.avsimulation.com/scaner-catalog/).  
+Use it for evaluation, inspiration, starter for your own projects.
 
-> **Get a [free SCANeR studio Trial here](https://www.avsimulation.com/free-download/), including all features to use the samples.**
+> _**Get a [free SCANeR studio Trial here](https://www.avsimulation.com/free-download/), including all features to use the samples.**_
 
-Please check the procedure below to get started with using and contributing to the Samples Pack
-
-## 1. Introduction
-
-### 1.1. Principle
+## Introduction
 
 AVSimulation encourages **collaboration**. The SCANeR Samples Pack is open source, and open to your contributions.
 
-The process is as follow:
-1. Copy the Samples Pack to your own Github account. ("fork")
-2. Use and make modifications: improvements, new samples. Publish under your own account.
-3. Suggest the modification into the official AVSimulation repository. ("pull request")
-4. AVSimulation approves; your modification is published and available for all.
+* **Step 1. Install:** Copy the Samples Pack to your own Github account ("fork").  
+  _Use it on your computer for evaluation, inspiration, starter for your own projects._
+  
+* **Step 2. Work:** Make modifications: improvements, new samples.  
+  _Track your changes on your own Github repository, branches._
+  
+* **Step 3. Publish:** Publish your work on AVSimulation's official repository ("pull request").  
+  _AVSimulation approves and your modification is published, available for all._
 
-### 1.2. Pre-requisites
+### Pre-requisites
 
-* SCANeR studio 2022
+* SCANeR studio 2022  
+  _Get a free Trial version here: [AVSimulation Free Downloads](https://www.avsimulation.com/free-download/)_
+* A [GitHub](https://github.com/login) Account
+* A Git client  
+  _Here is a Git client : https://git-scm.com/download/win_  
+  _Install with default settings (Git Bash is required, Git GUI is nice to have)_
+* Git basics  
+  _Feeling rusty with Git ? Review the Git basics here:  https://git-scm.com/doc_
 
-* GitHub Account
+## Step 1. Install the Samples Pack
 
-* Git client
-
-Any Git client is good to use.
-
-Here is a Git client : https://git-scm.com/download/win  
-Install with default settings (Git Bash is required, Git GUI is nice to have)
-
-* Git basics
-
-Feeling rusty with Git ? Review the Git basics here:  https://git-scm.com/doc
-
-## 2. First time installation
-
-### 2.1. Copy ("fork") the Git repository
+### 1.1. Copy ("fork") the Git repository
 
 This repository is open to forks.
 
@@ -49,7 +43,7 @@ This repository is open to forks.
 
 _Now you have your own copy of the projects in the Samples Pack._ 👍
 
-### 2.2. Set LOCAL_STUDIO_PATH
+### 1.2. Set LOCAL_STUDIO_PATH
 
 > The Samples Pack goes in folder `%LOCAL_STUDIO_PATH%/SCANeR-Samples-Pack-2022/`.
 
@@ -60,7 +54,7 @@ _Now you have your own copy of the projects in the Samples Pack._ 👍
 * Find "Edit environment variables for your account"
 * Add the environment variable "LOCAL_STUDIO_PATH" with full absolute path to your folder (e.g.: "D:\SCANeR_data").
 
-### 2.3. Download ("clone") your Git repository
+### 1.3. Download ("clone") your Git repository
 
 * Open the directory `%LOCAL_STUDIO_PATH%/`
 * `Right click > Git Bash here`
@@ -76,16 +70,16 @@ git clone https://github.com/<NAME>/SCANeR-Samples-Pack.git SCANeR-Samples-Pack-
 cd SCANeR-Samples-Pack-2022
 ```
 
-### 2.4. Git hooks for configuration.cfg
+### 1.4. Git hooks for configuration.cfg
 
-[Hooks](https://git-scm.com/docs/githooks) are bash scripts that are executed with a Git command.  
+[Hooks](https://git-scm.com/docs/githooks) are bash scripts that are executed along with a Git command.  
 In the folder `samples-pack-utils/` there is a hook script to auto-update `configuration.cfg` everytime `git checkout` is called.  
 ```
 git config core.hooksPath "./samples-pack-utils/hooks/"
 ```
 That way, SCANeR detects new samples automatically at the next start.
 
-### 2.5. Update the working tree
+### 1.5. Update the working tree
 
 ```
 git checkout 2022
@@ -94,7 +88,7 @@ Now the working tree (i.e. files in `%LOCAL_STUDIO_PATH%/SCANeR-Samples-Pack-202
 
 _The Samples Pack is ready to use in SCANeR._ 👍
 
-### 2.6. Prepare for contribution
+### 1.6. Prepare for contribution
 
 The remote repository will need to know who makes a contribution.
 ```
@@ -102,6 +96,67 @@ git config --global user.email "name.surname@avsimulation.fr"
 git config --global user.name "Name Surname"
 ```
 
-## 3. Modify & contribute
+## Step 2. Modify
 
-(TBD)
+### 2.1. Before modifying, get the latest files
+
+* On your github repository home, click `Fetch upstream` to recover changes from AVSimulation's repository.
+* On your local repository, recover the latest changes from your github repository.  
+```
+git fetch
+git pull
+```
+
+### 2.2. Start working
+
+You can perform the modifications on your local copy of the Samples Pack.
+
+Commit changes on your working branch as often as necessary.
+
+* Check the list of modified files
+```
+git status
+```
+* Include new, modified or deleted files to your commit with
+```
+git add path/to/the/file
+```
+* Save the changes in your current local branch
+```
+git commit -m "Replaced some Simulink block"
+```
+Parameter "-m" is the commit message that helps everyone know what you did.
+
+### 2.3. Push
+
+When you finished doing the modification and the Samples Pack works, push the branch to the GitHub server.
+```
+git push
+```
+> If you get rejected at this stage, hold on and check [merge conflict resolution](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) 💪.
+
+## Step 3. Publish
+
+* On your Github repository home, select the branch that you want to publish.
+* Click `Contribute` > `Open pull request`.
+* Left member (destination):
+  * base repository: `AVSimulation/SCANeR-Samples-Pack`
+  * base: `2022`
+* Right member (origin): Your repository, and the branch to publish.
+* Make sure to fill-in the title and describe your improvement, addition in the comment field.
+  It will make it easier for AVSimulation to understand and approve the change.
+* `Create pull request`
+
+**Thanks a lot for your contribution** 😎
+
+Now AVSimulation will review the modification and approve the pull request.  
+After the pull request is approved, your modification is available to all.
+
+## Get help
+
+* [SCANeR **Quick Starts**](https://avsimulation.github.io/SCANeR-Quick-Starts/)
+* [**Getting Started** with SCANeR on YouTube](https://www.youtube.com/playlist?list=PLkaKWDRLGrSacxV-4e-EmGLGHbr-w09_5)
+* [How to ? on YouTube](https://www.youtube.com/playlist?list=PLkaKWDRLGrSb2HZM76aeAaXoH0r06xwtl)
+* [**Online events** every months](https://www.avsimulation.com/events/)
+* [Past workshops on YouTube](https://www.youtube.com/playlist?list=PLkaKWDRLGrSZ5XdPTTLlDqJBXSDZy1U9Q)
+* [**Contact us**](https://www.avsimulation.com/contact-us/)
