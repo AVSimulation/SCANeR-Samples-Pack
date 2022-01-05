@@ -43,6 +43,8 @@ This repository is open to forks.
 
 _Now you have your own copy of the projects in the Samples Pack._ 👍
 
+Check out the [SCANeR Quick Starts](https://avsimulation.github.io/SCANeR-Quick-Starts/) for a guide of each sample.
+
 ### 1.2. Set LOCAL_STUDIO_PATH
 
 > The Samples Pack goes in folder `%LOCAL_STUDIO_PATH%/SCANeR-Samples-Pack-2022/`.
