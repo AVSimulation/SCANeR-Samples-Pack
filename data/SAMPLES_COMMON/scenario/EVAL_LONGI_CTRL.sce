@@ -173,8 +173,8 @@ To control the EGO in acceleration, run the Simulink model "eval_longitudinal_ct
       <ScanerNetRecorder/>
     </Recording>
     <ScenarioStopCriteria>
-      <finalTime>3600</finalTime>
-      <stopAtFinalTime>0</stopAtFinalTime>
+      <finalTime>35</finalTime>
+      <stopAtFinalTime>1</stopAtFinalTime>
     </ScenarioStopCriteria>
     <StoryBoard>
       <firstStep></firstStep>
