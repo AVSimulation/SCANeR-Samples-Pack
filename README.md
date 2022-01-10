@@ -2,16 +2,16 @@
 
 Thank you for checking the SCANeR Sample Pack.
 
-This project includes turn-key examples for various use cases of [**SCANeR studio**](https://www.avsimulation.com/scaner-catalog/).  
+This project includes turn-key examples for various use cases of [**SCANeR**](https://www.avsimulation.com/scaner-catalog/).  
 Use it for evaluation, inspiration, starter for your own projects.
 
-> _**Get a [free SCANeR studio Trial here](https://www.avsimulation.com/free-download/), including all features to use the samples.**_
+> _**Get a [free SCANeR Trial here](https://www.avsimulation.com/free-download/), including all features to use the samples.**_
 
 ## Introduction
 
 AVSimulation encourages **collaboration**. The SCANeR Samples Pack is open source, and open to your contributions.
 
-* **Step 1. Install:** Copy the Samples Pack to your own Github account ("fork").  
+* **Step 1. Copy:** Recover the Samples Pack to your own Github account ("fork").  
   _Use it on your computer for evaluation, inspiration, starter for your own projects._
   
 * **Step 2. Work:** Make modifications: improvements, new samples.  
@@ -22,18 +22,18 @@ AVSimulation encourages **collaboration**. The SCANeR Samples Pack is open sourc
 
 ### Pre-requisites
 
-* SCANeR studio 2022  
+* SCANeR 2022  
   _Get a free Trial version here: [AVSimulation Free Downloads](https://www.avsimulation.com/free-download/)_
 * A [GitHub](https://github.com/login) Account
 * A Git client  
   _Here is a Git client : https://git-scm.com/download/win_  
   _Install with default settings (Git Bash is required, Git GUI is nice to have)_
 * Git basics  
-  _Feeling rusty with Git ? Review the Git basics here:  https://git-scm.com/doc_
+  _Feeling rusty with Git? Review the Git basics here:  https://git-scm.com/doc_
 
-## Step 1. Install the Samples Pack
+## Step 1. Copy the Samples Pack
 
-### 1.1. Copy ("fork") the Git repository
+### 1.1. Recover ("fork") the Git repository
 
 This repository is open to forks.
 
@@ -67,7 +67,7 @@ git clone https://github.com/<NAME>/SCANeR-Samples-Pack.git SCANeR-Samples-Pack-
   Where `<NAME>` is your Github account.  
 * When prompted, login to GitHub with the account linked to your company e-mail.
 * *Downloading takes a few minutes.*
-* Go intside the new local repository
+* Go inside the new local repository
 ```
 cd SCANeR-Samples-Pack-2022
 ```
@@ -98,7 +98,7 @@ git config --global user.email "name.surname@avsimulation.fr"
 git config --global user.name "Name Surname"
 ```
 
-## Step 2. Modify
+## Step 2. Work
 
 ### 2.1. Before modifying, get the latest files
 
@@ -158,7 +158,7 @@ After the pull request is approved, your modification is available to all.
 
 * [SCANeR **Quick Starts**](https://avsimulation.github.io/SCANeR-Quick-Starts/)
 * [**Getting Started** with SCANeR on YouTube](https://www.youtube.com/playlist?list=PLkaKWDRLGrSacxV-4e-EmGLGHbr-w09_5)
-* [How to ? on YouTube](https://www.youtube.com/playlist?list=PLkaKWDRLGrSb2HZM76aeAaXoH0r06xwtl)
+* [How to? on YouTube](https://www.youtube.com/playlist?list=PLkaKWDRLGrSb2HZM76aeAaXoH0r06xwtl)
 * [**Online events** every months](https://www.avsimulation.com/events/)
 * [Past workshops on YouTube](https://www.youtube.com/playlist?list=PLkaKWDRLGrSZ5XdPTTLlDqJBXSDZy1U9Q)
 * [**Contact us**](https://www.avsimulation.com/contact-us/)
