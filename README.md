@@ -139,6 +139,9 @@ git push
 
 ## Step 3. Publish
 
+When your work is ready, send it to the official AVSimulation repository.  
+Your work will be visible to all, and AVSimulation takes care of migration to new versions.
+
 * On your Github repository home, select the branch that you want to publish.
 * Click `Contribute` > `Open pull request`.
 * Left member (destination):
