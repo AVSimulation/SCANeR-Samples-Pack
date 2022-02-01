@@ -43,8 +43,6 @@ This repository is open to forks.
 
 _Now you have your own copy of the projects in the Samples Pack._ 👍
 
-Check out the [SCANeR Quick Starts](https://avsimulation.github.io/SCANeR-Quick-Starts/) for a guide of each sample.
-
 ### 1.2. Set LOCAL_STUDIO_PATH
 
 > The Samples Pack goes in folder `%LOCAL_STUDIO_PATH%/SCANeR-Samples-Pack-2022/`.
@@ -52,8 +50,8 @@ Check out the [SCANeR Quick Starts](https://avsimulation.github.io/SCANeR-Quick-
 `LOCAL_STUDIO_PATH` is an _environment variable_, like `%STUDIO_PATH%`.  
 (Details in the User Manual: `1.5.4.7.5. Set LOCAL_STUDIO_PATH variable`)
 
-* In Windows, create a folder (e.g.: `D:/SCANeR_data/`).
-* Find "Edit environment variables for your account"
+* Create a new folder (e.g.: `D:/SCANeR_data/`).
+* Find in Windows: "Edit environment variables for your account"
 * Add the environment variable "LOCAL_STUDIO_PATH" with full absolute path to your folder (e.g.: "D:\SCANeR_data").
 
 ### 1.3. Download ("clone") your Git repository
@@ -66,20 +64,24 @@ git clone https://github.com/<NAME>/SCANeR-Samples-Pack.git SCANeR-Samples-Pack-
 ```
   Where `<NAME>` is your Github account.  
 * When prompted, login to GitHub with the account linked to your company e-mail.
-* *Downloading takes a few minutes.*
-* Go inside the new local repository
+* *Downloading takes a few seconds.*
+* Go inside the new local repository :
 ```
 cd SCANeR-Samples-Pack-2022
 ```
 
 ### 1.4. Git hooks for configuration.cfg
 
-[Hooks](https://git-scm.com/docs/githooks) are bash scripts that are executed along with a Git command.  
-In the folder `samples-pack-utils/` there is a hook script to auto-update `configuration.cfg` everytime `git checkout` is called.  
+[Hooks](https://git-scm.com/docs/githooks) are bash scripts that are executed along with a Git command.
+
+* Enable the hooks provided in this repository:
 ```
 git config core.hooksPath "./samples-pack-utils/hooks/"
 ```
-That way, SCANeR detects new samples automatically at the next start.
+
+> In the folder `samples-pack-utils/` there is a hook script to auto-update `configuration.cfg` everytime `git checkout` is called.  
+
+Now, SCANeR detects new samples automatically at the next start.
 
 ### 1.5. Update the working tree
 
@@ -89,6 +91,8 @@ git checkout 2022
 Now the working tree (i.e. files in `%LOCAL_STUDIO_PATH%/SCANeR-Samples-Pack-2022`) are matching the remote branch.
 
 _The Samples Pack is ready to use in SCANeR._ 👍
+
+Check out the [SCANeR Quick Starts](https://avsimulation.github.io/SCANeR-Quick-Starts/) for a guide of each sample.
 
 ### 1.6. Prepare for contribution
 
@@ -112,8 +116,6 @@ git pull
 ### 2.2. Start working
 
 You can perform the modifications on your local copy of the Samples Pack.
-
-Commit changes on your working branch as often as necessary.
 
 * Check the list of modified files
 ```
@@ -140,7 +142,7 @@ git push
 ## Step 3. Publish
 
 When your work is ready, send it to the official AVSimulation repository.  
-Your work will be visible to all, and AVSimulation takes care of migration to new versions.
+Your work will be visible to all, and AVSimulation takes care of the migration to new versions.
 
 * On your Github repository home, select the branch that you want to publish.
 * Click `Contribute` > `Open pull request`.
@@ -154,7 +156,7 @@ Your work will be visible to all, and AVSimulation takes care of migration to ne
 
 **Thanks a lot for your contribution** 😎
 
-Now AVSimulation will review the modification and approve the pull request.  
+Now AVSimulation will review the modification.  
 After the pull request is approved, your modification is available to all.
 
 ## Get help
