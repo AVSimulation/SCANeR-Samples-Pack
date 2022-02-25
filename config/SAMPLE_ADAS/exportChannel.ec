@@ -404,9 +404,9 @@
   </ExportChannelValue>
 
   <ExportChannelValue>
-    <category>ADAS</category>
+    <category>ADAS_AEB</category>
     <defaultValue>0</defaultValue>
-    <name>DistanceToCollision</name>
+    <name>TriggerDistance</name>
   </ExportChannelValue>
 
   <ExportChannelValue>
