@@ -28,6 +28,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "eval_lateral_ctrl", "Scaner
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "eval_longitudinal_ctrl", "ScanerAPI\EVAL_LONGITUDINAL_CTRL\cpp\eval_longitudinal_ctrl2.vcxproj", "{C5CAA2E7-590C-41E4-A90C-A8D9F9D5881C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AEB", "ScanerAPI\ADAS\AEB\AEB.vcxproj", "{7F435BD1-0553-4A81-9FF7-7467D6F82414}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -124,6 +126,14 @@ Global
 		{C5CAA2E7-590C-41E4-A90C-A8D9F9D5881C}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{C5CAA2E7-590C-41E4-A90C-A8D9F9D5881C}.Release|x64.ActiveCfg = Release|x64
 		{C5CAA2E7-590C-41E4-A90C-A8D9F9D5881C}.Release|x64.Build.0 = Release|x64
+		{7F435BD1-0553-4A81-9FF7-7467D6F82414}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{7F435BD1-0553-4A81-9FF7-7467D6F82414}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{7F435BD1-0553-4A81-9FF7-7467D6F82414}.Debug|x64.ActiveCfg = Debug|x64
+		{7F435BD1-0553-4A81-9FF7-7467D6F82414}.Debug|x64.Build.0 = Debug|x64
+		{7F435BD1-0553-4A81-9FF7-7467D6F82414}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{7F435BD1-0553-4A81-9FF7-7467D6F82414}.Release|Mixed Platforms.Build.0 = Release|x64
+		{7F435BD1-0553-4A81-9FF7-7467D6F82414}.Release|x64.ActiveCfg = Release|x64
+		{7F435BD1-0553-4A81-9FF7-7467D6F82414}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -136,6 +146,7 @@ Global
 		{1BDCEB5E-8053-4961-B90A-531DF329414B} = {90F8BAAF-1D3C-4FA2-8448-1B20A13BB930}
 		{CB9EB123-4136-41EB-A45E-F7E8084983E3} = {90F8BAAF-1D3C-4FA2-8448-1B20A13BB930}
 		{C5CAA2E7-590C-41E4-A90C-A8D9F9D5881C} = {90F8BAAF-1D3C-4FA2-8448-1B20A13BB930}
+		{7F435BD1-0553-4A81-9FF7-7467D6F82414} = {90F8BAAF-1D3C-4FA2-8448-1B20A13BB930}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F0BA03F3-7B73-4AF6-8766-E7A43D17D49B}

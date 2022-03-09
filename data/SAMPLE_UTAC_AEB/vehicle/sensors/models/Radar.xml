@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<SensorModelRoot version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <SensorModel>
+    <RadarSensorModel>
+      <angularPrecision>0.00872664625997165</angularPrecision>
+      <angularResolution>0.174532925199433</angularResolution>
+      <name>LongRangeRadarSensor</name>
+      <TargetSensorOption>
+        <includeWheelsBB>0</includeWheelsBB>
+        <logicalComputeBB>0</logicalComputeBB>
+      </TargetSensorOption>
+      <Beam>
+        <depthCartography></depthCartography>
+        <depthCartographyHorizontal></depthCartographyHorizontal>
+        <depthCartographyVertical></depthCartographyVertical>
+        <egoSpeedMax>0</egoSpeedMax>
+        <egoSpeedMin>0</egoSpeedMin>
+        <fov>0 0</fov>
+        <fovHorizontal>-0.174532925199433 0.174532925199433</fovHorizontal>
+        <fovVertical>-0.174532925199433 0.174532925199433</fovVertical>
+        <name>beam 0</name>
+        <offset>0 0</offset>
+        <position>0 0 0 0 0 0</position>
+        <range>150</range>
+        <useCartoHorizontal>0</useCartoHorizontal>
+        <useCartoVertical>0</useCartoVertical>
+        <useEgoSpeed>0</useEgoSpeed>
+        <useRange>1</useRange>
+        <DetectableTarget>
+          <name>2</name>
+          <range>150</range>
+          <visibility>0</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>3</name>
+          <range>150</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>4</name>
+          <range>150</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>5</name>
+          <range>150</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>6</name>
+          <range>150</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>7</name>
+          <range>150</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>11</name>
+          <range>150</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>13</name>
+          <range>150</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>14</name>
+          <range>150</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+      </Beam>
+      <Beam>
+        <depthCartography></depthCartography>
+        <depthCartographyHorizontal></depthCartographyHorizontal>
+        <depthCartographyVertical></depthCartographyVertical>
+        <egoSpeedMax>0</egoSpeedMax>
+        <egoSpeedMin>0</egoSpeedMin>
+        <fov>0 0</fov>
+        <fovHorizontal>-0.349065850398866 0.174532925199433</fovHorizontal>
+        <fovVertical>-0.174532925199433 0.174532925199433</fovVertical>
+        <name>Beam 1</name>
+        <offset>0 0</offset>
+        <position>0 0 0 0 0 0.349065850398866</position>
+        <range>30</range>
+        <useCartoHorizontal>0</useCartoHorizontal>
+        <useCartoVertical>0</useCartoVertical>
+        <useEgoSpeed>0</useEgoSpeed>
+        <useRange>1</useRange>
+        <DetectableTarget>
+          <name>2</name>
+          <range>30</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>3</name>
+          <range>30</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>4</name>
+          <range>30</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>5</name>
+          <range>30</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>6</name>
+          <range>30</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>7</name>
+          <range>30</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>11</name>
+          <range>30</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>13</name>
+          <range>30</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>14</name>
+          <range>30</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+      </Beam>
+      <Beam>
+        <depthCartography></depthCartography>
+        <depthCartographyHorizontal></depthCartographyHorizontal>
+        <depthCartographyVertical></depthCartographyVertical>
+        <egoSpeedMax>0</egoSpeedMax>
+        <egoSpeedMin>0</egoSpeedMin>
+        <fov>0 0</fov>
+        <fovHorizontal>-0.174532925199433 0.349065850398866</fovHorizontal>
+        <fovVertical>-0.174532925199433 0.174532925199433</fovVertical>
+        <name>Beam 2</name>
+        <offset>0 0</offset>
+        <position>0 0 0 0 0 -0.349065850398866</position>
+        <range>30</range>
+        <useCartoHorizontal>0</useCartoHorizontal>
+        <useCartoVertical>0</useCartoVertical>
+        <useEgoSpeed>0</useEgoSpeed>
+        <useRange>1</useRange>
+        <DetectableTarget>
+          <name>2</name>
+          <range>30</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>3</name>
+          <range>30</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>4</name>
+          <range>30</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>5</name>
+          <range>30</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>6</name>
+          <range>30</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>7</name>
+          <range>30</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>11</name>
+          <range>30</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>13</name>
+          <range>30</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+        <DetectableTarget>
+          <name>14</name>
+          <range>30</range>
+          <visibility>50</visibility>
+        </DetectableTarget>
+      </Beam>
+    </RadarSensorModel>
+  </SensorModel>
+
+</SensorModelRoot>
