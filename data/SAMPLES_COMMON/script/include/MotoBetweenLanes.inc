@@ -1,0 +1,536 @@
+
+TYPEOF INCLUDE (0)
+{
+	IS_EXPANDED="1"
+	LABEL="Include : MotoBetweenLanes"
+	TASK_KIND="0"
+	FILE=""
+
+	TYPEOF VARIABLE (10003)
+	{
+		LABEL="StartMoto"
+		TYPE="FLOAT"
+		VALUE="0.000000"
+		INTERACTIVE_TYPE="VOID"
+		IS_INITIALIZATION_NEEDED_AT_START="0"
+		INTERACTIVE_MIN_VALUE="0"
+		INTERACTIVE_MAX_VALUE="1"
+		INTERACTIVE_STEP_VALUE="1"
+		CATEGORY="INTERNAL"
+	}
+
+	TYPEOF VARIABLE (10004)
+	{
+		LABEL="idMoto"
+		TYPE="FLOAT"
+		VALUE="17.000000"
+		INTERACTIVE_TYPE="VOID"
+		IS_INITIALIZATION_NEEDED_AT_START="0"
+		INTERACTIVE_MIN_VALUE="0"
+		INTERACTIVE_MAX_VALUE="9999"
+		INTERACTIVE_STEP_VALUE="1"
+		CATEGORY="INTERNAL"
+	}
+
+	TYPEOF VARIABLE (10050)
+	{
+		LABEL="StartDistance"
+		TYPE="FLOAT"
+		VALUE="-5.000000"
+		INTERACTIVE_TYPE="VOID"
+		IS_INITIALIZATION_NEEDED_AT_START="0"
+		INTERACTIVE_MIN_VALUE="0"
+		INTERACTIVE_MAX_VALUE="9999"
+		INTERACTIVE_STEP_VALUE="1"
+		CATEGORY="INTERNAL"
+	}
+
+	TYPEOF VARIABLE (10051)
+	{
+		LABEL="startDriving"
+		TYPE="FLOAT"
+		VALUE="0"
+		INTERACTIVE_TYPE="VOID"
+		IS_INITIALIZATION_NEEDED_AT_START="0"
+		INTERACTIVE_MIN_VALUE="0"
+		INTERACTIVE_MAX_VALUE="9999"
+		INTERACTIVE_STEP_VALUE="1"
+		CATEGORY="INTERNAL"
+	}
+
+	TYPEOF VARIABLE (10060)
+	{
+		LABEL="MotoActivate"
+		TYPE="FLOAT"
+		VALUE="0"
+		INTERACTIVE_TYPE="VOID"
+		IS_INITIALIZATION_NEEDED_AT_START="0"
+		INTERACTIVE_MIN_VALUE="0"
+		INTERACTIVE_MAX_VALUE="9999"
+		INTERACTIVE_STEP_VALUE="1"
+		CATEGORY="INTERNAL"
+	}
+
+	TYPEOF RULE (1)
+	{
+		LABEL="To use this script you have to assign the idMoto variable (vhlId)  at the beginning of the scenario"
+	}
+
+	TYPEOF RULE (3)
+	{
+		IS_EXPANDED="1"
+		LABEL="Start Moto scenario"
+
+		TYPEOF CONDITION (EQUAL)
+		{
+			IS_EXPANDED="1"
+			MODIFIER="BECOMES_TRUE"
+
+			TYPEOF PARAMETER (OPERAND_1)
+			{
+				KIND="VARIABLE"
+				VALUE="10003"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (OPERAND_2)
+			{
+				KIND="USER"
+				VALUE="1"
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (SET_VHL_POSITION)
+		{
+
+			TYPEOF PARAMETER (VHL_NUMBER)
+			{
+				KIND="VARIABLE"
+				VALUE="10004"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (MAP_XPOSITION)
+			{
+				KIND="FUNCTION"
+
+				TYPEOF FUNCTION (GET_ROAD_ON_LANE_COORDINATE)
+				{
+
+					TYPEOF PARAMETER (VHL_NUMBER)
+					{
+						KIND="USER"
+						VALUE="0"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (DISTANCE_RELATIVE)
+					{
+						KIND="VARIABLE"
+						VALUE="10050"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (CHOOSE_SHIFT_TYPE)
+					{
+						KIND="ENUM"
+						VALUE="METERS"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (OFFSET_VALUE)
+					{
+						KIND="USER"
+						VALUE="-1.75"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (CHOOSE_COORDINATE_OR_HEADING)
+					{
+						KIND="ENUM"
+						VALUE="VHL_X"
+						OWNER_FILE=""
+					}
+				}
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (MAP_YPOSITION)
+			{
+				KIND="FUNCTION"
+
+				TYPEOF FUNCTION (GET_ROAD_ON_LANE_COORDINATE)
+				{
+					IS_EXPANDED="1"
+
+					TYPEOF PARAMETER (VHL_NUMBER)
+					{
+						KIND="USER"
+						VALUE="0"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (DISTANCE_RELATIVE)
+					{
+						KIND="VARIABLE"
+						VALUE="10050"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (CHOOSE_SHIFT_TYPE)
+					{
+						KIND="ENUM"
+						VALUE="METERS"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (OFFSET_VALUE)
+					{
+						KIND="USER"
+						VALUE="-1.75"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (CHOOSE_COORDINATE_OR_HEADING)
+					{
+						KIND="ENUM"
+						VALUE="VHL_Y"
+						OWNER_FILE=""
+					}
+				}
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (HEADING)
+			{
+				KIND="FUNCTION"
+
+				TYPEOF FUNCTION (GET_ROAD_ON_LANE_COORDINATE)
+				{
+					IS_EXPANDED="1"
+
+					TYPEOF PARAMETER (VHL_NUMBER)
+					{
+						KIND="USER"
+						VALUE="0"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (DISTANCE_RELATIVE)
+					{
+						KIND="VARIABLE"
+						VALUE="10050"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (CHOOSE_SHIFT_TYPE)
+					{
+						KIND="ENUM"
+						VALUE="METERS"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (OFFSET_VALUE)
+					{
+						KIND="USER"
+						VALUE="-1.75"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (CHOOSE_COORDINATE_OR_HEADING)
+					{
+						KIND="ENUM"
+						VALUE="VHL_H"
+						OWNER_FILE=""
+					}
+				}
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (SET_VHL_SPEED_OBLIGATORY)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (VHL_NUMBER)
+			{
+				KIND="VARIABLE"
+				VALUE="10004"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (SPEED)
+			{
+				KIND="FUNCTION"
+
+				TYPEOF FUNCTION (PLUS)
+				{
+					IS_EXPANDED="1"
+
+					TYPEOF PARAMETER (OPERAND_1)
+					{
+						KIND="FUNCTION"
+
+						TYPEOF FUNCTION (GET_VHL_SPEED)
+						{
+
+							TYPEOF PARAMETER (VHL_NUMBER)
+							{
+								KIND="USER"
+								VALUE="0"
+								OWNER_FILE=""
+							}
+						}
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (OPERAND_2)
+					{
+						KIND="USER"
+						VALUE="40"
+						OWNER_FILE=""
+					}
+				}
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (STATE)
+			{
+				KIND="ENUM"
+				VALUE="STATE_ON"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (SMOOTHINGTIME)
+			{
+				KIND="USER"
+				VALUE="0"
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (SET_VARIABLE)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (VARIABLE_NAME)
+			{
+				KIND="VARIABLE"
+				VALUE="10060"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (FLOAT_VALUE)
+			{
+				KIND="USER"
+				VALUE="1"
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (SET_VHL_ACTIVATION)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (VHL_NUMBER)
+			{
+				KIND="VARIABLE"
+				VALUE="10004"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (STATE)
+			{
+				KIND="ENUM"
+				VALUE="STATE_ON"
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (SET_VARIABLE)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (VARIABLE_NAME)
+			{
+				KIND="VARIABLE"
+				VALUE="10051"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (FLOAT_VALUE)
+			{
+				KIND="USER"
+				VALUE="1"
+				OWNER_FILE=""
+			}
+		}
+	}
+
+	TYPEOF RULE (0)
+	{
+		IS_EXPANDED="1"
+		LABEL="End of management when the moto has passed our vehicle"
+
+		TYPEOF CONDITION (AND)
+		{
+
+			TYPEOF CONDITION (NOTEQUAL)
+			{
+				IS_EXPANDED="1"
+
+				TYPEOF PARAMETER (OPERAND_1)
+				{
+					KIND="VARIABLE"
+					VALUE="10051"
+					OWNER_FILE=""
+				}
+
+				TYPEOF PARAMETER (OPERAND_2)
+				{
+					KIND="USER"
+					VALUE="0"
+					OWNER_FILE=""
+				}
+			}
+
+			TYPEOF CONDITION (SUPERIOR)
+			{
+				IS_EXPANDED="1"
+				MODIFIER="BECOMES_TRUE"
+
+				TYPEOF PARAMETER (DISTANCE)
+				{
+					KIND="FUNCTION"
+
+					TYPEOF FUNCTION (GET_VHL_CART_DISTANCE_TO_VEHICLE)
+					{
+						IS_EXPANDED="1"
+
+						TYPEOF PARAMETER (VHL_NUMBER)
+						{
+							KIND="USER"
+							VALUE="0"
+							OWNER_FILE=""
+						}
+
+						TYPEOF PARAMETER (VHL_NUMBER)
+						{
+							KIND="VARIABLE"
+							VALUE="10004"
+							OWNER_FILE=""
+						}
+					}
+					OWNER_FILE=""
+				}
+
+				TYPEOF PARAMETER (DISTANCE)
+				{
+					KIND="USER"
+					VALUE="10"
+					OWNER_FILE=""
+				}
+			}
+		}
+
+		TYPEOF ACTION (SET_VHL_SPEED_OBLIGATORY)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (VHL_NUMBER)
+			{
+				KIND="VARIABLE"
+				VALUE="10004"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (SPEED)
+			{
+				KIND="FUNCTION"
+
+				TYPEOF FUNCTION (PLUS)
+				{
+					IS_EXPANDED="1"
+
+					TYPEOF PARAMETER (OPERAND_1)
+					{
+						KIND="FUNCTION"
+
+						TYPEOF FUNCTION (GET_VHL_SPEED)
+						{
+
+							TYPEOF PARAMETER (VHL_NUMBER)
+							{
+								KIND="USER"
+								VALUE="0"
+								OWNER_FILE=""
+							}
+						}
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (OPERAND_2)
+					{
+						KIND="USER"
+						VALUE="40"
+						OWNER_FILE=""
+					}
+				}
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (STATE)
+			{
+				KIND="ENUM"
+				VALUE="STATE_OFF"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (SMOOTHINGTIME)
+			{
+				KIND="USER"
+				VALUE="0"
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (SET_VARIABLE)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (VARIABLE_NAME)
+			{
+				KIND="VARIABLE"
+				VALUE="10051"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (FLOAT_VALUE)
+			{
+				KIND="USER"
+				VALUE="0"
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (SET_VARIABLE)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (VARIABLE_NAME)
+			{
+				KIND="VARIABLE"
+				VALUE="10060"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (FLOAT_VALUE)
+			{
+				KIND="USER"
+				VALUE="0"
+				OWNER_FILE=""
+			}
+		}
+	}
+}

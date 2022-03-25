@@ -1,0 +1,744 @@
+
+TYPEOF INCLUDE (0)
+{
+	IS_EXPANDED="1"
+	LABEL="Include"
+	TASK_KIND="0"
+	FILE=""
+
+	TYPEOF VARIABLE (0)
+	{
+		LABEL="First_Animal"
+		TYPE="FLOAT"
+		VALUE="32.000000"
+		INTERACTIVE_TYPE="VOID"
+		IS_INITIALIZATION_NEEDED_AT_START="0"
+		INTERACTIVE_MIN_VALUE="0"
+		INTERACTIVE_MAX_VALUE="9999"
+		INTERACTIVE_STEP_VALUE="1"
+		CATEGORY="INTERNAL"
+	}
+
+	TYPEOF VARIABLE (1)
+	{
+		LABEL="Animal_Cross"
+		TYPE="FLOAT"
+		VALUE="0"
+		INTERACTIVE_TYPE="BOOL"
+		IS_INITIALIZATION_NEEDED_AT_START="0"
+		INTERACTIVE_MIN_VALUE="0"
+		INTERACTIVE_MAX_VALUE="1"
+		INTERACTIVE_STEP_VALUE="1"
+		CATEGORY="INTERNAL"
+	}
+
+	TYPEOF VARIABLE (2)
+	{
+		LABEL="Animal_IdAnimalToCross"
+		TYPE="FLOAT"
+		VALUE="0"
+		INTERACTIVE_TYPE="INTEGER"
+		IS_INITIALIZATION_NEEDED_AT_START="0"
+		INTERACTIVE_MIN_VALUE="0"
+		INTERACTIVE_MAX_VALUE="1"
+		INTERACTIVE_STEP_VALUE="1"
+		CATEGORY="INTERNAL"
+	}
+
+	TYPEOF VARIABLE (3)
+	{
+		LABEL="animal"
+		TYPE="FLOAT"
+		VALUE="32.000000"
+		INTERACTIVE_TYPE="VOID"
+		IS_INITIALIZATION_NEEDED_AT_START="0"
+		INTERACTIVE_MIN_VALUE="0"
+		INTERACTIVE_MAX_VALUE="9999"
+		INTERACTIVE_STEP_VALUE="1"
+		CATEGORY="INTERNAL"
+	}
+
+	TYPEOF VARIABLE (4)
+	{
+		LABEL="Flag_Run"
+		TYPE="FLOAT"
+		VALUE="0.000000"
+		INTERACTIVE_TYPE="VOID"
+		IS_INITIALIZATION_NEEDED_AT_START="0"
+		INTERACTIVE_MIN_VALUE="0"
+		INTERACTIVE_MAX_VALUE="9999"
+		INTERACTIVE_STEP_VALUE="1"
+		CATEGORY="INTERNAL"
+	}
+
+	TYPEOF VARIABLE (5)
+	{
+		LABEL="RunSpeed"
+		TYPE="FLOAT"
+		VALUE="0.000000"
+		INTERACTIVE_TYPE="VOID"
+		IS_INITIALIZATION_NEEDED_AT_START="0"
+		INTERACTIVE_MIN_VALUE="0"
+		INTERACTIVE_MAX_VALUE="9999"
+		INTERACTIVE_STEP_VALUE="1"
+		CATEGORY="INTERNAL"
+	}
+
+	TYPEOF RULE (1)
+	{
+		IS_EXPANDED="1"
+		LABEL="Rule"
+
+		TYPEOF CONDITION (IS_TRUE)
+		{
+			IS_EXPANDED="1"
+		}
+
+		TYPEOF ACTION (SET_VARIABLE)
+		{
+
+			TYPEOF PARAMETER (VARIABLE_NAME)
+			{
+				KIND="VARIABLE"
+				VALUE="3"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (FLOAT_VALUE)
+			{
+				KIND="FUNCTION"
+
+				TYPEOF FUNCTION (PLUS)
+				{
+					IS_EXPANDED="1"
+
+					TYPEOF PARAMETER (OPERAND_1)
+					{
+						KIND="VARIABLE"
+						VALUE="0"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (OPERAND_2)
+					{
+						KIND="VARIABLE"
+						VALUE="2"
+						OWNER_FILE=""
+					}
+				}
+				OWNER_FILE=""
+			}
+		}
+	}
+
+	TYPEOF RULE (3)
+	{
+		IS_EXPANDED="1"
+		LABEL="Dog Run Speed"
+
+		TYPEOF CONDITION (EQUAL)
+		{
+
+			TYPEOF PARAMETER (OPERAND_1)
+			{
+				KIND="VARIABLE"
+				VALUE="3"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (OPERAND_2)
+			{
+				KIND="FUNCTION"
+
+				TYPEOF FUNCTION (PLUS)
+				{
+					IS_EXPANDED="1"
+
+					TYPEOF PARAMETER (OPERAND_1)
+					{
+						KIND="VARIABLE"
+						VALUE="0"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (OPERAND_2)
+					{
+						KIND="USER"
+						VALUE="0"
+						OWNER_FILE=""
+					}
+				}
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (SET_VARIABLE)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (VARIABLE_NAME)
+			{
+				KIND="VARIABLE"
+				VALUE="5"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (FLOAT_VALUE)
+			{
+				KIND="USER"
+				VALUE="2.6"
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (PEDESTRIAN_SET_RUN_SPEED)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (VHL_NUMBER)
+			{
+				KIND="VARIABLE"
+				VALUE="3"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (SPEED)
+			{
+				KIND="VARIABLE"
+				VALUE="5"
+				OWNER_FILE=""
+			}
+		}
+	}
+
+	TYPEOF RULE (5)
+	{
+		IS_EXPANDED="1"
+		LABEL="Cat Run Speed"
+
+		TYPEOF CONDITION (EQUAL)
+		{
+
+			TYPEOF PARAMETER (OPERAND_1)
+			{
+				KIND="VARIABLE"
+				VALUE="3"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (OPERAND_2)
+			{
+				KIND="FUNCTION"
+
+				TYPEOF FUNCTION (PLUS)
+				{
+					IS_EXPANDED="1"
+
+					TYPEOF PARAMETER (OPERAND_1)
+					{
+						KIND="VARIABLE"
+						VALUE="0"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (OPERAND_2)
+					{
+						KIND="USER"
+						VALUE="1"
+						OWNER_FILE=""
+					}
+				}
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (SET_VARIABLE)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (VARIABLE_NAME)
+			{
+				KIND="VARIABLE"
+				VALUE="5"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (FLOAT_VALUE)
+			{
+				KIND="USER"
+				VALUE="3.6"
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (PEDESTRIAN_SET_RUN_SPEED)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (VHL_NUMBER)
+			{
+				KIND="VARIABLE"
+				VALUE="3"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (SPEED)
+			{
+				KIND="VARIABLE"
+				VALUE="5"
+				OWNER_FILE=""
+			}
+		}
+	}
+
+	TYPEOF RULE (0)
+	{
+		IS_EXPANDED="1"
+		LABEL="Rule"
+
+		TYPEOF CONDITION (SUPERIOR)
+		{
+			IS_EXPANDED="1"
+			MODIFIER="BECOMES_TRUE"
+
+			TYPEOF PARAMETER (OPERAND_1)
+			{
+				KIND="VARIABLE"
+				VALUE="1"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (OPERAND_2)
+			{
+				KIND="USER"
+				VALUE="0.5"
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (SET_VHL_POSITION)
+		{
+
+			TYPEOF PARAMETER (VHL_NUMBER)
+			{
+				KIND="VARIABLE"
+				VALUE="3"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (MAP_XPOSITION)
+			{
+				KIND="FUNCTION"
+
+				TYPEOF FUNCTION (GET_ROAD_ON_LANE_COORDINATE)
+				{
+
+					TYPEOF PARAMETER (VHL_NUMBER)
+					{
+						KIND="USER"
+						VALUE="0"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (DISTANCE_RELATIVE)
+					{
+						KIND="USER"
+						VALUE="10"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (CHOOSE_SHIFT_TYPE)
+					{
+						KIND="ENUM"
+						VALUE="METERS"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (OFFSET_VALUE)
+					{
+						KIND="USER"
+						VALUE="2"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (CHOOSE_COORDINATE_OR_HEADING)
+					{
+						KIND="ENUM"
+						VALUE="VHL_X"
+						OWNER_FILE=""
+					}
+				}
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (MAP_YPOSITION)
+			{
+				KIND="FUNCTION"
+
+				TYPEOF FUNCTION (GET_ROAD_ON_LANE_COORDINATE)
+				{
+
+					TYPEOF PARAMETER (VHL_NUMBER)
+					{
+						KIND="USER"
+						VALUE="0"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (DISTANCE_RELATIVE)
+					{
+						KIND="USER"
+						VALUE="15"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (CHOOSE_SHIFT_TYPE)
+					{
+						KIND="ENUM"
+						VALUE="METERS"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (OFFSET_VALUE)
+					{
+						KIND="USER"
+						VALUE="2"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (CHOOSE_COORDINATE_OR_HEADING)
+					{
+						KIND="ENUM"
+						VALUE="VHL_Y"
+						OWNER_FILE=""
+					}
+				}
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (HEADING)
+			{
+				KIND="FUNCTION"
+
+				TYPEOF FUNCTION (MINUS)
+				{
+
+					TYPEOF PARAMETER (OPERAND_1)
+					{
+						KIND="FUNCTION"
+
+						TYPEOF FUNCTION (GET_ROAD_ON_LANE_COORDINATE)
+						{
+
+							TYPEOF PARAMETER (VHL_NUMBER)
+							{
+								KIND="USER"
+								VALUE="0"
+								OWNER_FILE=""
+							}
+
+							TYPEOF PARAMETER (DISTANCE_RELATIVE)
+							{
+								KIND="USER"
+								VALUE="50"
+								OWNER_FILE=""
+							}
+
+							TYPEOF PARAMETER (CHOOSE_SHIFT_TYPE)
+							{
+								KIND="ENUM"
+								VALUE="METERS"
+								OWNER_FILE=""
+							}
+
+							TYPEOF PARAMETER (OFFSET_VALUE)
+							{
+								KIND="USER"
+								VALUE="2"
+								OWNER_FILE=""
+							}
+
+							TYPEOF PARAMETER (CHOOSE_COORDINATE_OR_HEADING)
+							{
+								KIND="ENUM"
+								VALUE="VHL_H"
+								OWNER_FILE=""
+							}
+						}
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (OPERAND_2)
+					{
+						KIND="USER"
+						VALUE="50"
+						OWNER_FILE=""
+					}
+				}
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (PEDESTRIAN_RUN)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (VHL_NUMBER)
+			{
+				KIND="VARIABLE"
+				VALUE="3"
+				OWNER_FILE=""
+			}
+		}
+	}
+
+	TYPEOF RULE (4)
+	{
+		IS_EXPANDED="1"
+		LABEL="Rule"
+
+		TYPEOF CONDITION (SUPERIOR)
+		{
+			IS_EXPANDED="1"
+			MODIFIER="HAS_BEEN_TRUE_FOR"
+			DURATION_TYPE="USER"
+			DURATION="0.7"
+
+			TYPEOF PARAMETER (OPERAND_1)
+			{
+				KIND="VARIABLE"
+				VALUE="1"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (OPERAND_2)
+			{
+				KIND="USER"
+				VALUE="0.5"
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (ADD_GOAL)
+		{
+
+			TYPEOF PARAMETER (VHL_NUMBER)
+			{
+				KIND="VARIABLE"
+				VALUE="3"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (MAP_XPOSITION)
+			{
+				KIND="FUNCTION"
+
+				TYPEOF FUNCTION (GET_ROAD_ON_LANE_COORDINATE)
+				{
+
+					TYPEOF PARAMETER (VHL_NUMBER)
+					{
+						KIND="USER"
+						VALUE="0"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (DISTANCE_RELATIVE)
+					{
+						KIND="USER"
+						VALUE="80"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (CHOOSE_SHIFT_TYPE)
+					{
+						KIND="ENUM"
+						VALUE="METERS"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (OFFSET_VALUE)
+					{
+						KIND="USER"
+						VALUE="-50"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (CHOOSE_COORDINATE_OR_HEADING)
+					{
+						KIND="ENUM"
+						VALUE="VHL_X"
+						OWNER_FILE=""
+					}
+				}
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (MAP_YPOSITION)
+			{
+				KIND="FUNCTION"
+
+				TYPEOF FUNCTION (GET_ROAD_ON_LANE_COORDINATE)
+				{
+
+					TYPEOF PARAMETER (VHL_NUMBER)
+					{
+						KIND="USER"
+						VALUE="0"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (DISTANCE_RELATIVE)
+					{
+						KIND="USER"
+						VALUE="80"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (CHOOSE_SHIFT_TYPE)
+					{
+						KIND="ENUM"
+						VALUE="METERS"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (OFFSET_VALUE)
+					{
+						KIND="USER"
+						VALUE="-50"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (CHOOSE_COORDINATE_OR_HEADING)
+					{
+						KIND="ENUM"
+						VALUE="VHL_Y"
+						OWNER_FILE=""
+					}
+				}
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (MAP_ZPOSITION)
+			{
+				KIND="FUNCTION"
+
+				TYPEOF FUNCTION (GET_ROAD_ON_LANE_COORDINATE)
+				{
+
+					TYPEOF PARAMETER (VHL_NUMBER)
+					{
+						KIND="USER"
+						VALUE="0"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (DISTANCE_RELATIVE)
+					{
+						KIND="USER"
+						VALUE="80"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (CHOOSE_SHIFT_TYPE)
+					{
+						KIND="ENUM"
+						VALUE="METERS"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (OFFSET_VALUE)
+					{
+						KIND="USER"
+						VALUE="-50"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (CHOOSE_COORDINATE_OR_HEADING)
+					{
+						KIND="ENUM"
+						VALUE="VHL_Z"
+						OWNER_FILE=""
+					}
+				}
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (SPEED)
+			{
+				KIND="FUNCTION"
+
+				TYPEOF FUNCTION (MULTIPLY)
+				{
+
+					TYPEOF PARAMETER (OPERAND_1)
+					{
+						KIND="VARIABLE"
+						VALUE="5"
+						OWNER_FILE=""
+					}
+
+					TYPEOF PARAMETER (OPERAND_2)
+					{
+						KIND="USER"
+						VALUE="3.6"
+						OWNER_FILE=""
+					}
+				}
+				OWNER_FILE=""
+			}
+		}
+	}
+
+	TYPEOF RULE (2)
+	{
+		IS_EXPANDED="1"
+		LABEL="Rule"
+
+		TYPEOF CONDITION (SUPERIOR)
+		{
+			IS_EXPANDED="1"
+			MODIFIER="HAS_BEEN_TRUE_FOR"
+			DURATION_TYPE="USER"
+			DURATION="4"
+
+			TYPEOF PARAMETER (OPERAND_1)
+			{
+				KIND="VARIABLE"
+				VALUE="1"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (OPERAND_2)
+			{
+				KIND="USER"
+				VALUE="0.5"
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (CLEAR_GOALS)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (VHL_NUMBER)
+			{
+				KIND="VARIABLE"
+				VALUE="3"
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (PEDESTRIAN_WALK)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (VHL_NUMBER)
+			{
+				KIND="VARIABLE"
+				VALUE="3"
+				OWNER_FILE=""
+			}
+		}
+	}
+}
