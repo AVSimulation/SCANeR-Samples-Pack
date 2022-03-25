@@ -1,0 +1,4 @@
+[Common]
+Data		 = ${LOCAL_STUDIO_PATH}/SCANeR-Demos-Pack-2022/data/DEMO_EVENTS_N104;${STUDIO_PATH}/SCANeRstudio_2022/data/DEFAULT
+Doc		 	 = ${STUDIO_PATH}/SCANeRstudio_2022/doc
+Config		 = ${LOCAL_STUDIO_PATH}/SCANeRstudio_2022/config
