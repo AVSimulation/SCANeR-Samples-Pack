@@ -1,0 +1,9 @@
+<camTree>
+ <VCam AttachedProc="0" ProcName="" VId="0" ChanId="0" name="driver" p="0" z="1.1999998092651367" x="1.6999986171722412" Mode="2" h="0" r="0" y="0.43999999761581421"/>
+ <VCam AttachedProc="0" ProcName="" VId="0" ChanId="0" name="egoview" p="0" z="14.899982452392578" x="-143.00051879882813" Mode="1" h="0" r="0" y="-201.09976196289063"/>
+ <VCam AttachedProc="0" ProcName="" VId="0" ChanId="0" name="egoview1" p="0" z="2" x="-4" Mode="2" h="0" r="0" y="0"/>
+ <VCam AttachedProc="0" ProcName="" VId="0" ChanId="0" name="egoview2" p="0" z="1.26" x="1.3" Mode="0" h="0" r="0" y="0.38"/>
+ <VCam AttachedProc="0" ProcName="" VId="0" ChanId="0" name="egoview3" p="0" z="1.3999998569488525" x="-3.2000007629394531" Mode="2" h="-2.7000000324456628" r="0" y="1.600000262260437"/>
+ <VCam AttachedProc="0" ProcName="" VId="0" ChanId="0" name="upper view" p="5.7600001261356564" z="2.7000000476837158" x="-6.399991512298584" Mode="2" h="-2.8800000630678282" r="0" y="-1.639127766850379e-08"/>
+</camTree>
+
