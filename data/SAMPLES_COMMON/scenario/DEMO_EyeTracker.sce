@@ -2,7 +2,7 @@
 <sce version="20.22.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <Scenario>
-    <description>To use this scenario execute the EyeTracker Emulator and:
+    <description>To use this scenario execute the EyeTracker Emulator (from TOOLS tab) and:
 - Force Eye Translation/Z value to maximum (+5)
 - Force Gave Vector/Z value to maximum (+5)
 - Modify Gaze vector/XY values to rotate the gaze vector
