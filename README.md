@@ -159,6 +159,29 @@ Your work will be visible to all, and AVSimulation takes care of the migration t
 Now AVSimulation will review the modification.  
 After the pull request is approved, your modification is available to all.
 
+## Samples list
+
+Click on the higlighted names for the user manuals.
+
+* [`SAMPLE_ADAS_AEB`](https://avsimulation.github.io/SCANeR-Quick-Starts//Pages/HT_ADAS/SAMPLE_ADAS_AEB.html)
+* [`SAMPLE_ADAS_LKA_ACC`](https://avsimulation.github.io/SCANeR-Quick-Starts//Pages/HT_ADAS/SAMPLE_ADAS_LKA_ACC.html)
+* `SAMPLE_CAMERACAPTURE`
+* `SAMPLE_CARMAKER`
+* [`SAMPLE_COMPUTE_HPC`](https://avsimulation.github.io/SCANeR-Quick-Starts/Pages/HT_Massive_Simulation/HT_Massive_Simulation.html)
+* [`SAMPLE_COMPUTE_LOCAL`](https://avsimulation.github.io/SCANeR-Quick-Starts/Pages/HT_Massive_Simulation/HT_Massive_Simulation.html)
+* `SAMPLE_DATAEXCHANGE`
+* `SAMPLE_DEMOS`
+* `SAMPLE_EYETRACKER`
+* `SAMPLE_FMI`
+* `SAMPLE_HEADLIGHTS`
+* `SAMPLE_HEADLIGHTS_HPC`
+* [`SAMPLE_LATERAL_CTRL`](https://avsimulation.github.io/SCANeR-Quick-Starts/Pages/HT_ADAS/HT_ADAS.html)
+* [`SAMPLE_LONGI_CTRL`](https://avsimulation.github.io/SCANeR-Quick-Starts/Pages/HT_ADAS/HT_ADAS.html)
+* `SAMPLE_PIXEL_LIGHTING`
+* `SAMPLE_SCENARIO_IMPORTER`
+* `SAMPLE_UTAC_AEB`
+* `SAMPLE_VEHICLE_PLAYER`
+
 ## Get help
 
 * [SCANeR **Quick Starts**](https://avsimulation.github.io/SCANeR-Quick-Starts/)
