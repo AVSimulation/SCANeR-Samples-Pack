@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<vehicle version="0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <host>localhost</host>
+
+  <port>8842</port>
+
+  <forceLocalPort>0</forceLocalPort>
+
+  <localPort>8842</localPort>
+
+  <protocolVersion>19</protocolVersion>
+
+  <mesurmentPointInScaner>0 0 0</mesurmentPointInScaner>
+
+  <useModelTimestamp>1</useModelTimestamp>
+
+  <isCommandOverride>1</isCommandOverride>
+
+  <isSynchronizedMode>1</isSynchronizedMode>
+
+  <packetTimeout>40</packetTimeout>
+
+  <udpResendTimeout>40</udpResendTimeout>
+
+  <isSteeringWheelTorque>1</isSteeringWheelTorque>
+
+  <canModifyLights>0</canModifyLights>
+
+  <canModifyIndicators>0</canModifyIndicators>
+
+  <supportsAutoGearboxCommand>0</supportsAutoGearboxCommand>
+
+  <supportsManualCommand>1</supportsManualCommand>
+
+  <supportsSequentialCommand>0</supportsSequentialCommand>
+
+  <needsClutchDuringGearchange>0</needsClutchDuringGearchange>
+
+  <length>4.3</length>
+
+  <width>1.808</width>
+
+  <height>1.46</height>
+
+  <weight>1200</weight>
+
+  <wheelBase>2.64</wheelBase>
+
+  <rideHeight>0.2</rideHeight>
+
+  <rearTrack>1.55</rearTrack>
+
+  <frontTrack>1.55</frontTrack>
+
+  <rearOverhang>0.75</rearOverhang>
+
+  <maxSpeed>50</maxSpeed>
+
+  <maxWheelSteeringAngle>0.785398</maxWheelSteeringAngle>
+
+  <maxSteeringwheelAngle>18.8496</maxSteeringwheelAngle>
+
+  <wheelRadius>0.306</wheelRadius>
+
+  <maxEngineSpeed>628.319</maxEngineSpeed>
+
+  <idleEngineSpeed>104.72</idleEngineSpeed>
+
+  <nbElectricMotor>0</nbElectricMotor>
+
+  <sendPilotTorqueToCustomIO>0</sendPilotTorqueToCustomIO>
+
+  <gearboxRatios>1 2 3 4 5 </gearboxRatios>
+
+</vehicle>

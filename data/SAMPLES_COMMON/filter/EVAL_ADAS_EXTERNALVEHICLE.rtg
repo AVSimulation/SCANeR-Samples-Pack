@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<RTGateway version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <maxStringSize>8</maxStringSize>
+
+  <RTGOutputCom>
+    <isEventBased>0</isEventBased>
+    <options>localhost:8192:0</options>
+    <plugin>UDP</plugin>
+  </RTGOutputCom>
+
+  <RTGInputValue>
+    <exportChanel>16101</exportChanel>
+    <name>V_x_ELKA_Alert_Left</name>
+  </RTGInputValue>
+
+  <RTGInputValue>
+    <exportChanel>16102</exportChanel>
+    <name>V_x_ELKA_Alert_Right</name>
+  </RTGInputValue>
+
+  <RTGInputValue>
+    <exportChanel>16103</exportChanel>
+    <name>LDW_AlertStatus</name>
+  </RTGInputValue>
+
+  <RTGFilter>
+    <Interface>ISensor</Interface>
+    <Method>SensorMovableTargets</Method>
+    <detected>0</detected>
+    <idRangeMax>100000</idRangeMax>
+    <idRangeMin>100000</idRangeMin>
+    <RTGField>
+      <Attribute>targetsArray</Attribute>
+      <indexMax>4</indexMax>
+      <indexMin>0</indexMin>
+      <RTGSubField>
+        <Attribute>distanceToCollision</Attribute>
+      </RTGSubField>
+    </RTGField>
+  </RTGFilter>
+
+  <RTGInputValue>
+    <exportChanel>16104</exportChanel>
+    <name>LKA_AlertStatus</name>
+  </RTGInputValue>
+
+  <RTGInputValue>
+    <exportChanel>16116</exportChanel>
+    <name>V_x_LDW_StatusDisplay_v2</name>
+  </RTGInputValue>
+
+  <RTGInputValue>
+    <exportChanel>16118</exportChanel>
+    <name>V_x_ELKA_StatusDisplay_v2</name>
+  </RTGInputValue>
+
+  <RTGInputValue>
+    <exportChanel>16119</exportChanel>
+    <name>LDW_operability_state</name>
+  </RTGInputValue>
+
+  <RTGInputValue>
+    <exportChanel>16120</exportChanel>
+    <name>LKA_operability_state</name>
+  </RTGInputValue>
+
+  <RTGInputValue>
+    <exportChanel>16121</exportChanel>
+    <name>ELKA_operability_state</name>
+  </RTGInputValue>
+
+  <RTGInputValue>
+    <exportChanel>16128</exportChanel>
+    <name>how_sensitive_is_LSS</name>
+  </RTGInputValue>
+
+  <RTGInputValue>
+    <exportChanel>16134</exportChanel>
+    <name>LSS_correction_feedback_to_HMI</name>
+  </RTGInputValue>
+
+</RTGateway>
