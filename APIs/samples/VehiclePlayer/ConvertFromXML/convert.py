@@ -3,7 +3,7 @@ import sys
 
 import xml.etree.ElementTree as ET
 
-from pyproj import Proj,transform
+from pyproj import Proj,Transformer
 
 
 def createSCANeRMDL(fileName,type):
@@ -80,7 +80,8 @@ def createCSV(fileName, root, startNode, inProj, outProj):
 
 
 	for geo in root.findall(startNode):
-		X,Y=transform(inProj,outProj,geo.get('long'),geo.get('lat'))
+		transformer=Transformer.from_proj(inProj,outProj)
+		X,Y=transformer.transform(geo.get('long'),geo.get('lat'))
 		x=X-offsetX
 		y=Y-offsetY
 		yaw = 0.017453*float(geo.get('course'))

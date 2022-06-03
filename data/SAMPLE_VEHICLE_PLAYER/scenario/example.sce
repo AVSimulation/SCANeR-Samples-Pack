@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<sce version="20.21.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<sce version="20.22.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <Scenario>
     <description></description>
@@ -154,7 +154,7 @@
       <Model/>
       <ObjectPosition>
         <heading>0</heading>
-        <position>1.66977542903624e-13 -1.67865721323324e-13 0</position>
+        <position>0 0 0</position>
         <RoadPosition>
           <abscissa>149.118525906794</abscissa>
           <gapInItnSystem>-6.77741271560259</gapInItnSystem>

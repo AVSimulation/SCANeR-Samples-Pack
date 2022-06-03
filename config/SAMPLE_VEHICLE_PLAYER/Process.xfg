@@ -88,7 +88,7 @@
         <processName>MODELHANDLER</processName>
       </Selected>
       <Selected>
-        <processName>UXDRENDER</processName>
+        <processName>VISUAL</processName>
       </Selected>
     </AutoStartProcesses>
     <DefaultProcesses>
@@ -99,7 +99,7 @@
         <processName>MODELHANDLER</processName>
       </Selected>
       <Selected>
-        <processName>UXDRENDER</processName>
+        <processName>VISUAL</processName>
       </Selected>
     </DefaultProcesses>
   </Setup>
