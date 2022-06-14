@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<sce version="20.21.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<sce version="20.22.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <Scenario>
     <description></description>
@@ -237,7 +237,7 @@ TYPEOF SCENARIO (0)
         <RoadPosition>
           <abscissa>52.8360378813792</abscissa>
           <gapInItnSystem>-12.2119933871109</gapInItnSystem>
-          <relativeHeading>3.15598477591397</relativeHeading>
+          <relativeHeading>3.15598440170288</relativeHeading>
           <subNetwork>Sub Network</subNetwork>
           <track>Avenue des Champs-Ã‰lysÃ©es - 642898830</track>
           <zOffset>0</zOffset>
@@ -28256,7 +28256,7 @@ TYPEOF SCENARIO (0)
         <RoadPosition>
           <abscissa>48.1372821907539</abscissa>
           <gapInItnSystem>-12.1780435425997</gapInItnSystem>
-          <relativeHeading>3.14159265358979</relativeHeading>
+          <relativeHeading>3.14159250259399</relativeHeading>
           <subNetwork>Sub Network</subNetwork>
           <track>Avenue des Champs-Ã‰lysÃ©es - 642898830</track>
           <zOffset>0</zOffset>
