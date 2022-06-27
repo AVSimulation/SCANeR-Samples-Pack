@@ -39,7 +39,7 @@
 
 # Python
 
-*/__pycache__/*
+*__pycache__/*
 
 # Unreal
 
@@ -54,3 +54,4 @@
 data/*/record/*
 *.sivr
 *.sifr
+*dont_remove_this_directory.txt
