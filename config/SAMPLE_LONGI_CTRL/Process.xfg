@@ -139,6 +139,14 @@
         <Environment/>
         <Display/>
       </Process>
+      <Process>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/scenario.exe</exe>
+        <name>SCENARIO</name>
+        <port>25111</port>
+        <protocol></protocol>
+        <Environment/>
+        <Display/>
+      </Process>
     </Computer>
   </Processes>
 
@@ -157,6 +165,9 @@
       <Selected>
         <processName>CONTROLPADVIEWER</processName>
       </Selected>
+      <Selected>
+        <processName>SCENARIO</processName>
+      </Selected>
     </AutoStartProcesses>
     <DefaultProcesses>
       <Selected>
@@ -170,6 +181,9 @@
       </Selected>
       <Selected>
         <processName>CONTROLPADVIEWER</processName>
+      </Selected>
+      <Selected>
+        <processName>SCENARIO</processName>
       </Selected>
     </DefaultProcesses>
   </Setup>
@@ -204,6 +218,9 @@
     </Module>
     <Module>
       <processName>CONTROLPADVIEWER</processName>
+    </Module>
+    <Module>
+      <processName>SCENARIO</processName>
     </Module>
   </ProcessGroups>
 

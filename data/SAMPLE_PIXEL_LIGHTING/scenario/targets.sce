@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<sce version="20.22.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<sce version="20.22.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <Scenario>
-    <description></description>
+    <description>REQUIRED:
+Copy D:\AVSimulationWork\SCANeRstudio_2022\APIs\bin\x64\vs2019\plugins\DynamicPhotometryPlugin.dll 
+To D:\AVSimulationWork\SCANeRstudio_2022\bin\x64\plugins
+</description>
     <name></name>
     <online>1</online>
     <steadystate>0</steadystate>
@@ -60,6 +63,63 @@
     </Ground>
     <PredefinedRun>
       <type>0</type>
+      <TacticalMobility>
+        <backupSampleTime>0.1</backupSampleTime>
+        <brakePedalPressDelay>2</brakePedalPressDelay>
+        <finalDistance>200</finalDistance>
+        <gasPedalPressDelay>1</gasPedalPressDelay>
+        <maxForceOnBrakePedal>400</maxForceOnBrakePedal>
+        <maxPosGasPedal>1</maxPosGasPedal>
+      </TacticalMobility>
+      <StrategicRoadMobility>
+        <finalDistanceStratMob>200000</finalDistanceStratMob>
+        <firstMaxSpeedForSlope>25</firstMaxSpeedForSlope>
+        <firstSlopeCondition>0</firstSlopeCondition>
+        <fourthMaxSpeedForSlope>8.33333333333333</fourthMaxSpeedForSlope>
+        <fourthSlopeCondition>-0.1</fourthSlopeCondition>
+        <maxPosOnBrakePedal>400</maxPosOnBrakePedal>
+        <maxPosOnGasPedal>1</maxPosOnGasPedal>
+        <samplingDistanceStratMob>10</samplingDistanceStratMob>
+        <secondMaxSpeedForSlope>19.4444444444444</secondMaxSpeedForSlope>
+        <secondSlopeCondition>-0.025</secondSlopeCondition>
+        <thirdMaxSpeedForSlope>13.8888888888889</thirdMaxSpeedForSlope>
+        <thirdSlopeCondition>-0.06</thirdSlopeCondition>
+      </StrategicRoadMobility>
+      <OperativeMobility>
+        <finalDistanceOpMob>200</finalDistanceOpMob>
+        <finalTimeOpMob>300</finalTimeOpMob>
+        <firstMaxSpeedCondOpMob>25</firstMaxSpeedCondOpMob>
+        <firstSlopeCondOpMob>0</firstSlopeCondOpMob>
+        <fourthMaxSpeedCondOpMob>8.33333333333333</fourthMaxSpeedCondOpMob>
+        <fourthSlopeCondOpMob>-0.1</fourthSlopeCondOpMob>
+        <isGeneralCriteriaOpMob>1</isGeneralCriteriaOpMob>
+        <isWarningOnlyCriteriaOpMob>1</isWarningOnlyCriteriaOpMob>
+        <maxAccelOpMob>1</maxAccelOpMob>
+        <maxDecelOpMob>4</maxDecelOpMob>
+        <maxLateralOpMob>3</maxLateralOpMob>
+        <secondMaxSpeedCondOpMob>19.4444444444444</secondMaxSpeedCondOpMob>
+        <secondSlopeCondOpMob>-0.025</secondSlopeCondOpMob>
+        <thirdMaxSpeedCondOpMob>13.8888888888889</thirdMaxSpeedCondOpMob>
+        <thirdSlopeCondOpMob>-0.06</thirdSlopeCondOpMob>
+      </OperativeMobility>
+      <PrecomputationLap>
+        <areInterimResultsFilesSaved>1</areInterimResultsFilesSaved>
+        <isNewTrajSavedPrecomputationLap>1</isNewTrajSavedPrecomputationLap>
+        <isResultFromStartLinePrecomputationLap>1</isResultFromStartLinePrecomputationLap>
+        <minimalSpeed>8.33333333333333</minimalSpeed>
+        <nbTurnPoints>20</nbTurnPoints>
+      </PrecomputationLap>
+      <DynamicLap>
+        <brakingPointsPrecision>0.5</brakingPointsPrecision>
+        <isBrakingPointsIteration>0</isBrakingPointsIteration>
+        <isCircuitOpenedDynamicLap>0</isCircuitOpenedDynamicLap>
+        <isRecordUpdatedTrajDynamicLap>1</isRecordUpdatedTrajDynamicLap>
+        <isResultFromStartLineDynamicLap>1</isResultFromStartLineDynamicLap>
+        <maxSideslipAngle>0.785398163397448</maxSideslipAngle>
+        <maxTrajectoryError>2</maxTrajectoryError>
+        <minSpeed>2.77777777777778</minSpeed>
+        <timePrecision>0.01</timePrecision>
+      </DynamicLap>
     </PredefinedRun>
     <ProgressDlg>
       <fullScreen>0</fullScreen>
@@ -74,6 +134,13 @@
         <title>Graph</title>
       </ResultsGraph>
     </ProgressDlg>
+    <ProjectInfos>
+      <designOfExperimentName></designOfExperimentName>
+      <explorationPath></explorationPath>
+      <originalName></originalName>
+      <testPlanName></testPlanName>
+      <testPlanPath></testPlanPath>
+    </ProjectInfos>
     <Recording>
       <mode>AUTO</mode>
       <recordPath></recordPath>

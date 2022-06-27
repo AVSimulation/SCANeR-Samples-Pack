@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<RoadXML version="3.0.0" versionRevision="3.0.0-$Revision: 23033 $-$Date: 2011-05-02 11:01:27 +0200 (lun., 02 mai 2011) $" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<RoadXML version="3.1.0" versionRevision="3.1.0-$Revision: 23033 $-$Date: 2011-05-02 11:01:27 +0200 (lun., 02 mai 2011) $" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-  <Network name="" traffic="right-hand">
-    <Geolocalisation Azimuth="0" EPSG="3857" TimeOffset="0" WKT="PROJCS['unnamed',PROJECTION['Mercator_1SP'],PARAMETER['standard_parallel_1',0],PARAMETER['central_meridian',0],PARAMETER['false_easting',0],PARAMETER['false_northing',0],UNIT['Meter',1],AUTHORITY['EPSG','3857']]">
-      <Translation x="255368.158658067" y="6220945.79148986" z="0"/>
+  <Network name="Paris" traffic="right-hand">
+    <Geolocalisation Azimuth="0" EPSG="27561" TimeOffset="0" WKT="PROJCS['NTF (Paris) / Lambert Nord France',&#xA;    GEOGCS['NTF (Paris)',&#xA;        DATUM['Nouvelle_Triangulation_Francaise_Paris',&#xA;            SPHEROID['Clarke 1880 (IGN)',6378249.2,293.466021293627,&#xA;                AUTHORITY['EPSG','7011']],&#xA;            AUTHORITY['EPSG','6807']],&#xA;        PRIMEM['Paris',2.33722917,&#xA;            AUTHORITY['EPSG','8903']],&#xA;        UNIT['grad',0.0157079632679489,&#xA;            AUTHORITY['EPSG','9105']],&#xA;        AUTHORITY['EPSG','4807']],&#xA;    PROJECTION['Lambert_Conformal_Conic_1SP'],&#xA;    PARAMETER['latitude_of_origin',55],&#xA;    PARAMETER['central_meridian',0],&#xA;    PARAMETER['scale_factor',0.999877341],&#xA;    PARAMETER['false_easting',600000],&#xA;    PARAMETER['false_northing',200000],&#xA;    UNIT['metre',1,&#xA;        AUTHORITY['EPSG','9001']],&#xA;    AXIS['Easting',EAST],&#xA;    AXIS['Northing',NORTH],&#xA;    AUTHORITY['EPSG','27561']]">
+      <Translation x="574881.751610424" y="33257.5395450076" z="0"/>
     </Geolocalisation>
     <SubNetworkJunctions/>
     <SubNetworks>
-      <SubNetwork heading="0" name="Sub Network" x="0" y="0" z="0">
+      <SubNetwork countryCode="FR" heading="0" name="Sub Network" x="0" y="0" z="0">
         <ExternalTerrain flipped="0" path="Paris_Champs_Elysees.ive"/>
         <RoadNetwork>
           <Grounds>
             <Ground grip="1" name="Asphalt" type="asphalt" waterLevel="0">
               <Roughness RepeatPattern="1" type="analytic">
                 <RoughnessAnalytic RoughnessHeight="0.005" RoughnessHeightStdDeviation="0" RoughnessLength="0.01" RoughnessLengthStdDeviation="0"/>
+                <CRG maxY="99" minY="-99" mode="relative" offsetX="0" offsetZ="0" path="" repeatPattern="none" scaleX="1" scaleZ="1"/>
                 <Roughness2x2D>
                   <Scale2x2DPoints bankingLeft="1" bankingRight="1" curvilinearDistance="1" zLeft="1" zRight="1"/>
                   <Offset2x2DPoints bankingLeft="0" bankingRight="0" curvilinearDistance="0" zLeft="0" zRight="0"/>
@@ -24,6 +25,7 @@
             <Ground grip="0.8" name="Concrete" type="concrete" waterLevel="0">
               <Roughness RepeatPattern="1" type="analytic">
                 <RoughnessAnalytic RoughnessHeight="0.001" RoughnessHeightStdDeviation="0" RoughnessLength="0.01" RoughnessLengthStdDeviation="0"/>
+                <CRG maxY="99" minY="-99" mode="relative" offsetX="0" offsetZ="0" path="" repeatPattern="none" scaleX="1" scaleZ="1"/>
                 <Roughness2x2D>
                   <Scale2x2DPoints bankingLeft="1" bankingRight="1" curvilinearDistance="1" zLeft="1" zRight="1"/>
                   <Offset2x2DPoints bankingLeft="0" bankingRight="0" curvilinearDistance="0" zLeft="0" zRight="0"/>
@@ -34,6 +36,7 @@
             <Ground grip="0.4" name="Grass" type="grass" waterLevel="0">
               <Roughness RepeatPattern="1" type="analytic">
                 <RoughnessAnalytic RoughnessHeight="0.003" RoughnessHeightStdDeviation="0" RoughnessLength="0.01" RoughnessLengthStdDeviation="0"/>
+                <CRG maxY="99" minY="-99" mode="relative" offsetX="0" offsetZ="0" path="" repeatPattern="none" scaleX="1" scaleZ="1"/>
                 <Roughness2x2D>
                   <Scale2x2DPoints bankingLeft="1" bankingRight="1" curvilinearDistance="1" zLeft="1" zRight="1"/>
                   <Offset2x2DPoints bankingLeft="0" bankingRight="0" curvilinearDistance="0" zLeft="0" zRight="0"/>
@@ -44,6 +47,7 @@
             <Ground grip="0.6" name="Cobblestone" type="cobblestone" waterLevel="0">
               <Roughness RepeatPattern="1" type="analytic">
                 <RoughnessAnalytic RoughnessHeight="0.009" RoughnessHeightStdDeviation="0" RoughnessLength="0.01" RoughnessLengthStdDeviation="0"/>
+                <CRG maxY="99" minY="-99" mode="relative" offsetX="0" offsetZ="0" path="" repeatPattern="none" scaleX="1" scaleZ="1"/>
                 <Roughness2x2D>
                   <Scale2x2DPoints bankingLeft="1" bankingRight="1" curvilinearDistance="1" zLeft="1" zRight="1"/>
                   <Offset2x2DPoints bankingLeft="0" bankingRight="0" curvilinearDistance="0" zLeft="0" zRight="0"/>
@@ -420,169 +424,169 @@
             </Profile>
           </Profiles>
           <Intersections>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 0" x="327.813636488077" y="457.708327995613" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 0" x="327.813636488077" y="457.708327995613" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 3" x="717.754680787795" y="31.7656631246209" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 3" x="717.754680787795" y="31.7656631246209" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 5" x="341.472538008384" y="212.704276573844" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 5" x="341.472538008384" y="212.704276573844" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 6" x="514.27378356675" y="129.372802227735" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 6" x="514.27378356675" y="129.372802227735" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 7" x="207.232364060794" y="277.675724605098" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 7" x="207.232364060794" y="277.675724605098" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 8" x="610.49835140846" y="83.2185242865235" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 8" x="610.49835140846" y="83.2185242865235" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 10" x="56.4835096284805" y="408.193914324977" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 10" x="56.4835096284805" y="408.193914324977" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 11" x="-15.562464812916" y="538.7647624081" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 11" x="-15.562464812916" y="538.7647624081" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 12" x="-98.0390755416011" y="185.770805562846" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 12" x="-98.0390755416011" y="185.770805562846" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 13" x="25.7036704241472" y="266.672732319683" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 13" x="25.7036704241472" y="266.672732319683" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 14" x="-117.998660240846" y="422.757939559408" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 14" x="-117.998660240846" y="422.757939559408" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 16" x="5.53257869241156" y="94.8287904225537" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 16" x="5.53257869241156" y="94.8287904225537" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 18" x="245.014199236" y="106.320944666862" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 18" x="245.014199236" y="106.320944666862" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 22" x="16.7869792116398" y="358.764172377065" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 22" x="16.7869792116398" y="358.764172377065" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 24" x="158.763857769372" y="415.028708651662" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 24" x="158.763857769372" y="415.028708651662" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 25" x="102.836945594841" y="424.799942799844" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 25" x="102.836945594841" y="424.799942799844" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 26" x="222.906148364506" y="549.093058866449" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 26" x="222.906148364506" y="549.093058866449" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 27" x="201.04300037268" y="377.462722675875" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 27" x="201.04300037268" y="377.462722675875" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 28" x="216.972819505172" y="330.311404096894" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 28" x="216.972819505172" y="330.311404096894" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 31" x="-137.22353630088" y="289.404390237291" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 31" x="-137.22353630088" y="289.404390237291" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 33" x="172.879169201915" y="236.532707688399" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 33" x="172.879169201915" y="236.532707688399" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 36" x="364.337561417342" y="355.574622376822" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 36" x="364.337561417342" y="355.574622376822" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 37" x="10.085545865848" y="315.899421847425" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 37" x="10.085545865848" y="315.899421847425" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 40" x="140.151238908729" y="69.8869884973391" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 40" x="140.151238908729" y="69.8869884973391" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 43" x="25.8372538131662" y="376.855187895708" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 43" x="25.8372538131662" y="376.855187895708" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 44" x="69.0848759863002" y="228.010491906665" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 44" x="69.0848759863002" y="228.010491906665" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 47" x="126.392149846652" y="218.745756248012" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 47" x="126.392149846652" y="218.745756248012" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
               <IntersectionWayLinks/>
             </Intersection>
-            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" name="Intersection 48" x="87.2633488328138" y="573.563746631145" z="0">
+            <Intersection drawMarkingInsideIntersection="0" groundName="Asphalt" material="" name="Intersection 48" x="87.2633488328138" y="573.563746631145" z="0">
               <ClippedDatas/>
               <Contours/>
               <BannedLinks/>
@@ -594,7 +598,7 @@
               <XYCurve direction="0.570280053354746" x="214.609905243398" y="386.164043433428">
                 <PolyLine endHeading="-0.0138756157646689" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="61.4061085921311" y="1.90958360235527e-014"/>
+                  <Vectord2 x="61.4061085921311" y="1.90958360235527e-14"/>
                   <Vectord2 x="68.6269049070235" y="0.000110721283750004"/>
                   <Vectord2 x="122.15570036329" y="-0.729501863192909"/>
                   <Vectord2 x="129.214161347971" y="-0.827448641773266"/>
@@ -633,7 +637,7 @@
               <XYCurve direction="-0.447102453763176" x="721.440733234867" y="29.9982511633991">
                 <PolyLine endHeading="-0.00576311452910903" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="13.7883547143491" y="3.38618022510673e-015"/>
+                  <Vectord2 x="13.7883547143491" y="3.38618022510673e-15"/>
                   <Vectord2 x="23.7666316426113" y="-0.00655458328577069"/>
                   <Vectord2 x="47.9750568863309" y="-0.146072055158797"/>
                 </PolyLine>
@@ -665,9 +669,9 @@
             </Track>
             <Track endNode="Intersection 6" exitAtEnd="0" exitAtStart="0" name="Avenue des Champs-Ã‰lysÃ©es - 642901742" startNode="Intersection 5">
               <XYCurve direction="-0.449317696187764" x="359.636491323659" y="203.945367101953">
-                <PolyLine endHeading="-6.44902972184846e-005" type="segment">
+                <PolyLine endHeading="-6.44902972184846e-05" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="23.0773050911719" y="5.65086172299445e-015"/>
+                  <Vectord2 x="23.0773050911719" y="5.65086172299445e-15"/>
                   <Vectord2 x="94.3736600996156" y="0.00109052949263779"/>
                   <Vectord2 x="152.262113610142" y="-0.00264271408495"/>
                 </PolyLine>
@@ -701,7 +705,7 @@
               <XYCurve direction="-0.450724435322757" x="221.544433531431" y="270.749414969245">
                 <PolyLine endHeading="0.000224074960530223" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="62.1606696915492" y="1.52204637782205e-014"/>
+                  <Vectord2 x="62.1606696915492" y="1.52204637782205e-14"/>
                   <Vectord2 x="84.7708213305726" y="-0.00668639040188935"/>
                   <Vectord2 x="108.703076983444" y="-0.0109607200277839"/>
                   <Vectord2 x="127.792702649909" y="-0.0066832128384434"/>
@@ -738,9 +742,9 @@
             </Track>
             <Track endNode="Intersection 8" exitAtEnd="0" exitAtStart="0" name="Avenue des Champs-Ã‰lysÃ©es - 626668696" startNode="Intersection 6">
               <XYCurve direction="-0.447244842468129" x="516.53969238151" y="128.285932958223">
-                <PolyLine endHeading="2.80558894022156e-005" type="segment">
+                <PolyLine endHeading="2.80558894022156e-05" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="73.8488116120965" y="1.80876364233584e-014"/>
+                  <Vectord2 x="73.8488116120965" y="1.80876364233584e-14"/>
                   <Vectord2 x="97.2372799738906" y="0.00065618428183597"/>
                 </PolyLine>
               </XYCurve>
@@ -767,9 +771,9 @@
             </Track>
             <Track endNode="Intersection 11" exitAtEnd="0" exitAtStart="0" name="Avenue Carnot - 566475380" startNode="Intersection 10">
               <XYCurve direction="2.07500271705286" x="48.4907720997928" y="422.679366506284">
-                <PolyLine endHeading="-8.57474023760277e-018" type="segment">
+                <PolyLine endHeading="-8.57474023760277e-18" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="128.087385586558" y="-1.0983160591184e-015"/>
+                  <Vectord2 x="128.087385586558" y="-1.0983160591184e-15"/>
                 </PolyLine>
               </XYCurve>
               <SZCurve>
@@ -793,7 +797,7 @@
               <XYCurve direction="0.579129161387515" x="-92.768205302844" y="189.217556831723">
                 <PolyLine endHeading="-0.000196749447135457" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="71.4053656969032" y="2.30839652948234e-014"/>
+                  <Vectord2 x="71.4053656969032" y="2.30839652948234e-14"/>
                   <Vectord2 x="125.370466458072" y="-0.0106176038763498"/>
                 </PolyLine>
               </XYCurve>
@@ -822,7 +826,7 @@
               <XYCurve direction="-0.443182362233546" x="-113.848780131796" y="420.78809913381">
                 <PolyLine endHeading="-0.000210782569635002" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="76.2412519445317" y="4.56752691224693e-015"/>
+                  <Vectord2 x="76.2412519445317" y="4.56752691224693e-15"/>
                   <Vectord2 x="98.3870604333278" y="-0.00518789840368585"/>
                   <Vectord2 x="123.920759332837" y="-0.00875671189120676"/>
                   <Vectord2 x="127.9194779953" y="-0.00959957209861071"/>
@@ -900,7 +904,7 @@
               <XYCurve direction="1.71791107524172" x="215.533796071033" y="340.022374376485">
                 <PolyLine endHeading="0.36522608745179" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="3.47285760195921" y="8.88178419700125e-016"/>
+                  <Vectord2 x="3.47285760195921" y="8.88178419700125e-16"/>
                   <Vectord2 x="16.640253985391" y="1.70617499727661"/>
                   <Vectord2 x="28.2367143604539" y="4.66920891189938"/>
                   <Vectord2 x="31.0341492977986" y="5.73889538695341"/>
@@ -939,7 +943,7 @@
               <XYCurve direction="2.21243750868728" x="195.945418436949" y="384.285900566544">
                 <PolyLine endHeading="0.41542640539118" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="6.73440615838626" y="1.77635683940025e-015"/>
+                  <Vectord2 x="6.73440615838626" y="1.77635683940025e-15"/>
                   <Vectord2 x="21.6478515922441" y="2.19794985256409"/>
                   <Vectord2 x="34.8482545332753" y="6.07868189772359"/>
                   <Vectord2 x="39.0395798043489" y="7.92746707756741"/>
@@ -1017,7 +1021,7 @@
               <XYCurve direction="-1.45922922572891" x="11.248720196087" y="305.516932611632">
                 <PolyLine endHeading="0.37558663135311" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="1.1508586518472" y="8.88178419700125e-016"/>
+                  <Vectord2 x="1.1508586518472" y="8.88178419700125e-16"/>
                   <Vectord2 x="12.9674325962833" y="1.3421405230786"/>
                   <Vectord2 x="26.318924469191" y="4.5622118084696"/>
                   <Vectord2 x="32.5454523558927" y="7.01735826431056"/>
@@ -1054,9 +1058,9 @@
             </Track>
             <Track endNode="Intersection 36" exitAtEnd="0" exitAtStart="0" name="Avenue de Friedland - 314456032" startNode="Intersection 28">
               <XYCurve direction="0.169627948267528" x="233.394860170814" y="333.124069930619">
-                <PolyLine endHeading="1.81101014204071e-005" type="segment">
+                <PolyLine endHeading="1.81101014204071e-05" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="7.53067722817168" y="1.11716191852906e-015"/>
+                  <Vectord2 x="7.53067722817168" y="1.11716191852906e-15"/>
                   <Vectord2 x="49.0276124123044" y="0.0152559917840047"/>
                   <Vectord2 x="62.3646620051912" y="0.00814549475266286"/>
                   <Vectord2 x="67.6616066774127" y="0.0083641624777168"/>
@@ -1110,7 +1114,7 @@
               <XYCurve direction="-1.8916834714891" x="14.3172893665913" y="351.333723918555">
                 <PolyLine endHeading="0.3155959832952" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="1.34624416846872" y="1.77635683940025e-015"/>
+                  <Vectord2 x="1.34624416846872" y="1.77635683940025e-15"/>
                   <Vectord2 x="10.8974563619389" y="0.851892026550746"/>
                   <Vectord2 x="22.9604500026045" y="3.24247953703676"/>
                   <Vectord2 x="28.283640018338" y="4.98054810995045"/>
@@ -1149,7 +1153,7 @@
               <XYCurve direction="-2.08426542343054" x="23.2892408339664" y="372.33681033923">
                 <PolyLine endHeading="0.0968738821063738" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="4.69362321171815" y="1.18655085756814e-015"/>
+                  <Vectord2 x="4.69362321171815" y="1.18655085756814e-15"/>
                   <Vectord2 x="5.1849877035862" y="0.0477498496601007"/>
                 </PolyLine>
               </XYCurve>
@@ -1178,7 +1182,7 @@
               <XYCurve direction="1.26634133658822" x="212.538270330071" y="291.150298262292">
                 <PolyLine endHeading="0.330796753499336" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="5.91785023827251" y="2.66453525910038e-015"/>
+                  <Vectord2 x="5.91785023827251" y="2.66453525910038e-15"/>
                   <Vectord2 x="16.5070119826214" y="1.20369009752857"/>
                   <Vectord2 x="27.4969793537632" y="3.66517548052474"/>
                   <Vectord2 x="31.5463093859369" y="5.05577753828554"/>
@@ -1217,7 +1221,7 @@
               <XYCurve direction="-0.942964986605471" x="30.8863660770482" y="259.532050505635">
                 <PolyLine endHeading="0.42726764113305" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="5.52304954460958" y="1.77635683940025e-015"/>
+                  <Vectord2 x="5.52304954460958" y="1.77635683940025e-15"/>
                   <Vectord2 x="20.5440469537375" y="2.16501336546409"/>
                   <Vectord2 x="34.3690269973335" y="6.21596267705576"/>
                   <Vectord2 x="40.1854276287513" y="8.86427510008926"/>
@@ -1256,7 +1260,7 @@
               <XYCurve direction="-2.98296408205225" x="97.6908166105639" y="423.97670303153">
                 <PolyLine endHeading="0.357915342805279" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="6.21975737875262" y="-8.88178419700125e-016"/>
+                  <Vectord2 x="6.21975737875262" y="-8.88178419700125e-16"/>
                   <Vectord2 x="17.4226451648109" y="1.24997688371622"/>
                   <Vectord2 x="30.0289826355801" y="4.15540730847142"/>
                   <Vectord2 x="37.4012454602482" y="6.91281573440836"/>
@@ -1295,7 +1299,7 @@
               <XYCurve direction="-0.380281640619877" x="77.0743569800088" y="224.816782134405">
                 <PolyLine endHeading="0.424900296442725" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="4.53512384387168" y="1.77635683940025e-015"/>
+                  <Vectord2 x="4.53512384387168" y="1.77635683940025e-15"/>
                   <Vectord2 x="17.4680550000527" y="1.62587095305782"/>
                   <Vectord2 x="33.2257822982082" y="5.9620627408253"/>
                   <Vectord2 x="43.2227151452307" y="10.4853052860847"/>
@@ -1334,7 +1338,7 @@
               <XYCurve direction="2.68247840877547" x="10.6859233593259" y="384.345188586484">
                 <PolyLine endHeading="-0.000543069221087464" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="4.23366217703669" y="1.04083408558608e-015"/>
+                  <Vectord2 x="4.23366217703669" y="1.04083408558608e-15"/>
                   <Vectord2 x="57.9834605009753" y="-0.0105663341297344"/>
                   <Vectord2 x="87.7144855309099" y="-0.0158777924835148"/>
                   <Vectord2 x="113.71885105258" y="-0.0185672342933862"/>
@@ -1378,7 +1382,7 @@
               <XYCurve direction="-1.47563084913593" x="127.944887418587" y="202.478856338348">
                 <PolyLine endHeading="-0.00558434996619041" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="58.4017580013504" y="1.4210854715202e-014"/>
+                  <Vectord2 x="58.4017580013504" y="1.4210854715202e-14"/>
                   <Vectord2 x="121.579692700069" y="-0.383387794469995"/>
                   <Vectord2 x="126.930852229846" y="-0.413270852643867"/>
                 </PolyLine>
@@ -1412,7 +1416,7 @@
               <XYCurve direction="1.12541350633638" x="8.23350746106419" y="100.486688966296">
                 <PolyLine endHeading="0.00014758933168944" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="33.8599663002274" y="-7.49400541621981e-016"/>
+                  <Vectord2 x="33.8599663002274" y="-7.49400541621981e-16"/>
                   <Vectord2 x="66.5976722217657" y="0.0115985307075375"/>
                   <Vectord2 x="125.224028449793" y="0.0202511555054447"/>
                 </PolyLine>
@@ -1446,7 +1450,7 @@
               <XYCurve direction="0.177889348738299" x="-131.268867510712" y="290.474979078593">
                 <PolyLine endHeading="0.000147562624036413" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="74.5367045510729" y="-1.21777588013572e-015"/>
+                  <Vectord2 x="74.5367045510729" y="-1.21777588013572e-15"/>
                   <Vectord2 x="126.62571394344" y="0.00768639096518354"/>
                 </PolyLine>
               </XYCurve>
@@ -1475,7 +1479,7 @@
               <XYCurve direction="-1.06507214746939" x="180.911110408065" y="222.028294187356">
                 <PolyLine endHeading="0.000618827819163084" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="26.3218950925461" y="6.63358257213531e-015"/>
+                  <Vectord2 x="26.3218950925461" y="6.63358257213531e-15"/>
                   <Vectord2 x="60.3158856506915" y="0.00822859497685952"/>
                   <Vectord2 x="93.2295911622505" y="0.0166090672559547"/>
                   <Vectord2 x="120.043613147194" y="0.017946889869945"/>
@@ -1519,7 +1523,7 @@
               <XYCurve direction="1.12441846075858" x="165.696824014867" y="429.514774610641">
                 <PolyLine endHeading="0.000122232800498875" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="7.66369726792884" y="1.87697080100691e-015"/>
+                  <Vectord2 x="7.66369726792884" y="1.87697080100691e-15"/>
                   <Vectord2 x="25.1750341161136" y="0.00118711030166358"/>
                   <Vectord2 x="61.8801909606351" y="0.00661362040399733"/>
                   <Vectord2 x="90.4650466293007" y="0.0131716187751687"/>
@@ -1563,7 +1567,7 @@
               <XYCurve direction="-0.447096717714979" x="617.535567833454" y="79.8443244714573">
                 <PolyLine endHeading="-0.000123276500069085" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="10.3064097388051" y="2.88311041707345e-015"/>
+                  <Vectord2 x="10.3064097388051" y="2.88311041707345e-15"/>
                   <Vectord2 x="96.0926580067659" y="-0.0212883756151337"/>
                   <Vectord2 x="106.743984681755" y="-0.0226014338953704"/>
                 </PolyLine>
@@ -1597,7 +1601,7 @@
               <XYCurve direction="-2.50522944148507" x="53.1299402422259" y="405.715940987204">
                 <PolyLine endHeading="0.324916065657102" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="6.82016057861994" y="-1.77635683940025e-015"/>
+                  <Vectord2 x="6.82016057861994" y="-1.77635683940025e-15"/>
                   <Vectord2 x="17.8355820823827" y="1.17718304155987"/>
                   <Vectord2 x="29.4269944497335" y="3.73330829563978"/>
                   <Vectord2 x="32.0336571150225" y="4.61137381016901"/>
@@ -1636,7 +1640,7 @@
               <XYCurve direction="0.183485482047229" x="131.086002383099" y="219.616807256123">
                 <PolyLine endHeading="0.361617209131927" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="7.80475575661019" y="1.77635683940025e-015"/>
+                  <Vectord2 x="7.80475575661019" y="1.77635683940025e-15"/>
                   <Vectord2 x="20.5744307028877" y="1.57796420996663"/>
                   <Vectord2 x="32.2448611234416" y="4.49272986495119"/>
                   <Vectord2 x="39.6857341069355" y="7.30724239042354"/>
@@ -1675,7 +1679,7 @@
               <XYCurve direction="-1.46041137471785" x="87.7658339103057" y="569.030134860844">
                 <PolyLine endHeading="-0.00841455864721845" type="segment">
                   <Vectord2 x="0" y="0"/>
-                  <Vectord2 x="36.9708791663976" y="1.14352971536391e-014"/>
+                  <Vectord2 x="36.9708791663976" y="1.14352971536391e-14"/>
                   <Vectord2 x="128.686202165167" y="-0.771762179129231"/>
                 </PolyLine>
               </XYCurve>
@@ -1764,9 +1768,10 @@
         <Trajectories/>
         <TrajectoryParts/>
         <TerrainContours>
-          <TerrainContour contourPoints="-198.269 -63.1257 0 -198.269 -63.1257 0 -198.269 633.564 0 -198.269 633.564 0 301.731 633.564 0 836.887 633.564 0 836.887 -63.1257 0 301.731 -63.1257 0 -198.269 -63.1257 0 "/>
+          <TerrainContour contourPoints="-198.269 -63.1257 0 -198.269 -63.1257 0 -198.269 633.564 0 -198.269 633.564 0 301.731 633.564 0 836.8869999999999 633.564 0 836.8869999999999 -63.1257 0 301.731 -63.1257 0 -198.269 -63.1257 0 "/>
         </TerrainContours>
         <Areas/>
+        <Generate3DRoads curvatureTolerence="0.1" maximumNormalVariation="0.0872664625997165" maximumStep="1" maximumWidth="1000" minimumStep="0.1"/>
         <ClippedDatas/>
       </SubNetwork>
     </SubNetworks>

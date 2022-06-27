@@ -94,7 +94,7 @@
         <Display/>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/APIs/bin/x64/vs2019/RTGatewayIO.exe</exe>
+        <exe>${LOCAL_STUDIO_PATH}/SCANeR-Samples-Pack-2022/APIs/bin/x64/vs2019/RTGatewayIO.exe</exe>
         <name>RT_GATEWAY_IO</name>
         <port>25111</port>
         <protocol>Standalone</protocol>

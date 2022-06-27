@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<sce version="20.21.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<sce version="20.22.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <Scenario>
     <description></description>
@@ -131,6 +131,13 @@
         <title>Graph</title>
       </ResultsGraph>
     </ProgressDlg>
+    <ProjectInfos>
+      <designOfExperimentName></designOfExperimentName>
+      <explorationPath></explorationPath>
+      <originalName></originalName>
+      <testPlanName></testPlanName>
+      <testPlanPath></testPlanPath>
+    </ProjectInfos>
     <Recording>
       <mode>AUTO</mode>
       <recordPath></recordPath>
@@ -148,6 +155,119 @@
       <finalTime>20</finalTime>
       <stopAtFinalTime>0</stopAtFinalTime>
     </ScenarioStopCriteria>
+    <StoryBoard>
+      <firstStep>Main Step</firstStep>
+      <Step>
+        <description></description>
+        <hint></hint>
+        <name>Main Step</name>
+        <ScenarioScript>
+          <isScriptActive>1</isScriptActive>
+          <script>
+TYPEOF SCENARIO (0)
+{
+	IS_EXPANDED="1"
+	LABEL="Main"
+	FILE="Community_Headlight_Scenario_Main"
+	TASK_KIND="0"
+
+	TYPEOF VARIABLE (0)
+	{
+		LABEL="Lamp_Heading"
+		TYPE="FLOAT"
+		VALUE="3.000000"
+		INTERACTIVE_TYPE="VOID"
+		IS_INITIALIZATION_NEEDED_AT_START="1"
+		INTERACTIVE_MIN_VALUE="-45"
+		INTERACTIVE_MAX_VALUE="45"
+		INTERACTIVE_STEP_VALUE="1"
+		CATEGORY="INTERNAL"
+	}
+
+	TYPEOF VARIABLE (1)
+	{
+		LABEL="Heading"
+		TYPE="FLOAT"
+		VALUE="0.000000"
+		INTERACTIVE_TYPE="VOID"
+		IS_INITIALIZATION_NEEDED_AT_START="0"
+		INTERACTIVE_MIN_VALUE="0"
+		INTERACTIVE_MAX_VALUE="9999"
+		INTERACTIVE_STEP_VALUE="1"
+		CATEGORY="OUTPUT"
+	}
+
+	TYPEOF RULE (0)
+	{
+		IS_EXPANDED="1"
+		LABEL="Heading to EC"
+
+		TYPEOF CONDITION (IS_SCENARIO_BEGINNING)
+		{
+			IS_EXPANDED="1"
+		}
+
+		TYPEOF ACTION (EXPORT_CHANNEL)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (CHANNEL_ID)
+			{
+				KIND="USER"
+				VALUE="67"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (FLOAT_VALUE)
+			{
+				KIND="VARIABLE"
+				VALUE="0"
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (SET_VARIABLE)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (VARIABLE_NAME)
+			{
+				KIND="VARIABLE"
+				VALUE="1"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (FLOAT_VALUE)
+			{
+				KIND="VARIABLE"
+				VALUE="0"
+				OWNER_FILE=""
+			}
+		}
+	}
+}
+</script>
+          <scriptLanguage>mice</scriptLanguage>
+          <scriptName>Main</scriptName>
+        </ScenarioScript>
+      </Step>
+      <Transition>
+        <allConditionsTrue>1</allConditionsTrue>
+        <fromStep>Main Step</fromStep>
+        <name>Forward</name>
+        <toStep>BUILTIN_SUCCESS_ADB568D064DB408EAFDE1D4021E336DF</toStep>
+      </Transition>
+      <Transition>
+        <allConditionsTrue>0</allConditionsTrue>
+        <fromStep>Main Step</fromStep>
+        <name>Failure</name>
+        <toStep>BUILTIN_FAILURE_A36CBB59761A4AF1B2BACC50D71084AB</toStep>
+      </Transition>
+      <Link>
+        <linkedFrom>mice:/Main%20Step/Main/Heading</linkedFrom>
+        <linkedTo>result:/Heading</linkedTo>
+      </Link>
+    </StoryBoard>
     <UserDataList/>
     <Visual>
       <Others>
@@ -308,95 +428,6 @@
         <strategyFile>default</strategyFile>
       </TrafficDriver>
     </Driver>
-    <ScenarioScript>
-      <isScriptActive>1</isScriptActive>
-      <script>
-TYPEOF SCENARIO (0)
-{
-	IS_EXPANDED="1"
-	LABEL="Main"
-	FILE="Community_Headlight_Scenario_Main"
-	TASK_KIND="0"
-
-	TYPEOF VARIABLE (0)
-	{
-		LABEL="Lamp_Heading"
-		TYPE="FLOAT"
-		VALUE="3.000000"
-		INTERACTIVE_TYPE="VOID"
-		IS_INITIALIZATION_NEEDED_AT_START="1"
-		INTERACTIVE_MIN_VALUE="-45"
-		INTERACTIVE_MAX_VALUE="45"
-		INTERACTIVE_STEP_VALUE="1"
-		CATEGORY="INTERNAL"
-	}
-
-	TYPEOF VARIABLE (1)
-	{
-		LABEL="Heading"
-		TYPE="FLOAT"
-		VALUE="0.000000"
-		INTERACTIVE_TYPE="VOID"
-		IS_INITIALIZATION_NEEDED_AT_START="0"
-		INTERACTIVE_MIN_VALUE="0"
-		INTERACTIVE_MAX_VALUE="9999"
-		INTERACTIVE_STEP_VALUE="1"
-		CATEGORY="OUTPUT"
-	}
-
-	TYPEOF RULE (0)
-	{
-		IS_EXPANDED="1"
-		LABEL="Heading to EC"
-
-		TYPEOF CONDITION (IS_SCENARIO_BEGINNING)
-		{
-			IS_EXPANDED="1"
-		}
-
-		TYPEOF ACTION (EXPORT_CHANNEL)
-		{
-			IS_EXPANDED="1"
-
-			TYPEOF PARAMETER (CHANNEL_ID)
-			{
-				KIND="USER"
-				VALUE="67"
-				OWNER_FILE=""
-			}
-
-			TYPEOF PARAMETER (FLOAT_VALUE)
-			{
-				KIND="VARIABLE"
-				VALUE="0"
-				OWNER_FILE=""
-			}
-		}
-
-		TYPEOF ACTION (SET_VARIABLE)
-		{
-			IS_EXPANDED="1"
-
-			TYPEOF PARAMETER (VARIABLE_NAME)
-			{
-				KIND="VARIABLE"
-				VALUE="1"
-				OWNER_FILE=""
-			}
-
-			TYPEOF PARAMETER (FLOAT_VALUE)
-			{
-				KIND="VARIABLE"
-				VALUE="0"
-				OWNER_FILE=""
-			}
-		}
-	}
-}
-</script>
-      <scriptLanguage>mice</scriptLanguage>
-      <scriptName>Main</scriptName>
-    </ScenarioScript>
     <Vehicle>
       <cabin></cabin>
       <decorationName></decorationName>
@@ -522,7 +553,7 @@ TYPEOF SCENARIO (0)
     </Driver>
     <VariadicParameter>
       <description></description>
-      <id>/sce/Scenario/ScenarioScript[scriptName="Main"]/Variable[name=0]/value</id>
+      <id>/sce/Scenario/StoryBoard/Step[name/@ScenarioTreeValue="Main Step"]/ScenarioScript[scriptName="Main"]/Variable[name=0]/value</id>
       <name>Lamp_Heading</name>
       <unit></unit>
       <RealParameter>
@@ -647,11 +678,8 @@ TYPEOF SCENARIO (0)
     </ScenarioCriterion>
     <ScenarioOutput>
       <name>Heading</name>
+      <unit>Unit not found</unit>
     </ScenarioOutput>
-    <Link>
-      <linkedFrom>mice:/Main/Heading</linkedFrom>
-      <linkedTo>result:/Heading</linkedTo>
-    </Link>
   </Scenario>
 
 </sce>
