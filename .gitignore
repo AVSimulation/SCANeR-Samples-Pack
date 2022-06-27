@@ -45,6 +45,7 @@
 
 *.udatasmith
 *_Assets/
+*.nDisplay
 
 # SCANeR
 
