@@ -24,8 +24,8 @@
 *.a
 *.lib
 
-#
-*/.vs/
+# Visual Studio
+.vs/
 */obj/*
 *.iobj
 *.ipdb
@@ -36,9 +36,20 @@
 *.vcxproj.user
 *.exe.recipe
 *.FileListAbsolute.txt
-data/*/record/*
 
 # Python
 
 */__pycache__/*
 
+# Unreal
+
+*.udatasmith
+*_Assets/
+
+# SCANeR
+
+*vehicleModeRef.sce
+*scenarioModeRef.sce
+data/*/record/*
+*.sivr
+*.sifr
