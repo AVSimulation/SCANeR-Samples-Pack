@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <RoadXML version="3.1.0" versionRevision="3.1.0-$Revision: 23033 $-$Date: 2011-05-02 11:01:27 +0200 (lun., 02 mai 2011) $" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-  <Network name="Paris" traffic="right-hand">
-    <Geolocalisation Azimuth="0" EPSG="27561" TimeOffset="0" WKT="PROJCS['NTF (Paris) / Lambert Nord France',&#xA;    GEOGCS['NTF (Paris)',&#xA;        DATUM['Nouvelle_Triangulation_Francaise_Paris',&#xA;            SPHEROID['Clarke 1880 (IGN)',6378249.2,293.466021293627,&#xA;                AUTHORITY['EPSG','7011']],&#xA;            AUTHORITY['EPSG','6807']],&#xA;        PRIMEM['Paris',2.33722917,&#xA;            AUTHORITY['EPSG','8903']],&#xA;        UNIT['grad',0.0157079632679489,&#xA;            AUTHORITY['EPSG','9105']],&#xA;        AUTHORITY['EPSG','4807']],&#xA;    PROJECTION['Lambert_Conformal_Conic_1SP'],&#xA;    PARAMETER['latitude_of_origin',55],&#xA;    PARAMETER['central_meridian',0],&#xA;    PARAMETER['scale_factor',0.999877341],&#xA;    PARAMETER['false_easting',600000],&#xA;    PARAMETER['false_northing',200000],&#xA;    UNIT['metre',1,&#xA;        AUTHORITY['EPSG','9001']],&#xA;    AXIS['Easting',EAST],&#xA;    AXIS['Northing',NORTH],&#xA;    AUTHORITY['EPSG','27561']]">
-      <Translation x="574881.751610424" y="33257.5395450076" z="0"/>
+  <Network advancedIntersectionGeneration="0" name="" traffic="right-hand">
+    <Geolocalisation Azimuth="0" EPSG="27571" TimeOffset="0" WKT="PROJCS['NTF (Paris) / Lambert zone I',&#xA;    GEOGCS['NTF (Paris)',&#xA;        DATUM['Nouvelle_Triangulation_Francaise_Paris',&#xA;            SPHEROID['Clarke 1880 (IGN)',6378249.2,293.466021293627,&#xA;                AUTHORITY['EPSG','7011']],&#xA;            AUTHORITY['EPSG','6807']],&#xA;        PRIMEM['Paris',2.33722917,&#xA;            AUTHORITY['EPSG','8903']],&#xA;        UNIT['grad',0.0157079632679489,&#xA;            AUTHORITY['EPSG','9105']],&#xA;        AUTHORITY['EPSG','4807']],&#xA;    PROJECTION['Lambert_Conformal_Conic_1SP'],&#xA;    PARAMETER['latitude_of_origin',55],&#xA;    PARAMETER['central_meridian',0],&#xA;    PARAMETER['scale_factor',0.999877341],&#xA;    PARAMETER['false_easting',600000],&#xA;    PARAMETER['false_northing',1200000],&#xA;    UNIT['metre',1,&#xA;        AUTHORITY['EPSG','9001']],&#xA;    AXIS['Easting',EAST],&#xA;    AXIS['Northing',NORTH],&#xA;    AUTHORITY['EPSG','27571']]">
+      <Translation x="596951.524574029" y="1130368.93256811" z="0"/>
     </Geolocalisation>
     <SubNetworkJunctions/>
     <SubNetworks>
@@ -1475,7 +1475,7 @@
               </Portions>
               <ClippedDatas/>
             </Track>
-            <Track endNode="Intersection 18" exitAtEnd="0" exitAtStart="0" name="Avenue Marceau - 24931206" startNode="Intersection 33">
+            <Track endNode="Intersection 18" exitAtEnd="0" exitAtStart="0" name="Avenue Marceau - 2493120" startNode="Intersection 33">
               <XYCurve direction="-1.06507214746939" x="180.911110408065" y="222.028294187356">
                 <PolyLine endHeading="0.000618827819163084" type="segment">
                   <Vectord2 x="0" y="0"/>
