@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<NightTest>
+	<Version>2</Version>
+	<Comments>enter description</Comments>
+	<MoonlightLevel>0.000000</MoonlightLevel>
+	<PublicLightsIntensity>100.000000</PublicLightsIntensity>
+	<BackgroundLuminance>1.000000</BackgroundLuminance>
+	<Vehicle File="GenericDynamic">
+		<Comments/>
+		<ActivationID>0</ActivationID>
+		<Strategy File="afsDynamic"/>
+		<Base File="Generic">
+			<Comments/>
+			<Hood File=""/>
+			<HoodSettings>
+				<HoodEntry FileName="dont_remove_this_directory.txt" X="0.000000" Y="0.000000" Z="0.000000" H="0.000000" P="0.000000" R="0.000000" SX="1.000000" SY="1.000000" SZ="1.000000"/>
+				<HoodEntry FileName="list from cockpits" X="0.000000" Y="0.000000" Z="0.000000" H="0.000000" P="0.000000" R="0.000000" SX="1.000000" SY="1.000000" SZ="1.000000"/>
+			</HoodSettings>
+			<Eye Percentile="50" Z="1.200000"/>
+			<Eye Percentile="95" Z="1.200000"/>
+			<Eye PositionControlActive="1"/>
+			<Location Name="location 0">
+				<Position X="2" Y="1.1" Z="0.6"/>
+				<Orientation H="0" P="0" R="0"/>
+			</Location>
+		</Base>
+		<Beam File="Generic_HB">
+			<Comments>High Beams</Comments>
+			<Color File="LED"/>
+			<Satellite State="01000000"/>
+			<Strategy File="afsDynamic"/>
+			<Location Name="location 0">
+				<Position X="2" Y="1.1" Z="0.6"/>
+				<Orientation H="0" P="-0" R="0"/>
+			</Location>
+			<Headlamp File="Generic_HB_Left">
+				<Comments>Left high beams projector</Comments>
+				<Strategy>Left</Strategy>
+				<Side>L</Side>
+				<Location Name="">
+					<Position X="0" Y="0" Z="0"/>
+					<Orientation H="0" P="0" R="0"/>
+				</Location>
+				<Intensity>100</Intensity>
+				<LightSource File="generic_high_left">
+					<Comments/>
+					<Location Name="">
+						<Position X="0" Y="0" Z="0"/>
+						<Orientation H="0" P="0" R="0"/>
+					</Location>
+					<Strategy>None</Strategy>
+					<Diapo File="generic_high_left.hlt"/>
+				</LightSource>
+			</Headlamp>
+			<Headlamp File="Generic_HB_Right">
+				<Comments>Right high beams projector</Comments>
+				<Strategy>Right</Strategy>
+				<Side>R</Side>
+				<Location Name="">
+					<Position X="0" Y="0" Z="0"/>
+					<Orientation H="0" P="0" R="0"/>
+				</Location>
+				<Intensity>100</Intensity>
+				<LightSource File="generic_high_right">
+					<Comments/>
+					<Location Name="">
+						<Position X="0" Y="0" Z="0"/>
+						<Orientation H="0" P="0" R="0"/>
+					</Location>
+					<Strategy>None</Strategy>
+					<Diapo File="generic_high_right.hlt"/>
+				</LightSource>
+			</Headlamp>
+		</Beam>
+		<Beam File="Generic_LB">
+			<Comments>low Beams</Comments>
+			<Color File="LED"/>
+			<Satellite State="11000000"/>
+			<Strategy File="afsDynamic"/>
+			<Location Name="location 0">
+				<Position X="2" Y="1.1" Z="0.6"/>
+				<Orientation H="0" P="-0" R="0"/>
+			</Location>
+			<Headlamp File="Generic_LB_Left">
+				<Comments/>
+				<Strategy>Left</Strategy>
+				<Side>L</Side>
+				<Location Name="">
+					<Position X="0" Y="0" Z="0"/>
+					<Orientation H="0" P="0" R="0"/>
+				</Location>
+				<Intensity>100</Intensity>
+				<LightSource File="generic_low_left">
+					<Comments/>
+					<Location Name="">
+						<Position X="0" Y="0" Z="0"/>
+						<Orientation H="0" P="0" R="0"/>
+					</Location>
+					<Strategy>None</Strategy>
+					<Diapo File="generic_low_left.hlt"/>
+				</LightSource>
+			</Headlamp>
+			<Headlamp File="Generic_LB_Right">
+				<Comments/>
+				<Strategy>Right</Strategy>
+				<Side>R</Side>
+				<Location Name="">
+					<Position X="0" Y="0" Z="0"/>
+					<Orientation H="0" P="0" R="0"/>
+				</Location>
+				<Intensity>100</Intensity>
+				<LightSource File="generic_low_right">
+					<Comments/>
+					<Location Name="">
+						<Position X="0" Y="0" Z="0"/>
+						<Orientation H="0" P="0" R="0"/>
+					</Location>
+					<Strategy>None</Strategy>
+					<Diapo File="generic_low_right.hlt"/>
+				</LightSource>
+			</Headlamp>
+		</Beam>
+	</Vehicle>
+	<Vehicle File="GenericStatic">
+		<Comments/>
+		<ActivationID>1</ActivationID>
+		<Strategy File="afsStatic"/>
+		<Base File="Generic">
+			<Comments/>
+			<Hood File=""/>
+			<HoodSettings>
+				<HoodEntry FileName="dont_remove_this_directory.txt" X="0.000000" Y="0.000000" Z="0.000000" H="0.000000" P="0.000000" R="0.000000" SX="1.000000" SY="1.000000" SZ="1.000000"/>
+				<HoodEntry FileName="list from cockpits" X="0.000000" Y="0.000000" Z="0.000000" H="0.000000" P="0.000000" R="0.000000" SX="1.000000" SY="1.000000" SZ="1.000000"/>
+			</HoodSettings>
+			<Eye Percentile="50" Z="1.200000"/>
+			<Eye Percentile="95" Z="1.200000"/>
+			<Eye PositionControlActive="1"/>
+			<Location Name="location 0">
+				<Position X="2" Y="1.1" Z="0.6"/>
+				<Orientation H="0" P="0" R="0"/>
+			</Location>
+		</Base>
+		<Beam File="Generic_HB">
+			<Comments>High Beams</Comments>
+			<Color File="LED"/>
+			<Satellite State="01000000"/>
+			<Strategy File="afsStatic"/>
+			<Location Name="location 0">
+				<Position X="2" Y="1.1" Z="0.6"/>
+				<Orientation H="0" P="-0" R="0"/>
+			</Location>
+			<Headlamp File="Generic_HB_Left">
+				<Comments>Left high beams projector</Comments>
+				<Strategy>None</Strategy>
+				<Side>L</Side>
+				<Location Name="">
+					<Position X="0" Y="0" Z="0"/>
+					<Orientation H="0" P="0" R="0"/>
+				</Location>
+				<Intensity>100</Intensity>
+				<LightSource File="generic_high_left">
+					<Comments/>
+					<Location Name="">
+						<Position X="0" Y="0" Z="0"/>
+						<Orientation H="0" P="0" R="0"/>
+					</Location>
+					<Strategy>None</Strategy>
+					<Diapo File="generic_high_left.hlt"/>
+				</LightSource>
+			</Headlamp>
+			<Headlamp File="Generic_HB_Right">
+				<Comments>Right high beams projector</Comments>
+				<Strategy>None</Strategy>
+				<Side>R</Side>
+				<Location Name="">
+					<Position X="0" Y="0" Z="0"/>
+					<Orientation H="0" P="0" R="0"/>
+				</Location>
+				<Intensity>100</Intensity>
+				<LightSource File="generic_high_right">
+					<Comments/>
+					<Location Name="">
+						<Position X="0" Y="0" Z="0"/>
+						<Orientation H="0" P="0" R="0"/>
+					</Location>
+					<Strategy>None</Strategy>
+					<Diapo File="generic_high_right.hlt"/>
+				</LightSource>
+			</Headlamp>
+		</Beam>
+		<Beam File="Generic_LB">
+			<Comments>low Beams</Comments>
+			<Color File="LED"/>
+			<Satellite State="11000000"/>
+			<Strategy File="afsStatic"/>
+			<Location Name="location 0">
+				<Position X="2" Y="1.1" Z="0.6"/>
+				<Orientation H="0" P="-0" R="0"/>
+			</Location>
+			<Headlamp File="Generic_LB_Left">
+				<Comments/>
+				<Strategy>None</Strategy>
+				<Side>L</Side>
+				<Location Name="">
+					<Position X="0" Y="0" Z="0"/>
+					<Orientation H="0" P="0" R="0"/>
+				</Location>
+				<Intensity>100</Intensity>
+				<LightSource File="generic_low_left">
+					<Comments/>
+					<Location Name="">
+						<Position X="0" Y="0" Z="0"/>
+						<Orientation H="0" P="0" R="0"/>
+					</Location>
+					<Strategy>None</Strategy>
+					<Diapo File="generic_low_left.hlt"/>
+				</LightSource>
+			</Headlamp>
+			<Headlamp File="Generic_LB_Right">
+				<Comments/>
+				<Strategy>None</Strategy>
+				<Side>R</Side>
+				<Location Name="">
+					<Position X="0" Y="0" Z="0"/>
+					<Orientation H="0" P="0" R="0"/>
+				</Location>
+				<Intensity>100</Intensity>
+				<LightSource File="generic_low_right">
+					<Comments/>
+					<Location Name="">
+						<Position X="0" Y="0" Z="0"/>
+						<Orientation H="0" P="0" R="0"/>
+					</Location>
+					<Strategy>None</Strategy>
+					<Diapo File="generic_low_right.hlt"/>
+				</LightSource>
+			</Headlamp>
+		</Beam>
+	</Vehicle>
+	<Vehicle File="Generic">
+		<Comments/>
+		<ActivationID>2</ActivationID>
+		<Base File="Generic">
+			<Comments/>
+			<Hood File=""/>
+			<HoodSettings>
+				<HoodEntry FileName="dont_remove_this_directory.txt" X="0.000000" Y="0.000000" Z="0.000000" H="0.000000" P="0.000000" R="0.000000" SX="1.000000" SY="1.000000" SZ="1.000000"/>
+				<HoodEntry FileName="list from cockpits" X="0.000000" Y="0.000000" Z="0.000000" H="0.000000" P="0.000000" R="0.000000" SX="1.000000" SY="1.000000" SZ="1.000000"/>
+			</HoodSettings>
+			<Eye Percentile="50" Z="1.200000"/>
+			<Eye Percentile="95" Z="1.200000"/>
+			<Eye PositionControlActive="1"/>
+			<Location Name="location 0">
+				<Position X="2" Y="1.1" Z="0.3"/>
+				<Orientation H="0" P="0" R="0"/>
+			</Location>
+		</Base>
+		<Beam File="Generic_HB">
+			<Comments>High Beams</Comments>
+			<Color File="LED"/>
+			<Satellite State="01000000"/>
+			<Location Name="location 0">
+				<Position X="2" Y="1.1" Z="0.3"/>
+				<Orientation H="0" P="-0" R="0"/>
+			</Location>
+			<Headlamp File="Generic_HB_Left">
+				<Comments>Left high beams projector</Comments>
+				<Strategy>None</Strategy>
+				<Side>L</Side>
+				<Location Name="">
+					<Position X="0" Y="0" Z="0"/>
+					<Orientation H="0" P="0" R="0"/>
+				</Location>
+				<Intensity>100</Intensity>
+				<LightSource File="generic_high_left">
+					<Comments/>
+					<Location Name="">
+						<Position X="0" Y="0" Z="0"/>
+						<Orientation H="0" P="0" R="0"/>
+					</Location>
+					<Strategy>None</Strategy>
+					<Diapo File="generic_high_left.hlt"/>
+				</LightSource>
+			</Headlamp>
+			<Headlamp File="Generic_HB_Right">
+				<Comments>Right high beams projector</Comments>
+				<Strategy>None</Strategy>
+				<Side>R</Side>
+				<Location Name="">
+					<Position X="0" Y="0" Z="0"/>
+					<Orientation H="0" P="0" R="0"/>
+				</Location>
+				<Intensity>100</Intensity>
+				<LightSource File="generic_high_right">
+					<Comments/>
+					<Location Name="">
+						<Position X="0" Y="0" Z="0"/>
+						<Orientation H="0" P="0" R="0"/>
+					</Location>
+					<Strategy>None</Strategy>
+					<Diapo File="generic_high_right.hlt"/>
+				</LightSource>
+			</Headlamp>
+		</Beam>
+		<Beam File="Generic_LB">
+			<Comments>low Beams</Comments>
+			<Color File="LED"/>
+			<Satellite State="11000000"/>
+			<Location Name="location 0">
+				<Position X="2" Y="1.1" Z="0.3"/>
+				<Orientation H="0" P="-0" R="0"/>
+			</Location>
+			<Headlamp File="Generic_LB_Left">
+				<Comments/>
+				<Strategy>None</Strategy>
+				<Side>L</Side>
+				<Location Name="">
+					<Position X="0" Y="0" Z="0"/>
+					<Orientation H="0" P="0" R="0"/>
+				</Location>
+				<Intensity>100</Intensity>
+				<LightSource File="generic_low_left">
+					<Comments/>
+					<Location Name="">
+						<Position X="0" Y="0" Z="0"/>
+						<Orientation H="0" P="0" R="0"/>
+					</Location>
+					<Strategy>None</Strategy>
+					<Diapo File="generic_low_left.hlt"/>
+				</LightSource>
+			</Headlamp>
+			<Headlamp File="Generic_LB_Right">
+				<Comments/>
+				<Strategy>None</Strategy>
+				<Side>R</Side>
+				<Location Name="">
+					<Position X="0" Y="0" Z="0"/>
+					<Orientation H="0" P="0" R="0"/>
+				</Location>
+				<Intensity>100</Intensity>
+				<LightSource File="generic_low_right">
+					<Comments/>
+					<Location Name="">
+						<Position X="0" Y="0" Z="0"/>
+						<Orientation H="0" P="0" R="0"/>
+					</Location>
+					<Strategy>None</Strategy>
+					<Diapo File="generic_low_right.hlt"/>
+				</LightSource>
+			</Headlamp>
+		</Beam>
+	</Vehicle>
+</NightTest>
+
