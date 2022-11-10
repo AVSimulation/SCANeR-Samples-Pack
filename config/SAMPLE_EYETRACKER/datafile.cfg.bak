@@ -1,4 +1,0 @@
-[Common]
-Data		 = ${STUDIO_PATH}/SCANeRstudio_2022/data/DEFAULT
-Doc		 	 = ${STUDIO_PATH}/SCANeRstudio_2022/doc
-Config		 = ${STUDIO_PATH}/SCANeRstudio_2022/config
