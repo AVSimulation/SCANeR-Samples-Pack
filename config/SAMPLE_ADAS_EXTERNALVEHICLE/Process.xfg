@@ -30,13 +30,13 @@
         <protocol></protocol>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/traffic.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/traffic.exe</exe>
         <name>TRAFFIC</name>
         <port>25103</port>
         <protocol></protocol>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/scenario.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/scenario.exe</exe>
         <name>SCENARIO</name>
         <port>25104</port>
         <protocol></protocol>
@@ -46,7 +46,7 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/ModelHandler.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/ModelHandler.exe</exe>
         <name>MODELHANDLER</name>
         <port>25105</port>
         <protocol></protocol>
@@ -60,13 +60,13 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/WalkerTraffic.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/WalkerTraffic.exe</exe>
         <name>WALKERTRAFFIC</name>
         <port>25106</port>
         <protocol></protocol>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/OfflineScheduler.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/OfflineScheduler.exe</exe>
         <name>OFFLINESCHEDULER</name>
         <port>25107</port>
         <protocol></protocol>
@@ -76,7 +76,7 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/Sensors.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/Sensors.exe</exe>
         <name>SENSORS</name>
         <port>25108</port>
         <protocol></protocol>
@@ -84,7 +84,7 @@
         <Display/>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/RTGateway.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/RTGateway.exe</exe>
         <name>RT_GATEWAY</name>
         <port>25109</port>
         <protocol></protocol>

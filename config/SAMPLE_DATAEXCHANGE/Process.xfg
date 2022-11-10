@@ -30,13 +30,13 @@
         <protocol></protocol>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/traffic.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/traffic.exe</exe>
         <name>TRAFFIC</name>
         <port>25103</port>
         <protocol></protocol>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/scenario.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/scenario.exe</exe>
         <name>SCENARIO</name>
         <port>25104</port>
         <protocol></protocol>
@@ -46,7 +46,7 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/Sound.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/Sound.exe</exe>
         <name>SOUND</name>
         <port>25105</port>
         <protocol></protocol>
@@ -56,7 +56,7 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/visual.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/visual.exe</exe>
         <name>VISUAL</name>
         <port>25106</port>
         <protocol></protocol>
@@ -66,19 +66,19 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/recorder.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/recorder.exe</exe>
         <name>RECORD</name>
         <port>25107</port>
         <protocol></protocol>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/ControlpadDesigner.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/ControlpadDesigner.exe</exe>
         <name>CONTROLPAD</name>
         <port>25108</port>
         <protocol></protocol>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/GPSSensor.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/GPSSensor.exe</exe>
         <name>GPSSENSOR</name>
         <port>25109</port>
         <protocol></protocol>
@@ -86,7 +86,7 @@
         <Display/>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/RTGateway.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/RTGateway.exe</exe>
         <name>RT_GATEWAY</name>
         <port>25110</port>
         <protocol></protocol>
@@ -94,7 +94,7 @@
         <Display/>
       </Process>
       <Process>
-        <exe>${LOCAL_STUDIO_PATH}/SCANeR-Samples-Pack-2022/APIs/bin/x64/vs2019/RTGatewayIO.exe</exe>
+        <exe>${LOCAL_STUDIO_PATH}/SCANeR-Samples-Pack-2023/APIs/bin/x64/vs2019/RTGatewayIO.exe</exe>
         <name>RT_GATEWAY_IO</name>
         <port>25111</port>
         <protocol>Standalone</protocol>
@@ -107,7 +107,7 @@
         </ExitMethod>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/UXDRender.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/UXDRender.exe</exe>
         <name>UXDRENDER</name>
         <port>25112</port>
         <protocol></protocol>

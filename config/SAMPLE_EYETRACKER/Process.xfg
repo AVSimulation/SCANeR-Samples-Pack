@@ -30,7 +30,7 @@
         <protocol></protocol>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/EyeTracker.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/EyeTracker.exe</exe>
         <name>EYETRACKER</name>
         <port>25110</port>
         <protocol></protocol>
@@ -42,7 +42,7 @@
         <Display/>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/CameraManager.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/CameraManager.exe</exe>
         <name>CAMERA</name>
         <port>25109</port>
         <protocol></protocol>
@@ -59,7 +59,7 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/visual.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/visual.exe</exe>
         <name>VISUAL</name>
         <port>25105</port>
         <protocol></protocol>
@@ -69,7 +69,7 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/DriverHandler.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/DriverHandler.exe</exe>
         <name>ACQUISITION</name>
         <port>25104</port>
         <protocol></protocol>
@@ -79,7 +79,7 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/ModelHandler.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/ModelHandler.exe</exe>
         <name>MODELHANDLER</name>
         <port>25107</port>
         <protocol></protocol>
@@ -93,13 +93,13 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/WalkerTraffic.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/WalkerTraffic.exe</exe>
         <name>WALKERTRAFFIC</name>
         <port>25108</port>
         <protocol></protocol>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/scenario.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/scenario.exe</exe>
         <name>SCENARIO</name>
         <port>25103</port>
         <protocol></protocol>
@@ -109,7 +109,7 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/traffic.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/traffic.exe</exe>
         <name>TRAFFIC</name>
         <port>25111</port>
         <protocol></protocol>
@@ -117,7 +117,7 @@
         <Display/>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/recorder.exe</exe>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/recorder.exe</exe>
         <name>RECORD</name>
         <port>25106</port>
         <protocol></protocol>
