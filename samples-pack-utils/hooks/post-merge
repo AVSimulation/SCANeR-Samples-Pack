@@ -21,13 +21,13 @@ function add_config() {
 	do {
 		configFolder=${configFolder#'./config/'}
 		configFolder=${configFolder%/}
-		configName=${configFolder/'SAMPLE_'/'SAMPLE_2022_'}
+		configName=${configFolder/'SAMPLE_'/'SAMPLE_2023_'}
 		if  grep -q "$configName\s=" ../configurations.cfg
 		then
 			echo Found "$configName"
 		else
 			echo Adding $configName ...
-			echo $configName = \${LOCAL_STUDIO_PATH}\\SCANeR-Samples-Pack-2022\\config\\$configFolder >> ../configurations.cfg
+			echo $configName = \${LOCAL_STUDIO_PATH}\\SCANeR-Samples-Pack-2023\\config\\$configFolder >> ../configurations.cfg
 		fi
 	} done
 	echo '(LOCAL_STUDIO_PATH)/configurations.cfg' is up to date.;
