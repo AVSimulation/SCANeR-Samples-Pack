@@ -22,7 +22,7 @@ AVSimulation encourages **collaboration**. The SCANeR Samples Pack is open sourc
 
 ### Pre-requisites
 
-* SCANeR 2022  
+* SCANeR 2023  
   _Get a free Trial version here: [AVSimulation Free Downloads](https://www.avsimulation.com/free-download/)_
 * A [GitHub](https://github.com/login) Account
 * A Git client  
@@ -45,7 +45,7 @@ _Now you have your own copy of the projects in the Samples Pack._ 👍
 
 ### 1.2. Set LOCAL_STUDIO_PATH
 
-> The Samples Pack goes in folder `%LOCAL_STUDIO_PATH%/SCANeR-Samples-Pack-2022/`.
+> The Samples Pack goes in folder `%LOCAL_STUDIO_PATH%/SCANeR-Samples-Pack-2023/`.
 
 `LOCAL_STUDIO_PATH` is an _environment variable_, like `%STUDIO_PATH%`.  
 (Details in the User Manual: `1.5.4.7.5. Set LOCAL_STUDIO_PATH variable`)
@@ -60,14 +60,14 @@ _Now you have your own copy of the projects in the Samples Pack._ 👍
 * `Right click > Git Bash here`
 * Clone your repository:
 ```
-git clone https://github.com/<NAME>/SCANeR-Samples-Pack.git SCANeR-Samples-Pack-2022
+git clone https://github.com/<NAME>/SCANeR-Samples-Pack.git SCANeR-Samples-Pack-2023
 ```
   Where `<NAME>` is your Github account.  
 * When prompted, login to GitHub with the account linked to your company e-mail.
 * *Downloading takes a few seconds.*
 * Go inside the new local repository :
 ```
-cd SCANeR-Samples-Pack-2022
+cd SCANeR-Samples-Pack-2023
 ```
 
 ### 1.4. Git hooks for configuration.cfg
@@ -86,9 +86,9 @@ Now, SCANeR detects new samples automatically at the next start.
 ### 1.5. Update the working tree
 
 ```
-git checkout 2022
+git checkout 2023
 ```
-Now the working tree (i.e. files in `%LOCAL_STUDIO_PATH%/SCANeR-Samples-Pack-2022`) are matching the remote branch.
+Now the working tree (i.e. files in `%LOCAL_STUDIO_PATH%/SCANeR-Samples-Pack-2023`) are matching the remote branch.
 
 _The Samples Pack is ready to use in SCANeR._ 👍
 
@@ -148,7 +148,7 @@ Your work will be visible to all, and AVSimulation takes care of the migration t
 * Click `Contribute` > `Open pull request`.
 * Left member (destination):
   * base repository: `AVSimulation/SCANeR-Samples-Pack`
-  * base: `2022`
+  * base: `2023`
 * Right member (origin): Your repository, and the branch to publish.
 * Make sure to fill-in the title and describe your improvement, addition in the comment field.
   It will make it easier for AVSimulation to understand and approve the change.
