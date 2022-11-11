@@ -54,19 +54,19 @@
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="$(STUDIO_PATH)\SCANeRstudio_2022\APIs\samples\APIs.props" />
+    <Import Project="$(STUDIO_PATH)\SCANeRstudio_2023\APIs\samples\APIs.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="$(STUDIO_PATH)\SCANeRstudio_2022\APIs\samples\APIs.props" />
+    <Import Project="$(STUDIO_PATH)\SCANeRstudio_2023\APIs\samples\APIs.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="$(STUDIO_PATH)\SCANeRstudio_2022\APIs\samples\APIs.props" />
+    <Import Project="$(STUDIO_PATH)\SCANeRstudio_2023\APIs\samples\APIs.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="$(STUDIO_PATH)\SCANeRstudio_2022\APIs\samples\APIs.props" />
+    <Import Project="$(STUDIO_PATH)\SCANeRstudio_2023\APIs\samples\APIs.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
@@ -98,13 +98,13 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <CompileAs>Default</CompileAs>
-      <AdditionalIncludeDirectories>$(STUDIO_PATH)\SCANeRstudio_2022\APIs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(STUDIO_PATH)\SCANeRstudio_2023\APIs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>SCANeR_API_C.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>$(STUDIO_PATH)\SCANeRstudio_2022\APIs\lib\$(TARGET_PLATFORM)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(STUDIO_PATH)\SCANeRstudio_2023\APIs\lib\$(TARGET_PLATFORM)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>copy sut_aeb.exe.res $(OutDir)</Command>
@@ -117,7 +117,7 @@
       <PrecompiledHeader />
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalIncludeDirectories>$(STUDIO_PATH)\SCANeRstudio_2022\APIs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(STUDIO_PATH)\SCANeRstudio_2023\APIs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>SCANeR_API_C.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -125,7 +125,7 @@
       <SubSystem>Console</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <AdditionalLibraryDirectories>$(STUDIO_PATH)\SCANeRstudio_2022\APIs\lib\$(TARGET_PLATFORM)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(STUDIO_PATH)\SCANeRstudio_2023\APIs\lib\$(TARGET_PLATFORM)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>copy sut_aeb.exe.res $(OutDir)</Command>
@@ -144,14 +144,14 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CompileAs>Default</CompileAs>
-      <AdditionalIncludeDirectories>$(STUDIO_PATH)\SCANeRstudio_2022\APIs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(STUDIO_PATH)\SCANeRstudio_2023\APIs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>SCANeR_API_C.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX64</TargetMachine>
-      <AdditionalLibraryDirectories>$(STUDIO_PATH)\SCANeRstudio_2022\APIs\lib\$(TARGET_PLATFORM)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(STUDIO_PATH)\SCANeRstudio_2023\APIs\lib\$(TARGET_PLATFORM)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>copy sut_aeb.exe.res $(OutDir)</Command>
@@ -167,7 +167,7 @@
       <PrecompiledHeader />
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalIncludeDirectories>$(STUDIO_PATH)\SCANeRstudio_2022\APIs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(STUDIO_PATH)\SCANeRstudio_2023\APIs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>SCANeR_API_C.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -176,7 +176,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <TargetMachine>MachineX64</TargetMachine>
-      <AdditionalLibraryDirectories>$(STUDIO_PATH)\SCANeRstudio_2022\APIs\lib\$(TARGET_PLATFORM)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(STUDIO_PATH)\SCANeRstudio_2023\APIs\lib\$(TARGET_PLATFORM)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>copy sut_aeb.exe.res $(OutDir)</Command>
