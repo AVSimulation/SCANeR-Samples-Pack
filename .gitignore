@@ -25,7 +25,7 @@
 *.lib
 
 # Visual Studio
-.vs/
+*.vs/
 */obj/*
 *.iobj
 *.ipdb
