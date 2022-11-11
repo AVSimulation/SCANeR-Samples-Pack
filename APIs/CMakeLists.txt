@@ -24,10 +24,10 @@ IF(WIN32)
 	SET(LIBRARY_DIR ${CMAKE_CURRENT_SOURCE_DIR}/lib/x64/vs2019)
 	SET(SCANER_API_LIB SCANeR_API_C)
 ELSE(WIN32)
-	SET(BINARY_DIR  ${CMAKE_CURRENT_SOURCE_DIR}/../data/SAMPLE_COMPUTE_HPC/bin/${LSB_DISTRIBUTOR_ID}/${LSB_RELEASE})
+	SET(BINARY_DIR  ${CMAKE_CURRENT_SOURCE_DIR}/bin/Linux/${LSB_DISTRIBUTOR_ID}/${LSB_RELEASE})
 	SET(LIBRARY_DIR ${CMAKE_CURRENT_SOURCE_DIR}/lib/Linux/${LSB_DISTRIBUTOR_ID}/${LSB_RELEASE})
 
-	SET(SCANER_API_LIB SCANeR_API_C.2022)
+	SET(SCANER_API_LIB SCANeR_API_C.2023)
 	ADD_DEFINITIONS(-DLINUX)
 	ADD_DEFINITIONS(-D_FILE_OFFSET_BITS=64)
 	SET(CMAKE_CXX_FLAGS "-O3 -std=c++11 -Wno-deprecated")
@@ -38,6 +38,9 @@ IF(NOT WIN32)
 	find_library(ROSCPP_LIBRARY NAMES roscpp)
 	get_filename_component(ROSCPP_DIR ${ROSCPP_LIBRARY} DIRECTORY)
 	set(ROS_INCLUDE_DIR "${ROSCPP_DIR}/../include")
+	IF(${ROSCPP_LIBRARY} STREQUAL "ROSCPP_LIBRARY-NOTFOUND")
+		message("ROS not detected: Ros samples will not be compiled.")
+	ENDIF()
 ENDIF(NOT WIN32)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${BINARY_DIR})
@@ -53,17 +56,6 @@ ELSE(WIN32)
 	link_directories(${CMAKE_SOURCE_DIR}/lib/Linux/${LSB_DISTRIBUTOR_ID}/${LSB_RELEASE} 
 					${CMAKE_SOURCE_DIR}/../bin/Linux/${LSB_DISTRIBUTOR_ID}/${LSB_RELEASE}/lib 
 					${CMAKE_SOURCE_DIR}/../bin/Linux/${LSB_DISTRIBUTOR_ID}/${LSB_RELEASE}/lib/external)
-	
-	# VRX SPECIFIC to link with right libstdc++ (CentOS 7 only)
-	IF (${LSB_DISTRIBUTOR_ID} STREQUAL "centos" AND ${LSB_RELEASE} STREQUAL "7")
-	        IF(EXISTS ${CMAKE_SOURCE_DIR}/../bin/Linux/${LSB_DISTRIBUTOR_ID}/${LSB_RELEASE}/lib/external/libstdc++.so.6 AND NOT EXISTS ${CMAKE_SOURCE_DIR}/../bin/Linux/${LSB_DISTRIBUTOR_ID}/${LSB_RELEASE}/lib/external/libstdc++.so)
-	                        execute_process(
-	                        COMMAND ${CMAKE_COMMAND}
-	                        -E create_symlink
-	                        "${CMAKE_SOURCE_DIR}/../bin/Linux/${LSB_DISTRIBUTOR_ID}/${LSB_RELEASE}/lib/external/libstdc++.so.6"
-	                        "${CMAKE_SOURCE_DIR}/../bin/Linux/${LSB_DISTRIBUTOR_ID}/${LSB_RELEASE}/lib/external/libstdc++.so")
-	        ENDIF()
-	ENDIF()
 ENDIF(WIN32)
 
 ADD_SUBDIRECTORY(samples)
