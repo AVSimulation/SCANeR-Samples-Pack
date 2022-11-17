@@ -12,19 +12,8 @@
 //Main
 int main(int argc, char *argv[])
 {
-	std::string configName = "EVAL_CAMERACAPTURE";
-	std::string procName = "TARGETSDETECTION";
-	for (int i = 1; i < argc; i++)
-	{
-		std::string currentArg(argv[i]);
-		if ((currentArg == "-c") && (i + 1 < argc))
-			configName = argv[i + 1];
-		else if ((currentArg == "-p") && (i + 1 < argc))
-			procName = argv[i + 1];
-	}
-
 	//process Com intialization
-	if (Process_InitParams(procName.c_str(), configName.c_str(), 100) != 0)
+	if (Process_Init(argc, argv) == -1)
 	{
 		std::cout << "Error while initializing SCANeR API. Exiting" << std::endl;
 		return 1;
