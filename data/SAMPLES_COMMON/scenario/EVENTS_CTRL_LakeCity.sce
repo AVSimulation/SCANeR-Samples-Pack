@@ -12,7 +12,7 @@
       <DayTime>
         <dawnTime>21600</dawnTime>
         <day>1</day>
-        <duskTime>79200</duskTime>
+        <duskTime>66600</duskTime>
         <month>6</month>
         <startTime>28800</startTime>
         <year>2022</year>
@@ -111,8 +111,8 @@
 TYPEOF SCENARIO (0)
 {
 	IS_EXPANDED="1"
-	LABEL="Script 0"
-	FILE="DEMO_SCANeR_LakeCity_Script 0"
+	LABEL="Main"
+	FILE="EVENTS_CTRL_LakeCity_Script 0"
 	TASK_KIND="0"
 
 	TYPEOF INCLUDE (0)
@@ -197,7 +197,6 @@ TYPEOF SCENARIO (0)
 
 	TYPEOF RULE (3)
 	{
-		IS_EXPANDED="1"
 		LABEL="Rule: isTrue"
 
 		TYPEOF CONDITION (IS_TRUE)
@@ -236,40 +235,9 @@ TYPEOF SCENARIO (0)
 			}
 		}
 
-		TYPEOF ACTION (SET_DAY_TIME)
-		{
-
-			TYPEOF PARAMETER (TIME)
-			{
-				KIND="FUNCTION"
-
-				TYPEOF FUNCTION (PLUS)
-				{
-					IS_EXPANDED="1"
-
-					TYPEOF PARAMETER (OPERAND_1)
-					{
-						KIND="FUNCTION"
-
-						TYPEOF FUNCTION (GET_DAY_TIME)
-						{
-						}
-						OWNER_FILE=""
-					}
-
-					TYPEOF PARAMETER (OPERAND_2)
-					{
-						KIND="USER"
-						VALUE="0.003"
-						OWNER_FILE=""
-					}
-				}
-				OWNER_FILE=""
-			}
-		}
-
 		TYPEOF ACTION (SET_DISPLAY_INTERACTIVE_TEXT)
 		{
+			IS_EXPANDED="1"
 
 			TYPEOF PARAMETER (STRING_VALUE)
 			{
@@ -318,9 +286,134 @@ TYPEOF SCENARIO (0)
 		}
 	}
 
+	TYPEOF RULE (8)
+	{
+		LABEL="Rule: DayTime 1"
+
+		TYPEOF CONDITION (EQUAL)
+		{
+			IS_EXPANDED="1"
+			MODIFIER="HAS_BEEN_TRUE_FOR"
+			DURATION_TYPE="USER"
+			DURATION="90"
+
+			TYPEOF PARAMETER (OPERAND_1)
+			{
+				KIND="FUNCTION"
+
+				TYPEOF FUNCTION (GET_DAY_TIME)
+				{
+				}
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (OPERAND_2)
+			{
+				KIND="USER"
+				VALUE="8"
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (SET_DAY_TIME)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (TIME)
+			{
+				KIND="USER"
+				VALUE="16"
+				OWNER_FILE=""
+			}
+		}
+	}
+
+	TYPEOF RULE (9)
+	{
+		LABEL="Rule: DayTime 2"
+
+		TYPEOF CONDITION (EQUAL)
+		{
+			IS_EXPANDED="1"
+			MODIFIER="HAS_BEEN_TRUE_FOR"
+			DURATION_TYPE="USER"
+			DURATION="90"
+
+			TYPEOF PARAMETER (OPERAND_1)
+			{
+				KIND="FUNCTION"
+
+				TYPEOF FUNCTION (GET_DAY_TIME)
+				{
+				}
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (OPERAND_2)
+			{
+				KIND="USER"
+				VALUE="16"
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (SET_DAY_TIME)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (TIME)
+			{
+				KIND="USER"
+				VALUE="0"
+				OWNER_FILE=""
+			}
+		}
+	}
+
+	TYPEOF RULE (10)
+	{
+		LABEL="Rule: DayTime 3"
+
+		TYPEOF CONDITION (EQUAL)
+		{
+			IS_EXPANDED="1"
+			MODIFIER="HAS_BEEN_TRUE_FOR"
+			DURATION_TYPE="USER"
+			DURATION="30"
+
+			TYPEOF PARAMETER (OPERAND_1)
+			{
+				KIND="FUNCTION"
+
+				TYPEOF FUNCTION (GET_DAY_TIME)
+				{
+				}
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (OPERAND_2)
+			{
+				KIND="USER"
+				VALUE="0"
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (SET_DAY_TIME)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (TIME)
+			{
+				KIND="USER"
+				VALUE="8"
+				OWNER_FILE=""
+			}
+		}
+	}
+
 	TYPEOF RULE (1)
 	{
-		IS_EXPANDED="1"
 		LABEL="Rule: Kid cross road"
 
 		TYPEOF CONDITION (IS_TRIGGERED_BY_VEHICLE)
@@ -403,7 +496,6 @@ TYPEOF SCENARIO (0)
 
 	TYPEOF RULE (0)
 	{
-		IS_EXPANDED="1"
 		LABEL="Rule: Car goes out parking"
 
 		TYPEOF CONDITION (IS_TRIGGERED_BY_VEHICLE)
@@ -448,7 +540,6 @@ TYPEOF SCENARIO (0)
 
 	TYPEOF RULE (2)
 	{
-		IS_EXPANDED="1"
 		LABEL="Rule: Display braking image"
 
 		TYPEOF CONDITION (IS_TRIGGERED_BY_VEHICLE)
@@ -528,7 +619,6 @@ TYPEOF SCENARIO (0)
 
 	TYPEOF RULE (4)
 	{
-		IS_EXPANDED="1"
 		LABEL="Rule: Force actor 50 to overtake"
 
 		TYPEOF CONDITION (IS_TRIGGERED_BY_VEHICLE)
@@ -653,9 +743,62 @@ TYPEOF SCENARIO (0)
 		}
 	}
 
+	TYPEOF RULE (11)
+	{
+		LABEL="Rule: Display"
+
+		TYPEOF CONDITION (EQUAL)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (OPERAND_1)
+			{
+				KIND="VARIABLE"
+				VALUE="2"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (OPERAND_2)
+			{
+				KIND="USER"
+				VALUE="1"
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ACTION (SET_DISPLAY_CONSTANT_TEXT)
+		{
+
+			TYPEOF PARAMETER (STRING_VALUE)
+			{
+				KIND="USER"
+				VALUE="Play with: Agent_LateralShift &lt;-&gt;"
+				OWNER_FILE=""
+			}
+
+			TYPEOF PARAMETER (STRING_DISPLAYNAME)
+			{
+				KIND="USER"
+				VALUE="LEFT"
+				OWNER_FILE=""
+			}
+		}
+
+		TYPEOF ELSE_ACTION (SET_CLEAR_DISPLAY_TEXT)
+		{
+			IS_EXPANDED="1"
+
+			TYPEOF PARAMETER (STRING_DISPLAYNAME)
+			{
+				KIND="USER"
+				VALUE="LEFT"
+				OWNER_FILE=""
+			}
+		}
+	}
+
 	TYPEOF RULE (5)
 	{
-		IS_EXPANDED="1"
 		LABEL="Rule: disable actor 50 speed obligatory"
 
 		TYPEOF CONDITION (EQUAL)
@@ -735,7 +878,6 @@ TYPEOF SCENARIO (0)
 
 	TYPEOF RULE (7)
 	{
-		IS_EXPANDED="1"
 		LABEL="Rule: activate rain"
 
 		TYPEOF CONDITION (IS_TRIGGERED_BY_VEHICLE)
@@ -746,7 +888,7 @@ TYPEOF SCENARIO (0)
 			TYPEOF PARAMETER (TRIGGER_NAME)
 			{
 				KIND="TRIGGER"
-				VALUE="Trigge5"
+				VALUE="Trigger5"
 				OWNER_FILE=""
 			}
 
@@ -804,7 +946,6 @@ TYPEOF SCENARIO (0)
 
 	TYPEOF RULE (6)
 	{
-		IS_EXPANDED="1"
 		LABEL="Rule: deactivate rain"
 
 		TYPEOF CONDITION (SUPEQUAL)
@@ -875,7 +1016,7 @@ TYPEOF SCENARIO (0)
 }
 </script>
           <scriptLanguage>mice</scriptLanguage>
-          <scriptName>Script 0</scriptName>
+          <scriptName>Main</scriptName>
         </ScenarioScript>
       </Step>
       <Transition>
@@ -6996,7 +7137,7 @@ TYPEOF SCENARIO (0)
       <height>4</height>
       <isActivated>1</isActivated>
       <isRectangle>1</isRectangle>
-      <name>Trigge5</name>
+      <name>Trigger5</name>
       <width>10</width>
       <ObjectPosition>
         <heading>5.51650238037109</heading>
