@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<sce version="20.22.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<sce version="20.23.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <Scenario>
     <description></description>
@@ -55,6 +55,7 @@
     <Ground>
       <enableRoughness>0</enableRoughness>
       <infrastructure></infrastructure>
+      <isParametric>0</isParametric>
       <name>Paris_Champs_Elysees.rnd</name>
       <useSpecificSurfaceForTraffic>0</useSpecificSurfaceForTraffic>
     </Ground>
@@ -111,50 +112,51 @@ TYPEOF SCENARIO (0)
 {
 	IS_EXPANDED="1"
 	LABEL="Main"
+	FILE="result_scenario-importer_Sce_Main"
 	TASK_KIND="0"
-	
+
 	TYPEOF RULE (0)
 	{
 		IS_EXPANDED="1"
 		LABEL="Rule"
-		
+
 		TYPEOF CONDITION (IS_SCENARIO_BEGINNING)
 		{
 			IS_EXPANDED="1"
 		}
-		
+
 		TYPEOF ACTION (EXECUTE_SCRIPT)
 		{
 			IS_EXPANDED="1"
-			
+
 			TYPEOF PARAMETER (SCRIPT_FILENAME)
 			{
 				KIND="FILE"
 				VALUE="set_trajectory_end_behaviour_ghost.py"
-				OWNER_FILE = ""
+				OWNER_FILE=""
 			}
 		}
 	}
-	
+
 	TYPEOF RULE (1)
 	{
 		IS_EXPANDED="1"
 		LABEL="Rule"
-		
+
 		TYPEOF CONDITION (IS_TRUE)
 		{
 			IS_EXPANDED="1"
 		}
-		
+
 		TYPEOF ACTION (EXECUTE_SCRIPT)
 		{
 			IS_EXPANDED="1"
-			
+
 			TYPEOF PARAMETER (SCRIPT_FILENAME)
 			{
 				KIND="FILE"
 				VALUE="activate.py"
-				OWNER_FILE = ""
+				OWNER_FILE=""
 			}
 		}
 	}
@@ -164,6 +166,23 @@ TYPEOF SCENARIO (0)
           <scriptName>Main</scriptName>
         </ScenarioScript>
       </Step>
+      <Step>
+        <description></description>
+        <hint></hint>
+        <name>_background_task_step</name>
+      </Step>
+      <Transition>
+        <allConditionsTrue>0</allConditionsTrue>
+        <fromStep>_background_task_step</fromStep>
+        <name>_end_scenario_condition_list</name>
+        <toStep>BUILTIN_SUCCESS_ADB568D064DB408EAFDE1D4021E336DF</toStep>
+      </Transition>
+      <Transition>
+        <allConditionsTrue>0</allConditionsTrue>
+        <fromStep>_background_task_step</fromStep>
+        <name>_failed_scenario_condition_list</name>
+        <toStep>BUILTIN_FAILURE_A36CBB59761A4AF1B2BACC50D71084AB</toStep>
+      </Transition>
     </StoryBoard>
     <UserDataList/>
     <Visual>
@@ -226,7 +245,7 @@ TYPEOF SCENARIO (0)
         <Simple/>
       </Model>
       <ObjectPosition>
-        <heading>2.70526034059121</heading>
+        <heading>2.70526075363159</heading>
         <position>111.419687893673 -38.9796392730004 0</position>
         <RoadPosition>
           <abscissa>20.8724721194327</abscissa>
@@ -28228,7 +28247,7 @@ TYPEOF SCENARIO (0)
         <Simple/>
       </Model>
       <ObjectPosition>
-        <heading>2.69328457707863</heading>
+        <heading>2.69328451156616</heading>
         <position>106.902588026246 -36.8383974324305 0</position>
         <RoadPosition>
           <abscissa>15.8736412800173</abscissa>
@@ -56211,7 +56230,7 @@ TYPEOF SCENARIO (0)
       <name>Activate_Vhls_0_1</name>
       <width>5</width>
       <ObjectPosition>
-        <heading>2.70526034059121</heading>
+        <heading>2.70526075363159</heading>
         <position>113.813246759237 -40.0957741022576 0</position>
         <RoadPosition>
           <abscissa>23.5132827370232</abscissa>
@@ -56231,7 +56250,7 @@ TYPEOF SCENARIO (0)
       <name>Desactivate_Vhls_0_1</name>
       <width>5</width>
       <ObjectPosition>
-        <heading>2.70526034059121</heading>
+        <heading>2.70526075363159</heading>
         <position>128.586331186234 -65.1637439583428 0</position>
         <RoadPosition>
           <abscissa>47.6920132576113</abscissa>
