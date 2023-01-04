@@ -67,23 +67,6 @@
           <value>uxdrender.cfg</value>
         </Argument>
       </Process>
-      <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/CameraManager.exe</exe>
-        <name>CAMERA</name>
-        <port>25108</port>
-        <protocol></protocol>
-        <Environment/>
-        <Display/>
-        <ExitMethod>
-          <exitMethod>0</exitMethod>
-          <overrideExitOrder>0</overrideExitOrder>
-          <timeout>3000</timeout>
-        </ExitMethod>
-        <Argument>
-          <name>t</name>
-          <value>ego_camera_views.cam</value>
-        </Argument>
-      </Process>
     </Computer>
   </Processes>
 
@@ -127,9 +110,6 @@
     </Module>
     <Module>
       <processName>WALKERTRAFFIC</processName>
-    </Module>
-    <Module>
-      <processName>CAMERA</processName>
     </Module>
   </ProcessGroups>
 
