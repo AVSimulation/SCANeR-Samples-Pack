@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<sce version="20.22.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<sce version="20.23.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <Scenario>
     <description>-------------------------------------
@@ -83,6 +83,7 @@ To control the EGO in acceleration, run the Simulink model "eval_longitudinal_ct
     <Ground>
       <enableRoughness>0</enableRoughness>
       <infrastructure></infrastructure>
+      <isParametric>0</isParametric>
       <name>EVAL_ADAS_2.rnd</name>
       <useSpecificSurfaceForTraffic>0</useSpecificSurfaceForTraffic>
     </Ground>
@@ -185,6 +186,33 @@ To control the EGO in acceleration, run the Simulink model "eval_longitudinal_ct
     </ScenarioStopCriteria>
     <StoryBoard>
       <firstStep></firstStep>
+      <Step>
+        <description></description>
+        <hint></hint>
+        <name>_background_task_step</name>
+      </Step>
+      <Transition>
+        <allConditionsTrue>0</allConditionsTrue>
+        <fromStep>_background_task_step</fromStep>
+        <name>_end_scenario_condition_list</name>
+        <toStep>BUILTIN_SUCCESS_ADB568D064DB408EAFDE1D4021E336DF</toStep>
+        <Condition>
+          <description></description>
+          <evaluationCount>-1</evaluationCount>
+          <evaluationTimeout>0</evaluationTimeout>
+          <evaluationType>IS_TRUE</evaluationType>
+          <name>TimeOut</name>
+          <TimeOutTest>
+            <duration>35</duration>
+          </TimeOutTest>
+        </Condition>
+      </Transition>
+      <Transition>
+        <allConditionsTrue>0</allConditionsTrue>
+        <fromStep>_background_task_step</fromStep>
+        <name>_failed_scenario_condition_list</name>
+        <toStep>BUILTIN_FAILURE_A36CBB59761A4AF1B2BACC50D71084AB</toStep>
+      </Transition>
     </StoryBoard>
     <UserDataList/>
     <Visual>

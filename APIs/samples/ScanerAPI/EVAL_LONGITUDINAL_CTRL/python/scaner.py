@@ -11,14 +11,14 @@ if (os.name == 'nt'):
     this_file = inspect.currentframe().f_code.co_filename
     this_dir = os.path.dirname(this_file)
     cur_dir = os.getcwd()
-    api_path = os.path.abspath(os.environ['STUDIO_PATH']+'./SCANeRstudio_2022/APIs/bin/x64/vs2019')
+    api_path = os.path.abspath(os.environ['STUDIO_PATH']+'./SCANeRstudio_2023/APIs/bin/x64/vs2019')
     if os.path.exists(api_path):
         os.chdir(api_path)
-    scaner_api = ctypes.CDLL(os.environ['STUDIO_PATH']+'/SCANeRstudio_2022/APIs/bin/x64/vs2019/SCANeR_API_C.2022.dll')
+    scaner_api = ctypes.CDLL(os.environ['STUDIO_PATH']+'/SCANeRstudio_2023/APIs/bin/x64/vs2019/SCANeR_API_C.2023.dll')
     if os.path.exists(api_path):
         os.chdir(cur_dir)
 else:
-    scaner_api = ctypes.CDLL('libSCANeR_API_C.2022.so')
+    scaner_api = ctypes.CDLL('libSCANeR_API_C.2023.so')
 
 #structures first
 class DataInterface(ctypes.Structure):

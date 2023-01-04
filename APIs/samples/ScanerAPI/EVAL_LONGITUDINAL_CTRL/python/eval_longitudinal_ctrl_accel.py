@@ -12,7 +12,7 @@ this_file = inspect.currentframe().f_code.co_filename
 this_dir = os.path.dirname(this_file)
 # to find scaner_api dll
 if (os.name == 'nt'):
-    os.chdir(os.path.abspath(os.environ['STUDIO_PATH']+'./SCANeRstudio_2022/APIs/bin/x64/vs2019'))
+    os.chdir(os.path.abspath(os.environ['STUDIO_PATH']+'./SCANeRstudio_2023/APIs/bin/x64/vs2019'))
 
 from scaner import *
 

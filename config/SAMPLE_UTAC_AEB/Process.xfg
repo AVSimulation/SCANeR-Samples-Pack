@@ -95,17 +95,9 @@
         </Argument>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/Driver_UTAC.exe</exe>
-        <name>DRIVER_UTAC</name>
-        <port>25109</port>
-        <protocol></protocol>
-        <Environment/>
-        <Display/>
-      </Process>
-      <Process>
         <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/WalkerTraffic.exe</exe>
         <name>WALKERTRAFFIC</name>
-        <port>25110</port>
+        <port>25109</port>
         <protocol></protocol>
         <Environment/>
         <Display/>
@@ -113,7 +105,7 @@
       <Process>
         <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/visual.exe</exe>
         <name>VISUAL_UTAC_BS</name>
-        <port>25111</port>
+        <port>25110</port>
         <protocol></protocol>
         <Argument>
           <name>cfg</name>
@@ -123,7 +115,7 @@
       <Process>
         <exe>${LOCAL_STUDIO_PATH}/SCANeR-Samples-Pack-2023/APIs/bin/x64/vs2019/AEB.exe</exe>
         <name>AEB</name>
-        <port>25112</port>
+        <port>25111</port>
         <protocol></protocol>
         <Environment/>
         <Display/>
@@ -131,6 +123,14 @@
       <Process>
         <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/Sensors.exe</exe>
         <name>SENSORS</name>
+        <port>25112</port>
+        <protocol></protocol>
+        <Environment/>
+        <Display/>
+      </Process>
+      <Process>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/FMIHandler.exe</exe>
+        <name>FMIHANDLER</name>
         <port>25113</port>
         <protocol></protocol>
         <Environment/>
@@ -146,9 +146,6 @@
         <processName>AEB</processName>
       </Selected>
       <Selected>
-        <processName>DRIVER_UTAC</processName>
-      </Selected>
-      <Selected>
         <processName>MODELHANDLER</processName>
       </Selected>
       <Selected>
@@ -162,6 +159,9 @@
       </Selected>
       <Selected>
         <processName>SENSORS</processName>
+      </Selected>
+      <Selected>
+        <processName>FMIHANDLER</processName>
       </Selected>
     </AutoStartProcesses>
     <DefaultProcesses>
@@ -178,13 +178,13 @@
         <processName>MODELHANDLER</processName>
       </Selected>
       <Selected>
-        <processName>DRIVER_UTAC</processName>
-      </Selected>
-      <Selected>
         <processName>AEB</processName>
       </Selected>
       <Selected>
         <processName>SENSORS</processName>
+      </Selected>
+      <Selected>
+        <processName>FMIHANDLER</processName>
       </Selected>
     </DefaultProcesses>
   </Setup>
@@ -209,9 +209,6 @@
       <processName>VISUAL</processName>
     </Module>
     <Module>
-      <processName>DRIVER_UTAC</processName>
-    </Module>
-    <Module>
       <processName>RECORDER</processName>
     </Module>
     <Module>
@@ -228,6 +225,9 @@
     </Module>
     <Module>
       <processName>SENSORS</processName>
+    </Module>
+    <Module>
+      <processName>FMIHANDLER</processName>
     </Module>
   </ProcessGroups>
 
