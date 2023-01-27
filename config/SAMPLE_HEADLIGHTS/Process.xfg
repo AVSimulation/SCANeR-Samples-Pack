@@ -184,29 +184,7 @@
 
   <Setup>
     <name>Unamed</name>
-    <AutoStartProcesses>
-      <Selected>
-        <processName>VISUAL_HL</processName>
-      </Selected>
-      <Selected>
-        <processName>TRAFFIC</processName>
-      </Selected>
-      <Selected>
-        <processName>ACQUISITION</processName>
-      </Selected>
-      <Selected>
-        <processName>MODELHANDLER</processName>
-      </Selected>
-      <Selected>
-        <processName>NIGHTTESTMANAGER</processName>
-      </Selected>
-      <Selected>
-        <processName>AFSMANAGER</processName>
-      </Selected>
-      <Selected>
-        <processName>SENSORS</processName>
-      </Selected>
-    </AutoStartProcesses>
+    <AutoStartProcesses/>
     <DefaultProcesses>
       <Selected>
         <processName>TRAFFIC</processName>

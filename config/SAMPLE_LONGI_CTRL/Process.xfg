@@ -152,23 +152,7 @@
 
   <Setup>
     <name>Unamed</name>
-    <AutoStartProcesses>
-      <Selected>
-        <processName>ACQUISITION</processName>
-      </Selected>
-      <Selected>
-        <processName>MODELHANDLER</processName>
-      </Selected>
-      <Selected>
-        <processName>LONGI_C</processName>
-      </Selected>
-      <Selected>
-        <processName>CONTROLPADVIEWER</processName>
-      </Selected>
-      <Selected>
-        <processName>SCENARIO</processName>
-      </Selected>
-    </AutoStartProcesses>
+    <AutoStartProcesses/>
     <DefaultProcesses>
       <Selected>
         <processName>ACQUISITION</processName>

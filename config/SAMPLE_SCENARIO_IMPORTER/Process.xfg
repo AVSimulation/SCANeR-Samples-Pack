@@ -156,14 +156,7 @@
 
   <Setup>
     <name>Unamed</name>
-    <AutoStartProcesses>
-      <Selected>
-        <processName>TRAFFIC</processName>
-      </Selected>
-      <Selected>
-        <processName>SCENARIO</processName>
-      </Selected>
-    </AutoStartProcesses>
+    <AutoStartProcesses/>
     <DefaultProcesses>
       <Selected>
         <processName>TRAFFIC</processName>

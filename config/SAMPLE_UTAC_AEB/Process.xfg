@@ -141,29 +141,7 @@
 
   <Setup>
     <name>Unamed</name>
-    <AutoStartProcesses>
-      <Selected>
-        <processName>AEB</processName>
-      </Selected>
-      <Selected>
-        <processName>MODELHANDLER</processName>
-      </Selected>
-      <Selected>
-        <processName>VISUAL</processName>
-      </Selected>
-      <Selected>
-        <processName>SCENARIO</processName>
-      </Selected>
-      <Selected>
-        <processName>TRAFFIC</processName>
-      </Selected>
-      <Selected>
-        <processName>SENSORS</processName>
-      </Selected>
-      <Selected>
-        <processName>FMIHANDLER</processName>
-      </Selected>
-    </AutoStartProcesses>
+    <AutoStartProcesses/>
     <DefaultProcesses>
       <Selected>
         <processName>TRAFFIC</processName>

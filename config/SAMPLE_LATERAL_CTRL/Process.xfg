@@ -112,23 +112,7 @@
 
   <Setup>
     <name>Unamed</name>
-    <AutoStartProcesses>
-      <Selected>
-        <processName>ACQUISITION</processName>
-      </Selected>
-      <Selected>
-        <processName>MODELHANDLER</processName>
-      </Selected>
-      <Selected>
-        <processName>UXDRENDER</processName>
-      </Selected>
-      <Selected>
-        <processName>LATERAL_CTRL</processName>
-      </Selected>
-      <Selected>
-        <processName>SENSORS</processName>
-      </Selected>
-    </AutoStartProcesses>
+    <AutoStartProcesses/>
     <DefaultProcesses>
       <Selected>
         <processName>ACQUISITION</processName>
