@@ -136,6 +136,14 @@
         <Environment/>
         <Display/>
       </Process>
+      <Process>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/UTAC_Score.exe</exe>
+        <name>UTAC_SCORE</name>
+        <port>25114</port>
+        <protocol></protocol>
+        <Environment/>
+        <Display/>
+      </Process>
     </Computer>
   </Processes>
 
@@ -163,6 +171,9 @@
       </Selected>
       <Selected>
         <processName>FMIHANDLER</processName>
+      </Selected>
+      <Selected>
+        <processName>UTAC_SCORE</processName>
       </Selected>
     </DefaultProcesses>
   </Setup>
@@ -206,6 +217,9 @@
     </Module>
     <Module>
       <processName>FMIHANDLER</processName>
+    </Module>
+    <Module>
+      <processName>UTAC_SCORE</processName>
     </Module>
   </ProcessGroups>
 
