@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ControllerConfig>
+  <Controller Name='System'>
+    <General AssertWhenConfigurationProblems='t' MapMessageIndicesFile='' NumberOfFailureIndices='4' />
+    <Seqencer CleanupPlayerAfterStop='f' FinishedIsTransient='t' />
+    <SoftCodedBindings File='SignalBindings.xml' />
+    <SoftCodedBindings File='SignalBindingsInternal.xml' />
+    <Statemachine HasChannelControl='f' HasExternalMode='f' HasOneChannelFailure='f' />
+    <TuningSetSelection ParameterSetType='Cueing' />
+    <Channel Name='Motion' ProcessorAffinity='0x0' Type='Motion' />
+    <Controller Name='Motion'>
+      <Hardware AccelerationCalculation='t' BridgeType='1' HardwareConsent='f' PlcType='Power' Pneumatics='t' SafetyPlc='f' />
+      <Kinematics UseEncoderAcceleration='t' UseEncoderVelocity='t' />
+      <IoCards HasSmcFNet='f' />
+      <Controller Name='Model'>
+        <PlatformControl Acc='f' Pos='f' Pva='t' PvaGeneratorHasHostInput='f' />
+        <ActuatorControl Pos='f' Pva='f' />
+        <Cueing CueingModel='t' SpecialEffects='t' />
+        <Engage HasNeutralOffset='f' HasSnubber='f' />
+        <Controller Name='ActualBackwardKinematics'>
+          <General Parametrization='Default' UseRrpFromHost='f' UseTiltAngles='f' />
+        </Controller>
+        <Controller Name='CueingModel'>
+          <Controller Name='MapIn'>
+            <General HasCogToCrpHostInput='f' IdenticalFilters='t' />
+          </Controller>
+          <Controller Name='HpRotational'>
+            <General UseTwoFilters='f' UseVelocityInput='f' />
+          </Controller>
+        </Controller>
+        <Controller Name='SpecialEffects'>
+          <Buffets HasHostInputBuffets='t' HasNoiseBuffets='f' Name='Tx' SineWaveCount='3' />
+          <Buffets HasHostInputBuffets='t' HasNoiseBuffets='f' Name='Ty' SineWaveCount='3' />
+          <Buffets HasConditionalSine='t' HasHostInputBuffets='t' HasNoiseBuffets='f' Name='Tz' SineWaveCount='3' />
+          <Buffets HasHostInputBuffets='t' HasNoiseBuffets='f' Name='Rx' SineWaveCount='0' />
+          <Buffets HasHostInputBuffets='t' HasNoiseBuffets='f' Name='Ry' SineWaveCount='0' />
+          <Buffets HasHostInputBuffets='t' HasNoiseBuffets='f' Name='Rz' SineWaveCount='0' />
+          <RunwayRumble Enabled='f' Name='' UseAkima='f' />
+          <HelicopterRotorFrequency Enabled='f' HasAccelerationInput='f' />
+          <RotorVibrations Enabled='f' HasAccelerationInput='f' HasVibrationAbsorbers='f' Type='Shaker' />
+        </Controller>
+        <Controller Name='PlatformSetpointGuarding'>
+          <General EnabledByDefault='t' UsePvaLimiter='f' />
+        </Controller>
+        <Controller Name='ActuatorSetpointGuarding'>
+          <General CommissioningMode='f' CurrentLimiting='f' ForceCalculations='f' IdenticalParameters='t' PosLimiterMode='t' />
+          <Controller Name='Disengaging'>
+            <General HasDisengageActuatorFailure='f' HasDisengageFast='f' HasSnubber='f' />
+          </Controller>
+        </Controller>
+      </Controller>
+      <Controller Name='Hardware'>
+        <Hardware>
+          <BrakeTest Enabled='f' IsForced='f' Type='-1' />
+          <BufferTest Enabled='f' IsMaintenance='f' />
+          <Acu DriveErrorMessageFile='' DriveType='Canbus' HasAbortingState='f' HasExtRevBumpComp='f' HasMAE='f' HasSVT='f' HasSVTErrorClass2='f' Unit='m'>
+            <Encoder EncoderType='Relative' HasExtendHoldPosition='f' />
+          </Acu>
+          <Acu HasSameParameters='t' HasSameSettings='t' />
+          <Acu HasSameParameters='t' HasSameSettings='t' />
+          <Acu HasSameParameters='t' HasSameSettings='t' />
+          <Acu HasSameParameters='t' HasSameSettings='t' />
+          <Acu HasSameParameters='t' HasSameSettings='t' />
+        </Hardware>
+      </Controller>
+      <Controller Name='Safety'>
+        <SignalInput Category='Class1Fault' DisableMains='t' Message='Smoke Detector Alarm' Name='SmokeDetectorAlarm' />
+        <SignalInput Category='Class1Fault' DisableMains='f' Message='Mechanical Brake not Ground Connected' Name='MechanicalBrakeGroundNotConnected' />
+        <SignalInput Category='Class1Fault' DisableMains='f' Message='Interlock Circuit 1' Name='InterlockCircuit1' />
+        <SignalOutput Name='IndicatorWarning' />
+        <SignalOutput Name='IndicatorActive' />
+        <SignalOutput Name='IndicatorSettled' />
+        <Power EmsActiveClass1Fault='f' HasHeartbeatSignal='f' HasRemotePowerSettings='f' PlcToSwHeartbeat='f' SwToPlcHeartbeat='f' />
+      </Controller>
+      <Controller Name='Pneumatics'>
+        <General HasAutomatedControl='f' HasClassicPressureControl='f' HasPassiveSettle='f' NumberOfTanks='1' />
+      </Controller>
+      <Controller Name='AccCalculation'>
+        <General ExtPars='f' Type='6sensors' />
+        <Observer Type='None' />
+      </Controller>
+    </Controller>
+  </Controller>
+</ControllerConfig>

@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FailureMessages>
+  <Message Index='1101' String='Mode Command Changed' />
+  <Message Index='1102' String='Aborted all running applications' />
+  <Message Index='1103' String='Overrun Detected' />
+  <Message Index='1104' String='Host Communication Lost' />
+  <Message Index='1105' String='Host Disconnect Received' />
+  <Message Index='1106' String='NaN in Host Data' />
+  <Message Index='1107' String='Signal out of bounds in Host Data' />
+  <Message Index='1108' String='Parameter loading went wrong: check the log file' />
+  <Message Index='1109' String='Bindings went wrong: check the log file' />
+  <Message Index='3201' String='Motion.Bridge: Manual Override Pressed' />
+  <Message Index='3202' String='Motion.Bridge: Actuator Emulation Requires Bridge Emulation' />
+  <Message Index='3203' String='Motion.Bridge: Bridge Emulation Not Allowed' />
+  <Message Index='3204' String='Motion.Bridge: Bridge Loaded' />
+  <Message Index='3205' String='Motion.Bridge: Bridge Movement Time Out' />
+  <Message Index='3206' String='Motion.Bridge: Open Switches Do Not Match' />
+  <Message Index='3207' String='Motion.Bridge: Bridge Drive Not Enabled' />
+  <Message Index='3208' String='Motion.Bridge: Stop Button Pressed' />
+  <Message Index='3209' String='Motion.Bridge: Gate Not Closed' />
+  <Message Index='3210' String='Motion.Bridge: Not All SettleSwitches Detected (Opening)' />
+  <Message Index='3211' String='Motion.Bridge: Open Switch A Lost' />
+  <Message Index='3212' String='Motion.Bridge: Open Switch B Lost' />
+  <Message Index='3213' String='Motion.Bridge: Not All SettleSwitches Detected' />
+  <Message Index='3214' String='Motion.Bridge: Not All Actuators Settled And/Or Calibrated' />
+  <Message Index='3215' String='Motion.Bridge: Not All Encoders Calibrated' />
+  <Message Index='1301' String='Motion.Hardware.Acu1: NaN in PVA Setpoint' />
+  <Message Index='1302' String='Motion.Hardware.Acu1: NaN in AmplifierControlSignal' />
+  <Message Index='1303' String='Motion.Hardware.Acu1: NaN in FeedForwardTorque' />
+  <Message Index='1304' String='Motion.Hardware.Acu1: Drive SW Enable TimeOut' />
+  <Message Index='1401' String='Motion.Hardware.Acu1.Encoder: Current too High in Calibrating' />
+  <Message Index='1402' String='Motion.Hardware.Acu1.Encoder: Calibration Velocity Exceeded' />
+  <Message Index='1403' String='Motion.Hardware.Acu1.Encoder: Max Position Error Exceeded' />
+  <Message Index='1404' String='Motion.Hardware.Acu1.Encoder: SettleSwitch Signal Remains True While Extending' />
+  <Message Index='1405' String='Motion.Hardware.Acu1.Encoder: SettleSwitch Glitch Detected' />
+  <Message Index='1406' String='Motion.Hardware.Acu1.Encoder: Calibration Difference Too High' />
+  <Message Index='1407' String='Motion.Hardware.Acu1.Encoder: SettleSwitch Not Found' />
+  <Message Index='1408' String='Motion.Hardware.Acu1.Encoder: SettleSwitch Toggle in Wrong Position' />
+  <Message Index='1501' String='Motion.Hardware.Acu1.Guard: Position Error too High' />
+  <Message Index='1502' String='Motion.Hardware.Acu1.Guard: Amplifier Velocity Too High' />
+  <Message Index='1503' String='Motion.Hardware.Acu1.Guard: Heartbeat from Amplifier to MSW Not OK' />
+  <Message Index='1504' String='Motion.Hardware.Acu1.Guard: Amplifier Fault' />
+  <Message Index='1505' String='Motion.Hardware.Acu1.Guard: Amplifier Power Not Ok' />
+  <Message Index='1506' String='Motion.Hardware.Acu1.Guard: Amplifier AlarmStatus High' />
+  <Message Index='1507' String='Motion.Hardware.Acu1.Guard: Canbus Status is Not Operational' />
+  <Message Index='1508' String='Motion.Hardware.Acu1.Guard: Amplifier Not Enabled' />
+  <Message Index='1509' String='Motion.Hardware.Acu1.Guard: Bearing Protection Activated' />
+  <Message Index='1601' String='Motion.Hardware.Acu2: NaN in PVA Setpoint' />
+  <Message Index='1602' String='Motion.Hardware.Acu2: NaN in AmplifierControlSignal' />
+  <Message Index='1603' String='Motion.Hardware.Acu2: NaN in FeedForwardTorque' />
+  <Message Index='1604' String='Motion.Hardware.Acu2: Drive SW Enable TimeOut' />
+  <Message Index='1701' String='Motion.Hardware.Acu2.Encoder: Current too High in Calibrating' />
+  <Message Index='1702' String='Motion.Hardware.Acu2.Encoder: Calibration Velocity Exceeded' />
+  <Message Index='1703' String='Motion.Hardware.Acu2.Encoder: Max Position Error Exceeded' />
+  <Message Index='1704' String='Motion.Hardware.Acu2.Encoder: SettleSwitch Signal Remains True While Extending' />
+  <Message Index='1705' String='Motion.Hardware.Acu2.Encoder: SettleSwitch Glitch Detected' />
+  <Message Index='1706' String='Motion.Hardware.Acu2.Encoder: Calibration Difference Too High' />
+  <Message Index='1707' String='Motion.Hardware.Acu2.Encoder: SettleSwitch Not Found' />
+  <Message Index='1708' String='Motion.Hardware.Acu2.Encoder: SettleSwitch Toggle in Wrong Position' />
+  <Message Index='1801' String='Motion.Hardware.Acu2.Guard: Position Error too High' />
+  <Message Index='1802' String='Motion.Hardware.Acu2.Guard: Amplifier Velocity Too High' />
+  <Message Index='1803' String='Motion.Hardware.Acu2.Guard: Heartbeat from Amplifier to MSW Not OK' />
+  <Message Index='1804' String='Motion.Hardware.Acu2.Guard: Amplifier Fault' />
+  <Message Index='1805' String='Motion.Hardware.Acu2.Guard: Amplifier Power Not Ok' />
+  <Message Index='1806' String='Motion.Hardware.Acu2.Guard: Amplifier AlarmStatus High' />
+  <Message Index='1807' String='Motion.Hardware.Acu2.Guard: Canbus Status is Not Operational' />
+  <Message Index='1808' String='Motion.Hardware.Acu2.Guard: Amplifier Not Enabled' />
+  <Message Index='1809' String='Motion.Hardware.Acu2.Guard: Bearing Protection Activated' />
+  <Message Index='1901' String='Motion.Hardware.Acu3: NaN in PVA Setpoint' />
+  <Message Index='1902' String='Motion.Hardware.Acu3: NaN in AmplifierControlSignal' />
+  <Message Index='1903' String='Motion.Hardware.Acu3: NaN in FeedForwardTorque' />
+  <Message Index='1904' String='Motion.Hardware.Acu3: Drive SW Enable TimeOut' />
+  <Message Index='2001' String='Motion.Hardware.Acu3.Encoder: Current too High in Calibrating' />
+  <Message Index='2002' String='Motion.Hardware.Acu3.Encoder: Calibration Velocity Exceeded' />
+  <Message Index='2003' String='Motion.Hardware.Acu3.Encoder: Max Position Error Exceeded' />
+  <Message Index='2004' String='Motion.Hardware.Acu3.Encoder: SettleSwitch Signal Remains True While Extending' />
+  <Message Index='2005' String='Motion.Hardware.Acu3.Encoder: SettleSwitch Glitch Detected' />
+  <Message Index='2006' String='Motion.Hardware.Acu3.Encoder: Calibration Difference Too High' />
+  <Message Index='2007' String='Motion.Hardware.Acu3.Encoder: SettleSwitch Not Found' />
+  <Message Index='2008' String='Motion.Hardware.Acu3.Encoder: SettleSwitch Toggle in Wrong Position' />
+  <Message Index='2101' String='Motion.Hardware.Acu3.Guard: Position Error too High' />
+  <Message Index='2102' String='Motion.Hardware.Acu3.Guard: Amplifier Velocity Too High' />
+  <Message Index='2103' String='Motion.Hardware.Acu3.Guard: Heartbeat from Amplifier to MSW Not OK' />
+  <Message Index='2104' String='Motion.Hardware.Acu3.Guard: Amplifier Fault' />
+  <Message Index='2105' String='Motion.Hardware.Acu3.Guard: Amplifier Power Not Ok' />
+  <Message Index='2106' String='Motion.Hardware.Acu3.Guard: Amplifier AlarmStatus High' />
+  <Message Index='2107' String='Motion.Hardware.Acu3.Guard: Canbus Status is Not Operational' />
+  <Message Index='2108' String='Motion.Hardware.Acu3.Guard: Amplifier Not Enabled' />
+  <Message Index='2109' String='Motion.Hardware.Acu3.Guard: Bearing Protection Activated' />
+  <Message Index='2201' String='Motion.Hardware.Acu4: NaN in PVA Setpoint' />
+  <Message Index='2202' String='Motion.Hardware.Acu4: NaN in AmplifierControlSignal' />
+  <Message Index='2203' String='Motion.Hardware.Acu4: NaN in FeedForwardTorque' />
+  <Message Index='2204' String='Motion.Hardware.Acu4: Drive SW Enable TimeOut' />
+  <Message Index='2301' String='Motion.Hardware.Acu4.Encoder: Current too High in Calibrating' />
+  <Message Index='2302' String='Motion.Hardware.Acu4.Encoder: Calibration Velocity Exceeded' />
+  <Message Index='2303' String='Motion.Hardware.Acu4.Encoder: Max Position Error Exceeded' />
+  <Message Index='2304' String='Motion.Hardware.Acu4.Encoder: SettleSwitch Signal Remains True While Extending' />
+  <Message Index='2305' String='Motion.Hardware.Acu4.Encoder: SettleSwitch Glitch Detected' />
+  <Message Index='2306' String='Motion.Hardware.Acu4.Encoder: Calibration Difference Too High' />
+  <Message Index='2307' String='Motion.Hardware.Acu4.Encoder: SettleSwitch Not Found' />
+  <Message Index='2308' String='Motion.Hardware.Acu4.Encoder: SettleSwitch Toggle in Wrong Position' />
+  <Message Index='2401' String='Motion.Hardware.Acu4.Guard: Position Error too High' />
+  <Message Index='2402' String='Motion.Hardware.Acu4.Guard: Amplifier Velocity Too High' />
+  <Message Index='2403' String='Motion.Hardware.Acu4.Guard: Heartbeat from Amplifier to MSW Not OK' />
+  <Message Index='2404' String='Motion.Hardware.Acu4.Guard: Amplifier Fault' />
+  <Message Index='2405' String='Motion.Hardware.Acu4.Guard: Amplifier Power Not Ok' />
+  <Message Index='2406' String='Motion.Hardware.Acu4.Guard: Amplifier AlarmStatus High' />
+  <Message Index='2407' String='Motion.Hardware.Acu4.Guard: Canbus Status is Not Operational' />
+  <Message Index='2408' String='Motion.Hardware.Acu4.Guard: Amplifier Not Enabled' />
+  <Message Index='2409' String='Motion.Hardware.Acu4.Guard: Bearing Protection Activated' />
+  <Message Index='2501' String='Motion.Hardware.Acu5: NaN in PVA Setpoint' />
+  <Message Index='2502' String='Motion.Hardware.Acu5: NaN in AmplifierControlSignal' />
+  <Message Index='2503' String='Motion.Hardware.Acu5: NaN in FeedForwardTorque' />
+  <Message Index='2504' String='Motion.Hardware.Acu5: Drive SW Enable TimeOut' />
+  <Message Index='2601' String='Motion.Hardware.Acu5.Encoder: Current too High in Calibrating' />
+  <Message Index='2602' String='Motion.Hardware.Acu5.Encoder: Calibration Velocity Exceeded' />
+  <Message Index='2603' String='Motion.Hardware.Acu5.Encoder: Max Position Error Exceeded' />
+  <Message Index='2604' String='Motion.Hardware.Acu5.Encoder: SettleSwitch Signal Remains True While Extending' />
+  <Message Index='2605' String='Motion.Hardware.Acu5.Encoder: SettleSwitch Glitch Detected' />
+  <Message Index='2606' String='Motion.Hardware.Acu5.Encoder: Calibration Difference Too High' />
+  <Message Index='2607' String='Motion.Hardware.Acu5.Encoder: SettleSwitch Not Found' />
+  <Message Index='2608' String='Motion.Hardware.Acu5.Encoder: SettleSwitch Toggle in Wrong Position' />
+  <Message Index='2701' String='Motion.Hardware.Acu5.Guard: Position Error too High' />
+  <Message Index='2702' String='Motion.Hardware.Acu5.Guard: Amplifier Velocity Too High' />
+  <Message Index='2703' String='Motion.Hardware.Acu5.Guard: Heartbeat from Amplifier to MSW Not OK' />
+  <Message Index='2704' String='Motion.Hardware.Acu5.Guard: Amplifier Fault' />
+  <Message Index='2705' String='Motion.Hardware.Acu5.Guard: Amplifier Power Not Ok' />
+  <Message Index='2706' String='Motion.Hardware.Acu5.Guard: Amplifier AlarmStatus High' />
+  <Message Index='2707' String='Motion.Hardware.Acu5.Guard: Canbus Status is Not Operational' />
+  <Message Index='2708' String='Motion.Hardware.Acu5.Guard: Amplifier Not Enabled' />
+  <Message Index='2709' String='Motion.Hardware.Acu5.Guard: Bearing Protection Activated' />
+  <Message Index='2801' String='Motion.Hardware.Acu6: NaN in PVA Setpoint' />
+  <Message Index='2802' String='Motion.Hardware.Acu6: NaN in AmplifierControlSignal' />
+  <Message Index='2803' String='Motion.Hardware.Acu6: NaN in FeedForwardTorque' />
+  <Message Index='2804' String='Motion.Hardware.Acu6: Drive SW Enable TimeOut' />
+  <Message Index='2901' String='Motion.Hardware.Acu6.Encoder: Current too High in Calibrating' />
+  <Message Index='2902' String='Motion.Hardware.Acu6.Encoder: Calibration Velocity Exceeded' />
+  <Message Index='2903' String='Motion.Hardware.Acu6.Encoder: Max Position Error Exceeded' />
+  <Message Index='2904' String='Motion.Hardware.Acu6.Encoder: SettleSwitch Signal Remains True While Extending' />
+  <Message Index='2905' String='Motion.Hardware.Acu6.Encoder: SettleSwitch Glitch Detected' />
+  <Message Index='2906' String='Motion.Hardware.Acu6.Encoder: Calibration Difference Too High' />
+  <Message Index='2907' String='Motion.Hardware.Acu6.Encoder: SettleSwitch Not Found' />
+  <Message Index='2908' String='Motion.Hardware.Acu6.Encoder: SettleSwitch Toggle in Wrong Position' />
+  <Message Index='3001' String='Motion.Hardware.Acu6.Guard: Position Error too High' />
+  <Message Index='3002' String='Motion.Hardware.Acu6.Guard: Amplifier Velocity Too High' />
+  <Message Index='3003' String='Motion.Hardware.Acu6.Guard: Heartbeat from Amplifier to MSW Not OK' />
+  <Message Index='3004' String='Motion.Hardware.Acu6.Guard: Amplifier Fault' />
+  <Message Index='3005' String='Motion.Hardware.Acu6.Guard: Amplifier Power Not Ok' />
+  <Message Index='3006' String='Motion.Hardware.Acu6.Guard: Amplifier AlarmStatus High' />
+  <Message Index='3007' String='Motion.Hardware.Acu6.Guard: Canbus Status is Not Operational' />
+  <Message Index='3008' String='Motion.Hardware.Acu6.Guard: Amplifier Not Enabled' />
+  <Message Index='3009' String='Motion.Hardware.Acu6.Guard: Bearing Protection Activated' />
+  <Message Index='1201' String='Motion.Model: NaN Actual BwdKinematics' />
+  <Message Index='1202' String='Motion.Model: NaN Actuator Setpoint Guarding' />
+  <Message Index='1203' String='Motion.Model: Limiter Intervention' />
+  <Message Index='3301' String='Motion.Pneumatics: Current Too High Acu1' />
+  <Message Index='3302' String='Motion.Pneumatics: Current Too High Acu2' />
+  <Message Index='3303' String='Motion.Pneumatics: Current Too High Acu3' />
+  <Message Index='3304' String='Motion.Pneumatics: Current Too High Acu4' />
+  <Message Index='3305' String='Motion.Pneumatics: Current Too High Acu5' />
+  <Message Index='3306' String='Motion.Pneumatics: Current Too High Acu6' />
+  <Message Index='3307' String='Motion.Pneumatics: Pressure Tank Not Ok' />
+  <Message Index='3101' String='Motion.Safety: Test1 Main Power Detected' />
+  <Message Index='3102' String='Motion.Safety: Emergency Circuit Broken' />
+  <Message Index='3103' String='Motion.Safety: Power Switch Not In Remote' />
+  <Message Index='3104' String='Motion.Safety: Drive STO Error' />
+  <Message Index='3105' String='Motion.Safety: Remote Power On Command Signal Not Present' />
+  <Message Index='3106' String='Motion.Safety: Proxy Emulation Not Allowed' />
+  <Message Index='3107' String='Motion.Safety: Test4 Main Power Not Detected' />
+  <Message Index='3108' String='Motion.Safety: Main Power Not Detected' />
+  <Message Index='3109' String='Motion.Safety: Smoke Detector Alarm' />
+  <Message Index='3110' String='Motion.Safety: Mechanical Brake not Ground Connected' />
+  <Message Index='3111' String='Motion.Safety: Interlock Circuit 1' />
+</FailureMessages>

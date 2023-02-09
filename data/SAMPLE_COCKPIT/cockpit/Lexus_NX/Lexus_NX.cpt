@@ -1,0 +1,40 @@
+filename=Lexus_NX.osgb
+
+position.x = 1.357
+position.y = 0
+position.z = 0
+orientation.h = -90
+orientation.p = 0
+orientation.r = 0
+
+observer.x = -.5
+observer.y = .4
+observer.z = 1.3
+
+[MIRRORS]
+MirrorCount = 3
+MirrorRefreshCount = 1
+MirrorBackCockpit = Off
+MirrorBackCockpitName = backcockpit
+;MirrorLODLevel = 1
+[MIRRORS:1]
+MirrorResolution = 512
+MirrorName = R_RIGHT_MIRROR_SURF
+MirrorState = On
+MirrorFarPlane = 500
+MirrorLODLevel = 1
+MirrorNormal = -0.55 -1 0.04
+[MIRRORS:2]
+MirrorResolution = 512
+MirrorName = R_LEFT_MIRROR_SURF
+MirrorState = On
+MirrorFarPlane = 500
+MirrorLODLevel = 1
+MirrorNormal = 0.15 -1 0.06
+[MIRRORS:3]
+MirrorResolution = 512
+MirrorName = R_CENTRAL_MIRROR_SURF
+MirrorState = On
+MirrorFarPlane = 500
+MirrorLODLevel = 1
+MirrorNormal = -0.32 -1 -0.029

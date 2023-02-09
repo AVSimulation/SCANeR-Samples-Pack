@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<UDP_NOHEADER>
+  <UDP_PORT Value='1702' />
+  <UDP_REPLY_PORT Value='1703' />
+  <UDP_ADD_CHECKSUM Value='f' />
+  <ControlCommand Name='ControlCommand'>
+    <Off                  Value='0'/>
+    <Disengage            Value='1'/>
+    <Consent              Value='2'/>
+    <ReadyForTraining     Value='3'/>
+    <Engage               Value='4'/>
+    <Hold                 Value='5'/>
+    <Reset                Value='6'/>
+  </ControlCommand>
+  <StateValue Name='SystemStatus'>
+    <Off                  Value='0'/>
+    <WaitingForConsent    Value='1'/>
+    <OpeningBridge        Value='2'/>
+    <ClosingBridge        Value='3'/>
+    <StandBy              Value='4'/>
+    <Preparing            Value='5'/>
+    <BufferTest           Value='6'/>
+    <Initializing         Value='7'/>
+    <ReadyForTraining     Value='8'/>
+    <Engaged              Value='9'/>
+    <Holding              Value='10'/>
+    <Disengaging          Value='11'/>
+    <ForcedDisengaging    Value='12'/>
+    <Aborting             Value='13'/>
+    <Fault                Value='14'/>
+    <Reset                Value='15'/>
+    <EnableSafety         Value='16'/>
+  </StateValue>
+  <FailureMessages>
+    <StatusFail1 />
+    <StatusFail2 />
+    <StatusFail3 />
+  </FailureMessages>
+  <ToController>
+    <Signal Name='ControlCommand'           Type='Int'   Unit='-'       Value='0'        BindingTarget='System.Motion.inControlCommand' ControlCommand='ControlCommand'/>
+
+    <Signal Name='VehicleAccelerationSurge' Type='Float' Unit='m/s^2'   Value='0'        BindingTarget='System.Motion.Model.CueingModel.MapIn.inVehicleAccelerationSurge'/>
+    <Signal Name='VehicleAccelerationSway'  Type='Float' Unit='m/s^2'   Value='0'        BindingTarget='System.Motion.Model.CueingModel.MapIn.inVehicleAccelerationSway'/>
+    <Signal Name='VehicleAccelerationHeave' Type='Float' Unit='m/s^2'   Value='-9.80665' BindingTarget='System.Motion.Model.CueingModel.MapIn.inVehicleAccelerationHeave'/>
+    <Signal Name='VehicleAccelerationRoll'  Type='Float' Unit='rad/s^2' Value='0'        BindingTarget='System.Motion.Model.CueingModel.MapIn.inVehicleAccelerationRoll'/>
+    <Signal Name='VehicleAccelerationPitch' Type='Float' Unit='rad/s^2' Value='0'        BindingTarget='System.Motion.Model.CueingModel.MapIn.inVehicleAccelerationPitch'/>
+    <Signal Name='VehicleAccelerationYaw'   Type='Float' Unit='rad/s^2' Value='0'        BindingTarget='System.Motion.Model.CueingModel.MapIn.inVehicleAccelerationYaw'/>
+    <Signal Name='VehicleVelocityRoll'      Type='Float' Unit='rad/s'   Value='0'        BindingTarget='System.Motion.Model.CueingModel.MapIn.inVehicleVelocityRoll'/>
+    <Signal Name='VehicleVelocityPitch'     Type='Float' Unit='rad/s'   Value='0'        BindingTarget='System.Motion.Model.CueingModel.MapIn.inVehicleVelocityPitch'/>
+    <Signal Name='VehicleVelocityYaw'       Type='Float' Unit='rad/s'   Value='0'        BindingTarget='System.Motion.Model.CueingModel.MapIn.inVehicleVelocityYaw'/>
+    <Signal Name='VehicleOnGround'          Type='Int'   Unit='-'       Value='0'        BindingTarget='System.Motion.Model.CueingModel.MapIn.inVehicleOnGround'/>
+    <Signal Name='VehicleGroundSpeed'       Type='Float' Unit='m/s'     Value='0'        BindingTarget='System.Motion.Model.CueingModel.MapIn.inVehicleGroundSpeed'/>
+    <Signal Name='BodyAngleRoll'            Type='Float' Unit='rad'     Value='0'        BindingTarget='System.Motion.Model.CueingModel.MapIn.inVehicleBodyRoll'/>
+    <Signal Name='BodyAnglePitch'           Type='Float' Unit='rad'     Value='0'        BindingTarget='System.Motion.Model.CueingModel.MapIn.inVehicleBodyPitch'/>
+
+    <Signal Name='BuffetAccelerationTx'     Type='Float' Unit='m/s^2'   Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.HostInputBuffets.inAccelerationTx'/>
+    <Signal Name='BuffetAccelerationTy'     Type='Float' Unit='m/s^2'   Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.HostInputBuffets.inAccelerationTy'/>
+    <Signal Name='BuffetAccelerationTz'     Type='Float' Unit='m/s^2'   Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.HostInputBuffets.inAccelerationTz'/>
+    <Signal Name='BuffetAccelerationRx'     Type='Float' Unit='rad/s^2' Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.HostInputBuffets.inAccelerationRx'/>
+    <Signal Name='BuffetAccelerationRy'     Type='Float' Unit='rad/s^2' Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.HostInputBuffets.inAccelerationRy'/>
+    <Signal Name='BuffetAccelerationRz'     Type='Float' Unit='rad/s^2' Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.HostInputBuffets.inAccelerationRz'/>
+
+    <Signal Name='SineWaveTxAmplitude1'     Type='Float' Unit='m/s^2'   Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.SineWaveBuffets.inTxAmplitude1'/>
+    <Signal Name='SineWaveTxAmplitude2'     Type='Float' Unit='m/s^2'   Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.SineWaveBuffets.inTxAmplitude2'/>
+    <Signal Name='SineWaveTxAmplitude3'     Type='Float' Unit='m/s^2'   Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.SineWaveBuffets.inTxAmplitude3'/>
+    <Signal Name='SineWaveTyAmplitude1'     Type='Float' Unit='m/s^2'   Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.SineWaveBuffets.inTyAmplitude1'/>
+    <Signal Name='SineWaveTyAmplitude2'     Type='Float' Unit='m/s^2'   Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.SineWaveBuffets.inTyAmplitude2'/>
+    <Signal Name='SineWaveTyAmplitude3'     Type='Float' Unit='m/s^2'   Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.SineWaveBuffets.inTyAmplitude3'/>
+    <Signal Name='SineWaveTzAmplitude1'     Type='Float' Unit='m/s^2'   Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.SineWaveBuffets.inTzAmplitude1'/>
+    <Signal Name='SineWaveTzAmplitude2'     Type='Float' Unit='m/s^2'   Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.SineWaveBuffets.inTzAmplitude2'/>
+    <Signal Name='SineWaveTzAmplitude3'     Type='Float' Unit='m/s^2'   Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.SineWaveBuffets.inTzAmplitude3'/>
+
+    <Signal Name='SineWaveTxFrequency1'     Type='Float' Unit='Hz'      Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.SineWaveBuffets.inTxFrequency1'/>
+    <Signal Name='SineWaveTxFrequency2'     Type='Float' Unit='Hz'      Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.SineWaveBuffets.inTxFrequency2'/>
+    <Signal Name='SineWaveTxFrequency3'     Type='Float' Unit='Hz'      Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.SineWaveBuffets.inTxFrequency3'/>
+    <Signal Name='SineWaveTyFrequency1'     Type='Float' Unit='Hz'      Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.SineWaveBuffets.inTyFrequency1'/>
+    <Signal Name='SineWaveTyFrequency2'     Type='Float' Unit='Hz'      Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.SineWaveBuffets.inTyFrequency2'/>
+    <Signal Name='SineWaveTyFrequency3'     Type='Float' Unit='Hz'      Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.SineWaveBuffets.inTyFrequency3'/>
+    <Signal Name='SineWaveTzFrequency1'     Type='Float' Unit='Hz'      Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.SineWaveBuffets.inTzFrequency1'/>
+    <Signal Name='SineWaveTzFrequency2'     Type='Float' Unit='Hz'      Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.SineWaveBuffets.inTzFrequency2'/>
+    <Signal Name='SineWaveTzFrequency3'     Type='Float' Unit='Hz'      Value='0'        BindingTarget='System.Motion.Model.SpecialEffects.SineWaveBuffets.inTzFrequency3'/>
+	
+	<!--<Channel Name='PlatformPvaControl'>-->
+		<Signal Name='SetpointPositionTx'     	Type='Float' Unit='m'		Value='0'        BindingTarget='System.Motion.Model.PlatformPvaControl.inSetpointPositionTx'/>
+		<Signal Name='SetpointVelocityTx'     	Type='Float' Unit='m/s'		Value='0'        BindingTarget='System.Motion.Model.PlatformPvaControl.inSetpointVelocityTx'/>
+		<Signal Name='SetpointAccelerationTx'    Type='Float' Unit='m/s2'	Value='0'        BindingTarget='System.Motion.Model.PlatformPvaControl.inSetpointAccelerationTx'/>
+		<Signal Name='SetpointPositionTy'     	Type='Float' Unit='m'		Value='0'        BindingTarget='System.Motion.Model.PlatformPvaControl.inSetpointPositionTy'/>
+		<Signal Name='SetpointVelocityTy'     	Type='Float' Unit='m/s'		Value='0'        BindingTarget='System.Motion.Model.PlatformPvaControl.inSetpointVelocityTy'/>
+		<Signal Name='SetpointAccelerationTy'    Type='Float' Unit='m/s2'	Value='0'        BindingTarget='System.Motion.Model.PlatformPvaControl.inSetpointAccelerationTy'/>
+		<Signal Name='SetpointPositionTz'     	Type='Float' Unit='m'		Value='0'        BindingTarget='System.Motion.Model.PlatformPvaControl.inSetpointPositionTz'/>
+		<Signal Name='SetpointVelocityTz'     	Type='Float' Unit='m/s'		Value='0'        BindingTarget='System.Motion.Model.PlatformPvaControl.inSetpointVelocityTz'/>
+		<Signal Name='SetpointAccelerationTz'    Type='Float' Unit='m/s2'	Value='0'        BindingTarget='System.Motion.Model.PlatformPvaControl.inSetpointAccelerationTz'/>
+		<Signal Name='SetpointPositionRx'     	Type='Float' Unit='rad'		Value='0'        BindingTarget='System.Motion.Model.PlatformPvaControl.inSetpointPositionRx'/>
+		<Signal Name='SetpointVelocityRx'    	Type='Float' Unit='rad/s'	Value='0'        BindingTarget='System.Motion.Model.PlatformPvaControl.inSetpointVelocityRx'/>
+		<Signal Name='SetpointAccelerationRx'    Type='Float' Unit='rad/s2'	Value='0'        BindingTarget='System.Motion.Model.PlatformPvaControl.inSetpointAccelerationRx'/>
+		<Signal Name='SetpointPositionRy'     	Type='Float' Unit='rad'		Value='0'        BindingTarget='System.Motion.Model.PlatformPvaControl.inSetpointPositionRy'/>
+		<Signal Name='SetpointVelocityRy'     	Type='Float' Unit='rad/s'	Value='0'        BindingTarget='System.Motion.Model.PlatformPvaControl.inSetpointVelocityRy'/>
+		<Signal Name='SetpointAccelerationRy'    Type='Float' Unit='rad/s2'	Value='0'        BindingTarget='System.Motion.Model.PlatformPvaControl.inSetpointAccelerationRy'/>
+		<Signal Name='SetpointPositionRz'     	Type='Float' Unit='rad'		Value='0'        BindingTarget='System.Motion.Model.PlatformPvaControl.inSetpointPositionRz'/>
+		<Signal Name='SetpointVelocityRz'     	Type='Float' Unit='rad/s'	Value='0'        BindingTarget='System.Motion.Model.PlatformPvaControl.inSetpointVelocityRz'/>
+		<Signal Name='SetpointAccelerationRz'    Type='Float' Unit='rad/s2'	Value='0'        BindingTarget='System.Motion.Model.PlatformPvaControl.inSetpointAccelerationRz'/>
+		<!--<Signal Name='FaderValue'    			Type='Float' Unit='-'		Value='0'        BindingTarget='System.Motion.Model.PlatformPvaControl.inFaderValue'/>
+	<Channel>-->
+	
+  </ToController>
+
+  <FromController>
+    <Signal Name='StatusState'                    Type='Int'   Unit='-'       BindingSource='System.Motion.outState' StateSet='SystemStatus'/>
+    <Signal Name='StatusMode'                     Type='Int'   Unit='-'       BindingSource='System.outMode'/>
+    <Signal Name='StatusClass1Interlock'          Type='Int'   Unit='-'       BindingSource='System.Motion.Safety.outInterlockClass1Status'/>
+    <Signal Name='StatusClass2Interlock'          Type='Int'   Unit='-'       BindingSource='System.Motion.Safety.outInterlockClass2Status'/>
+    <Signal Name='StatusActuatorFault'            Type='Int'   Unit='-'       BindingSource='System.Motion.Hardware.outStatusWord'/>
+    <Signal Name='StatusPower'                    Type='Int'   Unit='-'       BindingSource='System.Motion.Safety.outPowerStatusWord'/>
+    <Signal Name='StatusPneumatics'               Type='Int'   Unit='-'       BindingSource='System.Motion.Pneumatics.outStatusWord'/>
+    <Signal Name='StatusBridge'                   Type='Int'   Unit='-'       BindingSource='System.Motion.Bridge.outStatusWord'/>
+    <Signal Name='StatusConsent'                  Type='Int'   Unit='-'       /><!--BindingSource='System.Motion.Consent.outStatusWord'/-->
+    <Signal Name='StatusFail1'                    Type='Int'   Unit='-'       BindingSource='System.outMessageIndex0'/>
+    <Signal Name='StatusFail2'                    Type='Int'   Unit='-'       BindingSource='System.outMessageIndex1'/>
+    <Signal Name='StatusFail3'                    Type='Int'   Unit='-'       BindingSource='System.outMessageIndex2'/>
+
+    <Signal Name='ActualPlatformPositionTx'       Type='Float' Unit='m'       BindingSource='System.Motion.Model.ActualBackwardKinematics.outPlatformPositionTx'/>
+    <Signal Name='ActualPlatformPositionTy'       Type='Float' Unit='m'       BindingSource='System.Motion.Model.ActualBackwardKinematics.outPlatformPositionTy'/>
+    <Signal Name='ActualPlatformPositionTz'       Type='Float' Unit='m'       BindingSource='System.Motion.Model.ActualBackwardKinematics.outPlatformPositionTz'/>
+    <Signal Name='ActualPlatformPositionRx'       Type='Float' Unit='rad'     BindingSource='System.Motion.Model.ActualBackwardKinematics.outPlatformPositionRx'/>
+    <Signal Name='ActualPlatformPositionRy'       Type='Float' Unit='rad'     BindingSource='System.Motion.Model.ActualBackwardKinematics.outPlatformPositionRy'/>
+    <Signal Name='ActualPlatformPositionRz'       Type='Float' Unit='rad'     BindingSource='System.Motion.Model.ActualBackwardKinematics.outPlatformPositionRz'/>
+    <Signal Name='ActualPlatformVelocityTx'       Type='Float' Unit='m/s'     BindingSource='System.Motion.Model.ActualBackwardKinematics.outPlatformVelocityTx'/>
+    <Signal Name='ActualPlatformVelocityTy'       Type='Float' Unit='m/s'     BindingSource='System.Motion.Model.ActualBackwardKinematics.outPlatformVelocityTy'/>
+    <Signal Name='ActualPlatformVelocityTz'       Type='Float' Unit='m/s'     BindingSource='System.Motion.Model.ActualBackwardKinematics.outPlatformVelocityTz'/>
+    <Signal Name='ActualPlatformVelocityRx'       Type='Float' Unit='rad/s'   BindingSource='System.Motion.Model.ActualBackwardKinematics.outPlatformVelocityRx'/>
+    <Signal Name='ActualPlatformVelocityRy'       Type='Float' Unit='rad/s'   BindingSource='System.Motion.Model.ActualBackwardKinematics.outPlatformVelocityRy'/>
+    <Signal Name='ActualPlatformVelocityRz'       Type='Float' Unit='rad/s'   BindingSource='System.Motion.Model.ActualBackwardKinematics.outPlatformVelocityRz'/>
+    <Signal Name='ActualPlatformAccelerationTx'   Type='Float' Unit='m/s^2'   BindingSource='System.Motion.Model.ActualBackwardKinematics.outPlatformAccelerationTx'/>
+    <Signal Name='ActualPlatformAccelerationTy'   Type='Float' Unit='m/s^2'   BindingSource='System.Motion.Model.ActualBackwardKinematics.outPlatformAccelerationTy'/>
+    <Signal Name='ActualPlatformAccelerationTz'   Type='Float' Unit='m/s^2'   BindingSource='System.Motion.Model.ActualBackwardKinematics.outPlatformAccelerationTz'/>
+    <Signal Name='ActualPlatformAccelerationRx'   Type='Float' Unit='rad/s^2' BindingSource='System.Motion.Model.ActualBackwardKinematics.outPlatformAccelerationRx'/>
+    <Signal Name='ActualPlatformAccelerationRy'   Type='Float' Unit='rad/s^2' BindingSource='System.Motion.Model.ActualBackwardKinematics.outPlatformAccelerationRy'/>
+    <Signal Name='ActualPlatformAccelerationRz'   Type='Float' Unit='rad/s^2' BindingSource='System.Motion.Model.ActualBackwardKinematics.outPlatformAccelerationRz'/>
+
+    <Signal Name='ActualActuatorPosition1'        Type='Float' Unit='m'       BindingSource='System.Motion.Hardware.Acu1.Encoder.outAbsolutePos'/>
+    <Signal Name='ActualActuatorPosition2'        Type='Float' Unit='m'       BindingSource='System.Motion.Hardware.Acu2.Encoder.outAbsolutePos'/>
+    <Signal Name='ActualActuatorPosition3'        Type='Float' Unit='m'       BindingSource='System.Motion.Hardware.Acu3.Encoder.outAbsolutePos'/>
+    <Signal Name='ActualActuatorPosition4'        Type='Float' Unit='m'       BindingSource='System.Motion.Hardware.Acu4.Encoder.outAbsolutePos'/>
+    <Signal Name='ActualActuatorPosition5'        Type='Float' Unit='m'       BindingSource='System.Motion.Hardware.Acu5.Encoder.outAbsolutePos'/>
+    <Signal Name='ActualActuatorPosition6'        Type='Float' Unit='m'       BindingSource='System.Motion.Hardware.Acu6.Encoder.outAbsolutePos'/>
+  </FromController>
+
+ <Bindings>
+    <Binding Source='System.HostCommunication.outVehicleOnGround'  Target='System.inTuningSetSelector_Cueing'/>
+    <Binding Source='System.HostCommunication.outStatus_NewData'   Target='System.Motion.Model.CueingModel.MapIn.inNewData'/>
+  </Bindings>
+</UDP_NOHEADER>

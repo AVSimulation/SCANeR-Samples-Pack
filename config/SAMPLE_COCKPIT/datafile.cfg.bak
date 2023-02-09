@@ -1,0 +1,4 @@
+[Common]
+Data		 = ${STUDIO_PATH}/SCANeRstudio_2023/data/DEFAULT
+Doc		 	 = ${STUDIO_PATH}/SCANeRstudio_2023/doc
+Config		 = ${STUDIO_PATH}/SCANeRstudio_2023/config
