@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<sce version="20.23.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<sce version="20.23.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <Scenario>
     <description>To use this scenario:
@@ -170,6 +170,7 @@ The camera sensor model used is: FrontCamera_Lanes_Lines</description>
     </ScenarioStopCriteria>
     <StoryBoard>
       <firstStep>Main Step</firstStep>
+      <openScenario></openScenario>
       <Step>
         <description></description>
         <hint></hint>

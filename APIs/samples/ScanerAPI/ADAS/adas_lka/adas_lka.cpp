@@ -93,12 +93,12 @@ int main(int argc, char* argv[])
 						double AdditiveSteeringWheelAngle = 0;
 						stk::Vector3 roadSensorPointL, roadSensorPointR;
 						// read matrice points from road sensor from the sensor reference system
-						roadSensorPointL.x = Com_getDoubleData(roadSensor, "roadLinesPointsArray[5]/pointX");
-						roadSensorPointL.y = Com_getDoubleData(roadSensor, "roadLinesPointsArray[5]/pointY");
-						roadSensorPointL.z = Com_getDoubleData(roadSensor, "roadLinesPointsArray[5]/pointZ");
-						roadSensorPointR.x = Com_getDoubleData(roadSensor, "roadLinesPointsArray[7]/pointX");
-						roadSensorPointR.y = Com_getDoubleData(roadSensor, "roadLinesPointsArray[7]/pointY");
-						roadSensorPointR.z = Com_getDoubleData(roadSensor, "roadLinesPointsArray[7]/pointZ");
+						roadSensorPointL.x = Com_getDoubleData(roadSensor, "roadLinesPointsArray[4]/pointX");
+						roadSensorPointL.y = Com_getDoubleData(roadSensor, "roadLinesPointsArray[4]/pointY");
+						roadSensorPointL.z = Com_getDoubleData(roadSensor, "roadLinesPointsArray[4]/pointZ");
+						roadSensorPointR.x = Com_getDoubleData(roadSensor, "roadLinesPointsArray[6]/pointX");
+						roadSensorPointR.y = Com_getDoubleData(roadSensor, "roadLinesPointsArray[6]/pointY");
+						roadSensorPointR.z = Com_getDoubleData(roadSensor, "roadLinesPointsArray[6]/pointZ");
 
 						stk::Vector3 targetedPoint = (roadSensorPointL + roadSensorPointR) / 2.f; // target the middle of the road
 
@@ -106,7 +106,7 @@ int main(int argc, char* argv[])
 
 							targetedPoint.normalize();
 							double targetWheelAngle = atan2(targetedPoint.y, targetedPoint.x); // wheel angle related to the targeted point
-							AdditiveSteeringWheelAngle = .2 * (targetWheelAngle / maxWheelsAngle) * maxSteeringWheelAngle; // convert wheel angle to steering angle (rad)
+							AdditiveSteeringWheelAngle = .02 * (targetWheelAngle / maxWheelsAngle) * maxSteeringWheelAngle; // convert wheel angle to steering angle (rad)
 
 							// apply the computed streering wheel angle
 							Com_setDoubleData(lateralControl, "AdditiveSteeringWheelAngle", AdditiveSteeringWheelAngle);
