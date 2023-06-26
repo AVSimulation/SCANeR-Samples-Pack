@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<sce version="20.23.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<sce version="20.23.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <Scenario>
     <description></description>
@@ -101,6 +101,7 @@
     </ScenarioStopCriteria>
     <StoryBoard>
       <firstStep>Step</firstStep>
+      <openScenario></openScenario>
       <Step>
         <description></description>
         <hint></hint>
@@ -112,7 +113,7 @@ TYPEOF SCENARIO (0)
 {
 	IS_EXPANDED="1"
 	LABEL="Main"
-	FILE="EVENTS_CTRL_LakeCity_Script 0"
+	FILE="EVENTS_CTRL_LakeCity_Main"
 	TASK_KIND="0"
 
 	TYPEOF INCLUDE (0)
