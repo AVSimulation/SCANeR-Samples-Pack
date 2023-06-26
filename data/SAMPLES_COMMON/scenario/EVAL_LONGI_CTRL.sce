@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<sce version="20.23.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<sce version="20.23.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <Scenario>
     <description>-------------------------------------
@@ -186,6 +186,7 @@ To control the EGO in acceleration, run the Simulink model "eval_longitudinal_ct
     </ScenarioStopCriteria>
     <StoryBoard>
       <firstStep></firstStep>
+      <openScenario></openScenario>
       <Step>
         <description></description>
         <hint></hint>
