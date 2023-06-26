@@ -103,19 +103,9 @@
         <Display/>
       </Process>
       <Process>
-        <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/visual.exe</exe>
-        <name>VISUAL_UTAC_BS</name>
-        <port>25110</port>
-        <protocol></protocol>
-        <Argument>
-          <name>cfg</name>
-          <value>observer_UTAC.cfg</value>
-        </Argument>
-      </Process>
-      <Process>
         <exe>${LOCAL_STUDIO_PATH}/SCANeR-Samples-Pack-2023/APIs/bin/x64/vs2019/AEB.exe</exe>
         <name>AEB</name>
-        <port>25111</port>
+        <port>25110</port>
         <protocol></protocol>
         <Environment/>
         <Display/>
@@ -123,7 +113,7 @@
       <Process>
         <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/Sensors.exe</exe>
         <name>SENSORS</name>
-        <port>25112</port>
+        <port>25111</port>
         <protocol></protocol>
         <Environment/>
         <Display/>
@@ -131,7 +121,7 @@
       <Process>
         <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/FMIHandler.exe</exe>
         <name>FMIHANDLER</name>
-        <port>25113</port>
+        <port>25112</port>
         <protocol></protocol>
         <Environment/>
         <Display/>
@@ -139,7 +129,7 @@
       <Process>
         <exe>${STUDIO_PATH}/SCANeRstudio_2023/bin/x64/UTAC_Score.exe</exe>
         <name>UTAC_SCORE</name>
-        <port>25114</port>
+        <port>25113</port>
         <protocol></protocol>
         <Environment/>
         <Display/>
@@ -205,9 +195,6 @@
     </Module>
     <Module>
       <processName>WALKERTRAFFIC</processName>
-    </Module>
-    <Module>
-      <processName>VISUAL_UTAC_BS</processName>
     </Module>
     <Module>
       <processName>AEB</processName>
