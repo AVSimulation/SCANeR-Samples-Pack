@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<sce version="20.23.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<sce version="20.23.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <Scenario>
     <description>-------------------------------------
@@ -177,6 +177,7 @@ These 3 SCANeR API modules are identical, only one must be executed.</descriptio
     </ScenarioStopCriteria>
     <StoryBoard>
       <firstStep>Main Step</firstStep>
+      <openScenario></openScenario>
       <Step>
         <description></description>
         <hint></hint>
