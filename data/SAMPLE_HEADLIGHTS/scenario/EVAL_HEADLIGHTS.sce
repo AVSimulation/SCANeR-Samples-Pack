@@ -188,12 +188,12 @@
         <Simple/>
       </Model>
       <ObjectPosition>
-        <heading>3.85149383544922</heading>
-        <position>733.139326928573 123.376702234729 0</position>
+        <heading>3.79389071464539</heading>
+        <position>667.412299657465 72.7351945796532 0</position>
         <RoadPosition>
-          <abscissa>112.16024905531</abscissa>
-          <gapInItnSystem>-5.00001199198646</gapInItnSystem>
-          <relativeHeading>3.14159250259399</relativeHeading>
+          <abscissa>28.8934583196951</abscissa>
+          <gapInItnSystem>-5.00000000000001</gapInItnSystem>
+          <relativeHeading>3.14159274101257</relativeHeading>
           <subNetwork>First subnetwork</subNetwork>
           <track>Track 48 2</track>
           <zOffset>0</zOffset>
