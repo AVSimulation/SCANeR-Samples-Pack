@@ -126,9 +126,6 @@
       <Selected>
         <processName>LATERAL_CTRL</processName>
       </Selected>
-      <Selected>
-        <processName>UXDRENDER</processName>
-      </Selected>
     </DefaultProcesses>
   </Setup>
 

@@ -86,12 +86,12 @@ int main(int argc, char* argv[])
 					double AdditiveSteeringWheelAngle = 0;					
 					stk::Vector3 roadSensorPoint1, roadSensorPoint3;
 					// read matrice points from road sensor from the sensor reference system
-					roadSensorPoint1.x = Com_getDoubleData(roadSensor, "roadLinesPointsArray[1]/pointX");
-					roadSensorPoint1.y = Com_getDoubleData(roadSensor, "roadLinesPointsArray[1]/pointY");
-					roadSensorPoint1.z = Com_getDoubleData(roadSensor, "roadLinesPointsArray[1]/pointZ");
-					roadSensorPoint3.x = Com_getDoubleData(roadSensor, "roadLinesPointsArray[4]/pointX");
-					roadSensorPoint3.y = Com_getDoubleData(roadSensor, "roadLinesPointsArray[4]/pointY");
-					roadSensorPoint3.z = Com_getDoubleData(roadSensor, "roadLinesPointsArray[4]/pointZ");
+					roadSensorPoint1.x = Com_getDoubleData(roadSensor, "roadLinesPointsArray[4]/pointX");
+					roadSensorPoint1.y = Com_getDoubleData(roadSensor, "roadLinesPointsArray[4]/pointY");
+					roadSensorPoint1.z = Com_getDoubleData(roadSensor, "roadLinesPointsArray[4]/pointZ");
+					roadSensorPoint3.x = Com_getDoubleData(roadSensor, "roadLinesPointsArray[7]/pointX");
+					roadSensorPoint3.y = Com_getDoubleData(roadSensor, "roadLinesPointsArray[7]/pointY");
+					roadSensorPoint3.z = Com_getDoubleData(roadSensor, "roadLinesPointsArray[7]/pointZ");
 
 					stk::Vector3 targetedPoint = (roadSensorPoint1 + roadSensorPoint3) / 2; // target the middle of the road
 					

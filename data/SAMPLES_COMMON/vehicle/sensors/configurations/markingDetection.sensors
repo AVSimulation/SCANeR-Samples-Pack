@@ -18,6 +18,8 @@
       <scriptConfigName></scriptConfigName>
       <sensorModelName>FrontCamera_Lanes_Lines</sensorModelName>
       <CameraSensor>
+        <NDIstream>0</NDIstream>
+        <computeVisibilityAtFrameN>1</computeVisibilityAtFrameN>
         <frameSharingFormat>0</frameSharingFormat>
         <shareFrames>0</shareFrames>
         <RoadSensor>
@@ -25,6 +27,9 @@
           <scanNumber>0</scanNumber>
         </RoadSensor>
       </CameraSensor>
+      <Plugin>
+        <pluginName></pluginName>
+      </Plugin>
       <Output>
         <outputName>sensorPoint</outputName>
         <outputReferenceFrame>Sensor</outputReferenceFrame>

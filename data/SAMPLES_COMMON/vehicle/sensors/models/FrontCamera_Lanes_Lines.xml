@@ -17,6 +17,7 @@
         <fps>30</fps>
         <hOffset>0</hOffset>
         <hResolution>400</hResolution>
+        <isVisible>1</isVisible>
         <keepDimAspectRatio>1</keepDimAspectRatio>
         <keepFOVAspectRatio>1</keepFOVAspectRatio>
         <keepResAspectRatio>1</keepResAspectRatio>
@@ -27,10 +28,29 @@
         <useFOV>0</useFOV>
         <vOffset>0</vOffset>
         <vResolution>300</vResolution>
+        <PostProcess>
+          <isBloomEnabled>0</isBloomEnabled>
+          <isChromaticAbberrationEnabled>0</isChromaticAbberrationEnabled>
+          <isDepthOfFieldEnabled>0</isDepthOfFieldEnabled>
+          <isImageEffectsEnabled>0</isImageEffectsEnabled>
+          <isWhiteBalanceEnabled>0</isWhiteBalanceEnabled>
+          <myAbberrationIntensity>0</myAbberrationIntensity>
+          <myAperture>1</myAperture>
+          <myBloomIntensity>0</myBloomIntensity>
+          <myFocalDistance>8</myFocalDistance>
+          <myGrainIntensity>0</myGrainIntensity>
+          <myGrainJitter>0</myGrainJitter>
+          <myMaximumAperture>1</myMaximumAperture>
+          <myNumberOfBlades>4</myNumberOfBlades>
+          <myStartOffset>0</myStartOffset>
+          <myVignetteIntensity>0.4</myVignetteIntensity>
+          <myWhiteTemperature>6500</myWhiteTemperature>
+          <myWhiteTint>0</myWhiteTint>
+        </PostProcess>
         <DetectableArea>
           <name>3</name>
           <range>10</range>
-          <sample>2</sample>
+          <sample>3</sample>
         </DetectableArea>
       </Focal>
     </CameraSensorModel>
